@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}" dir="{{DIR}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+<meta name="author" content="Tarik Chouika">
+<meta name="theme-color" content="#0b0d10">
+<script>/* theme bootstrap (avoid flash) */(function(){try{var t=localStorage.getItem('tc-theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t)}}catch(e){}})();</script>
+<link rel="canonical" href="{{CANONICAL}}">
+{{HREFLANGS}}
+<meta property="og:type" content="profile">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESC}}">
+<meta property="og:url" content="{{CANONICAL}}">
+<meta property="og:locale" content="{{OG_LOCALE}}">
+<meta property="og:image" content="{{SITE_URL}}/img/profile.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;900&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">{{JSONLD}}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">{{SKIP}}</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="{{HOME_URL}}">
+      <span class="brand-mark" aria-hidden="true">TC</span>
+      <span class="brand-text">{{BRAND}}</span>
+    </a>
+    <nav class="nav-links" aria-label="{{NAV_ARIA}}">{{NAV_LINKS}}</nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="{{THEME_ARIA}}" title="{{THEME_ARIA}}">
+        <span class="i-sun" aria-hidden="true">{{ICON_SUN}}</span>
+        <span class="i-moon" aria-hidden="true">{{ICON_MOON}}</span>
+      </button>
+      <label class="lang-wrap">
+        <span class="lang-globe" aria-hidden="true">{{ICON_GLOBE}}</span>
+        <select id="lang-switch" class="lang-select" aria-label="{{LANG_ARIA}}">{{LANG_OPTIONS}}</select>
+      </label>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="{{MENU}}">
+        <span class="i-menu" aria-hidden="true">{{ICON_MENU}}</span>
+        <span class="i-close" aria-hidden="true">{{ICON_CLOSE}}</span>
+      </button>
+    </div>
+  </div>
+  <div class="nav-panel" id="nav-panel">
+    <nav class="nav-panel-links" aria-label="{{NAV_ARIA}}">{{NAV_LINKS_MOBILE}}</nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="hero-glow g1" aria-hidden="true"></div>
+    <div class="hero-glow g2" aria-hidden="true"></div>
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-photo reveal">
+        <img src="/img/profile.jpg" alt="{{ALT_PROFILE}}" width="220" height="220" fetchpriority="high">
+      </div>
+      <p class="hero-greeting reveal">{{GREETING}}</p>
+      <h1 class="hero-name reveal">{{NAME}}</h1>
+      <p class="hero-name-alt reveal">{{NAME_ALT}}</p>
+      <p class="hero-role reveal"><span id="typewriter" data-roles='{{ROLES}}'>{{ROLES_TEXT}}</span><span class="tw-cursor" aria-hidden="true"></span></p>
+      <div class="hero-meta reveal">
+        <span class="meta-chip">{{ICON_PIN}}<span>{{LOCATION}}</span></span>
+        <a class="meta-chip" href="mailto:{{EMAIL}}">{{ICON_MAIL}}<bdi>{{EMAIL}}</bdi></a>
+      </div>
+      <div class="hero-cta reveal">
+        <a class="btn btn-primary" href="#contact">{{ICON_SEND}}<span>{{CTA_CONTACT}}</span></a>
+        <button class="btn btn-outline" type="button" onclick="window.print()">{{ICON_DOWNLOAD}}<span>{{CTA_CV}}</span></button>
+      </div>
+      <div class="hero-stats reveal">{{STATS}}</div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">01</span>
+        <h2>{{ABOUT_TITLE}}</h2>
+        <p class="subtitle">{{ABOUT_SUB}}</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>{{ABOUT_P1}}</p>
+          <p>{{ABOUT_P2}}</p>
+          <p>{{ABOUT_P3}}</p>
+          <p>{{ABOUT_P4}}</p>
+        </div>
+        <div class="about-facts reveal">{{FACTS}}</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CERTIFICATES (knowledge first) ================= -->
+  <section class="section alt" id="certificates">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">02</span>
+        <h2>{{CERT_TITLE}}</h2>
+        <p class="subtitle">{{CERT_SUB}}</p>
+      </div>
+      <div class="filter-bar reveal" role="group" aria-label="{{FILT_ARIA}}">
+{{FILTER_BAR}}
+      </div>
+      <div class="certs-grid" id="certs-grid">
+{{CERTS}}
+      </div>
+      <aside class="drive-banner reveal">
+        <span class="drive-icon" aria-hidden="true">{{ICON_FOLDER}}</span>
+        <div class="drive-body">
+          <h3>{{DRIVE_TITLE}}</h3>
+          <p>{{DRIVE_TEXT}}</p>
+        </div>
+        <a class="btn btn-outline" href="{{DRIVE_URL}}" target="_blank" rel="noopener">{{DRIVE_CTA}}{{ICON_EXT}}</a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">03</span>
+        <h2>{{SK_TITLE}}</h2>
+        <p class="subtitle">{{SK_SUB}}</p>
+      </div>
+      <div class="skills-grid">
+{{SKILLS}}
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="section alt" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">04</span>
+        <h2>{{PJ_TITLE}}</h2>
+        <p class="subtitle">{{PJ_SUB}}</p>
+      </div>
+      <div class="projects-grid">
+{{PROJECTS}}
+      </div>
+      <p class="proj-note reveal">{{PJ_NOTE}}</p>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE (field work) ================= -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">05</span>
+        <h2>{{EXP_TITLE}}</h2>
+        <p class="subtitle">{{EXP_SUB}}</p>
+      </div>
+      <div class="timeline">
+{{EXPERIENCE}}
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION ================= -->
+  <section class="section alt" id="education">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">06</span>
+        <h2>{{EDU_TITLE}}</h2>
+        <p class="subtitle">{{EDU_SUB}}</p>
+      </div>
+      <div class="edu-card card reveal">
+        <span class="edu-icon" aria-hidden="true">{{ICON_BOOK}}</span>
+        <h3>{{EDU_LEVEL}}</h3>
+        <p>{{EDU_NOTE}}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">07</span>
+        <h2>{{GAL_TITLE}}</h2>
+        <p class="subtitle">{{GAL_SUB}}</p>
+      </div>
+      <div class="gallery-grid">
+{{GALLERY}}
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">08</span>
+        <h2>{{CT_TITLE}}</h2>
+        <p class="subtitle">{{CT_SUB}}</p>
+      </div>
+      <div class="contact-card reveal">
+        <span class="avail"><span class="dot" aria-hidden="true"></span>{{AVAIL}}</span>
+        <a class="btn btn-primary btn-lg" href="mailto:{{EMAIL}}">{{ICON_MAIL}}<span>{{EMAIL_CTA}}</span></a>
+        <div class="contact-info">
+          <div class="info-chip">
+            {{ICON_MAIL}}<bdi>{{EMAIL}}</bdi>
+            <button class="copy-btn" type="button" data-copy="{{EMAIL}}" data-copied="{{COPIED}}" aria-label="{{COPY}}" title="{{COPY}}">
+              {{ICON_COPY}}<span class="copy-label" aria-hidden="true">{{COPY_SHORT}}</span>
+            </button>
+          </div>
+          <div class="info-chip">{{ICON_PIN}}<span>{{LOCATION}}</span></div>
+        </div>
+        <p class="contact-note">{{CT_NOTE}}</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-name">{{NAME}}</p>
+    <p class="footer-copy">&copy; <span data-year>2026</span> {{NAME_LATIN}} — {{FOOTER_RIGHTS}}</p>
+    <p class="footer-built">{{FOOTER_BUILT}}</p>
+    <nav class="footer-langs" aria-label="{{LANG_ARIA}}">{{FOOTER_LANGS}}</nav>
+  </div>
+</footer>
+
+<button class="back-to-top" id="back-to-top" type="button" aria-label="{{TOP}}">{{ICON_UP}}</button>
+
+<!-- ================= CERTIFICATE LIGHTBOX ================= -->
+<div class="lb" id="cert-lb" hidden>
+  <div class="lb-backdrop" data-lb-close></div>
+  <div class="lb-dialog" role="dialog" aria-modal="true" aria-labelledby="lb-title">
+    <button class="lb-close" type="button" data-lb-close aria-label="{{LB_CLOSE}}">{{ICON_CLOSE}}</button>
+    <button class="lb-nav lb-prev" type="button" id="lb-prev" aria-label="{{LB_PREV}}">{{ICON_PREV}}</button>
+    <button class="lb-nav lb-next" type="button" id="lb-next" aria-label="{{LB_NEXT}}">{{ICON_NEXT}}</button>
+    <div class="lb-media"><img id="lb-img" src="" alt=""></div>
+    <div class="lb-info">
+      <span class="cert-field" id="lb-field"></span>
+      <h3 id="lb-title"></h3>
+      <dl class="cert-meta">
+        <div><dt>{{L_ISSUER}}</dt><dd id="lb-issuer"></dd></div>
+        <div><dt>{{L_DATE}}</dt><dd id="lb-date"></dd></div>
+        <div id="lb-cred-row"><dt>{{L_CRED}}</dt><dd id="lb-cred" dir="ltr"></dd></div>
+      </dl>
+      <a class="btn btn-outline lb-drive" id="lb-drive" href="#" target="_blank" rel="noopener">{{LB_DRIVE}}{{ICON_EXT}}</a>
+    </div>
+  </div>
+</div>
+
+<script src="/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}" dir="{{DIR}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+<meta name="author" content="Tarik Chouika">
+<meta name="theme-color" content="#0b0d10">
+<script>/* theme bootstrap (avoid flash) */(function(){try{var t=localStorage.getItem('tc-theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t)}}catch(e){}})();</script>
+<link rel="canonical" href="{{CANONICAL}}">
+{{HREFLANGS}}
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESC}}">
+<meta property="og:url" content="{{CANONICAL}}">
+<meta property="og:locale" content="{{OG_LOCALE}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;900&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">{{JSONLD}}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">{{SKIP}}</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="{{HOME_URL}}">
+      <span class="brand-mark" aria-hidden="true">TC</span>
+      <span class="brand-text">{{BRAND}}</span>
+    </a>
+    <nav class="nav-links" aria-label="{{NAV_ARIA}}">{{NAV_LINKS}}</nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="{{THEME_ARIA}}" title="{{THEME_ARIA}}">
+        <span class="i-sun" aria-hidden="true">{{ICON_SUN}}</span>
+        <span class="i-moon" aria-hidden="true">{{ICON_MOON}}</span>
+      </button>
+      <label class="lang-wrap">
+        <span class="lang-globe" aria-hidden="true">{{ICON_GLOBE}}</span>
+        <select id="lang-switch" class="lang-select" aria-label="{{LANG_ARIA}}">{{LANG_OPTIONS}}</select>
+      </label>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="{{MENU}}">
+        <span class="i-menu" aria-hidden="true">{{ICON_MENU}}</span>
+        <span class="i-close" aria-hidden="true">{{ICON_CLOSE}}</span>
+      </button>
+    </div>
+  </div>
+  <div class="nav-panel" id="nav-panel">
+    <nav class="nav-panel-links" aria-label="{{NAV_ARIA}}">{{NAV_LINKS_MOBILE}}</nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= PAGE HERO ================= -->
+  <section class="page-hero" id="home">
+    <div class="container">
+      <nav class="crumbs" aria-label="{{NAV_ARIA}}">
+        <a href="{{HOME_URL}}">{{PP_HOME}}</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="{{PROJECTS_URL}}">{{PP_PROJECTS}}</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current" aria-current="page">{{PJ_NAME}}</span>
+      </nav>
+      <span class="cert-field">{{PJ_TAG}}</span>
+      <h1 class="reveal">{{PJ_NAME}}</h1>
+      <p class="page-lead reveal">{{PJ_DESC}}</p>
+      <a class="figure-zoom proj-figure reveal" href="{{PJ_URL}}" target="_blank" rel="noopener" aria-label="{{PP_VISIT}}">
+        <img src="{{PJ_IMG}}" alt="{{PJ_NAME}}" width="1000" height="625" fetchpriority="high">
+        <span class="zoom-tag">{{ICON_EXT}}<span>{{PP_VISIT}}</span></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= DETAILS ================= -->
+  <div class="container detail-layout">
+    <div class="detail-main">
+      <section class="dsec" id="pp-about">
+        <h2>{{PP_ABOUT}}</h2>
+        <p>{{P_ABOUT}}</p>
+      </section>
+
+      <section class="dsec" id="pp-tech">
+        <h2>{{PP_TECH}}</h2>
+        <ul class="chips reveal">
+{{TECH_CHIPS}}
+        </ul>
+      </section>
+
+      <section class="dsec" id="pp-features">
+        <h2>{{PP_FEATURES}}</h2>
+        <ul class="feature-list reveal">
+{{FEATURE_LIST}}
+        </ul>
+      </section>
+
+      <section class="dsec" id="pp-learned">
+        <h2>{{PP_LEARNED}}</h2>
+        <p>{{P_LEARNED}}</p>
+      </section>
+    </div>
+
+    <aside class="detail-aside">
+      <div class="meta-card card reveal">
+        <h3>{{ICON_CODE}}<span>{{CP_META}}</span></h3>
+        <dl class="cert-meta">
+          <div><dt>{{PP_STATUS}}</dt><dd><span class="live-dot" aria-hidden="true"></span>{{PP_LIVE}}</dd></div>
+          <div><dt>{{PP_DOMAIN}}</dt><dd dir="ltr">{{PJ_DOMAIN}}</dd></div>
+          <div><dt>{{PP_HOST}}</dt><dd>Cloudflare Pages</dd></div>
+          <div><dt>{{PP_BUILT_LABEL}}</dt><dd>{{PP_BUILT}}</dd></div>
+        </dl>
+        <div class="meta-actions">
+          <a class="btn btn-primary" href="{{PJ_URL}}" target="_blank" rel="noopener">{{ICON_EXT}}<span>{{PP_VISIT}}</span></a>
+          <button class="btn btn-outline" type="button" onclick="window.print()">{{ICON_PRINTER}}<span>{{CP_PRINT}}</span></button>
+        </div>
+      </div>
+      <a class="back-link" href="{{PROJECTS_URL}}">{{ICON_BACK}}<span>{{PP_BACK}}</span></a>
+    </aside>
+  </div>
+
+  <!-- ================= PAGER ================= -->
+  <div class="container pager">
+    <a class="pager-card prev" href="{{PREV_URL}}">
+      <span class="dir">{{ICON_PREV}}<span>{{PP_PREV}}</span></span>
+      <span class="ttl">{{PREV_TITLE}}</span>
+    </a>
+    <a class="pager-card next" href="{{NEXT_URL}}">
+      <span class="dir"><span>{{PP_NEXT}}</span>{{ICON_NEXT}}</span>
+      <span class="ttl">{{NEXT_TITLE}}</span>
+    </a>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-name">{{NAME}}</p>
+    <p class="footer-copy">&copy; <span data-year>2026</span> {{NAME_LATIN}} — {{FOOTER_RIGHTS}}</p>
+    <p class="footer-built">{{FOOTER_BUILT}}</p>
+    <nav class="footer-langs" aria-label="{{LANG_ARIA}}">{{FOOTER_LANGS}}</nav>
+  </div>
+</footer>
+
+<button class="back-to-top" id="back-to-top" type="button" aria-label="{{TOP}}">{{ICON_UP}}</button>
+
+<script src="/js/main.js" defer></script>
+</body>
+</html>
