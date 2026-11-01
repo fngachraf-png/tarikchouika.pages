@@ -92,6 +92,17 @@ ICONS = {
     'next': '<polyline points="9 18 15 12 9 6"/>',
     'printer': '<polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>',
     'back': '<line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>',
+    'phone': '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>',
+    'landmark': '<line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/>',
+    'quote': '<path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>',
+}
+
+# brand glyphs (filled, from simple-icons)
+BRAND_ICONS = {
+    'wa': 'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z',
+    'li': 'M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z',
+    'fb': 'M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z',
+    'tg': 'M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z',
 }
 
 
@@ -103,6 +114,11 @@ def icon(name):
     return ('<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
             'stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" '
             'aria-hidden="true">' + ICONS[name] + '</svg>')
+
+
+def brand_icon(name):
+    return ('<svg class="ic ic-fill" viewBox="0 0 24 24" fill="currentColor" '
+            'stroke="none" aria-hidden="true">' + BRAND_ICONS[name] + '</svg>')
 
 
 _TR_CACHE = {}
@@ -130,6 +146,26 @@ FIELDS = _cd.FIELDS
 CERTS_EN = _cd.CERTS_EN
 SLUGS = _cd.SLUGS
 PROJECTS = _cd.PROJECTS
+REVIEWS = _cd.REVIEWS
+OFFICIAL = _cd.OFFICIAL
+TRUSTED_PLATFORMS = _cd.TRUSTED_PLATFORMS
+CONTACT = _cd.CONTACT
+GOV = _cd.GOV
+TELEGRAM = _cd.TELEGRAM
+
+_cs = load_mod('chatbot_strings', os.path.join(SRC, 'chatbot_strings.py'))
+CHAT = _cs.CHAT
+SPEECH_LANG = _cs.SPEECH_LANG
+
+TRUSTED_NAMES = {
+    'grow': 'Grow with Google', 'life': 'HP LIFE', 'huawei_talent': 'Huawei Talent',
+    'coursera': 'Coursera', 'edx': 'edX', 'linkedin_learning': 'LinkedIn Learning',
+}
+# icon used per official-link key
+LINK_ICON = {
+    'credential': 'check', 'course': 'book', 'grow': 'globe', 'platform': 'globe',
+    'academy': 'award', 'talent': 'award', 'maroc': 'landmark', 'spub': 'landmark',
+}
 
 # page suffix helpers
 CERT_SUFFIX = ['certs/%s/' % SLUGS[c[0]] for c in CERTS]
@@ -206,7 +242,17 @@ def head_tokens(lang, title, desc, canonical, suffix, og_image, og_type, jsonld)
     }
 
 
-def chrome_tokens(t, lang, suffix=''):
+def chrome_tokens(t, lang, detail=False):
+    pre = LANG_PATH[lang] if detail else ''
+    quick_items = [('about', t['nav']['about']), ('certificates', t['nav']['certificates']),
+                   ('skills', t['nav']['skills']), ('projects', t['nav']['projects']),
+                   ('experience', t['nav']['experience']), ('gallery', t['nav']['gallery']),
+                   ('contact', t['nav']['contact'])]
+    footer_quick = ''.join('<li><a href="%s#%s">%s</a></li>' % (pre, i, esc(x)) for i, x in quick_items)
+    gov_links = '\n'.join(
+        '<li><a href="%s" target="_blank" rel="noopener">%s<span class="g-dom" dir="ltr">%s</span></a></li>'
+        % (url, esc(t['gov'][key]), url.replace('https://www.', '').replace('https://', ''))
+        for key, url in GOV)
     return {
         'HOME_URL': LANG_PATH[lang],
         'BRAND': esc(t['brand']),
@@ -219,7 +265,34 @@ def chrome_tokens(t, lang, suffix=''):
         'ICON_GLOBE': icon('globe'),
         'ICON_MENU': icon('menu'),
         'ICON_CLOSE': icon('close'),
+        'ICON_PHONE': icon('phone'),
+        'ICON_WA': brand_icon('wa'),
+        'ICON_TG': brand_icon('tg'),
+        'ICON_LI': brand_icon('li'),
+        'ICON_FB': brand_icon('fb'),
+        'ICON_MAIL': icon('mail'),
         'SKIP': esc(SKIP[lang]),
+        'EMAIL': CONTACT['email'],
+        'PHONE': CONTACT['phone'],
+        'PHONE_HREF': CONTACT['phone_href'],
+        'WA_HREF': CONTACT['whatsapp_href'],
+        'TG_URL': CONTACT['telegram'],
+        'LI_URL': CONTACT['linkedin'],
+        'FB_URL': CONTACT['facebook'],
+        'CT_PHONE': esc(t['ct_phone']),
+        'CT_WHATSAPP': esc(t['ct_whatsapp']),
+        'CT_TELEGRAM': esc(t['ct_telegram']),
+        'CT_LINKEDIN': esc(t['ct_linkedin']),
+        'CT_FACEBOOK': esc(t['ct_facebook']),
+        'HD_BOOK': esc(t['hd_book']),
+        'FT_TAGLINE': esc(t['ft_tagline']),
+        'FT_QUICK': esc(t['ft_quick']),
+        'FT_CONTACT': esc(t['ft_contact']),
+        'FT_GOV': esc(t['ft_gov']),
+        'FT_GOV_NOTE': esc(t['ft_gov_note']),
+        'FOOTER_QUICK': footer_quick,
+        'GOV_LINKS': gov_links,
+        'AVAIL': esc(t['avail']),
     }
 
 
@@ -370,6 +443,75 @@ def gallery_html(t):
     return '\n'.join(out)
 
 
+# ---------------- v4: contact channels ----------------
+def channels_html(t):
+    defs = [
+        ('phone', CONTACT['phone_href'], False, icon('phone'), t['ct_phone'], CONTACT['phone']),
+        ('wa', CONTACT['whatsapp_href'], True, brand_icon('wa'), t['ct_whatsapp'], CONTACT['phone']),
+        ('mail', 'mailto:' + CONTACT['email'], False, icon('mail'), t['fact_email_l'], CONTACT['email']),
+        ('li', CONTACT['linkedin'], True, brand_icon('li'), t['ct_linkedin'], 'Tarik Chouika'),
+        ('fb', CONTACT['facebook'], True, brand_icon('fb'), t['ct_facebook'], 'Tarik Chouika'),
+        ('tg', CONTACT['telegram'], True, brand_icon('tg'), t['ct_telegram'], '@tarikchouika_bot'),
+    ]
+    out = []
+    for key, href, ext, ic, label, value in defs:
+        tgt = ' target="_blank" rel="noopener"' if ext else ''
+        out.append(
+            '<a class="channel card" href="%s"%s>\n'
+            '<span class="ch-icon">%s</span>\n'
+            '<span class="ch-body"><span class="ch-l">%s</span><span class="ch-v" dir="ltr">%s</span></span>\n'
+            '<span class="ch-go">%s</span>\n'
+            '</a>' % (href, tgt, ic, esc(label), esc(value), icon('next')))
+    return '\n'.join(out)
+
+
+# ---------------- v4: certificate reviews + official links ----------------
+def reviews_sec_html(t, idx):
+    cid = CERTS[idx][0]
+    revs = REVIEWS.get(cid) or []
+    if not revs:
+        return ''
+    cards = []
+    for author, src_key, url, qlang, quote in revs:
+        cards.append(
+            '<figure class="review-card card reveal">\n'
+            '<blockquote lang="%s" dir="ltr">%s</blockquote>\n'
+            '<figcaption>\n'
+            '<span class="rv-author">%s</span>\n'
+            '<span class="rv-src">%s</span>\n'
+            '<a class="rv-link" href="%s" target="_blank" rel="noopener">%s%s</a>\n'
+            '</figcaption>\n'
+            '</figure>' % (qlang, quote, esc(author), esc(t['sources'][src_key]), url,
+                           esc(t['cp_view_source']), icon('ext')))
+    return ('<section class="dsec" id="cp-reviews">\n'
+            '<h2>%s%s</h2>\n'
+            '<p class="dsec-note">%s</p>\n'
+            '<div class="reviews-grid">\n%s\n</div>\n'
+            '</section>' % (icon('quote'), esc(t['cp_reviews']), esc(t['cp_reviews_note']), '\n'.join(cards)))
+
+
+def links_sec_html(t, idx):
+    issuer_key = CERTS[idx][2]
+    links = OFFICIAL.get(issuer_key) or []
+    cards = []
+    for key, url in links:
+        cards.append(
+            '<a class="offlink card" href="%s" target="_blank" rel="noopener">\n'
+            '<span class="ol-icon">%s</span>\n'
+            '<span class="ol-l">%s</span>\n'
+            '%s\n'
+            '</a>' % (url, icon(LINK_ICON[key]), esc(t['links'][key]), icon('ext')))
+    trusted = '\n'.join(
+        '<li class="chip"><a href="%s" target="_blank" rel="noopener">%s</a></li>' % (url, TRUSTED_NAMES[key])
+        for key, url in TRUSTED_PLATFORMS)
+    return ('<section class="dsec" id="cp-links">\n'
+            '<h2>%s</h2>\n'
+            '<div class="offlinks">\n%s\n</div>\n'
+            '<p class="chips-label">%s</p>\n'
+            '<ul class="chips reveal">\n%s\n</ul>\n'
+            '</section>' % (esc(t['cp_links']), '\n'.join(cards), esc(t['links']['trusted']), trusted))
+
+
 def jsonld_person():
     creds = [
         {'@type': 'EducationalOccupationalCredential', 'name': CERTS_EN[c[0]],
@@ -464,6 +606,7 @@ def render_index(lang, template):
         'COPIED': esc(t['copied']),
         'COPY_SHORT': esc(COPY_SHORT[lang]),
         'CT_NOTE': esc(t['ct_note']),
+        'CHANNELS': channels_html(t),
         'LB_CLOSE': esc(t['lb_close']),
         'LB_PREV': esc(t['lb_prev']),
         'LB_NEXT': esc(t['lb_next']),
@@ -538,11 +681,13 @@ def render_cert_page(lang, idx, template):
     tokens = {}
     tokens.update(head_tokens(lang, title, desc, canonical, suffix,
                               SITE_URL + '/certs/%s.jpg' % c[0], 'article', jsonld_cert(idx, t, lang, cp)))
-    tokens.update(chrome_tokens(t, lang))
+    tokens.update(chrome_tokens(t, lang, detail=True))
     tokens.update({
         'NAV_LINKS': nav_links(t, lang, detail=True),
         'NAV_LINKS_MOBILE': nav_links(t, lang, detail=True),
         'LANG_OPTIONS': lang_options_html(lang, suffix),
+        'REVIEWS_SEC': reviews_sec_html(t, idx),
+        'LINKS_SEC': links_sec_html(t, idx),
         'CP_HOME': esc(t['cp_home']),
         'CP_CERTS': esc(t['cp_certs']),
         'CERTS_URL': LANG_PATH[lang] + '#certificates',
@@ -625,10 +770,17 @@ def render_project_page(lang, idx, template):
     feature_list = '\n'.join('<li>' + icon('check') + '<span>' + esc(f) + '</span></li>' for f in pp['features'])
     prev_i = (idx - 1) % len(PROJECTS)
     next_i = (idx + 1) % len(PROJECTS)
+    pv = t['project_v4'][idx]
+    value_cards = '\n'.join(
+        '<article class="value-card card reveal">\n<h3>%s</h3>\n<p>%s</p>\n</article>'
+        % (esc(vt), esc(vd)) for vt, vd in pv['values'])
+    effort_stats = '\n'.join(
+        '<div><dt>%s</dt><dd>%s</dd></div>' % (esc(l), esc(v)) for l, v in pv['effort_stats'])
+    ops_chips = '\n'.join('<li class="chip">%s</li>' % esc(x) for x in pv['ops'])
     tokens = {}
     tokens.update(head_tokens(lang, title, desc, canonical, suffix,
                               SITE_URL + img, 'article', jsonld_project(idx, t, lang, pp)))
-    tokens.update(chrome_tokens(t, lang))
+    tokens.update(chrome_tokens(t, lang, detail=True))
     tokens.update({
         'NAV_LINKS': nav_links(t, lang, detail=True),
         'NAV_LINKS_MOBILE': nav_links(t, lang, detail=True),
@@ -646,6 +798,27 @@ def render_project_page(lang, idx, template):
         'ICON_EXT': icon('ext'),
         'PP_ABOUT': esc(t['pp_about']),
         'P_ABOUT': esc(pp['about']),
+        'PP_VALUE': esc(t['pp_value']),
+        'VALUE_INTRO': esc(pv['value_intro']),
+        'VALUE_CARDS': value_cards,
+        'PP_EFFORT': esc(t['pp_effort']),
+        'P_EFFORT': esc(pv['effort']),
+        'EFFORT_STATS': effort_stats,
+        'PP_TECH_BUILD': esc(t['pp_tech_build']),
+        'PP_TECH_OPS': esc(t['pp_tech_ops']),
+        'OPS_CHIPS': ops_chips,
+        'PP_COSTS': esc(t['pp_costs']),
+        'COST_BUILD': esc(t['cost_build']),
+        'COST_OPS': esc(t['cost_ops']),
+        'COST_SELF': esc(t['cost_self']),
+        'COST_MARKET': esc(t['cost_market']),
+        'COST_NOW': esc(t['cost_now']),
+        'COST_SCALE': esc(t['cost_scale']),
+        'COST_SELF_V': esc(pv['cost_self']),
+        'COST_MARKET_V': esc(pv['cost_market']),
+        'COST_NOW_V': esc(pv['cost_now']),
+        'COST_SCALE_V': esc(pv['cost_scale']),
+        'COST_NOTE': esc(t['cost_note']),
         'PP_TECH': esc(t['pp_tech']),
         'TECH_CHIPS': tech_chips,
         'PP_FEATURES': esc(t['pp_features']),
@@ -828,12 +1001,23 @@ def main():
     os.makedirs(os.path.join(OUT, 'js'), exist_ok=True)
     shutil.copy(os.path.join(SRC, 'style.css'), os.path.join(OUT, 'css', 'style.css'))
     shutil.copy(os.path.join(SRC, 'main.js'), os.path.join(OUT, 'js', 'main.js'))
+    shutil.copy(os.path.join(SRC, 'chatbot.js'), os.path.join(OUT, 'js', 'chatbot.js'))
+    chatbot_i18n = (
+        '/* generated by build_site.py from chatbot_strings.py */\n'
+        'window.TC_CHAT = %s;\n'
+        'window.TC_CHAT_SPEECH = %s;\n'
+        'window.TC_CHAT_TG = %s;\n'
+        % (json.dumps(CHAT, ensure_ascii=False),
+           json.dumps(SPEECH_LANG, ensure_ascii=False),
+           json.dumps(TELEGRAM, ensure_ascii=False)))
+    with open(os.path.join(OUT, 'js', 'chatbot-i18n.js'), 'w', encoding='utf-8') as f:
+        f.write(chatbot_i18n)
     for name, content in [('favicon.svg', FAVICON), ('robots.txt', ROBOTS),
                            ('sitemap.xml', sitemap_xml()), ('404.html', NOT_FOUND),
                            ('_headers', HEADERS)]:
         with open(os.path.join(OUT, name), 'w', encoding='utf-8') as f:
             f.write(content)
-    print('assets written: css, js, favicon, robots, sitemap, 404, _headers')
+    print('assets written: css, js (main + chatbot + chatbot-i18n), favicon, robots, sitemap, 404, _headers')
 
     # validate every generated page
     for p in pages:

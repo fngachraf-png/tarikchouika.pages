@@ -36,6 +36,8 @@
     </a>
     <nav class="nav-links" aria-label="{{NAV_ARIA}}">{{NAV_LINKS}}</nav>
     <div class="nav-actions">
+      <a class="nav-icon" href="{{PHONE_HREF}}" aria-label="{{CT_PHONE}}" title="{{CT_PHONE}}">{{ICON_PHONE}}</a>
+      <a class="nav-icon" href="{{WA_HREF}}" target="_blank" rel="noopener" aria-label="{{CT_WHATSAPP}}" title="{{CT_WHATSAPP}}">{{ICON_WA}}</a>
       <button class="theme-toggle" id="theme-toggle" type="button" aria-label="{{THEME_ARIA}}" title="{{THEME_ARIA}}">
         <span class="i-sun" aria-hidden="true">{{ICON_SUN}}</span>
         <span class="i-moon" aria-hidden="true">{{ICON_MOON}}</span>
@@ -44,6 +46,10 @@
         <span class="lang-globe" aria-hidden="true">{{ICON_GLOBE}}</span>
         <select id="lang-switch" class="lang-select" aria-label="{{LANG_ARIA}}">{{LANG_OPTIONS}}</select>
       </label>
+      <button class="nav-cta" type="button" data-chat-open data-chat-wizard>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <span>{{HD_BOOK}}</span>
+      </button>
       <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="{{MENU}}">
         <span class="i-menu" aria-hidden="true">{{ICON_MENU}}</span>
         <span class="i-close" aria-hidden="true">{{ICON_CLOSE}}</span>
@@ -52,6 +58,18 @@
   </div>
   <div class="nav-panel" id="nav-panel">
     <nav class="nav-panel-links" aria-label="{{NAV_ARIA}}">{{NAV_LINKS_MOBILE}}</nav>
+    <div class="nav-panel-extra">
+      <button class="btn btn-primary btn-block" type="button" data-chat-open data-chat-wizard>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <span>{{HD_BOOK}}</span>
+      </button>
+      <div class="nav-panel-contact">
+        <a class="nav-icon" href="{{PHONE_HREF}}" aria-label="{{CT_PHONE}}" title="{{CT_PHONE}}">{{ICON_PHONE}}</a>
+        <a class="nav-icon" href="{{WA_HREF}}" target="_blank" rel="noopener" aria-label="{{CT_WHATSAPP}}" title="{{CT_WHATSAPP}}">{{ICON_WA}}</a>
+        <a class="nav-icon" href="mailto:{{EMAIL}}" aria-label="{{EMAIL}}" title="{{EMAIL}}">{{ICON_MAIL}}</a>
+        <a class="nav-icon" href="{{TG_URL}}" target="_blank" rel="noopener" aria-label="{{CT_TELEGRAM}}" title="{{CT_TELEGRAM}}">{{ICON_TG}}</a>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -222,6 +240,9 @@
         </div>
         <p class="contact-note">{{CT_NOTE}}</p>
       </div>
+      <div class="channels reveal">
+{{CHANNELS}}
+      </div>
     </div>
   </section>
 
@@ -229,9 +250,43 @@
 
 <footer class="site-footer">
   <div class="container">
-    <p class="footer-name">{{NAME}}</p>
-    <p class="footer-copy">&copy; <span data-year>2026</span> {{NAME_LATIN}} — {{FOOTER_RIGHTS}}</p>
-    <p class="footer-built">{{FOOTER_BUILT}}</p>
+    <div class="footer-grid">
+      <div class="f-col f-brand">
+        <a class="brand" href="{{HOME_URL}}">
+          <span class="brand-mark" aria-hidden="true">TC</span>
+          <span class="brand-text">{{BRAND}}</span>
+        </a>
+        <p class="f-tagline">{{FT_TAGLINE}}</p>
+        <span class="avail"><span class="dot" aria-hidden="true"></span>{{AVAIL}}</span>
+      </div>
+      <nav class="f-col" aria-label="{{FT_QUICK}}">
+        <h3>{{FT_QUICK}}</h3>
+        <ul class="f-links">{{FOOTER_QUICK}}</ul>
+      </nav>
+      <div class="f-col">
+        <h3>{{FT_CONTACT}}</h3>
+        <ul class="f-contact">
+          <li><a href="mailto:{{EMAIL}}">{{ICON_MAIL}}<span dir="ltr">{{EMAIL}}</span></a></li>
+          <li><a href="{{PHONE_HREF}}">{{ICON_PHONE}}<span dir="ltr">{{PHONE}}</span></a></li>
+          <li><a href="{{WA_HREF}}" target="_blank" rel="noopener">{{ICON_WA}}<span>{{CT_WHATSAPP}}</span></a></li>
+          <li><a href="{{TG_URL}}" target="_blank" rel="noopener">{{ICON_TG}}<span>{{CT_TELEGRAM}}</span></a></li>
+          <li><a href="{{LI_URL}}" target="_blank" rel="noopener">{{ICON_LI}}<span>{{CT_LINKEDIN}}</span></a></li>
+          <li><a href="{{FB_URL}}" target="_blank" rel="noopener">{{ICON_FB}}<span>{{CT_FACEBOOK}}</span></a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h3>{{FT_GOV}}</h3>
+        <ul class="f-gov">
+{{GOV_LINKS}}
+        </ul>
+        <p class="f-gov-note">{{FT_GOV_NOTE}}</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-name">{{NAME}}</p>
+      <p class="footer-copy">&copy; <span data-year>2026</span> {{NAME_LATIN}} — {{FOOTER_RIGHTS}}</p>
+      <p class="footer-built">{{FOOTER_BUILT}}</p>
+    </div>
     <nav class="footer-langs" aria-label="{{LANG_ARIA}}">{{FOOTER_LANGS}}</nav>
   </div>
 </footer>
@@ -260,5 +315,7 @@
 </div>
 
 <script src="/js/main.js" defer></script>
+<script src="/js/chatbot-i18n.js" defer></script>
+<script src="/js/chatbot.js" defer></script>
 </body>
 </html>
