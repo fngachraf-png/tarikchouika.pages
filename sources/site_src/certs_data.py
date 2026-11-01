@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Language-neutral data for the 13 certificates + 4 digital projects."""
+"""Language-neutral data for the 13 certificates + 6 digital projects."""
 
 # (img, field, issuer_key, year, month, day, credential_id, drive_file_id)
 CERTS = [
@@ -57,10 +57,12 @@ CERTS_EN = {
 
 # (key, image, url) — names/descriptions live in translations
 PROJECTS = [
-    ('natsuptc', '/img/pj-natsuptc.jpg', 'https://natsuptc.pages.dev'),
+    ('natsup', '/img/pj-natsup.jpg', 'https://natsup.pages.dev'),
     ('syda', '/img/pj-syda.jpg', 'https://syda.pages.dev'),
     ('dtsg', '/img/pj-dtsg.jpg', 'https://dtsg.pages.dev'),
     ('hrmp', '/img/pj-hrmp.jpg', 'https://hrmp.pages.dev'),
+    ('mamp', '/img/pj-mamp.jpg', 'https://mamp.pages.dev'),
+    ('isyacar', '/img/pj-isyacar.jpg', 'https://isyacar.pages.dev'),
 ]
 
 # ---------------------------------------------------------------------------

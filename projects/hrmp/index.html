@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;900&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css?v=5">
+<link rel="stylesheet" href="/css/style.css?v=6">
 <script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "HRMP", "description": "HRMP منصة مغربية لإدارة الموارد البشرية صُممت لتنظيم دورة العمل كاملة: التوظيف، جدولة الورديات، تتبع الحضور والغياب، وحساب الأجور وفق مدونة الشغل المغربية. يجمع المشروع واجهة استخدام عملية مع خدمات خلفية تعمل عبر نفق آمن، ليقدّم حلاً إدارياً واقعياً.", "url": "https://tarikchouika.pages.dev/projects/hrmp/", "image": "https://tarikchouika.pages.dev/img/pj-hrmp.jpg", "inLanguage": "ar", "author": {"@type": "Person", "name": "Tarik Chouika", "url": "https://tarikchouika.pages.dev/"}, "about": "منصة موارد بشرية"}</script>
 </head>
@@ -185,6 +185,41 @@
         </ul>
       </section>
 
+      <section class="dsec" id="pp-tools">
+        <h2>الأدوات والمهارات — بشرح مبسط</h2>
+        <p class="dsec-lead">كل أداة ومكتبة ومهارة استعملتها في هذا المشروع، مشروحة بلغة بسيطة: ما هي، وماذا أضافت له تحديداً — بلا رموز غامضة.</p>
+        <div class="tools-grid">
+<article class="tool-card reveal">
+<h3>HTML5 وCSS3 وJavaScript</h3>
+<p>أساس الواجهة: شاشات عملية بالعربية مبنية بلغة الويب الأساسية — خفيفة وسريعة ومناسبة للاستعمال اليومي في الشركة.</p>
+</article>
+<article class="tool-card reveal">
+<h3>الخدمات الخلفية عبر نفق آمن</h3>
+<p>الجزء غير المرئي من المنصة (الحسابات والأجور) يعمل على خادم يُنشر للعالم عبر قناة مشفرة — حل عملي لتشغيل خدمات حقيقية من استضافة مجانية.</p>
+</article>
+<article class="tool-card reveal">
+<h3>محرك الأجور</h3>
+<p>كود يحسب الأجور والاستقطاعات (CNSS وAMO والضريبة) وفق مدونة الشغل المغربية بدقة السنتيم، ويولّد ملفات Damancom وSIMPL-IR الرسمية.</p>
+</article>
+<article class="tool-card reveal">
+<h3>قاعدة البيانات SQLite</h3>
+<p>خزانة المعلومات المنظمة: ملفات الموظفين والعقود والورديات في قاعدة خفيفة يمكن ترقيتها لاحقاً إلى PostgreSQL عند نمو الشركة.</p>
+</article>
+<article class="tool-card reveal">
+<h3>نظام الصلاحيات والعزل</h3>
+<p>كل شركة في فضائها المعزول مع صلاحيات محددة — مدير الشركة يرى شركته فقط، وسجل التتبع يوثق كل عملية.</p>
+</article>
+<article class="tool-card reveal">
+<h3>تقارير PDF وDOCX بدعم RTL</h3>
+<p>توليد تقارير رسمية جاهزة للطبع تحترم اتجاه الكتابة العربية — التقرير الذي يقدمه المدير كما هو.</p>
+</article>
+<article class="tool-card reveal">
+<h3>Cloudflare Pages</h3>
+<p>استضافة الواجهة مجاناً على شبكة عالمية — والباقي يشتغل عند الحاجة عبر الخادم والنفق الآمن.</p>
+</article>
+        </div>
+      </section>
+
       <section class="dsec" id="pp-features">
         <h2>أبرز الميزات</h2>
         <ul class="feature-list reveal">
@@ -243,9 +278,9 @@
       <span class="dir"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg><span>المشروع السابق</span></span>
       <span class="ttl">DTSG</span>
     </a>
-    <a class="pager-card next" href="/projects/natsuptc/">
+    <a class="pager-card next" href="/projects/mamp/">
       <span class="dir"><span>المشروع التالي</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></span>
-      <span class="ttl">NATSUP</span>
+      <span class="ttl">MAMP — منصة مامب</span>
     </a>
   </div>
 
@@ -303,8 +338,8 @@
 
 <button class="back-to-top" id="back-to-top" type="button" aria-label="العودة إلى الأعلى"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
 
-<script src="/js/main.js?v=5" defer></script>
-<script src="/js/chatbot-i18n.js?v=5" defer></script>
-<script src="/js/chatbot.js?v=5" defer></script>
+<script src="/js/main.js?v=6" defer></script>
+<script src="/js/chatbot-i18n.js?v=6" defer></script>
+<script src="/js/chatbot.js?v=6" defer></script>
 </body>
 </html>

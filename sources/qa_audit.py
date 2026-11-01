@@ -16,7 +16,9 @@ PAGES = [
     ('/projects/syda/', 'ar-proj'),
     ('/pt/certs/digital-marketing-english/', 'pt-cert'),
     ('/en/', 'en-home'),
-    ('/de/projects/natsuptc/', 'de-proj'),
+    ('/de/projects/natsup/', 'de-proj'),
+    ('/projects/mamp/', 'ar-mamp'),
+    ('/en/projects/isyacar/', 'en-isyacar'),
 ]
 VIEWPORTS = [
     ('360x800', 360, 800),      # small phone portrait

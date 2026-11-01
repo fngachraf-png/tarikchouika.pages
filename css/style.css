@@ -1243,6 +1243,21 @@ html[lang="ar"] .cert-more, html[lang="ar"] .proj-more { font-family: var(--font
 
 .chips.ops .chip { border-color: var(--border-gold); color: var(--gold-2); background: var(--gold-soft); }
 
+/* v6: tools & skills explained (simple human explanations per tool) */
+.tools-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.9rem; }
+.tool-card {
+  background: var(--glass); border: 1px solid var(--border-faint);
+  border-inline-start: 3px solid var(--gold-2);
+  border-radius: 12px; padding: 0.95rem 1.1rem; min-width: 0;
+}
+.tool-card h3 {
+  font-family: var(--font-body); font-size: 0.92rem; font-weight: 700;
+  color: var(--gold-2); margin-bottom: 0.4rem; letter-spacing: 0.02em;
+  overflow-wrap: anywhere;
+}
+.tool-card p { color: var(--muted); font-size: 0.88rem; line-height: 1.75; margin: 0; }
+@media (max-width: 700px) { .tools-grid { grid-template-columns: 1fr; } }
+
 .cost-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 .cost-group {
   background: var(--glass); border: 1px solid var(--border-faint);

@@ -197,16 +197,16 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tarikchouika.pages.dev/projects/natsuptc/</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://tarikchouika.pages.dev/projects/natsuptc/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tarikchouika.pages.dev/en/projects/natsuptc/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://tarikchouika.pages.dev/fr/projects/natsuptc/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://tarikchouika.pages.dev/es/projects/natsuptc/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://tarikchouika.pages.dev/it/projects/natsuptc/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://tarikchouika.pages.dev/de/projects/natsuptc/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://tarikchouika.pages.dev/nl/projects/natsuptc/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://tarikchouika.pages.dev/pt/projects/natsuptc/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarikchouika.pages.dev/projects/natsuptc/"/>
+    <loc>https://tarikchouika.pages.dev/projects/natsup/</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tarikchouika.pages.dev/projects/natsup/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarikchouika.pages.dev/en/projects/natsup/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tarikchouika.pages.dev/fr/projects/natsup/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tarikchouika.pages.dev/es/projects/natsup/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tarikchouika.pages.dev/it/projects/natsup/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tarikchouika.pages.dev/de/projects/natsup/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tarikchouika.pages.dev/nl/projects/natsup/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tarikchouika.pages.dev/pt/projects/natsup/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarikchouika.pages.dev/projects/natsup/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -249,6 +249,34 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://tarikchouika.pages.dev/nl/projects/hrmp/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://tarikchouika.pages.dev/pt/projects/hrmp/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tarikchouika.pages.dev/projects/hrmp/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tarikchouika.pages.dev/projects/mamp/</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tarikchouika.pages.dev/projects/mamp/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarikchouika.pages.dev/en/projects/mamp/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tarikchouika.pages.dev/fr/projects/mamp/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tarikchouika.pages.dev/es/projects/mamp/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tarikchouika.pages.dev/it/projects/mamp/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tarikchouika.pages.dev/de/projects/mamp/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tarikchouika.pages.dev/nl/projects/mamp/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tarikchouika.pages.dev/pt/projects/mamp/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarikchouika.pages.dev/projects/mamp/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tarikchouika.pages.dev/projects/isyacar/</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tarikchouika.pages.dev/projects/isyacar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarikchouika.pages.dev/en/projects/isyacar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tarikchouika.pages.dev/fr/projects/isyacar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tarikchouika.pages.dev/es/projects/isyacar/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tarikchouika.pages.dev/it/projects/isyacar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tarikchouika.pages.dev/de/projects/isyacar/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tarikchouika.pages.dev/nl/projects/isyacar/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tarikchouika.pages.dev/pt/projects/isyacar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarikchouika.pages.dev/projects/isyacar/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

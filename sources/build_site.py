@@ -5,8 +5,8 @@
 Reads the templates + 8 translation modules, renders static HTML pages:
   - index page per language (root = Arabic, /xx/ for the others)
   - 13 certificate detail pages per language  (/certs/<slug>/)
-  - 4 project detail pages per language       (/projects/<key>/)
-Total: 8 x (1 + 13 + 4) = 144 pages, plus assets.
+  - 6 project detail pages per language       (/projects/<key>/)
+Total: 8 x (1 + 13 + 6) = 160 pages, plus assets.
 """
 import html
 import importlib.util
@@ -777,6 +777,9 @@ def render_project_page(lang, idx, template):
     effort_stats = '\n'.join(
         '<div><dt>%s</dt><dd>%s</dd></div>' % (esc(l), esc(v)) for l, v in pv['effort_stats'])
     ops_chips = '\n'.join('<li class="chip">%s</li>' % esc(x) for x in pv['ops'])
+    tool_cards = '\n'.join(
+        '<article class="tool-card reveal">\n<h3>%s</h3>\n<p>%s</p>\n</article>'
+        % (esc(tn), esc(td)) for tn, td in t['project_tools'][idx])
     tokens = {}
     tokens.update(head_tokens(lang, title, desc, canonical, suffix,
                               SITE_URL + img, 'article', jsonld_project(idx, t, lang, pp)))
@@ -821,6 +824,9 @@ def render_project_page(lang, idx, template):
         'COST_NOTE': esc(t['cost_note']),
         'PP_TECH': esc(t['pp_tech']),
         'TECH_CHIPS': tech_chips,
+        'PP_TOOLS': esc(t['pp_tools']),
+        'PP_TOOLS_NOTE': esc(t['pp_tools_note']),
+        'TOOL_CARDS': tool_cards,
         'PP_FEATURES': esc(t['pp_features']),
         'FEATURE_LIST': feature_list,
         'PP_LEARNED': esc(t['pp_learned']),
@@ -933,6 +939,16 @@ HEADERS = '''/*
 '''
 
 
+# v6: the natsup project moved from /projects/natsuptc/ to /projects/natsup/ —
+# keep old indexed/shared links working (301, per language).
+def redirects_file():
+    lines = []
+    for lang in LANGS:
+        base = LANG_PATH[lang]
+        lines.append('%sprojects/natsuptc/* %sprojects/natsup/:splat 301' % (base, base))
+    return '\n'.join(lines) + '\n'
+
+
 # ---------------- validation ----------------
 VOID_TAGS = {'meta', 'link', 'img', 'br', 'hr', 'input', 'source', 'wbr'}
 
@@ -1014,7 +1030,7 @@ def main():
         f.write(chatbot_i18n)
     for name, content in [('favicon.svg', FAVICON), ('robots.txt', ROBOTS),
                            ('sitemap.xml', sitemap_xml()), ('404.html', NOT_FOUND),
-                           ('_headers', HEADERS)]:
+                           ('_headers', HEADERS), ('_redirects', redirects_file())]:
         with open(os.path.join(OUT, name), 'w', encoding='utf-8') as f:
             f.write(content)
     print('assets written: css, js (main + chatbot + chatbot-i18n), favicon, robots, sitemap, 404, _headers')

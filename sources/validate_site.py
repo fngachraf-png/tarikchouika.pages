@@ -68,11 +68,13 @@ def check(lang):
         'hp cert': 'c76722f4-9169-474f-83e8-d93859654c2d' in content,
         'theme toggle': 'id="theme-toggle"' in content,
         'theme bootstrap': "localStorage.getItem('tc-theme')" in content,
-        '4 projects': all(p in content for p in
-                          ['pj-natsuptc.jpg', 'pj-syda.jpg', 'pj-dtsg.jpg', 'pj-hrmp.jpg']),
+        '6 projects': all(p in content for p in
+                          ['pj-natsup.jpg', 'pj-syda.jpg', 'pj-dtsg.jpg', 'pj-hrmp.jpg',
+                           'pj-mamp.jpg', 'pj-isyacar.jpg']),
         'project links': all(u in content for u in
-                             ['natsuptc.pages.dev', 'syda.pages.dev', 'dtsg.pages.dev',
-                              'hrmp.pages.dev']),
+                             ['natsup.pages.dev', 'syda.pages.dev', 'dtsg.pages.dev',
+                              'hrmp.pages.dev', 'mamp.pages.dev', 'isyacar.pages.dev']),
+        '6 project cards': content.count('class="proj-card card reveal"') == 6,
         'stats 13': '>13</b>' in content,
         'no leftover tokens': '{{' not in content,
         '8 lang options': content.count('<option value=') == 8,
