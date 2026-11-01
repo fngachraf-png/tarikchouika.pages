@@ -215,6 +215,7 @@
     opened = true;
     panel.classList.add('open');
     fab.classList.add('open');
+    document.body.classList.add('chat-open');
     fab.setAttribute('aria-label', S.close);
     if (!msgs.childElementCount) {
       addMsg(lp(S.welcome), 'bot', S.welcome);
@@ -227,6 +228,7 @@
     opened = false;
     panel.classList.remove('open');
     fab.classList.remove('open');
+    document.body.classList.remove('chat-open');
     fab.setAttribute('aria-label', S.open);
     try { window.speechSynthesis.cancel(); } catch (e) {}
   }
