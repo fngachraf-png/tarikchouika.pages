@@ -63,6 +63,7 @@ PROJECTS = [
     ('hrmp', '/img/pj-hrmp.jpg', 'https://hrmp.pages.dev'),
     ('mamp', '/img/pj-mamp.jpg', 'https://mamp.pages.dev'),
     ('isyacar', '/img/pj-isyacar.jpg', 'https://isyacar.pages.dev'),
+    ('phmp', '/img/pj-phmp.jpg', 'https://phmp.pages.dev'),
 ]
 
 # ---------------------------------------------------------------------------
@@ -188,9 +189,9 @@ GOV = [
     ('interieur', 'https://www.interieur.gov.ma'),
 ]
 
-# Telegram bot (client-side direct send — static site, no backend)
+# Telegram bot (public info only — sending goes through the tarik-bot Cloudflare
+# Worker gateway server-side; the bot token is never shipped to the browser)
 TELEGRAM = {
-    'token': '9159561689:AAGsdrB6cPTC9eTg8K5rDv90SInL2POvlow',
-    'chat_id': '5700612979',
     'bot_url': 'https://t.me/tarikchouika_bot',
+    'worker': 'https://tarik-bot.balbolghol-ai.workers.dev',
 }

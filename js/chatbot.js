@@ -6,7 +6,9 @@
   'use strict';
 
   if (!window.TC_CHAT) { return; }
-  var TG = window.TC_CHAT_TG; /* {token, chat_id, bot_url} injected by chatbot-i18n.js */
+  /* Telegram sending goes through the tarik-bot Cloudflare Worker gateway:
+     the bot token stays server-side and is never exposed in client JS. */
+  var WORKER = (window.TC_CHAT_TG && window.TC_CHAT_TG.worker) || 'https://tarik-bot.balbolghol-ai.workers.dev';
   var lang = (document.documentElement.lang || 'ar').slice(0, 2);
   var L = window.TC_CHAT[lang] ? lang : 'ar';
   var S = window.TC_CHAT[L];
@@ -342,27 +344,20 @@
     msgs.scrollTop = msgs.scrollHeight;
   }
   function sendToTelegram() {
-    if (!wiz || !TG) { return; }
+    if (!wiz) { return; }
     var d = wiz.data;
     addMsg('<span class="cb-q">' + esc(S.wiz_sending) + '</span>', 'bot');
-    var langName = { ar: 'العربية', en: 'English', fr: 'Français', es: 'Español', it: 'Italiano', de: 'Deutsch', nl: 'Nederlands', pt: 'Português' }[L] || L;
-    var lines = [
-      '🟢 <b>طلب جديد من الموقع</b> (New website request)',
-      '🌐 ' + esc(langName) + ' · ' + location.hostname + location.pathname,
-      '📌 <b>النوع / Type:</b> ' + esc(typeLabel(d.type)),
-      '👤 <b>الاسم / Name:</b> ' + esc(d.name),
-      '📞 <b>التواصل / Contact:</b> ' + esc(d.contact),
-      '📝 <b>التفاصيل / Details:</b> ' + esc(d.details),
-    ];
-    if (d.type === 'book') { lines.push('🗓 <b>الموعد المقترح / Preferred time:</b> ' + esc(d.when)); }
-    lines.push('— via Tarik Chouika website assistant');
-    fetch('https://api.telegram.org/bot' + TG.token + '/sendMessage', {
+    fetch(WORKER + '/notify', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        chat_id: TG.chat_id,
-        text: lines.join('\n'),
-        disable_web_page_preview: true,
+        type: d.type,
+        name: d.name,
+        contact: d.contact,
+        details: d.details,
+        when: d.when || '',
+        lang: L,
+        page: location.pathname,
       }),
     }).then(function (r) { return r.json(); }).then(function (j) {
       wiz = null;

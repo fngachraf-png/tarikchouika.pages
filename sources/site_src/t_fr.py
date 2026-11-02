@@ -1,417 +1,1299 @@
 # -*- coding: utf-8 -*-
 # French
-T = {
-    "title": "Tarik Chouika | Identité numérique professionnelle",
-    "desc": "Tarik Chouika : un professionnel marocain qui appuie sa connaissance digitale sur 13 certifications (Google, HP LIFE, Huawei) et six projets numériques en ligne, sur fond de dix ans d'expérience de terrain en opérations et service client.",
-    "brand": "Tarik Chouika",
-    "menu": "Menu",
-    "lang_aria": "Choisir la langue",
-    "nav_aria": "Navigation principale",
-    "top": "Retour en haut",
-    "theme_aria": "Basculer le mode clair/sombre",
-    "filt_aria": "Filtrer les certificats par domaine",
-    "nav": {"about": "À propos", "experience": "Expérience", "certificates": "Certificats", "projects": "Projets", "skills": "Compétences", "gallery": "Galerie", "contact": "Contact"},
-    "greeting": "Bonjour, je suis",
-    "name": "Tarik Chouika",
-    "name_alt": "طارق شويكة",
-    "roles": ["Professionnel des compétences numériques certifiées (13)", "Créateur de sites assisté par l'IA", "Expert opérations & service client", "Dix ans d'expérience de terrain"],
-    "alt_profile": "Photo de portrait de Tarik Chouika",
-    "cta_contact": "Me contacter",
-    "cta_cv": "Télécharger le CV (PDF)",
-    "stats": [["10+", "Années d'expérience"], ["13", "Certifications"], ["5", "Domaines de savoir"], ["6", "Projets numériques"]],
-    "about_title": "À propos de moi",
-    "about_sub": "Une connaissance numérique certifiée à l'international, sur une base solide de dix ans de terrain",
-    "about_p1": "Je suis Tarik Chouika, un professionnel marocain de Rabat qui a choisi de redessiner son parcours avec confiance vers le monde numérique. Mon socle de connaissances est documenté par 13 certifications de Google, HP LIFE, Huawei et d'institutions de formation nationales, couvrant l'intelligence artificielle, le marketing digital, les technologies web, le leadership et la communication professionnelle — une connaissance que je développe et j'applique chaque jour, pas des certificats accrochés au mur.",
-    "about_p2": "Ma différence : je n'apprends pas seulement, je construis. J'ai mis en pratique ce que j'ai acquis dans quatre projets numériques en ligne développés avec l'aide de modèles d'IA : un guide et une boutique de compléments naturels multilingues, une boutique e-commerce arabe complète, une plateforme de jeux traditionnels marocains avec des salles multijoueur en direct, et une plateforme RH construite autour du code du travail marocain — de l'idée au déploiement sur Cloudflare Pages.",
-    "about_p3": "Avant ce parcours numérique, j'ai passé plus de dix ans dans des terrains qui ne pardonnent pas la paresse : gestion et exploitation d'un café populaire avec une responsabilité complète des opérations, des stocks et du service, aux côtés d'expériences dans la construction et la sécurité. C'est là que mes compétences se sont vraiment forgées : service client, gestion de la pression, discipline et lecture des gens.",
-    "about_p4": "Aujourd'hui, j'offre ce mélange rare : une mentalité de terrain solide alliée à une connaissance numérique certifiée et vérifiable. Je cherche une opportunité de prouver que mes certificats ne sont pas du papier, et qu'une décennie au service du public forge un professionnel qui ne déçoit jamais. Prêt à commencer immédiatement.",
-    "fact_loc_l": "Localisation",
-    "fact_email_l": "E-mail",
-    "fact_status_l": "Statut",
-    "fact_status_v": "Disponible pour de nouvelles opportunités",
-    "exp_title": "Expérience professionnelle",
-    "exp_sub": "Une carrière diversifiée fondée sur la discipline et la responsabilité",
-    "jobs": [
-        {
-            "period": "2016 – 2018 · 2020 – 2025",
-            "title": "Gérant de café et responsable des opérations",
-            "org": "Secteur cafés et restaurants",
-            "bullets": [
-                "Gestion complète des opérations quotidiennes du café et organisation du flux de travail.",
-                "Préparation et service des boissons avec efficacité tout en garantissant une qualité de service irréprochable.",
-                "Gestion des stocks, organisation des achats et trésorerie quotidienne.",
-                "Résolution des problèmes imprévus et adaptation flexible à chaque profil de client pour garantir leur satisfaction.",
-            ],
-        },
-        {
-            "period": "2015 – 2016",
-            "title": "Ouvrier assistant en construction et démolition",
-            "org": "Chantiers de construction",
-            "bullets": [
-                "Contribution aux travaux de construction et soutien aux chantiers avec efficacité et discipline.",
-                "Respect des normes de sécurité au travail et capacité à prospérer dans des conditions physiques exigeantes.",
-            ],
-        },
-        {
-            "period": "2013 – 2014",
-            "title": "Agent de sécurité",
-            "org": "Services de sécurité et de gardiennage",
-            "bullets": [
-                "Sécurisation des installations et surveillance du périmètre de travail pour garantir la sûreté.",
-                "Gestion des situations avec fermeté, sagesse et vigilance constante pour prévenir les risques.",
-            ],
-        },
-    ],
-    "cert_title": "Certificats et formations",
-    "cert_sub": "13 certifications dans 5 domaines, de Google, HP LIFE, Huawei et des institutions nationales marocaines",
-    "l_issuer": "Délivré par",
-    "l_date": "Date d'obtention",
-    "l_cred": "N° de certificat",
-    "l_view": "Voir le certificat",
-    "l_details": "Page du certificat",
-    "l_pj_details": "Détails du projet",
-    "lb_close": "Fermer",
-    "lb_prev": "Certificat précédent",
-    "lb_next": "Certificat suivant",
-    "lb_drive": "Vérifier sur Google Drive",
-    "cp_home": "Accueil",
-    "cp_certs": "Certificats",
-    "cp_about": "Contenu du certificat",
-    "cp_skills": "Compétences acquises",
-    "cp_prospects": "Perspectives et applications",
-    "cp_roles": "Voies et rôles liés",
-    "cp_meta": "Fiche du certificat",
-    "cp_verify": "Vérifier ce certificat sur Google Drive",
-    "cp_view_img": "Voir l'image en pleine taille",
-    "cp_print": "Imprimer cette page",
-    "cp_back": "Tous les certificats",
-    "cp_prev": "Certificat précédent",
-    "cp_next": "Certificat suivant",
-    "cp_related": "Certificats du même domaine",
-    "pp_home": "Accueil",
-    "pp_projects": "Projets",
-    "pp_about": "À propos du projet",
-    "pp_tech": "Technologies utilisées",
-    "pp_features": "Fonctionnalités clés",
-    "pp_learned": "Ce que j'en ai appris",
-    "pp_visit": "Visiter le site en ligne",
-    "pp_live": "Publié et en ligne",
-    "pp_host": "Hébergement",
-    "pp_domain": "Adresse",
-    "pp_status": "Statut",
-    "pp_built_label": "Méthode de construction",
-    "pp_built": "Avec l'aide de modèles d'IA",
-    "pp_back": "Tous les projets",
-    "pp_prev": "Projet précédent",
-    "pp_next": "Projet suivant",
-    "fields": {
-        "all": "Tous",
-        "ai": "Intelligence artificielle",
-        "biz": "Compétences professionnelles",
-        "civic": "Engagement citoyen",
-        "marketing": "Marketing digital",
-        "web": "Technologies web",
-    },
-    "issuers": {
-        "google_en": "Google Digital Garage / Skillshop",
-        "google_ar": "Maharat min Google — accrédité par The Open University et IAB Europe",
-        "huawei": "Huawei ICT Academy",
-        "portal": "Portail national de formation à distance des associations — Maroc",
-        "hp": "HP LIFE — HP Foundation",
-    },
-    "certs": [
-        {"title": "Fondamentaux du marketing digital (anglais)", "desc": "Programme certifié de Google couvrant les bases du marketing digital : recherche, publicité en ligne, réseaux sociaux et analytique web."},
-        {"title": "Fondamentaux du marketing digital (arabe)", "desc": "Certificat Maharat min Google accrédité par The Open University et IAB Europe, couvrant la stratégie digitale, l'e-mailing et le marketing social."},
-        {"title": "Introduction à l'intelligence artificielle", "desc": "Formation de la Huawei ICT Academy introduisant les concepts fondamentaux de l'IA et ses applications dans les technologies de l'information et de la communication."},
-        {"title": "Module : Démocratie participative", "desc": "Formation via le portail national marocain d'e-learning des associations, couvrant les principes de la démocratie participative et de l'engagement citoyen."},
-        {"title": "Module : Cadre juridique de création des associations", "desc": "Formation certifiée sur le droit des associations au Maroc et les procédures de création et de gestion légales des associations."},
-        {"title": "Module : Communication communautaire", "desc": "Programme de formation axé sur les compétences de communication et d'organisation dans le travail associatif et les initiatives citoyennes."},
-        {"title": "L'IA pour les professionnels des affaires", "desc": "Cours HP LIFE sur les outils d'IA en entreprise : outils autonomes ou intégrés, formulation efficace des requêtes et usage éthique."},
-        {"title": "Leadership efficace", "desc": "Cours HP LIFE sur les styles et stratégies de leadership, et le rôle de l'éthique dans une direction d'équipe réussie."},
-        {"title": "L'IA pour débutants", "desc": "Introduction HP LIFE à l'IA : son impact sur le paysage technologique, l'importance des données et les considérations éthiques en entreprise."},
-        {"title": "Communication professionnelle pour la croissance de carrière", "desc": "Cours HP LIFE sur la construction d'un réseau professionnel, la marque personnelle et les outils numériques pour évoluer en toute confiance."},
-        {"title": "Sites web efficaces", "desc": "Cours HP LIFE sur les meilleures pratiques de conception de sites web d'entreprise, la compréhension du comportement des visiteurs et la mesure des performances."},
-        {"title": "L'e-mail au travail", "desc": "Cours HP Life sur la rédaction d'e-mails professionnels efficaces et l'utilisation appropriée de l'e-mail dans différents scénarios de travail."},
-        {"title": "Planification stratégique à l'ère de l'IA", "desc": "Cours HP LIFE sur la pensée stratégique et la prise de décision dans un monde des affaires piloté par l'IA, et l'évaluation des cadres de planification."},
-    ],
-    "cert_pages": [
-        {"overview": "Un programme certifié de Google Digital Garage couvrant l'intégralité des fondamentaux du marketing digital à travers plusieurs modules de formation en anglais : présence numérique de la marque, visibilité dans les moteurs de recherche, publicité payante, marketing par e-mail et réseaux sociaux, et enfin mesure des résultats par les données. Je l'ai obtenu en 2021 — ma première certification internationale sur le chemin du digital.", "skills": ["Construire une stratégie de marketing digital", "Visibilité dans les moteurs de recherche (SEO)", "Lancer des campagnes publicitaires digitales", "Marketing par e-mail et réseaux sociaux", "Mesurer la performance des campagnes avec les données", "Rédiger un contenu digital efficace"], "prospects": "Une base solide pour tout rôle de promotion digitale : gestion de pages et de contenu, contribution à des campagnes petites et moyennes, ou lancement de canaux de croissance pour un commerce en ligne.", "roles": ["Assistant marketing digital", "Gestion de contenu et de pages", "Support e-commerce"]},
-        {"overview": "L'édition arabe accréditée du programme Maharat min Google, co-accréditée par The Open University et l'IAB Europe — un certificat de classe mondiale en arabe clair. Elle couvre la construction d'une stratégie digitale pratique, la mobilisation des publics via mobile, e-mail et réseaux sociaux, et les techniques de visibilité sur les moteurs de recherche, avec une attention particulière au contexte arabe local.", "skills": ["Planifier des campagnes digitales en arabe", "Marketing mobile", "Marketing de contenu", "Mesurer le succès avec des KPI clairs", "Comprendre le comportement du consommateur arabe en ligne", "Publicité sur les réseaux sociaux"], "prospects": "Une qualification directe pour les rôles de contenu et de communication digitale dans les environnements arabes, et un pilier pratique pour toute entreprise ciblant un public arabe en ligne.", "roles": ["Responsable communication digitale", "Créateur de contenu", "Support e-commerce"]},
-        {"overview": "Une formation de la Huawei ICT Academy établissant une compréhension complète de l'intelligence artificielle : des concepts fondamentaux (apprentissage automatique et réseaux de neurones) aux étapes d'évolution du domaine et ses applications pratiques dans les technologies de l'information et de la communication et au-delà. Une certification récente (2026) ouvrant une fenêtre sur la technologie la plus influente de notre époque.", "skills": ["Concepts d'apprentissage automatique et de réseaux de neurones", "Applications de l'IA dans les TIC", "Suivre l'évolution des technologies d'IA", "Lire un paysage technologique en mutation rapide", "Relier l'IA à des solutions concrètes"], "prospects": "La porte d'entrée officielle dans le monde de l'IA ; elle fournit le socle minimal pour suivre des formations plus approfondies et comprendre l'impact de la technologie sur tous les secteurs.", "roles": ["Stagiaire en technologie numérique", "Utilisateur professionnel d'outils d'IA", "Assistant projets numériques"]},
-        {"overview": "Un module de formation via le portail national marocain de formation à distance des associations, sous la tutelle du ministère chargé des relations avec le Parlement. Il a couvert les principes et mécanismes de la démocratie participative : la participation citoyenne à la gestion des affaires publiques, les rôles de la société civile et les mécanismes constitutionnels qui font du citoyen un partenaire de la décision.", "skills": ["Principes de la démocratie participative", "Mécanismes de participation citoyenne", "Comprendre les rôles de la société civile", "Le cadre constitutionnel de la participation", "Culture des affaires publiques"], "prospects": "Une connaissance essentielle pour quiconque est actif dans le travail associatif ou aspire à participer à la vie civique et institutionnelle, et pour comprendre comment les décisions publiques se prennent au Maroc.", "roles": ["Travail associatif et société civile", "Initiatives citoyennes", "Appui à des projets locaux"]},
-        {"overview": "Un module certifié expliquant l'intégralité du cadre juridique des associations au Maroc : la fondation légale d'une association, les documents requis, les organes de gouvernance et leurs rôles, les droits et obligations, et une relation saine avec l'administration — de la préparation du dossier à la gestion juridique quotidienne de l'association.", "skills": ["Fonder une association au Maroc", "Préparer des dossiers juridiques", "Organes de gouvernance et leurs rôles", "Droits et obligations juridiques", "Gestion juridique saine des associations"], "prospects": "Permet concrètement de participer à la fondation et à la gestion d'associations en toute légalité — une compétence recherchée dans le travail associatif, les initiatives citoyennes et les partenariats institutionnels.", "roles": ["Fondateur ou membre du bureau d'une association", "Support administratif et juridique", "Initiatives communautaires"]},
-        {"overview": "Un module de formation centré sur le cœur du travail associatif réussi : la communication. Il couvre la communication interne entre les membres de l'association, la communication externe avec le public, les partenaires et les institutions, et l'organisation de messages et de campagnes de terrain qui amplifient l'impact de l'association et élargissent sa base de soutien.", "skills": ["Planifier la communication associative", "Communiquer avec le public et les partenaires", "Organiser des campagnes de sensibilisation", "Construire des messages clairs et percutants", "Organiser le travail d'équipe"], "prospects": "Renforce la préparation aux rôles de coordination et de communication dans tout effort collectif — au sein des associations et au-delà — où la communication reste la compétence la plus demandée.", "roles": ["Coordinateur de communication", "Membre d'une équipe d'organisation", "Facilitateur communautaire"]},
-        {"overview": "Un cours HP LIFE pour les professionnels sur le déploiement de l'intelligence artificielle en entreprise : distinguer les outils autonomes des outils intégrés, rédiger des prompts efficaces qui tirent le meilleur parti des résultats, et l'usage éthique et responsable de la technologie au service de la croissance professionnelle.", "skills": ["Rédaction professionnelle de prompts", "Choisir le bon outil d'IA", "Intégrer l'IA dans le flux de travail quotidien", "Usage éthique de la technologie", "Évaluer les sorties de l'IA"], "prospects": "Une compétence quotidienne immédiate : accélérer les tâches rédactionnelles et analytiques et élever la qualité et la productivité du travail — dans tout poste touchant au texte, aux données ou au service client.", "roles": ["Utilisateur professionnel d'outils d'IA", "Support aux opérations numériques", "Amélioration de la productivité"]},
-        {"overview": "Un cours HP LIFE sur ce qui rend le leadership réellement réussi : les différents styles de leadership et leur usage approprié, les stratégies d'influence positive sur une équipe, et la construction d'une culture de la performance — avec le rôle pivot que joue l'éthique dans le vrai leadership.", "skills": ["Styles de leadership et bon choix", "Diriger des équipes avec confiance", "Motivation et culture du travail", "Décision éthique en management", "Évaluation de la performance d'équipe"], "prospects": "Mon expérience de terrain dans la gestion d'un café avec une équipe fait de ce certificat un prolongement naturel de mon parcours — une préparation directe à diriger des équipes plus grandes dans les services ou les projets numériques.", "roles": ["Chef d'équipe", "Superviseur de site/poste", "Coordinateur de projets"]},
-        {"overview": "L'introduction de HP LIFE à l'intelligence artificielle à partir de zéro : ce qu'est l'IA et comment elle fonctionne, pourquoi les données en sont le carburant, comment elle a transformé tout le paysage des affaires, et les considérations éthiques à comprendre avant de l'utiliser.", "skills": ["Concepts fondamentaux de l'IA", "Comprendre le rôle des données", "Suivre l'impact de la technologie sur les affaires", "Conscience des enjeux éthiques", "Engagement critique avec les outils d'IA"], "prospects": "Une base solide pour quiconque débute en technologie sans bagage de programmation — la preuve pratique que toute personne déterminée peut comprendre et adopter les outils du futur.", "roles": ["Point de départ d'un parcours numérique", "Usage conscient des outils d'IA", "Développement personnel continu"]},
-        {"overview": "Un cours HP LIFE sur le facteur le plus important de la croissance de carrière : le réseau. Il couvre les stratégies de construction d'un véritable réseau professionnel, la création d'une marque personnelle et l'usage intelligent des outils numériques — des réseaux professionnels à l'e-mail — pour ouvrir les portes de nouvelles opportunités.", "skills": ["Construire un réseau professionnel", "Marque personnelle", "Communication professionnelle digitale", "Gérer son image professionnelle", "Transformer les opportunités en résultats"], "prospects": "Fait passer toute carrière de l'attente d'opportunités à leur création ; une fondation claire pour qui cherche un emploi, des partenariats ou une reconversion vers le secteur numérique.", "roles": ["Développement de carrière", "Présence professionnelle digitale", "Réseautage professionnel"]},
-        {"overview": "Un cours HP LIFE expliquant ce qui fait le succès d'un site web d'entreprise : les meilleures pratiques de conception orientée client, la compréhension du comportement réel des visiteurs et la mesure de la performance du site avec de vraies métriques plutôt qu'au doigt mouillé.", "skills": ["Principes de conception web efficace", "Comprendre le comportement des visiteurs", "Métriques de performance et de conversion", "Améliorer l'expérience utilisateur", "Lire les analyses de site"], "prospects": "Je l'ai appliquée directement dans mes quatre projets publiés ; c'est le critère que j'utilise pour évaluer tout site web — le mien comme celui des autres — avant de l'adopter ou de l'améliorer.", "roles": ["Évaluation et amélioration de sites", "Support de présence digitale pour entreprises", "Projets web indépendants"]},
-        {"overview": "Un cours HP LIFE sur l'outil le plus utilisé et le moins maîtrisé au travail : l'e-mail. De la structure d'un message professionnel efficace au ton juste pour chaque scénario — demandes, relances, clarifications, négociations — en passant par l'usage approprié de l'e-mail dans les contextes professionnels.", "skills": ["Rédiger des e-mails professionnels efficaces", "Structure et contenu du message", "Le bon ton pour chaque situation", "Relances professionnelles", "Gestion intelligente de la boîte de réception"], "prospects": "Un impact direct sur l'impression professionnelle quotidienne : un e-mail clair et respectueux signifie des réponses plus rapides et plus d'opportunités — une compétence que tout employeur ou partenaire remarque immédiatement.", "roles": ["Communication d'entreprise", "Service client par e-mail", "Support administratif"]},
-        {"overview": "Ma certification la plus récente : un cours HP LIFE sur la pensée stratégique dans un monde piloté par l'IA. Il couvre les composants essentiels de tout plan réussi, l'évaluation des cadres de planification pratiques et le choix du plus adapté, et l'acquisition de compétences pour utiliser les outils d'IA au service de la planification et de meilleures décisions.", "skills": ["Pensée stratégique systématique", "Composants d'un plan stratégique", "Évaluer les cadres de planification", "Prise de décision fondée sur les données", "Utiliser l'IA dans la planification"], "prospects": "Elle relie tout mon parcours : mes certifications en IA, marketing et leadership convergent dans la capacité à dresser un plan clair et à le suivre — la compétence de ceux qui veulent diriger, pas être dirigés.", "roles": ["Planification et coordination de projets", "Appui à la décision", "Entrepreneuriat"]},
-    ],
-    "drive_title": "Dossier complet des certificats",
-    "drive_text": "Le dossier Google Drive original contient les 13 certificats dans leur format intégral, disponibles à tout moment pour vérification.",
-    "drive_cta": "Ouvrir sur Google Drive",
-    "pj_title": "Mes projets numériques",
-    "pj_sub": "Six projets en ligne que j'ai réalisés dans le cadre de mon parcours d'apprentissage numérique",
-    "pj_note": "J'ai développé ces projets avec l'aide de modèles d'IA dans le cadre de l'auto-apprentissage et de l'amélioration de mes compétences numériques — tous sont publiés et fonctionnent sur Cloudflare Pages.",
-    "pj_visit": "Visiter le projet",
-    "projects": [
-        {"name": "NATSUP", "tag": "E-commerce — Compléments naturels", "desc": "Guide et boutique complets de compléments naturels offrant informations produits, prix et liens d'achat officiels en plusieurs langues."},
-        {"name": "SYDA", "tag": "Boutique e-commerce généraliste", "desc": "Boutique e-commerce arabe complète proposant des milliers de produits pour la maison, la beauté, l'électronique et plus, avec panier et suivi des commandes."},
-        {"name": "DTSG", "tag": "Plateforme de jeux marocains", "desc": "Plateforme de jeux numérique dédiée aux jeux traditionnels marocains comme la Ronda et le Rami, avec mode multijoueur, tournois et classements."},
-        {"name": "HRMP", "tag": "Plateforme RH", "desc": "Plateforme marocaine de gestion des ressources humaines couvrant le recrutement, la planification, la présence et la paie conformément au code du travail marocain."},
-        {"name": "MAMP", "tag": "Plateforme de gestion des associations marocaines", "desc": "La première plateforme marocaine complète de numérisation du travail associatif : adhésions, comptabilité, dons, événements et documents officiels — conformément à la loi 75.00 et au dahir de 1958."},
-        {"name": "ISYACAR", "tag": "Amélioration du site d'une agence de location de voitures", "desc": "Version reconstruite et améliorée du site de l'agence de location de voitures de mon ami à Marrakech : neuf langues, une flotte de l'économique au luxe, et réservation directe via WhatsApp."},
-    ],
-    "project_pages": [
-        {"about": "NATSUP est un guide et une boutique digitale spécialisés dans les compléments naturels, conçus pour les passionnés de santé et de fitness : il propose des avis clairs et simplifiés sur les compléments — ingrédients, bienfaits et prix — avec des liens d'achat officiels et fiables pour chaque produit. L'interface est multilingue et couvre des produits mondialement connus, avec un objectif : rendre la décision d'achat informée, sûre et réfléchie.", "tech": ["HTML5", "CSS3", "JavaScript", "Moteur de traduction multilingue", "Couche de données structurée (JSON)", "Optimisation SEO", "Cloudflare Pages"], "features": ["Catalogue de produits avec images, ingrédients et prix", "Liens d'achat officiels et fiables", "Interface multilingue", "Contenu éducatif organisé", "Design adapté au mobile"], "learned": "Ce projet m'a appris comment se construit un système de contenu vaste et organisé — données, traduction et présentation — comment gérer proprement les liens d'achat et de suivi, et comment la clarté et l'honnêteté construisent la confiance des visiteurs."},
-        {"about": "SYDA est une boutique e-commerce arabe complète présentant des milliers de produits : maison, beauté, électronique, automobile et plus. Elle offre une expérience d'achat entièrement en arabe : navigation par catégories, panier interactif, suivi des commandes et chat de service client en direct — avec l'esprit d'un commerce marocain moderne et rapide.", "tech": ["HTML5", "CSS3", "JavaScript", "Panier d'achat interactif", "Chat client en direct", "Navigation par catégories", "Cloudflare Pages"], "features": ["Des milliers de produits dans des catégories claires", "Panier et suivi de commandes", "Chat en direct avec les clients", "Interface entièrement en arabe", "Expérience mobile rapide"], "learned": "Il a affûté ma pensée commerciale : comment organiser de grands catalogues de produits, comment concevoir un parcours client complet de la navigation à la commande, et comment aborder le service client en ligne avec la mentalité du café — le client d'abord."},
-        {"about": "La plateforme des jeux traditionnels marocains numériques (DTSG) est mon projet le plus ambitieux : une plateforme qui rassemble les jeux traditionnels du Maroc — Ronda, Rami, Table, Damma, Partchi et d'autres — et les transforme en une expérience numérique moderne avec des salles multijoueur, un chat en direct, des tournois et des classements, plus des effets sonores et visuels soignés.", "tech": ["HTML5", "CSS3", "JavaScript natif (Vanilla)", "Mise en réseau en direct via WebSocket", "Système de sessions et d'authentification", "Effets sonores et visuels", "Cloudflare Pages"], "features": ["Plusieurs jeux traditionnels marocains", "Multijoueur en réseau en temps réel", "Salles de jeu et chat en direct", "Tournois et classements", "Effets sonores dans le jeu"], "learned": "La plus grande leçon technique de mon parcours : l'architecture d'un grand projet avec des modules de code propres, la connectivité des joueurs en temps réel, la gestion des états et des sessions, et pourquoi la division méthodique du code garde un projet maintenable."},
-        {"about": "HRMP est une plateforme marocaine de gestion des ressources humaines conçue pour organiser tout le cycle de travail : recrutement, planification des postes, suivi des présences et des absences, et calcul des salaires conformément au code du travail marocain. Le projet combine une interface utilisateur pratique avec des services backend fonctionnant via un tunnel sécurisé, offrant une solution administrative réaliste.", "tech": ["HTML5", "CSS3", "JavaScript", "Services backend via tunnel sécurisé", "Gestion des données des employés", "Calcul des salaires et des postes", "Cloudflare Pages"], "features": ["Gestion du recrutement et des dossiers employés", "Planification des postes et présences", "Paie conforme au code du travail", "Rapports administratifs organisés", "Interface pratique en arabe"], "learned": "Il m'a rapproché du monde réel des affaires : comprendre des besoins administratifs complexes — postes, présences, paie — et les traduire en un système utilisable, et pourquoi toute solution numérique doit respecter la loi locale (le code du travail marocain)."},
-        {"about": "MAMP est la première plateforme marocaine complète de numérisation du travail associatif, de la fondation d'une association à son rapport annuel : gestion des adhésions avec reçus numérotés, comptabilité catégorisée avec budget prévisionnel et double validation, enregistrement des dons en numéraire et en nature, programmation des événements avec inscription publique, et archives des documents officiels — avec en plus une carte d'identité numérique pour chaque association et un assistant associatif intelligent qui répond à partir d'une base de connaissances officielle vérifiée. Chaque module s'appuie sur une référence juridique marocaine réelle : la loi 75.00, le dahir du 15 novembre 1958 et la loi 09.08 sur la protection des données personnelles.", "tech": ["Next.js (React)", "Interface arabe RTL complète", "Système de connexion à sessions signées", "Permissions sur cinq niveaux", "Journal d'audit des opérations sensibles", "Police arabe Cairo", "Cloudflare Pages"], "features": ["Gestion des adhésions avec reçus numérotés et rappels de renouvellement", "Comptabilité catégorisée avec budget prévisionnel, double validation et rapport annuel", "Dons en numéraire et en nature avec reçus officiels et suivi de conformité", "Événements et activités avec inscription publique", "Archives de documents officiels avec classification et niveaux de sensibilité"], "learned": "Ce projet m'a appris que la programmation est un outil, pas une fin : la vraie valeur ne venait pas des écrans mais de la compréhension du droit marocain des associations et de la traduction des besoins réels des acteurs associatifs en modules simples utilisables par des personnes sans bagage technique — et que la protection des données personnelles (conformité CNDP) n'est pas un détail technique mais la pierre angulaire de la confiance dans toute plateforme qui collecte les données des gens."},
-        {"about": "ISYACAR est une refonte et une amélioration complètes du site de l'agence de location de voitures de mon ami à Marrakech (l'agence : isyacar.com). J'ai préservé l'identité de l'agence — sa flotte, ses adresses et ses numéros de téléphone — et reconstruit l'expérience autour d'elle : une flotte classée des citadines (à partir de 300 MAD/jour) aux SUV et aux véhicules de luxe, neuf langues pour la clientèle internationale, livraison gratuite à l'aéroport de Marrakech et aux hôtels en 15 minutes, assistance 24h/24 et 7j/7, annulation gratuite jusqu'à 48 heures avant, et des guides pratiques sur l'assurance et les routes — avec réservation directe via WhatsApp, sans formulaires.", "tech": ["HTML5", "CSS3", "JavaScript", "Moteur de traduction en neuf langues", "SEO multilingue (hreflang)", "Chat automatisé pour les questions courantes", "Cloudflare Pages"], "features": ["Flotte classée : citadines, SUV et luxe à prix clairs", "Neuf langues qui parlent au client dans la sienne", "Réservation directe via WhatsApp sans formulaires", "Livraison gratuite à l'aéroport et à l'hôtel en 15 minutes", "Guides pratiques : assurance, routes et coûts des trajets"], "learned": "Le premier projet construit pour un vrai client — un ami — ce qui a relevé le niveau d'exigence : j'ai appris que le développement est un service qui se mesure à son résultat commercial (combien de visiteurs ont réservé), pas au nombre de technologies ; que des fonctionnalités comme la réservation WhatsApp et le prix affiché viennent de la compréhension du vrai client de la location de voitures ; et que la confiance d'un ami vaut plus que toute démonstration technique."},
-    ],
-    "sk_title": "Compétences",
-    "sk_sub": "Des certifications au terrain — un mélange documenté et éprouvé",
-    "cats": [
-        {"icon": "code", "title": "Numérique & IA", "items": ["Outils d'IA", "Rédaction de prompts", "Planification stratégique à l'ère de l'IA", "Marketing digital", "Analyse web", "E-mail professionnel"]},
-        {"icon": "coffee", "title": "Opérations & Service", "items": ["Gestion de café", "Préparation des boissons", "Service client", "Gestion des stocks", "Organisation et planification"]},
-        {"icon": "shield", "title": "Discipline de terrain", "items": ["Discipline", "Endurance", "Travail sous pression", "Résolution de problèmes", "Sécurité et sûreté"]},
-        {"icon": "globe", "title": "Leadership & Communication", "items": ["Leadership efficace", "Communication professionnelle", "Arabe (langue maternelle)", "Travail d'équipe", "Communication associative"]},
-    ],
-    "edu_title": "Éducation",
-    "edu_sub": "Un socle académique doublé d'un auto-apprentissage incessant",
-    "edu_level": "Deuxième année du Baccalauréat (sans le diplôme final)",
-    "edu_note": "Bien que je n'aie pas obtenu mon Baccalauréat, j'ai continué à développer mes compétences par l'auto-apprentissage et des cours numériques certifiés — un reflet de ma volonté d'apprendre et d'évoluer en permanence.",
-    "gal_title": "Moments de ma vie",
-    "gal_sub": "Aperçus de ma vie au-delà du travail",
-    "gal": ["Moments en famille", "Avec mes proches", "Mon fidèle compagnon", "Mon amour de la nature"],
-    "ct_title": "Contactez-moi",
-    "ct_sub": "Vous cherchez un professionnel dévoué et adaptable ? Parlons-en",
-    "avail": "Disponible pour de nouvelles opportunités",
-    "email_cta": "Écrivez-moi",
-    "copy": "Copier l'adresse e-mail",
-    "copied": "Copié !",
-    "ct_note": "Je réponds généralement sous 24 heures.",
-    "footer_rights": "Tous droits réservés.",
-    "footer_built": "Conçu et développé avec l'aide de modèles d'IA, hébergé sur Cloudflare Pages.",
 
-    # ---------------- v4 ----------------
-    "sources": {
-        "medium": "Medium — critique indépendante publiée",
-        "reddit": "Reddit — discussion publique dans r/marketing",
-        "linkedin_article": "LinkedIn — article publié publiquement",
-        "appstore": "App Store — avis officiels de l'appli HP LIFE",
+T = {
+    'title': 'Tarik Chouika | Identité numérique professionnelle',
+    'desc': "Tarik Chouika : un professionnel marocain qui appuie sa connaissance digitale sur 13 certifications (Google, HP LIFE, Huawei) et sept projets numériques en ligne, sur fond de dix ans d'expérience de terrain en opérations et service client.",
+    'brand': 'Tarik Chouika',
+    'menu': 'Menu',
+    'lang_aria': 'Choisir la langue',
+    'nav_aria': 'Navigation principale',
+    'top': 'Retour en haut',
+    'theme_aria': 'Basculer le mode clair/sombre',
+    'filt_aria': 'Filtrer les certificats par domaine',
+    'nav': {
+        'about': 'À propos',
+        'experience': 'Expérience',
+        'certificates': 'Certificats',
+        'projects': 'Projets',
+        'skills': 'Compétences',
+        'gallery': 'Galerie',
+        'contact': 'Contact'
     },
-    "links": {
-        "credential": "Vérification officielle du certificat",
-        "course": "Page officielle du cours",
-        "grow": "Grow with Google — plateforme d'apprentissage de Google",
-        "platform": "Plateforme officielle HP LIFE",
-        "academy": "Académie Huawei ICT officielle",
-        "talent": "Plateforme Huawei Talent",
-        "maroc": "Portail officiel du Royaume du Maroc",
-        "spub": "Portail des services publics — Maroc",
-        "trusted": "Plateformes d'apprentissage de confiance",
-    },
-    "cp_reviews": "Avis réels publiés publiquement",
-    "cp_reviews_note": "Citations littérales d'utilisateurs réels, publiées ouvertement sur les sources mentionnées et affichées ici dans leur langue d'origine.",
-    "cp_view_source": "Voir la source",
-    "cp_links": "Liens officiels & plateformes de confiance",
-    "pp_value": "Valeur ajoutée",
-    "pp_effort": "L'effort investi dans la construction",
-    "pp_ops": "Technologies de construction et d'exploitation",
-    "pp_tech_build": "Pour la construction",
-    "pp_tech_ops": "Pour l'exploitation et la continuité",    "pp_costs": "Coût estimatif",
-    "cost_build": "Créer un projet similaire",
-    "cost_ops": "Gestion et exploitation",
-    "cost_self": "Parcours autonome (ce que j'ai réellement fait)",
-    "cost_market": "Via un freelance/agence au Maroc (estimation)",
-    "cost_now": "Situation actuelle",
-    "cost_scale": "En cas de montée en charge (estimation)",
-    "cost_note": "Estimations indicatives en dirham marocain (MAD) ; le coût réel varie selon l'ampleur, les exigences précises et le marché des services. Mes projets actuels sont construits et fonctionnent entièrement sur des offres gratuites.",
-    "ct_phone": "Téléphone",
-    "ct_whatsapp": "WhatsApp",
-    "ct_linkedin": "LinkedIn",
-    "ct_facebook": "Facebook",
-    "ct_telegram": "Bot Telegram",
-    "ct_call": "Appeler maintenant",
-    "ct_wa_chat": "Discuter sur WhatsApp",
-    "hd_book": "Consultation ou rendez-vous",
-    "ft_tagline": "Des connaissances numériques certifiées — 13 certifications internationales — sur dix ans d'expérience de terrain.",
-    "ft_quick": "Liens rapides",
-    "ft_contact": "Canaux de contact",
-    "ft_gov": "Sites gouvernementaux marocains officiels",
-    "ft_gov_note": "Portails officiels des administrations et services numériques du Maroc",
-    "gov": {
-        "maroc": "Portail national officiel",
-        "spub": "Portail des services publics",
-        "tax": "Direction Générale des Impôts (DGI)",
-        "cnss": "Caisse Nationale de Sécurité Sociale (CNSS)",
-        "anapec": "Agence Nationale de Promotion de l'Emploi (ANAPEC)",
-        "education": "Ministère de l'Éducation Nationale",
-        "sante": "Ministère de la Santé et de la Protection Sociale",
-        "interieur": "Ministère de l'Intérieur",
-    },
-    "project_v4": [
-        {
-            "value_intro": "NATSUP n'est pas qu'un site de produits : c'est un outil d'aide à la décision avant l'achat :",
-            "values": [
-                ("Des informations claires avant d'acheter", "Des avis simplifiés sur les compléments : ingrédients, bienfaits et prix au même endroit, sans confusion."),
-                ("Six langues, une seule interface", "Contenu disponible en anglais, arabe, français, espagnol, italien et allemand — une portée réellement mondiale."),
-                ("Liens d'achat officiels", "Chaque produit renvoie vers une source officielle fiable, protégeant le visiteur des liens douteux."),
-                ("Une structure pensée pour grandir", "Un catalogue alimenté par des données JSON structurées, extensible à des centaines de produits sans reconstruction."),
-            ],
-            "effort": "Le projet a été construit par étapes : organisation et traduction des données produits en six langues, construction du moteur de traduction, conception d'une interface adaptée au mobile, puis optimisation pour les moteurs de recherche. Chaque page a été revue sur le fond et la traduction avant publication, et le travail s'est étalé sur des semaines parallèlement à mon apprentissage quotidien.",
-            "effort_stats": [("Langues d'interface", "6"), ("Base de construction", "Données JSON structurées"), ("Optimisation", "SEO complet")],
-            "ops": ["Cloudflare Pages (hébergement gratuit)", "CDN mondial", "SSL automatique", "Déploiement via Wrangler", "Domaine pages.dev gratuit"],
-            "cost_self": "0 MAD — hébergement et sous-domaine gratuits ; le véritable investissement a été mon temps et mon apprentissage.",
-            "cost_market": "Environ 4 000 – 12 000 MAD pour un site catalogue multilingue de cette ampleur.",
-            "cost_now": "0 MAD par mois — fonctionne sur l'offre gratuite de Cloudflare Pages.",
-            "cost_scale": "Domaine personnalisé : environ 100 – 150 MAD/an, plus des services payants en option (environ 50 MAD/mois).",
-        },
-        {
-            "value_intro": "Syda marie l'expérience d'une boutique moderne et l'esprit du souk arabe :",
-            "values": [
-                ("Un catalogue immense et organisé", "Des milliers de produits répartis en sections claires, accessibles en quelques clics."),
-                ("Un parcours d'achat complet", "De la navigation au panier jusqu'à la commande — une interface 100 % arabe pensée d'abord pour le mobile."),
-                ("Un service client digital", "Chat en direct et assistant intelligent qui accueillent le client comme un hôte dans une vraie boutique."),
-                ("Des politiques qui inspirent confiance", "Paiement à la livraison et retours sous 15 jours — les garanties qui créent la fidélité."),
-            ],
-            "effort": "Le plus grand défi a été d'organiser un catalogue de milliers de produits en sections et pages logiques, de construire un panier fluide sur mobile, puis d'ajouter la couche de service client par chat. La gestion d'un café m'a appris qu'un bon design se comprend avant d'être expliqué — c'était mon critère pour chaque écran conçu.",
-            "effort_stats": [("Produits listés", "3 029+"), ("Langue de l'interface", "Arabe"), ("Priorité de conception", "Mobile d'abord")],
-            "ops": ["Cloudflare Pages", "CDN mondial + SSL automatique", "Données produits structurées", "Chat service client", "Déploiements continus via Wrangler"],
-            "cost_self": "0 MAD — construit entièrement sur une stack gratuite.",
-            "cost_market": "Environ 8 000 – 25 000 MAD pour une boutique en ligne arabe avec ces fonctionnalités.",
-            "cost_now": "0 MAD par mois sur l'offre gratuite.",
-            "cost_scale": "Domaine personnalisé (100 – 150 MAD/an) et outils de paiement/stock avancés au fur et à mesure.",
-        },
-        {
-            "value_intro": "DTSG préserve un patrimoine vivant et le transmet à la génération numérique :",
-            "values": [
-                ("Un patrimoine marocain en version numérique", "Ronda, Rami, Dama et d'autres jeux qui rassemblent les familles — interface moderne et effets sonores."),
-                ("Multijoueur en direct", "Salles de jeu et chat en direct via une connexion temps réel — comme les vraies parties, mais en ligne."),
-                ("Un système de motivation complet", "Tournois, classement et monnaie de jeu qui donnent aux parties un sens compétitif."),
-                ("Une vraie ingénierie logicielle", "78 modules de code organisés avec sessions et authentification — une structure de niveau professionnel."),
-            ],
-            "effort": "Mon projet le plus technique : 78 modules de code, connexions en direct entre joueurs via WebSocket, système de sessions et d'authentification, effets sonores et visuels, tournois et classement. Chaque jeu a été un exercice d'ingénierie à part entière — règles, IA, interface — avant d'être assemblé en une seule plateforme.",
-            "effort_stats": [("Modules de code", "78"), ("Connectivité", "Temps réel via WebSocket"), ("Plateformes", "Web + APK Android")],
-            "ops": ["Cloudflare Pages pour le front", "Pont WebSocket pour le multijoueur", "Sessions et authentification (2FA)", "Effets sonores et graphismes Canvas", "Application Android (APK)"],
-            "cost_self": "0 MAD en numéraire ; le véritable investissement : des mois d'apprentissage et de construction continus.",
-            "cost_market": "Environ 25 000 – 80 000 MAD pour une plateforme de jeux multijoueur en direct de cette ampleur.",
-            "cost_now": "0 MAD/mois pour le front sur l'offre gratuite.",
-            "cost_scale": "Services WebSocket dédiés selon la croissance des joueurs : environ 100 – 400 MAD/mois selon l'échelle.",
-        },
-        {
-            "value_intro": "HRMP traduit les besoins réels du terrain marocain en un outil administratif professionnel :",
-            "values": [
-                ("Conçu pour les secteurs réels du Maroc", "Sécurité, nettoyage, jardinage, BTP et artisanat — des secteurs qui ont besoin d'une vraie organisation, pas de modèles importés."),
-                ("Du recrutement à la paie", "Recrutement, planification des rotations, présence géolocalisée anti-fraude et paie calculée au centime."),
-                ("Conforme au droit marocain", "Cotisations CNSS, AMO et IR, avec génération des fichiers officiels Damancom et SIMPL-IR."),
-                ("Isolation sécurisée des sociétés", "Chaque société dans son espace isolé, avec rôles définis et journal d'audit complet."),
-            ],
-            "effort": "Mon projet le plus profond côté administratif et juridique : comprendre le Code du travail marocain et les besoins des PME, puis construire un moteur de paie respectant les retenues officielles, un système de présence géolocalisé résistant à la fraude et des rapports en quatre langues. Chaque fonctionnalité fut une leçon : transformer un vrai besoin administratif en logiciel.",
-            "effort_stats": [("Moteur de paie", "Code du travail marocain"), ("Langues des rapports", "4"), ("Déploiement", "Cloud ou serveur local")],
-            "ops": ["Front sur Cloudflare Pages", "Services backend via un tunnel sécurisé", "SQLite, évolutive vers PostgreSQL", "Rapports PDF/DOCX avec support RTL", "Application Android (APK)"],
-            "cost_self": "0 MAD pour le front ; le backend tourne à la demande via un tunnel sécurisé.",
-            "cost_market": "Environ 30 000 – 100 000 MAD pour une plateforme RH sur mesure avec cette profondeur juridique.",
-            "cost_now": "0 MAD/mois pour le front ; le backend est lancé à la demande.",
-            "cost_scale": "Hébergement backend permanent et tunnel sécurisé : environ 80 – 300 MAD/mois selon le nombre de sociétés et d'utilisateurs.",
-        },
-        {
-            "value_intro": "MAMP numérise le travail associatif marocain avec des fonctionnalités ancrées dans la réalité juridique et administrative :",
-            "values": [
-                ("De la loi à l'écran", "Chaque module s'appuie sur une référence réelle : la loi 75.00, le dahir de 1958 et la loi 09.08 sur la protection des données — pas des solutions importées qui ignorent la réalité marocaine."),
-                ("Une comptabilité digne de l'assemblée générale", "Recettes et dépenses catégorisées, budget prévisionnel, double validation et rapport financier annuel prêt à imprimer et à présenter aux partenaires."),
-                ("Reçus officiels et transparence", "Dons et adhésions sont enregistrés avec des reçus officiels numérotés et un suivi de conformité — la transparence qu'attendent aussi bien les autorités que les partenaires."),
-                ("Un assistant sans hallucinations", "Un assistant intelligent qui répond aux questions de procédure et de droit à partir d'une base de connaissances officielle vérifiée — il vous guide vers l'étape de dépôt et les documents requis avec précision."),
-            ],
-            "effort": "Mon projet le plus lourd en recherche : avant d'écrire le moindre écran, j'ai lu les textes juridiques et compris le cycle de vie d'une association, de la fondation à l'assemblée générale, puis j'ai construit les modules un à un — adhésions, comptabilité, dons, événements, documents — reliés à un système de permissions à cinq niveaux et à un journal d'audit qui consigne chaque opération sensible. La plateforme est entièrement en arabe et conçue pour des personnes sans bagage technique.",
-            "effort_stats": [("Référence juridique", "Loi 75.00 & dahir de 1958"), ("Niveaux de permission", "5"), ("Modules", "adhésions, comptabilité, dons, événements, documents")],
-            "ops": ["Next.js (React) — une interface rapide et évolutive", "Système de connexion à sessions signées", "Permissions vérifiées côté serveur", "Journal d'audit des opérations sensibles", "Cloudflare Pages"],
-            "cost_self": "0 MAD — construite sur une pile entièrement gratuite ; le vrai investissement, ce sont des mois de recherche juridique et de construction.",
-            "cost_market": "Environ 40 000 – 120 000 MAD pour une plateforme associative avec cette profondeur juridique et comptable.",
-            "cost_now": "0 MAD par mois sur l'offre gratuite.",
-            "cost_scale": "Un serveur et une base de données permanents au fil de l'adoption : environ 150 – 500 MAD par mois selon le nombre d'associations.",
-        },
-        {
-            "value_intro": "ISYACAR transforme les visiteurs du site de l'agence en clients qui réservent en confiance :",
-            "values": [
-                ("Neuf langues pour une clientèle mondiale", "Le client de Marrakech vient de partout — le site lui parle sa langue : français, anglais, arabe, russe, espagnol, italien, néerlandais, allemand et japonais."),
-                ("Une résaison sans friction", "Le prix est clair à partir de 300 MAD/jour et la réservation se fait en un geste sur WhatsApp — sans longs formulaires qui font fuir le client."),
-                ("Livraison à l'aéroport et à l'hôtel", "La voiture arrive à l'aéroport de Marrakech ou à l'hôtel en 15 minutes, gratuitement, avec une assistance 24h/24 — le service dont les clients parlent à leurs amis."),
-                ("Un contenu qui inspire confiance", "Des guides pratiques sur l'assurance, les routes et les coûts des trajets répondent aux questions du client avant qu'il ne les pose — du marketing par le contenu plutôt que des promesses."),
-            ],
-            "effort": "Améliorer un site existant pour une vraie agence est différent de construire from scratch : j'ai préservé l'identité de l'agence et de mon ami (flotte, adresses, téléphone) et reconstruit l'expérience autour — des pages par catégorie de voiture, un moteur en neuf langues, un contenu conseil sur l'assurance et les routes, et un chat qui répond jour et nuit. L'objectif commercial est visible sur chaque écran : un visiteur qui comprend, fait confiance, puis réserve.",
-            "effort_stats": [("Langues de l'interface", "9"), ("Catégories de flotte", "citadines, SUV et luxe"), ("Canal de réservation", "WhatsApp direct")],
-            "ops": ["Cloudflare Pages", "CDN mondial + SSL automatique", "Moteur de traduction en neuf langues", "Chat automatisé pour les questions courantes", "Liens WhatsApp directs pour réserver"],
-            "cost_self": "0 MAD — la refonte et l'amélioration ont été réalisées sur une pile entièrement gratuite, en service à un ami.",
-            "cost_market": "Environ 10 000 – 35 000 MAD pour un site d'agence de location multilingue à ce niveau.",
-            "cost_now": "0 MAD par mois sur l'offre gratuite.",
-            "cost_scale": "Le domaine propre de l'agence (environ 100 – 150 MAD par an) plus des outils de suivi et de réservation avancés au fur et à mesure de la croissance.",
-        },
+    'greeting': 'Bonjour, je suis',
+    'name': 'Tarik Chouika',
+    'name_alt': 'طارق شويكة',
+    'roles': [
+        'Professionnel des compétences numériques certifiées (13)',
+        "Créateur de sites assisté par l'IA",
+        'Expert opérations & service client',
+        "Dix ans d'expérience de terrain"
     ],
-    "pp_tools": "Outils et compétences — expliqués simplement",
-    "pp_tools_note": "Chaque outil, bibliothèque et compétence utilisés dans ce projet, expliqués en langage simple : ce que c'est et ce qu'il y a apporté précisément — sans symboles obscurs.",
-    "project_tools": [
+    'alt_profile': 'Photo de portrait de Tarik Chouika',
+    'cta_contact': 'Me contacter',
+    'cta_cv': 'Télécharger le CV (PDF)',
+    'stats': [
         [
-            ("HTML5", "Le langage fondateur des pages web : il définit la structure de chaque page — titres, images, liens et boutons. C'est le squelette sur lequel tout le reste repose, comme l'ossature d'un bâtiment avant la peinture."),
-            ("CSS3", "Le langage de mise en forme qui donne aux pages leur aspect final : couleurs, polices, espacement et adaptation au téléphone. C'est la différence entre une page grise sans âme et une interface agréable à l'œil."),
-            ("JavaScript", "Le langage de l'interaction dans le navigateur : il fait passer le site d'un affichage statique à une expérience vivante — recherche instantanée, tri des produits et changement de langue sans recharger la page."),
-            ("Moteur de traduction multilingue", "Un code que j'ai écrit, qui stocke les textes du site en six langues et les change instantanément selon le choix du visiteur — au lieu de construire six sites séparés, un seul site sert tout le monde."),
-            ("Couche de données JSON", "Des fichiers organisés qui conservent produits, prix et ingrédients dans une structure propre et lisible ; ajouter un produit se résume à modifier le fichier, sans toucher au design des pages."),
-            ("Référencement (SEO)", "Des titres et descriptions précis pour chaque page afin qu'une recherche Google la trouve du premier coup — un visiteur gratuit que la publicité ne peut pas acheter."),
-            ("Gestion des liens d'affiliation", "Un seul fichier qui regroupe les liens d'achat officiels : fiables, à jour et séparés du contenu — pour protéger le visiteur des liens suspects et faciliter les mises à jour."),
-            ("Cloudflare Pages", "L'hébergement : un réseau mondial qui distribue le site sur des centaines de serveurs gratuitement — ouverture rapide depuis tous les pays, avec certificat de sécurité SSL automatique."),
+            '10+',
+            "Années d'expérience"
         ],
         [
-            ("HTML5", "La structure de la boutique : les pages de rayons, de produits et de panier sont bâties dans le langage web de base — légères et rapides même avec une connexion faible."),
-            ("CSS3", "La mise en forme qui donne à la boutique son élégance arabe : couleurs chaudes, polices lisibles et un design pensé d'abord pour l'écran du téléphone, puis pour l'ordinateur."),
-            ("JavaScript", "Le moteur d'interaction : parcourir les rayons, mettre à jour le panier et chercher — tout fonctionne instantanément dans le navigateur du client, sans attendre un serveur lointain."),
-            ("Panier interactif", "Un code qui enregistre les choix du client et calcule le total directement dans son navigateur — et les conserve même s'il ferme la page et revient plus tard."),
-            ("Chat en direct", "Une fenêtre qui accompagne le client pendant ses achats et répond à ses questions — comme le vendeur qui vous accueille dans un vrai magasin et vous guide."),
-            ("Organisation du catalogue", "Une navigation réfléchie : rayons principaux et sous-catégories calés sur la mentalité du client arabe — du général au particulier en quelques clics."),
-            ("Cloudflare Pages", "L'hébergement mondial gratuit : ouverture rapide depuis tous les pays et certificat SSL automatique — une infrastructure au niveau des grandes boutiques."),
+            '13',
+            'Certifications'
         ],
         [
-            ("JavaScript pur (Vanilla)", "Programmer sans bibliothèques toutes faites : contrôle total sur chaque détail et performances supérieures — le bon choix pour une plateforme de jeux où chaque milliseconde compte."),
-            ("HTML5 et CSS3", "La structure et le style de l'interface : tables de jeu, cartes et boutons dessinés avec précision et s'adaptant au téléphone comme à l'ordinateur."),
-            ("WebSocket", "Un canal de communication qui reste ouvert entre les joueurs et le serveur : il transporte chaque coup à l'instant même — l'adversaire joue une carte et elle apparaît chez vous dans la seconde."),
-            ("Système de sessions et d'authentification", "Il conserve l'identité de chaque joueur après la connexion et protège les comptes par mot de passe et vérification en deux étapes — un jeu équitable sans usurpation d'identité."),
-            ("Canvas", "Une toile de dessin dans le navigateur : la table, les cartes et les pions y sont dessinés image par image — un mouvement fluide comme dans les jeux professionnels."),
-            ("Effets sonores", "Les sons des cartes, des clics et de la victoire ramènent l'esprit des vraies séances de jeu à l'écran — le détail dont les joueurs se souviennent le plus."),
-            ("Code découpé en 78 modules", "Chaque jeu et chaque fonction dans son propre fichier : corriger un bug ou ajouter du nouveau reste facile — comme un atelier organisé où chaque outil a sa place."),
-            ("Cloudflare Pages", "L'interface hébergée sur un réseau mondial gratuit — les joueurs de tous les pays ouvrent la plateforme vite et en sécurité."),
+            '5',
+            'Domaines de savoir'
         ],
         [
-            ("HTML5, CSS3 et JavaScript", "La base de l'interface : des écrans pratiques en arabe, bâtis dans le langage web de base — légers, rapides et adaptés à un usage quotidien en entreprise."),
-            ("Services backend via un tunnel sécurisé", "La partie invisible de la plateforme (comptes et paie) tourne sur un serveur publié au monde par un canal chiffré — une solution pratique pour faire tourner de vrais services depuis un hébergement gratuit."),
-            ("Le moteur de paie", "Un code qui calcule salaires et retenues (CNSS, AMO et impôt) selon le Code du travail marocain au centime près, et génère les fichiers officiels Damancom et SIMPL-IR."),
-            ("Base de données SQLite", "Le garde-manger organisé de l'information : dossiers des employés, contrats et horaires dans une base légère, évolutive vers PostgreSQL quand l'entreprise grandit."),
-            ("Système de permissions et d'isolation", "Chaque entreprise vit dans son espace isolé avec des permissions définies — le directeur ne voit que sa société, et le journal enregistre chaque opération."),
-            ("Rapports PDF et DOCX avec prise en charge RTL", "La génération de rapports officiels prêts à imprimer qui respectent l'écriture arabe de droite à gauche — le rapport qu'un directeur peut présenter tel quel."),
-            ("Cloudflare Pages", "L'hébergement gratuit de l'interface sur un réseau mondial — le reste tourne à la demande via le serveur et le tunnel sécurisé."),
-        ],
-        [
-            ("Next.js (React)", "Le framework avec lequel j'ai construit la plateforme : de la famille React utilisée par les plus grands sites du monde — il bâtit des interfaces rapides et découpe l'écran en composants faciles à développer et à maintenir."),
-            ("React", "Une façon de construire l'interface en petits composants indépendants — un bouton, une carte, un tableau — qui s'assemblent comme des Lego ; une erreur dans un composant ne casse pas toute la plateforme, et ajouter une fonctionnalité ne signifie pas tout reconstruire."),
-            ("Interface arabe RTL", "Une structure qui s'adapte automatiquement à l'écriture de droite à gauche : menus, tableaux et boutons pointent dans le bon sens — une plateforme qui pense en arabe nativement, pas en traduction."),
-            ("Connexion et sessions signées", "Les mots de passe sont chiffrés et les sessions sont signées, vérifiées par le serveur à chaque requête — votre compte n'appartient qu'à vous, même si quelqu'un tente d'usurper vos droits."),
-            ("Permissions à cinq niveaux", "Du propriétaire de la plateforme au citoyen : cinq rôles vérifiés par le serveur avant tout affichage — chaque utilisateur ne voit que ce qui le concerne, avec une séparation des rôles garantie."),
-            ("Journal d'audit", "Un journal de bord numérique qui consigne chaque opération sensible : qui a fait quoi et quand — la pierre angulaire de la confiance comptable devant l'assemblée générale et les autorités."),
-            ("La police Cairo", "Une police arabe open source de Google, dessinée pour les écrans : lisible à toutes les tailles, elle donne à la plateforme une identité arabe élégante et lisible."),
-            ("Cloudflare Pages", "L'hébergement mondial gratuit : la plateforme est distribuée sur un réseau mondial et s'ouvre rapidement depuis le Maroc et ailleurs, avec certificat de sécurité automatique."),
-        ],
-        [
-            ("HTML5, CSS3 et JavaScript", "Une construction sur mesure à partir de zéro dans le langage web de base : des interfaces rapides et légères, pensées pour un client qui navigue depuis son téléphone, dans un aéroport ou un hôtel."),
-            ("Moteur en neuf langues", "Un système de traduction qui parle au client dans sa langue — français, anglais, arabe, russe, espagnol, italien, néerlandais, allemand et japonais — car le client de Marrakech vient du monde entier."),
-            ("SEO multilingue (hreflang)", "Des balises qui indiquent à Google la version de chaque langue, si bien que chaque version se classe dans son pays : le client russe trouve la version russe, le client japonais la version japonaise — la base du marketing organique d'une agence touristique."),
-            ("Réservation via WhatsApp", "Le client réserve en un geste depuis l'application qu'il utilise déjà — sans formulaires ni nouveau compte ; le chemin le plus court entre l'envie et la réservation."),
-            ("Chat automatisé", "Il répond aux questions courantes — documents, prix, assurance — jour et nuit et transmet les cas particuliers à l'équipe ; un réceptionniste qui ne dort jamais."),
-            ("Polices multi-alphabets", "Une police latine moderne, une police arabe et une police japonaise : chaque langue apparaît dans son authenticité et non comme une traduction cosmétique — un détail qui gagne le respect du client."),
-            ("Contenu conseil", "Des guides pratiques sur l'assurance, les routes et les coûts des trajets répondent aux questions du client avant qu'il ne les pose — un marketing par le contenu qui construit la confiance au lieu de promettre."),
-            ("Cloudflare Pages", "Un hébergement mondial gratuit, une ouverture rapide depuis tous les pays et un certificat SSL automatique — toujours disponible quand le client décide de réserver."),
-        ],
+            '7',
+            'Projets numériques'
+        ]
     ],
+    'about_title': 'À propos de moi',
+    'about_sub': "Une connaissance numérique certifiée à l'international, sur une base solide de dix ans de terrain",
+    'about_p1': "Je suis Tarik Chouika, un professionnel marocain de Rabat qui a choisi de redessiner son parcours avec confiance vers le monde numérique. Mon socle de connaissances est documenté par 13 certifications de Google, HP LIFE, Huawei et d'institutions de formation nationales, couvrant l'intelligence artificielle, le marketing digital, les technologies web, le leadership et la communication professionnelle — une connaissance que je développe et j'applique chaque jour, pas des certificats accrochés au mur.",
+    'about_p2': "Ma différence : je n'apprends pas seulement, je construis. J'ai mis en pratique ce que j'ai acquis dans quatre projets numériques en ligne développés avec l'aide de modèles d'IA : un guide et une boutique de compléments naturels multilingues, une boutique e-commerce arabe complète, une plateforme de jeux traditionnels marocains avec des salles multijoueur en direct, et une plateforme RH construite autour du code du travail marocain — de l'idée au déploiement sur Cloudflare Pages.",
+    'about_p3': "Avant ce parcours numérique, j'ai passé plus de dix ans dans des terrains qui ne pardonnent pas la paresse : gestion et exploitation d'un café populaire avec une responsabilité complète des opérations, des stocks et du service, aux côtés d'expériences dans la construction et la sécurité. C'est là que mes compétences se sont vraiment forgées : service client, gestion de la pression, discipline et lecture des gens.",
+    'about_p4': "Aujourd'hui, j'offre ce mélange rare : une mentalité de terrain solide alliée à une connaissance numérique certifiée et vérifiable. Je cherche une opportunité de prouver que mes certificats ne sont pas du papier, et qu'une décennie au service du public forge un professionnel qui ne déçoit jamais. Prêt à commencer immédiatement.",
+    'fact_loc_l': 'Localisation',
+    'fact_email_l': 'E-mail',
+    'fact_status_l': 'Statut',
+    'fact_status_v': 'Disponible pour de nouvelles opportunités',
+    'exp_title': 'Expérience professionnelle',
+    'exp_sub': 'Une carrière diversifiée fondée sur la discipline et la responsabilité',
+    'jobs': [
+        {
+            'period': '2016 – 2018 · 2020 – 2025',
+            'title': 'Gérant de café et responsable des opérations',
+            'org': 'Secteur cafés et restaurants',
+            'bullets': [
+                'Gestion complète des opérations quotidiennes du café et organisation du flux de travail.',
+                'Préparation et service des boissons avec efficacité tout en garantissant une qualité de service irréprochable.',
+                'Gestion des stocks, organisation des achats et trésorerie quotidienne.',
+                'Résolution des problèmes imprévus et adaptation flexible à chaque profil de client pour garantir leur satisfaction.'
+            ]
+        },
+        {
+            'period': '2015 – 2016',
+            'title': 'Ouvrier assistant en construction et démolition',
+            'org': 'Chantiers de construction',
+            'bullets': [
+                'Contribution aux travaux de construction et soutien aux chantiers avec efficacité et discipline.',
+                'Respect des normes de sécurité au travail et capacité à prospérer dans des conditions physiques exigeantes.'
+            ]
+        },
+        {
+            'period': '2013 – 2014',
+            'title': 'Agent de sécurité',
+            'org': 'Services de sécurité et de gardiennage',
+            'bullets': [
+                'Sécurisation des installations et surveillance du périmètre de travail pour garantir la sûreté.',
+                'Gestion des situations avec fermeté, sagesse et vigilance constante pour prévenir les risques.'
+            ]
+        }
+    ],
+    'cert_title': 'Certificats et formations',
+    'cert_sub': '13 certifications dans 5 domaines, de Google, HP LIFE, Huawei et des institutions nationales marocaines',
+    'l_issuer': 'Délivré par',
+    'l_date': "Date d'obtention",
+    'l_cred': 'N° de certificat',
+    'l_view': 'Voir le certificat',
+    'l_details': 'Page du certificat',
+    'l_pj_details': 'Détails du projet',
+    'lb_close': 'Fermer',
+    'lb_prev': 'Certificat précédent',
+    'lb_next': 'Certificat suivant',
+    'lb_drive': 'Vérifier sur Google Drive',
+    'cp_home': 'Accueil',
+    'cp_certs': 'Certificats',
+    'cp_about': 'Contenu du certificat',
+    'cp_skills': 'Compétences acquises',
+    'cp_prospects': 'Perspectives et applications',
+    'cp_roles': 'Voies et rôles liés',
+    'cp_meta': 'Fiche du certificat',
+    'cp_verify': 'Vérifier ce certificat sur Google Drive',
+    'cp_view_img': "Voir l'image en pleine taille",
+    'cp_print': 'Imprimer cette page',
+    'cp_back': 'Tous les certificats',
+    'cp_prev': 'Certificat précédent',
+    'cp_next': 'Certificat suivant',
+    'cp_related': 'Certificats du même domaine',
+    'pp_home': 'Accueil',
+    'pp_projects': 'Projets',
+    'pp_about': 'À propos du projet',
+    'pp_tech': 'Technologies utilisées',
+    'pp_features': 'Fonctionnalités clés',
+    'pp_learned': "Ce que j'en ai appris",
+    'pp_visit': 'Visiter le site en ligne',
+    'pp_live': 'Publié et en ligne',
+    'pp_host': 'Hébergement',
+    'pp_domain': 'Adresse',
+    'pp_status': 'Statut',
+    'pp_built_label': 'Méthode de construction',
+    'pp_built': "Avec l'aide de modèles d'IA",
+    'pp_back': 'Tous les projets',
+    'pp_prev': 'Projet précédent',
+    'pp_next': 'Projet suivant',
+    'fields': {
+        'all': 'Tous',
+        'ai': 'Intelligence artificielle',
+        'biz': 'Compétences professionnelles',
+        'civic': 'Engagement citoyen',
+        'marketing': 'Marketing digital',
+        'web': 'Technologies web'
+    },
+    'issuers': {
+        'google_en': 'Google Digital Garage / Skillshop',
+        'google_ar': 'Maharat min Google — accrédité par The Open University et IAB Europe',
+        'huawei': 'Huawei ICT Academy',
+        'portal': 'Portail national de formation à distance des associations — Maroc',
+        'hp': 'HP LIFE — HP Foundation'
+    },
+    'certs': [
+        {
+            'title': 'Fondamentaux du marketing digital (anglais)',
+            'desc': 'Programme certifié de Google couvrant les bases du marketing digital : recherche, publicité en ligne, réseaux sociaux et analytique web.'
+        },
+        {
+            'title': 'Fondamentaux du marketing digital (arabe)',
+            'desc': "Certificat Maharat min Google accrédité par The Open University et IAB Europe, couvrant la stratégie digitale, l'e-mailing et le marketing social."
+        },
+        {
+            'title': "Introduction à l'intelligence artificielle",
+            'desc': "Formation de la Huawei ICT Academy introduisant les concepts fondamentaux de l'IA et ses applications dans les technologies de l'information et de la communication."
+        },
+        {
+            'title': 'Module : Démocratie participative',
+            'desc': "Formation via le portail national marocain d'e-learning des associations, couvrant les principes de la démocratie participative et de l'engagement citoyen."
+        },
+        {
+            'title': 'Module : Cadre juridique de création des associations',
+            'desc': 'Formation certifiée sur le droit des associations au Maroc et les procédures de création et de gestion légales des associations.'
+        },
+        {
+            'title': 'Module : Communication communautaire',
+            'desc': "Programme de formation axé sur les compétences de communication et d'organisation dans le travail associatif et les initiatives citoyennes."
+        },
+        {
+            'title': "L'IA pour les professionnels des affaires",
+            'desc': "Cours HP LIFE sur les outils d'IA en entreprise : outils autonomes ou intégrés, formulation efficace des requêtes et usage éthique."
+        },
+        {
+            'title': 'Leadership efficace',
+            'desc': "Cours HP LIFE sur les styles et stratégies de leadership, et le rôle de l'éthique dans une direction d'équipe réussie."
+        },
+        {
+            'title': "L'IA pour débutants",
+            'desc': "Introduction HP LIFE à l'IA : son impact sur le paysage technologique, l'importance des données et les considérations éthiques en entreprise."
+        },
+        {
+            'title': 'Communication professionnelle pour la croissance de carrière',
+            'desc': "Cours HP LIFE sur la construction d'un réseau professionnel, la marque personnelle et les outils numériques pour évoluer en toute confiance."
+        },
+        {
+            'title': 'Sites web efficaces',
+            'desc': "Cours HP LIFE sur les meilleures pratiques de conception de sites web d'entreprise, la compréhension du comportement des visiteurs et la mesure des performances."
+        },
+        {
+            'title': "L'e-mail au travail",
+            'desc': "Cours HP Life sur la rédaction d'e-mails professionnels efficaces et l'utilisation appropriée de l'e-mail dans différents scénarios de travail."
+        },
+        {
+            'title': "Planification stratégique à l'ère de l'IA",
+            'desc': "Cours HP LIFE sur la pensée stratégique et la prise de décision dans un monde des affaires piloté par l'IA, et l'évaluation des cadres de planification."
+        }
+    ],
+    'cert_pages': [
+        {
+            'overview': "Un programme certifié de Google Digital Garage couvrant l'intégralité des fondamentaux du marketing digital à travers plusieurs modules de formation en anglais : présence numérique de la marque, visibilité dans les moteurs de recherche, publicité payante, marketing par e-mail et réseaux sociaux, et enfin mesure des résultats par les données. Je l'ai obtenu en 2021 — ma première certification internationale sur le chemin du digital.",
+            'skills': [
+                'Construire une stratégie de marketing digital',
+                'Visibilité dans les moteurs de recherche (SEO)',
+                'Lancer des campagnes publicitaires digitales',
+                'Marketing par e-mail et réseaux sociaux',
+                'Mesurer la performance des campagnes avec les données',
+                'Rédiger un contenu digital efficace'
+            ],
+            'prospects': 'Une base solide pour tout rôle de promotion digitale : gestion de pages et de contenu, contribution à des campagnes petites et moyennes, ou lancement de canaux de croissance pour un commerce en ligne.',
+            'roles': [
+                'Assistant marketing digital',
+                'Gestion de contenu et de pages',
+                'Support e-commerce'
+            ]
+        },
+        {
+            'overview': "L'édition arabe accréditée du programme Maharat min Google, co-accréditée par The Open University et l'IAB Europe — un certificat de classe mondiale en arabe clair. Elle couvre la construction d'une stratégie digitale pratique, la mobilisation des publics via mobile, e-mail et réseaux sociaux, et les techniques de visibilité sur les moteurs de recherche, avec une attention particulière au contexte arabe local.",
+            'skills': [
+                'Planifier des campagnes digitales en arabe',
+                'Marketing mobile',
+                'Marketing de contenu',
+                'Mesurer le succès avec des KPI clairs',
+                'Comprendre le comportement du consommateur arabe en ligne',
+                'Publicité sur les réseaux sociaux'
+            ],
+            'prospects': 'Une qualification directe pour les rôles de contenu et de communication digitale dans les environnements arabes, et un pilier pratique pour toute entreprise ciblant un public arabe en ligne.',
+            'roles': [
+                'Responsable communication digitale',
+                'Créateur de contenu',
+                'Support e-commerce'
+            ]
+        },
+        {
+            'overview': "Une formation de la Huawei ICT Academy établissant une compréhension complète de l'intelligence artificielle : des concepts fondamentaux (apprentissage automatique et réseaux de neurones) aux étapes d'évolution du domaine et ses applications pratiques dans les technologies de l'information et de la communication et au-delà. Une certification récente (2026) ouvrant une fenêtre sur la technologie la plus influente de notre époque.",
+            'skills': [
+                "Concepts d'apprentissage automatique et de réseaux de neurones",
+                "Applications de l'IA dans les TIC",
+                "Suivre l'évolution des technologies d'IA",
+                'Lire un paysage technologique en mutation rapide',
+                "Relier l'IA à des solutions concrètes"
+            ],
+            'prospects': "La porte d'entrée officielle dans le monde de l'IA ; elle fournit le socle minimal pour suivre des formations plus approfondies et comprendre l'impact de la technologie sur tous les secteurs.",
+            'roles': [
+                'Stagiaire en technologie numérique',
+                "Utilisateur professionnel d'outils d'IA",
+                'Assistant projets numériques'
+            ]
+        },
+        {
+            'overview': 'Un module de formation via le portail national marocain de formation à distance des associations, sous la tutelle du ministère chargé des relations avec le Parlement. Il a couvert les principes et mécanismes de la démocratie participative : la participation citoyenne à la gestion des affaires publiques, les rôles de la société civile et les mécanismes constitutionnels qui font du citoyen un partenaire de la décision.',
+            'skills': [
+                'Principes de la démocratie participative',
+                'Mécanismes de participation citoyenne',
+                'Comprendre les rôles de la société civile',
+                'Le cadre constitutionnel de la participation',
+                'Culture des affaires publiques'
+            ],
+            'prospects': 'Une connaissance essentielle pour quiconque est actif dans le travail associatif ou aspire à participer à la vie civique et institutionnelle, et pour comprendre comment les décisions publiques se prennent au Maroc.',
+            'roles': [
+                'Travail associatif et société civile',
+                'Initiatives citoyennes',
+                'Appui à des projets locaux'
+            ]
+        },
+        {
+            'overview': "Un module certifié expliquant l'intégralité du cadre juridique des associations au Maroc : la fondation légale d'une association, les documents requis, les organes de gouvernance et leurs rôles, les droits et obligations, et une relation saine avec l'administration — de la préparation du dossier à la gestion juridique quotidienne de l'association.",
+            'skills': [
+                'Fonder une association au Maroc',
+                'Préparer des dossiers juridiques',
+                'Organes de gouvernance et leurs rôles',
+                'Droits et obligations juridiques',
+                'Gestion juridique saine des associations'
+            ],
+            'prospects': "Permet concrètement de participer à la fondation et à la gestion d'associations en toute légalité — une compétence recherchée dans le travail associatif, les initiatives citoyennes et les partenariats institutionnels.",
+            'roles': [
+                "Fondateur ou membre du bureau d'une association",
+                'Support administratif et juridique',
+                'Initiatives communautaires'
+            ]
+        },
+        {
+            'overview': "Un module de formation centré sur le cœur du travail associatif réussi : la communication. Il couvre la communication interne entre les membres de l'association, la communication externe avec le public, les partenaires et les institutions, et l'organisation de messages et de campagnes de terrain qui amplifient l'impact de l'association et élargissent sa base de soutien.",
+            'skills': [
+                'Planifier la communication associative',
+                'Communiquer avec le public et les partenaires',
+                'Organiser des campagnes de sensibilisation',
+                'Construire des messages clairs et percutants',
+                "Organiser le travail d'équipe"
+            ],
+            'prospects': 'Renforce la préparation aux rôles de coordination et de communication dans tout effort collectif — au sein des associations et au-delà — où la communication reste la compétence la plus demandée.',
+            'roles': [
+                'Coordinateur de communication',
+                "Membre d'une équipe d'organisation",
+                'Facilitateur communautaire'
+            ]
+        },
+        {
+            'overview': "Un cours HP LIFE pour les professionnels sur le déploiement de l'intelligence artificielle en entreprise : distinguer les outils autonomes des outils intégrés, rédiger des prompts efficaces qui tirent le meilleur parti des résultats, et l'usage éthique et responsable de la technologie au service de la croissance professionnelle.",
+            'skills': [
+                'Rédaction professionnelle de prompts',
+                "Choisir le bon outil d'IA",
+                "Intégrer l'IA dans le flux de travail quotidien",
+                'Usage éthique de la technologie',
+                "Évaluer les sorties de l'IA"
+            ],
+            'prospects': 'Une compétence quotidienne immédiate : accélérer les tâches rédactionnelles et analytiques et élever la qualité et la productivité du travail — dans tout poste touchant au texte, aux données ou au service client.',
+            'roles': [
+                "Utilisateur professionnel d'outils d'IA",
+                'Support aux opérations numériques',
+                'Amélioration de la productivité'
+            ]
+        },
+        {
+            'overview': "Un cours HP LIFE sur ce qui rend le leadership réellement réussi : les différents styles de leadership et leur usage approprié, les stratégies d'influence positive sur une équipe, et la construction d'une culture de la performance — avec le rôle pivot que joue l'éthique dans le vrai leadership.",
+            'skills': [
+                'Styles de leadership et bon choix',
+                'Diriger des équipes avec confiance',
+                'Motivation et culture du travail',
+                'Décision éthique en management',
+                "Évaluation de la performance d'équipe"
+            ],
+            'prospects': "Mon expérience de terrain dans la gestion d'un café avec une équipe fait de ce certificat un prolongement naturel de mon parcours — une préparation directe à diriger des équipes plus grandes dans les services ou les projets numériques.",
+            'roles': [
+                "Chef d'équipe",
+                'Superviseur de site/poste',
+                'Coordinateur de projets'
+            ]
+        },
+        {
+            'overview': "L'introduction de HP LIFE à l'intelligence artificielle à partir de zéro : ce qu'est l'IA et comment elle fonctionne, pourquoi les données en sont le carburant, comment elle a transformé tout le paysage des affaires, et les considérations éthiques à comprendre avant de l'utiliser.",
+            'skills': [
+                "Concepts fondamentaux de l'IA",
+                'Comprendre le rôle des données',
+                "Suivre l'impact de la technologie sur les affaires",
+                'Conscience des enjeux éthiques',
+                "Engagement critique avec les outils d'IA"
+            ],
+            'prospects': 'Une base solide pour quiconque débute en technologie sans bagage de programmation — la preuve pratique que toute personne déterminée peut comprendre et adopter les outils du futur.',
+            'roles': [
+                "Point de départ d'un parcours numérique",
+                "Usage conscient des outils d'IA",
+                'Développement personnel continu'
+            ]
+        },
+        {
+            'overview': "Un cours HP LIFE sur le facteur le plus important de la croissance de carrière : le réseau. Il couvre les stratégies de construction d'un véritable réseau professionnel, la création d'une marque personnelle et l'usage intelligent des outils numériques — des réseaux professionnels à l'e-mail — pour ouvrir les portes de nouvelles opportunités.",
+            'skills': [
+                'Construire un réseau professionnel',
+                'Marque personnelle',
+                'Communication professionnelle digitale',
+                'Gérer son image professionnelle',
+                'Transformer les opportunités en résultats'
+            ],
+            'prospects': "Fait passer toute carrière de l'attente d'opportunités à leur création ; une fondation claire pour qui cherche un emploi, des partenariats ou une reconversion vers le secteur numérique.",
+            'roles': [
+                'Développement de carrière',
+                'Présence professionnelle digitale',
+                'Réseautage professionnel'
+            ]
+        },
+        {
+            'overview': "Un cours HP LIFE expliquant ce qui fait le succès d'un site web d'entreprise : les meilleures pratiques de conception orientée client, la compréhension du comportement réel des visiteurs et la mesure de la performance du site avec de vraies métriques plutôt qu'au doigt mouillé.",
+            'skills': [
+                'Principes de conception web efficace',
+                'Comprendre le comportement des visiteurs',
+                'Métriques de performance et de conversion',
+                "Améliorer l'expérience utilisateur",
+                'Lire les analyses de site'
+            ],
+            'prospects': "Je l'ai appliquée directement dans mes quatre projets publiés ; c'est le critère que j'utilise pour évaluer tout site web — le mien comme celui des autres — avant de l'adopter ou de l'améliorer.",
+            'roles': [
+                'Évaluation et amélioration de sites',
+                'Support de présence digitale pour entreprises',
+                'Projets web indépendants'
+            ]
+        },
+        {
+            'overview': "Un cours HP LIFE sur l'outil le plus utilisé et le moins maîtrisé au travail : l'e-mail. De la structure d'un message professionnel efficace au ton juste pour chaque scénario — demandes, relances, clarifications, négociations — en passant par l'usage approprié de l'e-mail dans les contextes professionnels.",
+            'skills': [
+                'Rédiger des e-mails professionnels efficaces',
+                'Structure et contenu du message',
+                'Le bon ton pour chaque situation',
+                'Relances professionnelles',
+                'Gestion intelligente de la boîte de réception'
+            ],
+            'prospects': "Un impact direct sur l'impression professionnelle quotidienne : un e-mail clair et respectueux signifie des réponses plus rapides et plus d'opportunités — une compétence que tout employeur ou partenaire remarque immédiatement.",
+            'roles': [
+                "Communication d'entreprise",
+                'Service client par e-mail',
+                'Support administratif'
+            ]
+        },
+        {
+            'overview': "Ma certification la plus récente : un cours HP LIFE sur la pensée stratégique dans un monde piloté par l'IA. Il couvre les composants essentiels de tout plan réussi, l'évaluation des cadres de planification pratiques et le choix du plus adapté, et l'acquisition de compétences pour utiliser les outils d'IA au service de la planification et de meilleures décisions.",
+            'skills': [
+                'Pensée stratégique systématique',
+                "Composants d'un plan stratégique",
+                'Évaluer les cadres de planification',
+                'Prise de décision fondée sur les données',
+                "Utiliser l'IA dans la planification"
+            ],
+            'prospects': 'Elle relie tout mon parcours : mes certifications en IA, marketing et leadership convergent dans la capacité à dresser un plan clair et à le suivre — la compétence de ceux qui veulent diriger, pas être dirigés.',
+            'roles': [
+                'Planification et coordination de projets',
+                'Appui à la décision',
+                'Entrepreneuriat'
+            ]
+        }
+    ],
+    'drive_title': 'Dossier complet des certificats',
+    'drive_text': 'Le dossier Google Drive original contient les 13 certificats dans leur format intégral, disponibles à tout moment pour vérification.',
+    'drive_cta': 'Ouvrir sur Google Drive',
+    'pj_title': 'Mes projets numériques',
+    'pj_sub': "Sept projets en ligne que j'ai réalisés dans le cadre de mon parcours d'apprentissage numérique",
+    'pj_note': "J'ai développé ces projets avec l'aide de modèles d'IA dans le cadre de l'auto-apprentissage et de l'amélioration de mes compétences numériques — tous sont publiés et fonctionnent sur Cloudflare Pages.",
+    'pj_visit': 'Visiter le projet',
+    'projects': [
+        {
+            'name': 'NATSUP',
+            'tag': 'E-commerce — Compléments naturels',
+            'desc': "Guide et boutique complets de compléments naturels offrant informations produits, prix et liens d'achat officiels en plusieurs langues."
+        },
+        {
+            'name': 'SYDA',
+            'tag': 'Boutique e-commerce généraliste',
+            'desc': "Boutique e-commerce arabe complète proposant des milliers de produits pour la maison, la beauté, l'électronique et plus, avec panier et suivi des commandes."
+        },
+        {
+            'name': 'DTSG',
+            'tag': 'Plateforme de jeux marocains',
+            'desc': 'Plateforme de jeux numérique dédiée aux jeux traditionnels marocains comme la Ronda et le Rami, avec mode multijoueur, tournois et classements.'
+        },
+        {
+            'name': 'HRMP',
+            'tag': 'Plateforme RH',
+            'desc': 'Plateforme marocaine de gestion des ressources humaines couvrant le recrutement, la planification, la présence et la paie conformément au code du travail marocain.'
+        },
+        {
+            'name': 'MAMP',
+            'tag': 'Plateforme de gestion des associations marocaines',
+            'desc': 'La première plateforme marocaine complète de numérisation du travail associatif : adhésions, comptabilité, dons, événements et documents officiels — conformément à la loi 75.00 et au dahir de 1958.'
+        },
+        {
+            'name': 'ISYACAR',
+            'tag': "Amélioration du site d'une agence de location de voitures",
+            'desc': "Version reconstruite et améliorée du site de l'agence de location de voitures de mon ami à Marrakech : neuf langues, une flotte de l'économique au luxe, et réservation directe via WhatsApp."
+        },
+        {
+            'name': 'PHMP',
+            'tag': 'Plateforme de gestion de pharmacie',
+            'desc': 'Une plateforme professionnelle de gestion de pharmacies : caisse, stock, ordonnances et rapports, plus une interface client pour commander ses médicaments avec livraison.'
+        }
+    ],
+    'project_pages': [
+        {
+            'about': "NATSUP est un guide et une boutique digitale spécialisés dans les compléments naturels, conçus pour les passionnés de santé et de fitness : il propose des avis clairs et simplifiés sur les compléments — ingrédients, bienfaits et prix — avec des liens d'achat officiels et fiables pour chaque produit. L'interface est multilingue et couvre des produits mondialement connus, avec un objectif : rendre la décision d'achat informée, sûre et réfléchie.",
+            'tech': [
+                'HTML5',
+                'CSS3',
+                'JavaScript',
+                'Moteur de traduction multilingue',
+                'Couche de données structurée (JSON)',
+                'Optimisation SEO',
+                'Cloudflare Pages'
+            ],
+            'features': [
+                'Catalogue de produits avec images, ingrédients et prix',
+                "Liens d'achat officiels et fiables",
+                'Interface multilingue',
+                'Contenu éducatif organisé',
+                'Design adapté au mobile'
+            ],
+            'learned': "Ce projet m'a appris comment se construit un système de contenu vaste et organisé — données, traduction et présentation — comment gérer proprement les liens d'achat et de suivi, et comment la clarté et l'honnêteté construisent la confiance des visiteurs."
+        },
+        {
+            'about': "SYDA est une boutique e-commerce arabe complète présentant des milliers de produits : maison, beauté, électronique, automobile et plus. Elle offre une expérience d'achat entièrement en arabe : navigation par catégories, panier interactif, suivi des commandes et chat de service client en direct — avec l'esprit d'un commerce marocain moderne et rapide.",
+            'tech': [
+                'HTML5',
+                'CSS3',
+                'JavaScript',
+                "Panier d'achat interactif",
+                'Chat client en direct',
+                'Navigation par catégories',
+                'Cloudflare Pages'
+            ],
+            'features': [
+                'Des milliers de produits dans des catégories claires',
+                'Panier et suivi de commandes',
+                'Chat en direct avec les clients',
+                'Interface entièrement en arabe',
+                'Expérience mobile rapide'
+            ],
+            'learned': "Il a affûté ma pensée commerciale : comment organiser de grands catalogues de produits, comment concevoir un parcours client complet de la navigation à la commande, et comment aborder le service client en ligne avec la mentalité du café — le client d'abord."
+        },
+        {
+            'about': "La plateforme des jeux traditionnels marocains numériques (DTSG) est mon projet le plus ambitieux : une plateforme qui rassemble les jeux traditionnels du Maroc — Ronda, Rami, Table, Damma, Partchi et d'autres — et les transforme en une expérience numérique moderne avec des salles multijoueur, un chat en direct, des tournois et des classements, plus des effets sonores et visuels soignés.",
+            'tech': [
+                'HTML5',
+                'CSS3',
+                'JavaScript natif (Vanilla)',
+                'Mise en réseau en direct via WebSocket',
+                "Système de sessions et d'authentification",
+                'Effets sonores et visuels',
+                'Cloudflare Pages'
+            ],
+            'features': [
+                'Plusieurs jeux traditionnels marocains',
+                'Multijoueur en réseau en temps réel',
+                'Salles de jeu et chat en direct',
+                'Tournois et classements',
+                'Effets sonores dans le jeu'
+            ],
+            'learned': "La plus grande leçon technique de mon parcours : l'architecture d'un grand projet avec des modules de code propres, la connectivité des joueurs en temps réel, la gestion des états et des sessions, et pourquoi la division méthodique du code garde un projet maintenable."
+        },
+        {
+            'about': 'HRMP est une plateforme marocaine de gestion des ressources humaines conçue pour organiser tout le cycle de travail : recrutement, planification des postes, suivi des présences et des absences, et calcul des salaires conformément au code du travail marocain. Le projet combine une interface utilisateur pratique avec des services backend fonctionnant via un tunnel sécurisé, offrant une solution administrative réaliste.',
+            'tech': [
+                'HTML5',
+                'CSS3',
+                'JavaScript',
+                'Services backend via tunnel sécurisé',
+                'Gestion des données des employés',
+                'Calcul des salaires et des postes',
+                'Cloudflare Pages'
+            ],
+            'features': [
+                'Gestion du recrutement et des dossiers employés',
+                'Planification des postes et présences',
+                'Paie conforme au code du travail',
+                'Rapports administratifs organisés',
+                'Interface pratique en arabe'
+            ],
+            'learned': "Il m'a rapproché du monde réel des affaires : comprendre des besoins administratifs complexes — postes, présences, paie — et les traduire en un système utilisable, et pourquoi toute solution numérique doit respecter la loi locale (le code du travail marocain)."
+        },
+        {
+            'about': "MAMP est la première plateforme marocaine complète de numérisation du travail associatif, de la fondation d'une association à son rapport annuel : gestion des adhésions avec reçus numérotés, comptabilité catégorisée avec budget prévisionnel et double validation, enregistrement des dons en numéraire et en nature, programmation des événements avec inscription publique, et archives des documents officiels — avec en plus une carte d'identité numérique pour chaque association et un assistant associatif intelligent qui répond à partir d'une base de connaissances officielle vérifiée. Chaque module s'appuie sur une référence juridique marocaine réelle : la loi 75.00, le dahir du 15 novembre 1958 et la loi 09.08 sur la protection des données personnelles.",
+            'tech': [
+                'Next.js (React)',
+                'Interface arabe RTL complète',
+                'Système de connexion à sessions signées',
+                'Permissions sur cinq niveaux',
+                "Journal d'audit des opérations sensibles",
+                'Police arabe Cairo',
+                'Cloudflare Pages'
+            ],
+            'features': [
+                'Gestion des adhésions avec reçus numérotés et rappels de renouvellement',
+                'Comptabilité catégorisée avec budget prévisionnel, double validation et rapport annuel',
+                'Dons en numéraire et en nature avec reçus officiels et suivi de conformité',
+                'Événements et activités avec inscription publique',
+                'Archives de documents officiels avec classification et niveaux de sensibilité'
+            ],
+            'learned': "Ce projet m'a appris que la programmation est un outil, pas une fin : la vraie valeur ne venait pas des écrans mais de la compréhension du droit marocain des associations et de la traduction des besoins réels des acteurs associatifs en modules simples utilisables par des personnes sans bagage technique — et que la protection des données personnelles (conformité CNDP) n'est pas un détail technique mais la pierre angulaire de la confiance dans toute plateforme qui collecte les données des gens."
+        },
+        {
+            'about': "ISYACAR est une refonte et une amélioration complètes du site de l'agence de location de voitures de mon ami à Marrakech (l'agence : isyacar.com). J'ai préservé l'identité de l'agence — sa flotte, ses adresses et ses numéros de téléphone — et reconstruit l'expérience autour d'elle : une flotte classée des citadines (à partir de 300 MAD/jour) aux SUV et aux véhicules de luxe, neuf langues pour la clientèle internationale, livraison gratuite à l'aéroport de Marrakech et aux hôtels en 15 minutes, assistance 24h/24 et 7j/7, annulation gratuite jusqu'à 48 heures avant, et des guides pratiques sur l'assurance et les routes — avec réservation directe via WhatsApp, sans formulaires.",
+            'tech': [
+                'HTML5',
+                'CSS3',
+                'JavaScript',
+                'Moteur de traduction en neuf langues',
+                'SEO multilingue (hreflang)',
+                'Chat automatisé pour les questions courantes',
+                'Cloudflare Pages'
+            ],
+            'features': [
+                'Flotte classée : citadines, SUV et luxe à prix clairs',
+                'Neuf langues qui parlent au client dans la sienne',
+                'Réservation directe via WhatsApp sans formulaires',
+                "Livraison gratuite à l'aéroport et à l'hôtel en 15 minutes",
+                'Guides pratiques : assurance, routes et coûts des trajets'
+            ],
+            'learned': "Le premier projet construit pour un vrai client — un ami — ce qui a relevé le niveau d'exigence : j'ai appris que le développement est un service qui se mesure à son résultat commercial (combien de visiteurs ont réservé), pas au nombre de technologies ; que des fonctionnalités comme la réservation WhatsApp et le prix affiché viennent de la compréhension du vrai client de la location de voitures ; et que la confiance d'un ami vaut plus que toute démonstration technique."
+        },
+        {
+            'about': "PHMP est une plateforme de gestion de pharmacies à double face. Le côté public s'adresse au client : choisir sa pharmacie parmi celles disponibles dans sa zone, parcourir les médicaments et les commander avec livraison — sans formulaires compliqués. Le côté administration s'adresse au propriétaire et aux pharmaciens : une caisse rapide par lecture de codes-barres, le suivi du stock, l'enregistrement des ordonnances, des rapports et tableaux de bord graphiques des ventes et opérations, la gestion de plusieurs pharmacies avec une matrice de permissions fine, des journaux d'audit pour chaque action sensible, et les références juridiques marocaines officielles du secteur pharmaceutique intégrées dans la plateforme, avec accès aux textes originaux.",
+            'tech': [
+                'React (interface interactive)',
+                'Vite (construction rapide)',
+                'Tableaux de bord graphiques',
+                'Base de données des médicaments',
+                'Lecture de codes-barres',
+                'Services back-end (Cloudflare Workers)',
+                'Sessions de connexion signées',
+                'Cloudflare Pages'
+            ],
+            'features': [
+                'Interface client pour choisir sa pharmacie et commander avec livraison',
+                'Caisse rapide par lecture de codes-barres',
+                'Suivi du stock et enregistrement des ordonnances',
+                'Rapports et tableaux de bord graphiques des ventes et opérations',
+                "Gestion multi-pharmacies, permissions et journaux d'audit",
+                'Références juridiques marocaines du secteur pharmaceutique intégrées'
+            ],
+            'learned': "Ce projet m'a appris qu'un logiciel dans la santé porte une responsabilité doublée : une erreur sur le prix ou l'interaction d'un médicament n'est pas une erreur de boutique ordinaire. J'ai appris à construire une plateforme servant deux publics très différents — un client qui veut commander sans effort et un pharmacien qui exige vitesse et précision — et à les équilibrer dans un seul système ; et que la conformité aux règlements marocains officiels n'est pas une contrainte mais le fondement même de la confiance dans toute plateforme qui touche à la santé des gens."
+        }
+    ],
+    'sk_title': 'Compétences',
+    'sk_sub': 'Des certifications au terrain — un mélange documenté et éprouvé',
+    'cats': [
+        {
+            'icon': 'code',
+            'title': 'Numérique & IA',
+            'items': [
+                "Outils d'IA",
+                'Rédaction de prompts',
+                "Planification stratégique à l'ère de l'IA",
+                'Marketing digital',
+                'Analyse web',
+                'E-mail professionnel'
+            ]
+        },
+        {
+            'icon': 'coffee',
+            'title': 'Opérations & Service',
+            'items': [
+                'Gestion de café',
+                'Préparation des boissons',
+                'Service client',
+                'Gestion des stocks',
+                'Organisation et planification'
+            ]
+        },
+        {
+            'icon': 'shield',
+            'title': 'Discipline de terrain',
+            'items': [
+                'Discipline',
+                'Endurance',
+                'Travail sous pression',
+                'Résolution de problèmes',
+                'Sécurité et sûreté'
+            ]
+        },
+        {
+            'icon': 'globe',
+            'title': 'Leadership & Communication',
+            'items': [
+                'Leadership efficace',
+                'Communication professionnelle',
+                'Arabe (langue maternelle)',
+                "Travail d'équipe",
+                'Communication associative'
+            ]
+        }
+    ],
+    'edu_title': 'Éducation',
+    'edu_sub': "Un socle académique doublé d'un auto-apprentissage incessant",
+    'edu_level': 'Deuxième année du Baccalauréat (sans le diplôme final)',
+    'edu_note': "Bien que je n'aie pas obtenu mon Baccalauréat, j'ai continué à développer mes compétences par l'auto-apprentissage et des cours numériques certifiés — un reflet de ma volonté d'apprendre et d'évoluer en permanence.",
+    'gal_title': 'Moments de ma vie',
+    'gal_sub': 'Aperçus de ma vie au-delà du travail',
+    'gal': [
+        'Moments en famille',
+        'Avec mes proches',
+        'Mon fidèle compagnon',
+        'Mon amour de la nature'
+    ],
+    'ct_title': 'Contactez-moi',
+    'ct_sub': 'Vous cherchez un professionnel dévoué et adaptable ? Parlons-en',
+    'avail': 'Disponible pour de nouvelles opportunités',
+    'email_cta': 'Écrivez-moi',
+    'copy': "Copier l'adresse e-mail",
+    'copied': 'Copié !',
+    'ct_note': 'Je réponds généralement sous 24 heures.',
+    'footer_rights': 'Tous droits réservés.',
+    'footer_built': "Conçu et développé avec l'aide de modèles d'IA, hébergé sur Cloudflare Pages.",
+    'sources': {
+        'medium': 'Medium — critique indépendante publiée',
+        'reddit': 'Reddit — discussion publique dans r/marketing',
+        'linkedin_article': 'LinkedIn — article publié publiquement',
+        'appstore': "App Store — avis officiels de l'appli HP LIFE"
+    },
+    'links': {
+        'credential': 'Vérification officielle du certificat',
+        'course': 'Page officielle du cours',
+        'grow': "Grow with Google — plateforme d'apprentissage de Google",
+        'platform': 'Plateforme officielle HP LIFE',
+        'academy': 'Académie Huawei ICT officielle',
+        'talent': 'Plateforme Huawei Talent',
+        'maroc': 'Portail officiel du Royaume du Maroc',
+        'spub': 'Portail des services publics — Maroc',
+        'trusted': "Plateformes d'apprentissage de confiance"
+    },
+    'cp_reviews': 'Avis réels publiés publiquement',
+    'cp_reviews_note': "Citations littérales d'utilisateurs réels, publiées ouvertement sur les sources mentionnées et affichées ici dans leur langue d'origine.",
+    'cp_view_source': 'Voir la source',
+    'cp_links': 'Liens officiels & plateformes de confiance',
+    'pp_value': 'Valeur ajoutée',
+    'pp_effort': "L'effort investi dans la construction",
+    'pp_ops': "Technologies de construction et d'exploitation",
+    'pp_tech_build': 'Pour la construction',
+    'pp_tech_ops': "Pour l'exploitation et la continuité",
+    'pp_costs': 'Coût estimatif',
+    'cost_build': 'Créer un projet similaire',
+    'cost_ops': 'Gestion et exploitation',
+    'cost_self': "Parcours autonome (ce que j'ai réellement fait)",
+    'cost_market': 'Via un freelance/agence au Maroc (estimation)',
+    'cost_now': 'Situation actuelle',
+    'cost_scale': 'En cas de montée en charge (estimation)',
+    'cost_note': "Estimations indicatives en dirham marocain (MAD) ; le coût réel varie selon l'ampleur, les exigences précises et le marché des services. Mes projets actuels sont construits et fonctionnent entièrement sur des offres gratuites.",
+    'ct_phone': 'Téléphone',
+    'ct_whatsapp': 'WhatsApp',
+    'ct_linkedin': 'LinkedIn',
+    'ct_facebook': 'Facebook',
+    'ct_telegram': 'Bot Telegram',
+    'ct_call': 'Appeler maintenant',
+    'ct_wa_chat': 'Discuter sur WhatsApp',
+    'hd_book': 'Consultation ou rendez-vous',
+    'ft_tagline': "Des connaissances numériques certifiées — 13 certifications internationales — sur dix ans d'expérience de terrain.",
+    'ft_quick': 'Liens rapides',
+    'ft_contact': 'Canaux de contact',
+    'ft_gov': 'Sites gouvernementaux marocains officiels',
+    'ft_gov_note': 'Portails officiels des administrations et services numériques du Maroc',
+    'gov': {
+        'maroc': 'Portail national officiel',
+        'spub': 'Portail des services publics',
+        'tax': 'Direction Générale des Impôts (DGI)',
+        'cnss': 'Caisse Nationale de Sécurité Sociale (CNSS)',
+        'anapec': "Agence Nationale de Promotion de l'Emploi (ANAPEC)",
+        'education': "Ministère de l'Éducation Nationale",
+        'sante': 'Ministère de la Santé et de la Protection Sociale',
+        'interieur': "Ministère de l'Intérieur"
+    },
+    'project_v4': [
+        {
+            'value_intro': "NATSUP n'est pas qu'un site de produits : c'est un outil d'aide à la décision avant l'achat :",
+            'values': [
+                (
+                    "Des informations claires avant d'acheter",
+                    'Des avis simplifiés sur les compléments : ingrédients, bienfaits et prix au même endroit, sans confusion.',
+                ),
+                (
+                    'Six langues, une seule interface',
+                    'Contenu disponible en anglais, arabe, français, espagnol, italien et allemand — une portée réellement mondiale.',
+                ),
+                (
+                    "Liens d'achat officiels",
+                    'Chaque produit renvoie vers une source officielle fiable, protégeant le visiteur des liens douteux.',
+                ),
+                (
+                    'Une structure pensée pour grandir',
+                    'Un catalogue alimenté par des données JSON structurées, extensible à des centaines de produits sans reconstruction.',
+                )
+            ],
+            'effort': "Le projet a été construit par étapes : organisation et traduction des données produits en six langues, construction du moteur de traduction, conception d'une interface adaptée au mobile, puis optimisation pour les moteurs de recherche. Chaque page a été revue sur le fond et la traduction avant publication, et le travail s'est étalé sur des semaines parallèlement à mon apprentissage quotidien.",
+            'effort_stats': [
+                (
+                    "Langues d'interface",
+                    '6',
+                ),
+                (
+                    'Base de construction',
+                    'Données JSON structurées',
+                ),
+                (
+                    'Optimisation',
+                    'SEO complet',
+                )
+            ],
+            'ops': [
+                'Cloudflare Pages (hébergement gratuit)',
+                'CDN mondial',
+                'SSL automatique',
+                'Déploiement via Wrangler',
+                'Domaine pages.dev gratuit'
+            ],
+            'cost_self': '0 MAD — hébergement et sous-domaine gratuits ; le véritable investissement a été mon temps et mon apprentissage.',
+            'cost_market': 'Environ 4 000 – 12 000 MAD pour un site catalogue multilingue de cette ampleur.',
+            'cost_now': "0 MAD par mois — fonctionne sur l'offre gratuite de Cloudflare Pages.",
+            'cost_scale': 'Domaine personnalisé : environ 100 – 150 MAD/an, plus des services payants en option (environ 50 MAD/mois).'
+        },
+        {
+            'value_intro': "Syda marie l'expérience d'une boutique moderne et l'esprit du souk arabe :",
+            'values': [
+                (
+                    'Un catalogue immense et organisé',
+                    'Des milliers de produits répartis en sections claires, accessibles en quelques clics.',
+                ),
+                (
+                    "Un parcours d'achat complet",
+                    "De la navigation au panier jusqu'à la commande — une interface 100 % arabe pensée d'abord pour le mobile.",
+                ),
+                (
+                    'Un service client digital',
+                    'Chat en direct et assistant intelligent qui accueillent le client comme un hôte dans une vraie boutique.',
+                ),
+                (
+                    'Des politiques qui inspirent confiance',
+                    'Paiement à la livraison et retours sous 15 jours — les garanties qui créent la fidélité.',
+                )
+            ],
+            'effort': "Le plus grand défi a été d'organiser un catalogue de milliers de produits en sections et pages logiques, de construire un panier fluide sur mobile, puis d'ajouter la couche de service client par chat. La gestion d'un café m'a appris qu'un bon design se comprend avant d'être expliqué — c'était mon critère pour chaque écran conçu.",
+            'effort_stats': [
+                (
+                    'Produits listés',
+                    '3 029+',
+                ),
+                (
+                    "Langue de l'interface",
+                    'Arabe',
+                ),
+                (
+                    'Priorité de conception',
+                    "Mobile d'abord",
+                )
+            ],
+            'ops': [
+                'Cloudflare Pages',
+                'CDN mondial + SSL automatique',
+                'Données produits structurées',
+                'Chat service client',
+                'Déploiements continus via Wrangler'
+            ],
+            'cost_self': '0 MAD — construit entièrement sur une stack gratuite.',
+            'cost_market': 'Environ 8 000 – 25 000 MAD pour une boutique en ligne arabe avec ces fonctionnalités.',
+            'cost_now': "0 MAD par mois sur l'offre gratuite.",
+            'cost_scale': 'Domaine personnalisé (100 – 150 MAD/an) et outils de paiement/stock avancés au fur et à mesure.'
+        },
+        {
+            'value_intro': 'DTSG préserve un patrimoine vivant et le transmet à la génération numérique :',
+            'values': [
+                (
+                    'Un patrimoine marocain en version numérique',
+                    "Ronda, Rami, Dama et d'autres jeux qui rassemblent les familles — interface moderne et effets sonores.",
+                ),
+                (
+                    'Multijoueur en direct',
+                    'Salles de jeu et chat en direct via une connexion temps réel — comme les vraies parties, mais en ligne.',
+                ),
+                (
+                    'Un système de motivation complet',
+                    'Tournois, classement et monnaie de jeu qui donnent aux parties un sens compétitif.',
+                ),
+                (
+                    'Une vraie ingénierie logicielle',
+                    '78 modules de code organisés avec sessions et authentification — une structure de niveau professionnel.',
+                )
+            ],
+            'effort': "Mon projet le plus technique : 78 modules de code, connexions en direct entre joueurs via WebSocket, système de sessions et d'authentification, effets sonores et visuels, tournois et classement. Chaque jeu a été un exercice d'ingénierie à part entière — règles, IA, interface — avant d'être assemblé en une seule plateforme.",
+            'effort_stats': [
+                (
+                    'Modules de code',
+                    '78',
+                ),
+                (
+                    'Connectivité',
+                    'Temps réel via WebSocket',
+                ),
+                (
+                    'Plateformes',
+                    'Web + APK Android',
+                )
+            ],
+            'ops': [
+                'Cloudflare Pages pour le front',
+                'Pont WebSocket pour le multijoueur',
+                'Sessions et authentification (2FA)',
+                'Effets sonores et graphismes Canvas',
+                'Application Android (APK)'
+            ],
+            'cost_self': "0 MAD en numéraire ; le véritable investissement : des mois d'apprentissage et de construction continus.",
+            'cost_market': 'Environ 25 000 – 80 000 MAD pour une plateforme de jeux multijoueur en direct de cette ampleur.',
+            'cost_now': "0 MAD/mois pour le front sur l'offre gratuite.",
+            'cost_scale': "Services WebSocket dédiés selon la croissance des joueurs : environ 100 – 400 MAD/mois selon l'échelle."
+        },
+        {
+            'value_intro': 'HRMP traduit les besoins réels du terrain marocain en un outil administratif professionnel :',
+            'values': [
+                (
+                    'Conçu pour les secteurs réels du Maroc',
+                    "Sécurité, nettoyage, jardinage, BTP et artisanat — des secteurs qui ont besoin d'une vraie organisation, pas de modèles importés.",
+                ),
+                (
+                    'Du recrutement à la paie',
+                    'Recrutement, planification des rotations, présence géolocalisée anti-fraude et paie calculée au centime.',
+                ),
+                (
+                    'Conforme au droit marocain',
+                    'Cotisations CNSS, AMO et IR, avec génération des fichiers officiels Damancom et SIMPL-IR.',
+                ),
+                (
+                    'Isolation sécurisée des sociétés',
+                    "Chaque société dans son espace isolé, avec rôles définis et journal d'audit complet.",
+                )
+            ],
+            'effort': 'Mon projet le plus profond côté administratif et juridique : comprendre le Code du travail marocain et les besoins des PME, puis construire un moteur de paie respectant les retenues officielles, un système de présence géolocalisé résistant à la fraude et des rapports en quatre langues. Chaque fonctionnalité fut une leçon : transformer un vrai besoin administratif en logiciel.',
+            'effort_stats': [
+                (
+                    'Moteur de paie',
+                    'Code du travail marocain',
+                ),
+                (
+                    'Langues des rapports',
+                    '4',
+                ),
+                (
+                    'Déploiement',
+                    'Cloud ou serveur local',
+                )
+            ],
+            'ops': [
+                'Front sur Cloudflare Pages',
+                'Services backend via un tunnel sécurisé',
+                'SQLite, évolutive vers PostgreSQL',
+                'Rapports PDF/DOCX avec support RTL',
+                'Application Android (APK)'
+            ],
+            'cost_self': '0 MAD pour le front ; le backend tourne à la demande via un tunnel sécurisé.',
+            'cost_market': 'Environ 30 000 – 100 000 MAD pour une plateforme RH sur mesure avec cette profondeur juridique.',
+            'cost_now': '0 MAD/mois pour le front ; le backend est lancé à la demande.',
+            'cost_scale': "Hébergement backend permanent et tunnel sécurisé : environ 80 – 300 MAD/mois selon le nombre de sociétés et d'utilisateurs."
+        },
+        {
+            'value_intro': 'MAMP numérise le travail associatif marocain avec des fonctionnalités ancrées dans la réalité juridique et administrative :',
+            'values': [
+                (
+                    "De la loi à l'écran",
+                    "Chaque module s'appuie sur une référence réelle : la loi 75.00, le dahir de 1958 et la loi 09.08 sur la protection des données — pas des solutions importées qui ignorent la réalité marocaine.",
+                ),
+                (
+                    "Une comptabilité digne de l'assemblée générale",
+                    'Recettes et dépenses catégorisées, budget prévisionnel, double validation et rapport financier annuel prêt à imprimer et à présenter aux partenaires.',
+                ),
+                (
+                    'Reçus officiels et transparence',
+                    "Dons et adhésions sont enregistrés avec des reçus officiels numérotés et un suivi de conformité — la transparence qu'attendent aussi bien les autorités que les partenaires.",
+                ),
+                (
+                    'Un assistant sans hallucinations',
+                    "Un assistant intelligent qui répond aux questions de procédure et de droit à partir d'une base de connaissances officielle vérifiée — il vous guide vers l'étape de dépôt et les documents requis avec précision.",
+                )
+            ],
+            'effort': "Mon projet le plus lourd en recherche : avant d'écrire le moindre écran, j'ai lu les textes juridiques et compris le cycle de vie d'une association, de la fondation à l'assemblée générale, puis j'ai construit les modules un à un — adhésions, comptabilité, dons, événements, documents — reliés à un système de permissions à cinq niveaux et à un journal d'audit qui consigne chaque opération sensible. La plateforme est entièrement en arabe et conçue pour des personnes sans bagage technique.",
+            'effort_stats': [
+                (
+                    'Référence juridique',
+                    'Loi 75.00 & dahir de 1958',
+                ),
+                (
+                    'Niveaux de permission',
+                    '5',
+                ),
+                (
+                    'Modules',
+                    'adhésions, comptabilité, dons, événements, documents',
+                )
+            ],
+            'ops': [
+                'Next.js (React) — une interface rapide et évolutive',
+                'Système de connexion à sessions signées',
+                'Permissions vérifiées côté serveur',
+                "Journal d'audit des opérations sensibles",
+                'Cloudflare Pages'
+            ],
+            'cost_self': '0 MAD — construite sur une pile entièrement gratuite ; le vrai investissement, ce sont des mois de recherche juridique et de construction.',
+            'cost_market': 'Environ 40 000 – 120 000 MAD pour une plateforme associative avec cette profondeur juridique et comptable.',
+            'cost_now': "0 MAD par mois sur l'offre gratuite.",
+            'cost_scale': "Un serveur et une base de données permanents au fil de l'adoption : environ 150 – 500 MAD par mois selon le nombre d'associations."
+        },
+        {
+            'value_intro': "ISYACAR transforme les visiteurs du site de l'agence en clients qui réservent en confiance :",
+            'values': [
+                (
+                    'Neuf langues pour une clientèle mondiale',
+                    'Le client de Marrakech vient de partout — le site lui parle sa langue : français, anglais, arabe, russe, espagnol, italien, néerlandais, allemand et japonais.',
+                ),
+                (
+                    'Une résaison sans friction',
+                    'Le prix est clair à partir de 300 MAD/jour et la réservation se fait en un geste sur WhatsApp — sans longs formulaires qui font fuir le client.',
+                ),
+                (
+                    "Livraison à l'aéroport et à l'hôtel",
+                    "La voiture arrive à l'aéroport de Marrakech ou à l'hôtel en 15 minutes, gratuitement, avec une assistance 24h/24 — le service dont les clients parlent à leurs amis.",
+                ),
+                (
+                    'Un contenu qui inspire confiance',
+                    "Des guides pratiques sur l'assurance, les routes et les coûts des trajets répondent aux questions du client avant qu'il ne les pose — du marketing par le contenu plutôt que des promesses.",
+                )
+            ],
+            'effort': "Améliorer un site existant pour une vraie agence est différent de construire from scratch : j'ai préservé l'identité de l'agence et de mon ami (flotte, adresses, téléphone) et reconstruit l'expérience autour — des pages par catégorie de voiture, un moteur en neuf langues, un contenu conseil sur l'assurance et les routes, et un chat qui répond jour et nuit. L'objectif commercial est visible sur chaque écran : un visiteur qui comprend, fait confiance, puis réserve.",
+            'effort_stats': [
+                (
+                    "Langues de l'interface",
+                    '9',
+                ),
+                (
+                    'Catégories de flotte',
+                    'citadines, SUV et luxe',
+                ),
+                (
+                    'Canal de réservation',
+                    'WhatsApp direct',
+                )
+            ],
+            'ops': [
+                'Cloudflare Pages',
+                'CDN mondial + SSL automatique',
+                'Moteur de traduction en neuf langues',
+                'Chat automatisé pour les questions courantes',
+                'Liens WhatsApp directs pour réserver'
+            ],
+            'cost_self': "0 MAD — la refonte et l'amélioration ont été réalisées sur une pile entièrement gratuite, en service à un ami.",
+            'cost_market': "Environ 10 000 – 35 000 MAD pour un site d'agence de location multilingue à ce niveau.",
+            'cost_now': "0 MAD par mois sur l'offre gratuite.",
+            'cost_scale': "Le domaine propre de l'agence (environ 100 – 150 MAD par an) plus des outils de suivi et de réservation avancés au fur et à mesure de la croissance."
+        },
+        {
+            'value_intro': 'PHMP numérise la pharmacie du comptoir au rapport :',
+            'values': [
+                (
+                    'Une plateforme à double face dans un seul système',
+                    'Le client commande ses médicaments en quelques touches avec livraison, et le pharmacien reçoit la commande dans le même système et la prépare — un cycle complet sans papier.',
+                ),
+                (
+                    "Le code-barres plutôt que l'écriture manuelle",
+                    'La lecture du code-barres réduit les erreurs de saisie et accélère la caisse — la précision indispensable quand on manipule des médicaments.',
+                ),
+                (
+                    'Une conformité marocaine réelle',
+                    "Les références juridiques et règlements du secteur pharmaceutique marocain sont intégrés à la plateforme avec accès aux textes originaux — pas d'improvisation hors la loi.",
+                ),
+                (
+                    'Des décisions fondées sur les chiffres',
+                    'Des tableaux de bord graphiques résument ventes, opérations et stock : la pharmacie sait ce qui se vend et ce qui manque avant la rupture.',
+                )
+            ],
+            'effort': "J'ai construit la plateforme sur deux faces : le côté client simple — choisir la pharmacie, commander, se faire livrer — et le côté administration profond : caisse, stock, ordonnances, rapports, pharmacies multiples, matrice de permissions et journaux d'audit. Le plus difficile n'a pas été les écrans mais de comprendre le fonctionnement réel d'une pharmacie : comment une vente s'enregistre, quand le stock se déduit, et comment les droits et règlements se préservent — avec une base de données des médicaments et les références juridiques officielles.",
+            'effort_stats': [
+                (
+                    'Publics servis',
+                    'client + propriétaire + pharmaciens',
+                ),
+                (
+                    "Modules d'administration",
+                    'caisse, stock, ordonnances, rapports',
+                ),
+                (
+                    'Référence',
+                    'règlements pharmaceutiques marocains',
+                )
+            ],
+            'ops': [
+                'React + Vite — une interface rapide à construire et à mettre à jour',
+                'Services back-end sur Cloudflare Workers',
+                'Sessions signées et permissions vérifiées',
+                "Journaux d'audit des opérations sensibles",
+                "Cloudflare Pages pour l'hébergement"
+            ],
+            'cost_self': "0 MAD — construite sur une pile gratuite (hébergement et services back-end) avec un développement assisté par l'IA.",
+            'cost_market': 'Environ 60 000 – 180 000 MAD pour un système de gestion de pharmacie de cette profondeur : caisse, stock, ordonnances, rapports et conformité juridique.',
+            'cost_now': "0 MAD par mois sur l'offre gratuite.",
+            'cost_scale': "Un serveur et une base de données dédiés quand l'usage s'étend à plusieurs pharmacies : environ 200 – 700 MAD par mois."
+        }
+    ],
+    'pp_tools': 'Outils et compétences — expliqués simplement',
+    'pp_tools_note': "Chaque outil, bibliothèque et compétence utilisés dans ce projet, expliqués en langage simple : ce que c'est et ce qu'il y a apporté précisément — sans symboles obscurs.",
+    'project_tools': [
+        [
+            (
+                'HTML5',
+                "Le langage fondateur des pages web : il définit la structure de chaque page — titres, images, liens et boutons. C'est le squelette sur lequel tout le reste repose, comme l'ossature d'un bâtiment avant la peinture.",
+            ),
+            (
+                'CSS3',
+                "Le langage de mise en forme qui donne aux pages leur aspect final : couleurs, polices, espacement et adaptation au téléphone. C'est la différence entre une page grise sans âme et une interface agréable à l'œil.",
+            ),
+            (
+                'JavaScript',
+                "Le langage de l'interaction dans le navigateur : il fait passer le site d'un affichage statique à une expérience vivante — recherche instantanée, tri des produits et changement de langue sans recharger la page.",
+            ),
+            (
+                'Moteur de traduction multilingue',
+                "Un code que j'ai écrit, qui stocke les textes du site en six langues et les change instantanément selon le choix du visiteur — au lieu de construire six sites séparés, un seul site sert tout le monde.",
+            ),
+            (
+                'Couche de données JSON',
+                'Des fichiers organisés qui conservent produits, prix et ingrédients dans une structure propre et lisible ; ajouter un produit se résume à modifier le fichier, sans toucher au design des pages.',
+            ),
+            (
+                'Référencement (SEO)',
+                "Des titres et descriptions précis pour chaque page afin qu'une recherche Google la trouve du premier coup — un visiteur gratuit que la publicité ne peut pas acheter.",
+            ),
+            (
+                "Gestion des liens d'affiliation",
+                "Un seul fichier qui regroupe les liens d'achat officiels : fiables, à jour et séparés du contenu — pour protéger le visiteur des liens suspects et faciliter les mises à jour.",
+            ),
+            (
+                'Cloudflare Pages',
+                "L'hébergement : un réseau mondial qui distribue le site sur des centaines de serveurs gratuitement — ouverture rapide depuis tous les pays, avec certificat de sécurité SSL automatique.",
+            )
+        ],
+        [
+            (
+                'HTML5',
+                'La structure de la boutique : les pages de rayons, de produits et de panier sont bâties dans le langage web de base — légères et rapides même avec une connexion faible.',
+            ),
+            (
+                'CSS3',
+                "La mise en forme qui donne à la boutique son élégance arabe : couleurs chaudes, polices lisibles et un design pensé d'abord pour l'écran du téléphone, puis pour l'ordinateur.",
+            ),
+            (
+                'JavaScript',
+                "Le moteur d'interaction : parcourir les rayons, mettre à jour le panier et chercher — tout fonctionne instantanément dans le navigateur du client, sans attendre un serveur lointain.",
+            ),
+            (
+                'Panier interactif',
+                "Un code qui enregistre les choix du client et calcule le total directement dans son navigateur — et les conserve même s'il ferme la page et revient plus tard.",
+            ),
+            (
+                'Chat en direct',
+                'Une fenêtre qui accompagne le client pendant ses achats et répond à ses questions — comme le vendeur qui vous accueille dans un vrai magasin et vous guide.',
+            ),
+            (
+                'Organisation du catalogue',
+                'Une navigation réfléchie : rayons principaux et sous-catégories calés sur la mentalité du client arabe — du général au particulier en quelques clics.',
+            ),
+            (
+                'Cloudflare Pages',
+                "L'hébergement mondial gratuit : ouverture rapide depuis tous les pays et certificat SSL automatique — une infrastructure au niveau des grandes boutiques.",
+            )
+        ],
+        [
+            (
+                'JavaScript pur (Vanilla)',
+                'Programmer sans bibliothèques toutes faites : contrôle total sur chaque détail et performances supérieures — le bon choix pour une plateforme de jeux où chaque milliseconde compte.',
+            ),
+            (
+                'HTML5 et CSS3',
+                "La structure et le style de l'interface : tables de jeu, cartes et boutons dessinés avec précision et s'adaptant au téléphone comme à l'ordinateur.",
+            ),
+            (
+                'WebSocket',
+                "Un canal de communication qui reste ouvert entre les joueurs et le serveur : il transporte chaque coup à l'instant même — l'adversaire joue une carte et elle apparaît chez vous dans la seconde.",
+            ),
+            (
+                "Système de sessions et d'authentification",
+                "Il conserve l'identité de chaque joueur après la connexion et protège les comptes par mot de passe et vérification en deux étapes — un jeu équitable sans usurpation d'identité.",
+            ),
+            (
+                'Canvas',
+                'Une toile de dessin dans le navigateur : la table, les cartes et les pions y sont dessinés image par image — un mouvement fluide comme dans les jeux professionnels.',
+            ),
+            (
+                'Effets sonores',
+                "Les sons des cartes, des clics et de la victoire ramènent l'esprit des vraies séances de jeu à l'écran — le détail dont les joueurs se souviennent le plus.",
+            ),
+            (
+                'Code découpé en 78 modules',
+                'Chaque jeu et chaque fonction dans son propre fichier : corriger un bug ou ajouter du nouveau reste facile — comme un atelier organisé où chaque outil a sa place.',
+            ),
+            (
+                'Cloudflare Pages',
+                "L'interface hébergée sur un réseau mondial gratuit — les joueurs de tous les pays ouvrent la plateforme vite et en sécurité.",
+            )
+        ],
+        [
+            (
+                'HTML5, CSS3 et JavaScript',
+                "La base de l'interface : des écrans pratiques en arabe, bâtis dans le langage web de base — légers, rapides et adaptés à un usage quotidien en entreprise.",
+            ),
+            (
+                'Services backend via un tunnel sécurisé',
+                'La partie invisible de la plateforme (comptes et paie) tourne sur un serveur publié au monde par un canal chiffré — une solution pratique pour faire tourner de vrais services depuis un hébergement gratuit.',
+            ),
+            (
+                'Le moteur de paie',
+                'Un code qui calcule salaires et retenues (CNSS, AMO et impôt) selon le Code du travail marocain au centime près, et génère les fichiers officiels Damancom et SIMPL-IR.',
+            ),
+            (
+                'Base de données SQLite',
+                "Le garde-manger organisé de l'information : dossiers des employés, contrats et horaires dans une base légère, évolutive vers PostgreSQL quand l'entreprise grandit.",
+            ),
+            (
+                "Système de permissions et d'isolation",
+                'Chaque entreprise vit dans son espace isolé avec des permissions définies — le directeur ne voit que sa société, et le journal enregistre chaque opération.',
+            ),
+            (
+                'Rapports PDF et DOCX avec prise en charge RTL',
+                "La génération de rapports officiels prêts à imprimer qui respectent l'écriture arabe de droite à gauche — le rapport qu'un directeur peut présenter tel quel.",
+            ),
+            (
+                'Cloudflare Pages',
+                "L'hébergement gratuit de l'interface sur un réseau mondial — le reste tourne à la demande via le serveur et le tunnel sécurisé.",
+            )
+        ],
+        [
+            (
+                'Next.js (React)',
+                "Le framework avec lequel j'ai construit la plateforme : de la famille React utilisée par les plus grands sites du monde — il bâtit des interfaces rapides et découpe l'écran en composants faciles à développer et à maintenir.",
+            ),
+            (
+                'React',
+                "Une façon de construire l'interface en petits composants indépendants — un bouton, une carte, un tableau — qui s'assemblent comme des Lego ; une erreur dans un composant ne casse pas toute la plateforme, et ajouter une fonctionnalité ne signifie pas tout reconstruire.",
+            ),
+            (
+                'Interface arabe RTL',
+                "Une structure qui s'adapte automatiquement à l'écriture de droite à gauche : menus, tableaux et boutons pointent dans le bon sens — une plateforme qui pense en arabe nativement, pas en traduction.",
+            ),
+            (
+                'Connexion et sessions signées',
+                "Les mots de passe sont chiffrés et les sessions sont signées, vérifiées par le serveur à chaque requête — votre compte n'appartient qu'à vous, même si quelqu'un tente d'usurper vos droits.",
+            ),
+            (
+                'Permissions à cinq niveaux',
+                'Du propriétaire de la plateforme au citoyen : cinq rôles vérifiés par le serveur avant tout affichage — chaque utilisateur ne voit que ce qui le concerne, avec une séparation des rôles garantie.',
+            ),
+            (
+                "Journal d'audit",
+                "Un journal de bord numérique qui consigne chaque opération sensible : qui a fait quoi et quand — la pierre angulaire de la confiance comptable devant l'assemblée générale et les autorités.",
+            ),
+            (
+                'La police Cairo',
+                'Une police arabe open source de Google, dessinée pour les écrans : lisible à toutes les tailles, elle donne à la plateforme une identité arabe élégante et lisible.',
+            ),
+            (
+                'Cloudflare Pages',
+                "L'hébergement mondial gratuit : la plateforme est distribuée sur un réseau mondial et s'ouvre rapidement depuis le Maroc et ailleurs, avec certificat de sécurité automatique.",
+            )
+        ],
+        [
+            (
+                'HTML5, CSS3 et JavaScript',
+                'Une construction sur mesure à partir de zéro dans le langage web de base : des interfaces rapides et légères, pensées pour un client qui navigue depuis son téléphone, dans un aéroport ou un hôtel.',
+            ),
+            (
+                'Moteur en neuf langues',
+                'Un système de traduction qui parle au client dans sa langue — français, anglais, arabe, russe, espagnol, italien, néerlandais, allemand et japonais — car le client de Marrakech vient du monde entier.',
+            ),
+            (
+                'SEO multilingue (hreflang)',
+                "Des balises qui indiquent à Google la version de chaque langue, si bien que chaque version se classe dans son pays : le client russe trouve la version russe, le client japonais la version japonaise — la base du marketing organique d'une agence touristique.",
+            ),
+            (
+                'Réservation via WhatsApp',
+                "Le client réserve en un geste depuis l'application qu'il utilise déjà — sans formulaires ni nouveau compte ; le chemin le plus court entre l'envie et la réservation.",
+            ),
+            (
+                'Chat automatisé',
+                "Il répond aux questions courantes — documents, prix, assurance — jour et nuit et transmet les cas particuliers à l'équipe ; un réceptionniste qui ne dort jamais.",
+            ),
+            (
+                'Polices multi-alphabets',
+                'Une police latine moderne, une police arabe et une police japonaise : chaque langue apparaît dans son authenticité et non comme une traduction cosmétique — un détail qui gagne le respect du client.',
+            ),
+            (
+                'Contenu conseil',
+                "Des guides pratiques sur l'assurance, les routes et les coûts des trajets répondent aux questions du client avant qu'il ne les pose — un marketing par le contenu qui construit la confiance au lieu de promettre.",
+            ),
+            (
+                'Cloudflare Pages',
+                'Un hébergement mondial gratuit, une ouverture rapide depuis tous les pays et un certificat SSL automatique — toujours disponible quand le client décide de réserver.',
+            )
+        ],
+        [
+            (
+                'React',
+                "Une bibliothèque de Meta pour construire des interfaces interactives : elle découpe l'écran en petits composants réutilisables — un bouton, une carte, un tableau — pour qu'un grand système comme une plateforme de pharmacie reste organisé et maintenable, comme des pièces rangées dans une même maison.",
+            ),
+            (
+                'Vite',
+                "L'outil de construction moderne qui assemble le projet et rafraîchit l'aperçu en une fraction de seconde au lieu de minutes d'attente — comme une cuisine équipée qui prépare la commande dès qu'elle arrive ; c'est pourquoi il est devenu le standard pratique des projets React.",
+            ),
+            (
+                'Tableaux de bord graphiques',
+                "Des bibliothèques de graphiques transforment les chiffres en visuels — barres, courbes et cercles — pour que le pharmacien lise ventes et stock d'un seul regard au lieu de parcourir de longs tableaux.",
+            ),
+            (
+                'Base de données des médicaments',
+                "Un catalogue organisé des médicaments avec leurs noms, formes et classifications : une mémoire fiable pour la plateforme — recherche rapide, informations précises, et une mise à jour centrale qui atteint tous les écrans d'un coup.",
+            ),
+            (
+                'Lecture de codes-barres',
+                "Lire les barres noires imprimées sur chaque boîte de médicament : un seul scan enregistre la vente et déduit le stock automatiquement — pas de saisie manuelle, pas d'erreurs de chiffres.",
+            ),
+            (
+                'Sessions signées (JWT)',
+                'Un laissez-passer numérique signé, délivré après vérification du compte et contrôlé à chaque requête — seuls ceux qui en ont le droit accèdent aux données de la pharmacie, comme un badge de personnel infalsifiable.',
+            ),
+            (
+                'Cloudflare Workers (services back-end)',
+                "De petits services exécutés sur le réseau mondial de Cloudflare, près de l'utilisateur : ils reçoivent les requêtes de connexion et de données et les traitent sans serveur traditionnel — vitesse et disponibilité élevées à un coût quasi nul.",
+            ),
+            (
+                'Interface arabe RTL et police Cairo',
+                'La plateforme est arabe de conception, de droite à gauche, avec la police Cairo claire — pas une traduction plaquée mais un design arabe dès la base, visible dans chaque bouton et chaque tableau.',
+            )
+        ]
+    ]
 }

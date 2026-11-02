@@ -280,4 +280,18 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://tarikchouika.pages.dev/projects/phmp/</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tarikchouika.pages.dev/projects/phmp/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarikchouika.pages.dev/en/projects/phmp/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tarikchouika.pages.dev/fr/projects/phmp/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tarikchouika.pages.dev/es/projects/phmp/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tarikchouika.pages.dev/it/projects/phmp/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tarikchouika.pages.dev/de/projects/phmp/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tarikchouika.pages.dev/nl/projects/phmp/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tarikchouika.pages.dev/pt/projects/phmp/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarikchouika.pages.dev/projects/phmp/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>

@@ -1,417 +1,1299 @@
 # -*- coding: utf-8 -*-
 # Dutch
-T = {
-    "title": "Tarik Chouika | Professionele digitale identiteit",
-    "desc": "Tarik Chouika: een Marokkaanse professional die zijn digitale kennis onderbouwt met 13 certificeringen (Google, HP LIFE, Huawei) en zes live digitale projecten, op een fundament van tien jaar veldervaring in operaties en klantenservice.",
-    "brand": "Tarik Chouika",
-    "menu": "Menu",
-    "lang_aria": "Taal selecteren",
-    "nav_aria": "Hoofdnavigatie",
-    "top": "Terug naar boven",
-    "theme_aria": "Lichte/donkere modus wisselen",
-    "filt_aria": "Certificaten filteren op vakgebied",
-    "nav": {"about": "Over mij", "experience": "Ervaring", "certificates": "Certificaten", "projects": "Projecten", "skills": "Vaardigheden", "gallery": "Galerij", "contact": "Contact"},
-    "greeting": "Hallo, ik ben",
-    "name": "Tarik Chouika",
-    "name_alt": "طارق شويكة",
-    "roles": ["Gecertificeerde digitale professional (13 certificaten)", "Websitebouwer met AI-ondersteuning", "Expert in operaties & klantenservice", "Tien jaar veldervaring"],
-    "alt_profile": "Portretfoto van Tarik Chouika",
-    "cta_contact": "Neem contact op",
-    "cta_cv": "CV downloaden (PDF)",
-    "stats": [["10+", "Jaar ervaring"], ["13", "Certificeringen"], ["5", "Kennisgebieden"], ["6", "Digitale projecten"]],
-    "about_title": "Over mij",
-    "about_sub": "Internationaal gecertificeerde digitale kennis, op een stevige basis van tien jaar veldervaring",
-    "about_p1": "Ik ben Tarik Chouika, een Marokkaanse professional uit Rabat die ervoor koos zijn carrière met vertrouwen opnieuw richting de digitale wereld te tekenen. Mijn kennis is gedocumenteerd met 13 certificeringen van Google, HP LIFE, Huawei en nationale trainingsinstellingen, die kunstmatige intelligentie, digitale marketing, webtechnologieën, leiderschap en professionele communicatie dekken — kennis die ik elke dag verder ontwikkel en toepas, geen certificaten aan de muur.",
-    "about_p2": "Mijn verschil: ik leer niet alleen, ik bouw. Wat ik heb opgedaan zette ik in in vier live digitale projecten die tot stand kwamen met hulp van AI-modellen: een meertalige gids en winkel voor natuurlijke supplementen, een complete Arabische webwinkel, een platform voor traditionele Marokkaanse spellen met live multiplayerkamers, en een HR-platform rond de Marokkaanse arbeidswet — van idee tot publicatie op Cloudflare Pages.",
-    "about_p3": "Vóór deze digitale reis bracht ik meer dan tien jaar door in omgevingen die geen luiheid verdragen: het leiden en runnen van een volkscafé met volledige verantwoordelijkheid voor operaties, voorraad en service, naast ervaring in de bouw en beveiliging. Daar werden mijn vaardigheden echt gesmeed: klantenservice, omgaan met druk, discipline en mensenkennis.",
-    "about_p4": "Vandaag bied ik deze zeldzame combinatie: een stevige veldmentaliteit samen met verifieerbare, gecertificeerde digitale kennis. Ik zoek een kans om te bewijzen dat mijn certificaten geen papier zijn, en dat een decennium in dienst van het publiek een professional smeedt die nooit teleurstelt. Klaar om direct te beginnen.",
-    "fact_loc_l": "Locatie",
-    "fact_email_l": "E-mail",
-    "fact_status_l": "Status",
-    "fact_status_v": "Beschikbaar voor nieuwe mogelijkheden",
-    "exp_title": "Professionele ervaring",
-    "exp_sub": "Een gevarieerde loopbaan gebouwd op discipline en verantwoordelijkheid",
-    "jobs": [
-        {
-            "period": "2016 – 2018 · 2020 – 2025",
-            "title": "Cafémanager & operationsleider",
-            "org": "Café- en horecasector",
-            "bullets": [
-                "Volledige leiding van de dagelijkse café-operaties en organisatie van de werkstroom.",
-                "Efficiënte bereiding en service van dranken met garantie van topkwaliteit service.",
-                "Voorraadbeheer, inkooporganisatie en dagelijkse kasbeheer.",
-                "Oplossing van onverwachte problemen en flexibele aanpassing aan elk klantprofiel om hun tevredenheid te garanderen.",
-            ],
-        },
-        {
-            "period": "2015 – 2016",
-            "title": "Hulpwerker bij bouw- en sloopwerkzaamheden",
-            "org": "Bouwplaatsen",
-            "bullets": [
-                "Bijdrage aan bouwwerkzaamheden en ondersteuning van de bouwplaatsen met efficiëntie en discipline.",
-                "Naleving van arbeidsveiligheidsnormen en gedijen onder veeleisende fysieke omstandigheden.",
-            ],
-        },
-        {
-            "period": "2013 – 2014",
-            "title": "Beveiligingsmedewerker",
-            "org": "Beveiligings- en bewakingsdiensten",
-            "bullets": [
-                "Beveiliging van gebouwen en bewaking van de werkperimeter om veiligheid te garanderen.",
-                "Situaties aanpakken met vastberadenheid, wijsheid en constante alertheid om risico's te voorkomen.",
-            ],
-        },
-    ],
-    "cert_title": "Certificaten en cursussen",
-    "cert_sub": "13 certificeringen in 5 vakgebieden, van Google, HP LIFE, Huawei en Marokkaanse nationale instellingen",
-    "l_issuer": "Uitgegeven door",
-    "l_date": "Datum van uitgifte",
-    "l_cred": "Certificaat-ID",
-    "l_view": "Certificaat bekijken",
-    "l_details": "Certificaatpagina",
-    "l_pj_details": "Projectdetails",
-    "lb_close": "Sluiten",
-    "lb_prev": "Vorige certificaat",
-    "lb_next": "Volgende certificaat",
-    "lb_drive": "Verifiëren op Google Drive",
-    "cp_home": "Startpagina",
-    "cp_certs": "Certificaten",
-    "cp_about": "Over dit certificaat",
-    "cp_skills": "Opgedane vaardigheden",
-    "cp_prospects": "Vooruitzichten en toepassingen",
-    "cp_roles": "Verwante paden en rollen",
-    "cp_meta": "Certificaatgegevens",
-    "cp_verify": "Dit certificaat verifiëren op Google Drive",
-    "cp_view_img": "Afbeelding op volledige grootte bekijken",
-    "cp_print": "Deze pagina afdrukken",
-    "cp_back": "Alle certificaten",
-    "cp_prev": "Vorige certificaat",
-    "cp_next": "Volgende certificaat",
-    "cp_related": "Certificaten in hetzelfde vakgebied",
-    "pp_home": "Startpagina",
-    "pp_projects": "Projecten",
-    "pp_about": "Over het project",
-    "pp_tech": "Gebruikte technologieën",
-    "pp_features": "Belangrijkste functies",
-    "pp_learned": "Wat ik ervan heb geleerd",
-    "pp_visit": "Live-site bezoeken",
-    "pp_live": "Gepubliceerd en online",
-    "pp_host": "Hosting",
-    "pp_domain": "Adres",
-    "pp_status": "Status",
-    "pp_built_label": "Bouwmethode",
-    "pp_built": "Met hulp van AI-modellen",
-    "pp_back": "Alle projecten",
-    "pp_prev": "Vorige project",
-    "pp_next": "Volgende project",
-    "fields": {
-        "all": "Alle",
-        "ai": "Kunstmatige intelligentie",
-        "biz": "Professionele vaardigheden",
-        "civic": "Burgerlijke betrokkenheid",
-        "marketing": "Digitale marketing",
-        "web": "Webtechnologieën",
-    },
-    "issuers": {
-        "google_en": "Google Digital Garage / Skillshop",
-        "google_ar": "Maharat min Google — geaccrediteerd door The Open University en IAB Europe",
-        "huawei": "Huawei ICT Academy",
-        "portal": "Nationale portal voor online verenigingstraining — Marokko",
-        "hp": "HP LIFE — HP Foundation",
-    },
-    "certs": [
-        {"title": "Grondbeginselen van digitale marketing (Engels)", "desc": "Gecertificeerd programma van Google over de grondbeginselen van digitale marketing: zoeken, digitale advertenties, sociale media en webanalyse."},
-        {"title": "Grondbeginselen van digitale marketing (Arabisch)", "desc": "Maharat min Google-certificaat, geaccrediteerd door The Open University en IAB Europe, dat digitale strategie, e-mailmarketing en sociale marketing omvat."},
-        {"title": "Overzicht van kunstmatige intelligentie", "desc": "Training van de Huawei ICT Academy die de kernconcepten van AI en de toepassingen ervan in informatie- en communicatietechnologie introduceert."},
-        {"title": "Module: Participatieve democratie", "desc": "Training via Marokko's nationale e-learningportal voor verenigingen, over de principes van participatieve democratie en burgerlijke betrokkenheid."},
-        {"title": "Module: Juridisch kader voor het oprichten van verenigingen", "desc": "Gecertificeerde training over de Marokkaanse verenigingswet en de juridische procedures voor het oprichten en leiden van verenigingen."},
-        {"title": "Module: Gemeenschapscommunicatie", "desc": "Trainingsprogramma gericht op communicatie- en organisatievaardigheden voor verenigingswerk en burgerinitiatieven."},
-        {"title": "AI voor zakelijke professionals", "desc": "HP LIFE-cursus over AI-tools in het bedrijfsleven: zelfstandige versus geïntegreerde tools, effectieve prompts en ethisch gebruik."},
-        {"title": "Effectief leiderschap", "desc": "HP LIFE-cursus over leiderschapsstijlen en -strategieën, en de rol van ethiek in succesvol teamleiderschap."},
-        {"title": "AI voor beginners", "desc": "HP LIFE-introductie tot AI: de impact op het technologische landschap, het belang van data en ethische overwegingen in het bedrijfsleven."},
-        {"title": "Professionele communicatie voor carrièregroei", "desc": "HP LIFE-cursus over het opbouwen van een professioneel netwerk, personal branding en digitale tools om zelfverzekerd te groeien."},
-        {"title": "Effectieve websites", "desc": "HP LIFE-cursus over best practices voor zakelijk webdesign, het begrijpen van bezoekersgedrag en het meten van websiteprestaties."},
-        {"title": "E-mail op het werk", "desc": "HP LIFE-cursus over het schrijven van effectieve professionele e-mails en het juiste gebruik van e-mail in verschillende werkscenario's."},
-        {"title": "Strategische planning in het AI-tijdperk", "desc": "HP LIFE-cursus over strategisch denken en betere beslissingen nemen in een AI-gedreven bedrijfsomgeving, en het evalueren van planningskaders."},
-    ],
-    "cert_pages": [
-        {"overview": "Een gecertificeerd programma van Google Digital Garage dat via meerdere Engelstalige trainingsmodules de volledige basis van digitale marketing behandelt: digitale merkaanwezigheid, zichtbaarheid in zoekmachines, betaalde advertenties, e-mail- en socialmediamarketing en ten slotte het meten van resultaten met data. Ik behaalde het in 2021 — mijn eerste internationale certificering op het digitale pad.", "skills": ["Een digitale marketingstrategie opbouwen", "Zichtbaarheid in zoekmachines (SEO)", "Digitale advertentiecampagnes starten", "E-mail- en socialmediamarketing", "Campagneprestaties meten met data", "Effectieve digitale content schrijven"], "prospects": "Een stevige basis voor elke rol in digitale promotie: paginabeheer en content, bijdragen aan kleine en middelgrote campagnes, of groeikanalen opbouwen voor een eigen online bedrijf.", "roles": ["Assistent digitale marketing", "Content- en paginabeheer", "E-commerce support"]},
-        {"overview": "De geaccrediteerde Arabische editie van het Maharat min Google-programma, mede-geaccrediteerd door The Open University en IAB Europe — een wereldklassecertificaat in helder Arabisch. Het behandelt het opbouwen van een praktische digitale strategie, het bereiken van doelgroepen via mobiel, e-mail en social media, en technieken voor zichtbaarheid in zoekmachines, met bijzondere aandacht voor de lokale Arabische context.", "skills": ["Digitale campagnes in het Arabisch plannen", "Mobiele marketing", "Contentmarketing", "Succes meten met heldere KPI's", "Online gedrag van Arabische consumenten begrijpen", "Adverteren op social media"], "prospects": "Een directe kwalificatie voor content- en digitale communicatierollen in Arabische omgevingen, en een praktische pijler voor elk bedrijf dat een Arabisch online publiek bedient.", "roles": ["Digitaal communicatieverantwoordelijke", "Contentcreator", "E-commerce support"]},
-        {"overview": "Een training van de Huawei ICT Academy die een volledig begrip van kunstmatige intelligentie opbouwt: van de kernbegrippen (machine learning en neurale netten) via de evolutiefases van het vakgebied tot de praktische toepassingen in informatie- en communicatietechnologie en daarbuiten. Een recente certificering (2026) die een venster opent naar de meest invloedrijke technologie van onze tijd.", "skills": ["Concepten van machine learning & neurale netten", "AI-toepassingen in ICT", "De evolutie van AI-technologie volgen", "Een snel veranderend techlandschap lezen", "AI verbinden met praktische oplossingen"], "prospects": "De officiële toegangspoort tot de wereld van AI; het biedt de minimale kennis om diepere trainingen te volgen en de impact van de technologie op verschillende sectoren te begrijpen.", "roles": ["Trainee digitale technologie", "Professionele AI-tools gebruiker", "Assistent digitale projecten"]},
-        {"overview": "Een trainingsmodule via Marokko's nationale portal voor online verenigingstraining, onder het ministerie dat de relaties met het Parlement beheert. Het behandelde de principes en mechanismen van participatieve democratie: burgerparticipatie in het bestuur van de publieke zaak, de rollen van het maatschappelijk middenveld en de constitutionele mechanismen die de burger tot partner maken in de besluitvorming.", "skills": ["Principes van participatieve democratie", "Mechanismen van burgerparticipatie", "Rollen van het maatschappelijk middenveld", "Het constitutionele kader van participatie", "Cultuur van publieke zaken"], "prospects": "Essentiële kennis voor iedereen die actief is in verenigingswerk of wil deelnemen aan het maatschappelijke en institutionele leven — en wil begrijpen hoe publieke besluiten in Marokko genomen worden.", "roles": ["Verenigingswerk & maatschappelijk middenveld", "Burgerinitiatieven", "Ondersteuning van lokale projecten"]},
-        {"overview": "Een gecertificeerde module die het complete juridische kader voor verenigingen in Marokko van A tot Z uitlegt: hoe een vereniging juridisch op te richten, welke documenten nodig zijn, bestuursorganen en hun rollen, rechten en plichten, en een gezonde relatie met het bestuur — van het dossier voorbereiden tot de dagelijkse juridische verenigingsvoering.", "skills": ["Verenigingen oprichten in Marokko", "Juridische dossiers voorbereiden", "Bestuursorganen en hun rollen", "Juridische rechten en plichten", "Degelijke juridische verenigingsvoering"], "prospects": "Maakt het praktisch mogelijk deel te nemen aan het oprichten en besturen van verenigingen in volledige wettelijke naleving — een gevraagde vaardigheid in verenigingswerk, burgerinitiatieven en institutionele partnerschappen.", "roles": ["Oprichter of bestuurslid van een vereniging", "Administratieve & juridische ondersteuning", "Community-initiatieven"]},
-        {"overview": "Een trainingsmodule gericht op het hart van succesvol verenigingswerk: communicatie. Het behandelt interne communicatie tussen leden, externe communicatie met publiek, partners en instellingen, en het organiseren van boodschappen en veldcampagnes die de impact van de vereniging vergroten en de steunbasis verbreden.", "skills": ["Verenigingscommunicatie plannen", "Communiceren met publiek & partners", "Veldcampagnes organiseren", "Duidelijke, overtuigende boodschappen bouwen", "Teamwerk organiseren"], "prospects": "Versterkt de gereedheid voor coördinatie- en communicatierollen in elke collectieve inspanning — binnen en buiten verenigingen — waar communicatie de meest gevraagde vaardigheid blijft.", "roles": ["Communicatiecoördinator", "Lid van een organisatieteam", "Gemeenschapsfacilitator"]},
-        {"overview": "Een HP LIFE-cursus voor professionals over het inzetten van kunstmatige intelligentie in het bedrijfsleven: zelfstandige tools onderscheiden van geïntegreerde, effectieve prompts schrijven die het beste naar boven halen, en het ethische, verantwoorde gebruik van technologie in dienst van professionele groei.", "skills": ["Professioneel prompts schrijven", "De juiste AI-tool kiezen", "AI in het dagelijks werk integreren", "Ethisch gebruik van technologie", "AI-output beoordelen"], "prospects": "Een direct dagelijkse vaardigheid: schrijf- en analysetaken versnellen en de kwaliteit en productiviteit van het werk verhogen — in elke rol die tekst, data of klantenservice raakt.", "roles": ["Professionele AI-tools gebruiker", "Ondersteuning van digitale operaties", "Kantoorproductiviteit verbeteren"]},
-        {"overview": "Een HP LIFE-cursus over wat leiderschap echt succesvol maakt: de verschillende leiderschapsstijlen en wanneer je welke inzet, strategieën om een team positief te beïnvloeden, en het bouwen van een prestatiegerichte werkcultuur — met de spilrol die ethiek speelt in echt leiderschap.", "skills": ["Leiderschapsstijlen & de juiste keuze", "Teams met vertrouwen leiden", "Motivatie & werkcultuur", "Ethische besluitvorming in management", "Teamprestaties beoordelen"], "prospects": "Mijn veldervaring in het leiden van een café met een team maakt dit certificaat een natuurlijke voortzetting van mijn pad — directe gereedheid om grotere teams te leiden in dienstverlening of digitale projecten.", "roles": ["Teamleider", "Locatie-/ploegverantwoordelijke", "Projectcoördinator"]},
-        {"overview": "HP LIFE's introductie tot kunstmatige intelligentie vanaf nul: wat AI is en hoe het werkt, waarom data de kernbrandstof is, hoe het hele zakelijke landschap is getransformeerd, en de ethische overwegingen die je moet begrijpen voordat je het gebruikt.", "skills": ["Kernbegrippen van AI", "De rol van data begrijpen", "De impact van technologie op business volgen", "Bewustzijn van ethische uitdagingen", "Kritisch omgaan met AI-tools"], "prospects": "Een stevige basis voor iedereen die zonder programmeerachtergrond in technologie wil stappen — praktisch bewijs dat elke gedetermineerde de tools van de toekomst kan begrijpen en overnemen.", "roles": ["Startpunt van een digitaal pad", "Bewust gebruik van AI-tools", "Continue zelfontwikkeling"]},
-        {"overview": "Een HP LIFE-cursus over de belangrijkste factor in carrièregroei: je netwerk. Het behandelt strategieën voor het opbouwen van een echt professioneel netwerk, het ontwikkelen van een persoonlijk merk, en het slimme gebruik van digitale tools — van professionele netwerken tot e-mail — om deuren naar nieuwe kansen te openen.", "skills": ["Een professioneel netwerk opbouwen", "Persoonlijke branding", "Digitale professionele communicatie", "Je professionele imago managen", "Kansen omzetten in resultaten"], "prospects": "Verandert elke carrière van het wachten op kansen in het creëren ervan; een duidelijke basis voor wie werk zoekt, partnerschappen of een professionele wending naar de digitale sector.", "roles": ["Carrièreontwikkeling", "Digitale professionele aanwezigheid", "Professioneel netwerken"]},
-        {"overview": "Een HP LIFE-cursus die uitlegt wat de website van een bedrijf succesvol maakt: bewezen klantgerichte ontwerppraktijken, inzicht in hoe bezoekers werkelijk navigeren, en het meten van websiteprestaties met echte metrics in plaats van giswerk.", "skills": ["Principes van effectief webdesign", "Bezoekersgedrag begrijpen", "Prestatie- & conversiemetrics", "De gebruikerservaring verbeteren", "Website-analyses lezen"], "prospects": "Ik paste het direct toe in mijn vier gepubliceerde projecten; het is de maatstaf waarmee ik elke website — die van mij of van anderen — beoordeel voordat ik hem overneem of verbeter.", "roles": ["Websites beoordelen & verbeteren", "Ondersteuning van digitale aanwezigheid", "Onafhankelijke webprojecten"]},
-        {"overview": "Een HP LIFE-cursus over het meest gebruikte en minst beheerste gereedschap op het werk: e-mail. Van de structuur van een effectieve professionele boodschap tot de juiste toon voor elk scenario — verzoeken, opvolgingen, verduidelijkingen, onderhandelingen — en het juiste gebruik van e-mail in professionele contexten.", "skills": ["Effectieve professionele e-mails schrijven", "Structuur & inhoud van het bericht", "De juiste toon voor elke situatie", "Professioneel opvolgen", "Slim postvakbeheer"], "prospects": "Een directe invloed op de dagelijkse professionele indruk: een duidelijke, respectvolle e-mail betekent snellere antwoorden en meer kansen — een vaardigheid die elke werkgever of partner direct opmerkt.", "roles": ["Bedrijfscommunicatie", "Klantenservice via e-mail", "Administratieve ondersteuning"]},
-        {"overview": "Mijn nieuwste certificering: een HP LIFE-cursus over strategisch denken in een AI-gedreven wereld. Het behandelt de essentiële bouwstenen van elk succesvol plan, het evalueren van praktische planningskaders en het kiezen van het meest geschikte, en het verwerven van vaardigheden om AI-tools te gebruiken ter ondersteuning van planning en betere beslissingen.", "skills": ["Systematisch strategisch denken", "Bouwstenen van een strategisch plan", "Planningskaders evalueren", "Databeslissingen nemen", "AI gebruiken bij planning"], "prospects": "Het verbindt mijn hele pad: mijn certificeringen in AI, marketing en leiderschap komen samen in het vermogen een helder plan te trekken en het te volgen — de vaardigheid van wie wil leiden, niet geleid wil worden.", "roles": ["Projectplanning & coördinatie", "Besluitvorming ondersteunen", "Ondernemerschap"]},
-    ],
-    "drive_title": "Volledige certificatenmap",
-    "drive_text": "De originele Google Drive-map bevat alle 13 certificaten in hun volledige formaat, op elk moment beschikbaar voor verificatie.",
-    "drive_cta": "Openen op Google Drive",
-    "pj_title": "Mijn digitale projecten",
-    "pj_sub": "Zes live projecten die ik heb gebouwd als onderdeel van mijn digitale leerreis",
-    "pj_note": "Ik heb deze projecten ontwikkeld met behulp van AI-modellen als onderdeel van zelfstudie en het verbeteren van mijn digitale vaardigheden — ze zijn allemaal gepubliceerd en draaien op Cloudflare Pages.",
-    "pj_visit": "Project bezoeken",
-    "projects": [
-        {"name": "NATSUP", "tag": "E-commerce — Natuurlijke supplementen", "desc": "Complete gids en winkel voor natuurlijke supplementen met productinformatie, prijzen en officiële aankooplinks in meerdere talen."},
-        {"name": "SYDA", "tag": "Algemene webwinkel", "desc": "Volledige Arabische webwinkel met duizenden producten voor huis, beauty, elektronica en meer, met winkelwagen en ordertracking."},
-        {"name": "DTSG", "tag": "Marokkaans gameplatform", "desc": "Digitaal gameplatform voor traditionele Marokkaanse spellen zoals Ronda en Rami, met multiplayermodus, toernooien en ranglijsten."},
-        {"name": "HRMP", "tag": "HR-platform", "desc": "Marokkaans platform voor personeelsbeheer dat werving, planning, aanwezigheid en payroll dekt volgens de Marokkaanse arbeidswet."},
-        {"name": "MAMP", "tag": "Platform voor Marokkaanse verenigingen", "desc": "Het eerste complete Marokkaanse platform om verenigingswerk te digitaliseren: lidmaatschappen, boekhouding, donaties, evenementen en officiële documenten — volgens Wet 75.00 en de dahir van 1958."},
-        {"name": "ISYACAR", "tag": "Verbetering van de website van een autoverhuurbedrijf", "desc": "Opnieuw opgebouwde en verbeterde versie van de website van het autoverhuurbedrijf van mijn vriend in Marrakech: negen talen, een wagenpark van economy tot luxueus, en direct boeken via WhatsApp."},
-    ],
-    "project_pages": [
-        {"about": "NATSUP is een digitale gids en winkel gespecialiseerd in natuurlijke supplementen, gebouwd voor wie geïnteresseerd is in gezondheid en fitness: duidelijke, vereenvoudigde supplementreviews — ingrediënten, voordelen en prijzen — met betrouwbare officiële aankooplinks voor elk product. De interface is meertalig en dekt wereldwijd bekende producten af, met één doel: de aankoopbeslissing geïnformeerd, veilig en weloverwogen maken.", "tech": ["HTML5", "CSS3", "JavaScript", "Meertalige vertaalengine", "Gestructureerde JSON-datalaag", "SEO-optimalisatie", "Cloudflare Pages"], "features": ["Productcatalogus met afbeeldingen, ingrediënten en prijzen", "Betrouwbare officiële aankooplinks", "Meertalige interface", "Georganiseerde educatieve inhoud", "Mobielvriendelijk ontwerp"], "learned": "Dit project leerde me hoe een groot, georganiseerd contentsysteem wordt gebouwd — data, vertaling en presentatie — hoe aankoop- en trackinglinks netjes worden beheerd, en hoe helderheid en eerlijkheid het vertrouwen van bezoekers opbouwen."},
-        {"about": "SYDA is een complete Arabische webwinkel met duizenden producten: huis, beauty, elektronica, auto en meer. Het biedt een volledig Arabische winkelervaring: browsen per categorie, een interactieve winkelwagen, ordertracking en een live klantenservicechat — met de geest van een moderne, snelle Marokkaanse winkel.", "tech": ["HTML5", "CSS3", "JavaScript", "Interactieve winkelwagen", "Live klantenservicechat", "Categoriebrowsing", "Cloudflare Pages"], "features": ["Duizenden producten in heldere categorieën", "Winkelwagen & ordertracking", "Live chat met klanten", "Volledig Arabische interface", "Snelle mobiele ervaring"], "learned": "Het verscherpte mijn commerciële denken: hoe grote productcatalogi worden georganiseerd, hoe een complete klantreis van browsen tot bestellen wordt ontworpen, en hoe klantenservice digitaal wordt benaderd met de cafémentaliteit — de klant eerst."},
-        {"about": "Het platform voor digitale traditionele Marokkaanse spellen (DTSG) is mijn meest ambitieuze project: een platform dat Marokko's traditionele spellen — Ronda, Rami, Tawla, Damma, Partchi en meer — omtovert tot een moderne digitale ervaring met multiplayerkamers, live chat, toernooien en ranglijsten, plus geluidseffecten en visuele afwerking.", "tech": ["HTML5", "CSS3", "Vanilla JavaScript", "Live netwerkverbinding via WebSocket", "Sessie- & authenticatiesysteem", "Geluids- & visuele effecten", "Cloudflare Pages"], "features": ["Meerdere traditionele Marokkaanse spellen", "Realtime multiplayer via het netwerk", "Spelkamers & live chat", "Toernooien en ranglijsten", "Geluidseffecten in het spel"], "learned": "De grootste technische les van mijn reis: de architectuur van een groot project met nette codemodules, realtime verbinding tussen spelers, state- en sessiebeheer — en waarom methodische codeverdeling een project onderhoudbaar houdt."},
-        {"about": "HRMP is een Marokkaans platform voor personeelsbeheer, ontworpen om de volledige werkcyclus te organiseren: werving, ploegenplanning, aanwezigheids- en afwezigheidsregistratie en salarisberekening conform de Marokkaanse arbeidswet. Het project combineert een praktische gebruikersinterface met backendservices via een beveiligde tunnel, en levert een realistische administratieve oplossing.", "tech": ["HTML5", "CSS3", "JavaScript", "Backendservices via beveiligde tunnel", "Beheer van werknemersgegevens", "Salaris- & ploegenberekening", "Cloudflare Pages"], "features": ["Werving en personeelsdossiers beheren", "Ploegenplanning en aanwezigheid", "Salaris conform de arbeidswet", "Georganiseerde administratieve rapporten", "Praktische Arabische interface"], "learned": "Het bracht me dichter bij de echte zakenwereld: complexe administratieve behoeften begrijpen — ploegen, aanwezigheid, salarissen — en ze vertalen naar een bruikbaar systeem, en waarom elke digitale oplossing aan de lokale wetgeving (de Marokkaanse arbeidswet) moet voldoen."},
-        {"about": "MAMP is het eerste complete Marokkaanse platform om verenigingswerk te digitaliseren, van de oprichting van een vereniging tot haar jaarverslag: lidmaatschapsbeheer met genummerde kwitanties, gecategoriseerde boekhouding met voorlopig budget en dubbele goedkeuring, registratie van geld- en natuurlijke giften, planning van evenementen met openbare inschrijving en een archief van officiële documenten — met daarbovenop een digitale identiteitskaart voor elke vereniging en een slimme verenigingsassistent die antwoordt vanuit een gecontroleerde officiële kennisbank. Elke module is gebouwd op een echte Marokkaanse wettelijke referentie: Wet 75.00, de dahir van 15 november 1958 en Wet 09.08 over de bescherming van persoonsgegevens.", "tech": ["Next.js (React)", "Volledig Arabisch RTL-interface", "Inlogsysteem met ondertekende sessies", "Rechten op vijf niveaus", "Auditlogboek voor gevoelige handelingen", "Arabische lettertype Cairo", "Cloudflare Pages"], "features": ["Lidmaatschapsbeheer met genummerde kwitanties en verlengingsherinneringen", "Gecategoriseerde boekhouding met voorlopig budget, dubbele goedkeuring en jaarverslag", "Geld- en natuurlijke giften met officiële kwitanties en compliance-opvolging", "Evenementen en activiteiten met openbare inschrijving", "Archief van officiële documenten met classificatie en vertrouwelijkheidsniveaus"], "learned": "Dit project leerde me dat programmeren een gereedschap is, geen doel: de echte waarde kwam niet van de schermen maar van het begrijpen van de Marokkaanse verenigingswet en het vertalen van de werkelijke behoeften van verenigingsmensen naar eenvoudige modules die mensen zonder technische achtergrond kunnen gebruiken — en dat de bescherming van persoonsgegevens (CNDP-naleving) geen technisch detail is maar de hoeksteen van vertrouwen in elk platform dat gegevens van mensen verzamelt."},
-        {"about": "ISYACAR is een volledige herbouw en verbetering van de website van het autoverhuurbedrijf van mijn vriend in Marrakech (het bedrijf: isyacar.com). Ik heb de identiteit van het bedrijf bewaard — het wagenpark, de adressen en de telefoonnummers — en de ervaring er opnieuw omheen gebouwd: een geclassificeerd wagenpark van compacte wagens (vanaf 300 MAD per dag) tot SUV's en luxewagens, negen talen voor de internationale klant, gratis levering op de luchthaven van Marrakech en bij hotels binnen 15 minuten, hulp dag en nacht, gratis annuleren tot 48 uur vooraf en praktische gidsen over verzekering en wegen — met direct boeken via WhatsApp, zonder formulieren.", "tech": ["HTML5", "CSS3", "JavaScript", "Vertaalengine met negen talen", "Meertalig SEO (hreflang)", "Geautomatiseerde chat voor veelgestelde vragen", "Cloudflare Pages"], "features": ["Geclassificeerd wagenpark: economy, SUV en luxe met duidelijke prijzen", "Negen talen die de klant in de zijne aanspreken", "Direct boeken via WhatsApp zonder formulieren", "Gratis levering op luchthaven en hotel binnen 15 minuten", "Praktische gidsen: verzekering, wegen en ritkosten"], "learned": "Het eerste project dat ik voor een echte klant bouwde — en nog wel een vriend — wat de lat voor verantwoordelijkheid hoger legde: ik leerde dat ontwikkeling een dienst is die afgemeten wordt aan het zakelijke resultaat (hoeveel bezoekers echt boekten), niet aan het aantal technologieën; dat functies als boeken via WhatsApp en een duidelijke prijs voortkomen uit begrip van de echte huurautoklant; en dat het vertrouwen van een vriend meer waard is dan welke technische showcased dan ook."},
-    ],
-    "sk_title": "Vaardigheden",
-    "sk_sub": "Van certificeringen naar het veld — een gedocumenteerde, geteste mix",
-    "cats": [
-        {"icon": "code", "title": "Digitaal & AI", "items": ["AI-tools", "Prompts schrijven", "Strategische planning in het AI-tijdperk", "Digitale marketing", "Webanalyse", "Professionele e-mail"]},
-        {"icon": "coffee", "title": "Operaties & Service", "items": ["Cafémanagement", "Dranken bereiden", "Klantenservice", "Voorraadbeheer", "Organisatie & planning"]},
-        {"icon": "shield", "title": "Velddiscipline", "items": ["Discipline", "Uithoudingsvermogen", "Werken onder druk", "Problemen oplossen", "Veiligheid & beveiliging"]},
-        {"icon": "globe", "title": "Leiderschap & Communicatie", "items": ["Effectief leiderschap", "Professionele communicatie", "Arabisch (moedertaal)", "Samenwerken", "Verenigingscommunicatie"]},
-    ],
-    "edu_title": "Onderwijs",
-    "edu_sub": "Een academische basis gecombineerd met onvermoeibaar zelfleren",
-    "edu_level": "Tweede jaar van het Baccalaureaat (zonder het einddiploma)",
-    "edu_note": "Hoewel ik mijn Baccalaureaat niet heb behaald, bleef ik mijn vaardigheden opbouwen via zelfstudie en gecertificeerde digitale cursussen — een weerspiegeling van mijn wil om continu te leren en te groeien.",
-    "gal_title": "Momenten uit mijn leven",
-    "gal_sub": "Glimpen van mijn leven buiten het werk",
-    "gal": ["Familiemomenten", "Met mijn dierbaren", "Mijn trouwe metgezel", "Mijn liefde voor de natuur"],
-    "ct_title": "Neem contact op",
-    "ct_sub": "Zoek je een toegewijde, flexibele professional? Laten we praten",
-    "avail": "Beschikbaar voor nieuwe mogelijkheden",
-    "email_cta": "Stuur me een e-mail",
-    "copy": "E-mailadres kopiëren",
-    "copied": "Gekopieerd!",
-    "ct_note": "Ik beantwoord meestal binnen 24 uur.",
-    "footer_rights": "Alle rechten voorbehouden.",
-    "footer_built": "Ontworpen en gebouwd met behulp van AI-modellen, gehost op Cloudflare Pages.",
 
-    # ---------------- v4 ----------------
-    "sources": {
-        "medium": "Medium — onafhankelijke gepubliceerde recensie",
-        "reddit": "Reddit — publieke discussie in r/marketing",
-        "linkedin_article": "LinkedIn — publiek gepubliceerd artikel",
-        "appstore": "App Store — officiële beoordelingen van de HP LIFE-app",
+T = {
+    'title': 'Tarik Chouika | Professionele digitale identiteit',
+    'desc': 'Tarik Chouika: een Marokkaanse professional die zijn digitale kennis onderbouwt met 13 certificeringen (Google, HP LIFE, Huawei) en zeven live digitale projecten, op een fundament van tien jaar veldervaring in operaties en klantenservice.',
+    'brand': 'Tarik Chouika',
+    'menu': 'Menu',
+    'lang_aria': 'Taal selecteren',
+    'nav_aria': 'Hoofdnavigatie',
+    'top': 'Terug naar boven',
+    'theme_aria': 'Lichte/donkere modus wisselen',
+    'filt_aria': 'Certificaten filteren op vakgebied',
+    'nav': {
+        'about': 'Over mij',
+        'experience': 'Ervaring',
+        'certificates': 'Certificaten',
+        'projects': 'Projecten',
+        'skills': 'Vaardigheden',
+        'gallery': 'Galerij',
+        'contact': 'Contact'
     },
-    "links": {
-        "credential": "Officiële certificaatverificatie",
-        "course": "Officiële cursuspagina",
-        "grow": "Grow with Google — leerplatform van Google",
-        "platform": "Officieel HP LIFE-platform",
-        "academy": "Officiële Huawei ICT Academy",
-        "talent": "Huawei Talent-platform",
-        "maroc": "Officiële portaalsite van het Koninkrijk Marokko",
-        "spub": "Portaal van de overheidsdiensten — Marokko",
-        "trusted": "Betrouwbare leerplatformen",
-    },
-    "cp_reviews": "Echte, publiek gepubliceerde beoordelingen",
-    "cp_reviews_note": "Letterlijke citaten van echte gebruikers, openbaar gepubliceerd op de genoemde bronnen en hier getoond in de originele taal.",
-    "cp_view_source": "Bron bekijken",
-    "cp_links": "Officiële links & betrouwbare platforms",
-    "pp_value": "Toegevoegde waarde",
-    "pp_effort": "De geïnvesteerde inspanning",
-    "pp_ops": "Technologieën voor bouw en beheer",
-    "pp_tech_build": "Voor de bouw",
-    "pp_tech_ops": "Voor beheer en continuïteit",    "pp_costs": "Geschatte kosten",
-    "cost_build": "Een soortgelijk project bouwen",
-    "cost_ops": "Beheer en exploitatie",
-    "cost_self": "Zelfbouwroute (wat ik echt deed)",
-    "cost_market": "Via freelancer/bureau in Marokko (schatting)",
-    "cost_now": "Huidige situatie",
-    "cost_scale": "Bij opschaling (schatting)",
-    "cost_note": "Richtbedragen in Marokkaanse dirham (MAD); de werkelijke kosten variëren met omvang, exacte vereisten en de dienstenmarkt. Mijn huidige projecten draaien volledig op gratis pakketten.",
-    "ct_phone": "Telefoon",
-    "ct_whatsapp": "WhatsApp",
-    "ct_linkedin": "LinkedIn",
-    "ct_facebook": "Facebook",
-    "ct_telegram": "Telegram-bot",
-    "ct_call": "Nu bellen",
-    "ct_wa_chat": "Chatten via WhatsApp",
-    "hd_book": "Consult of afspraak",
-    "ft_tagline": "Gecertificeerde digitale kennis — 13 internationale certificaten — op tien jaar praktijkervaring.",
-    "ft_quick": "Snelle links",
-    "ft_contact": "Contactkanalen",
-    "ft_gov": "Officiële Marokkaanse overheidswebsites",
-    "ft_gov_note": "Officiële portalen van de Marokkaanse overheden en digitale diensten",
-    "gov": {
-        "maroc": "Officieel nationaal portaal",
-        "spub": "Portaal overheidsdiensten",
-        "tax": "Algemene Directie Belastingen (DGI)",
-        "cnss": "Nationaal Sociaal Zekerheidsfonds (CNSS)",
-        "anapec": "Nationaal Agentschap voor Werkgelegenheid (ANAPEC)",
-        "education": "Ministerie van Onderwijs",
-        "sante": "Ministerie van Volksgezondheid en Sociale Bescherming",
-        "interieur": "Ministerie van Binnenlandse Zaken",
-    },
-    "project_v4": [
-        {
-            "value_intro": "NATSUP is niet zomaar een productsite, maar een beslistool vóór de aankoop:",
-            "values": [
-                ("Duidelijke info vooraf", "Vereenvoudigde supplementreviews: ingrediënten, voordelen en prijzen op één plek, zonder verwarring."),
-                ("Zes talen, één interface", "Content in het Engels, Arabisch, Frans, Spaans, Italiaans en Duits — werkelijk wereldwijd bereik."),
-                ("Officiële aankooplinks", "Elk product verwijst naar een vertrouwde officiële bron en beschermt bezoekers tegen dubieuze links."),
-                ("Structuur die kan groeien", "Een catalogus op basis van gestructureerde JSON-data, uitbreidbaar tot honderden producten zonder herbouw."),
-            ],
-            "effort": "Het project verliep in fasen: productdata organiseren en in zes talen vertalen, de vertaalengine bouwen, een mobielvriendelijke interface ontwerpen en daarna zoekmachineoptimalisatie. Elke pagina werd vóór publicatie inhoudelijk en taalkundig gecontroleerd; het werk besloeg weken, naast mijn dagelijkse leerproces.",
-            "effort_stats": [("Interfacetalen", "6"), ("Bouwbasis", "Gestructureerde JSON-data"), ("Optimalisatie", "Volledige SEO")],
-            "ops": ["Cloudflare Pages (gratis hosting)", "Wereldwijd CDN", "Automatisch SSL", "Deployments via Wrangler", "Gratis pages.dev-domein"],
-            "cost_self": "0 MAD — gratis hosting en subdomein; de echte investering was mijn tijd en leerproces.",
-            "cost_market": "Ca. 4.000 – 12.000 MAD voor een meertalige catalogussite van deze omvang.",
-            "cost_now": "0 MAD per maand — draait op het gratis Cloudflare Pages-pakket.",
-            "cost_scale": "Eigen domein: ca. 100 – 150 MAD per jaar, plus optionele betaalde diensten (ca. 50 MAD/maand).",
-        },
-        {
-            "value_intro": "Syda combineert een moderne winkelervaring met de sfeer van een Arabische souk:",
-            "values": [
-                ("Enorme, geordende catalogus", "Duizenden producten in overzichtelijke rubrieken, binnen enkele tikken bereikbaar."),
-                ("Complete koopreis", "Van bladeren naar mandje tot bestelling — een volledig Arabische interface, mobiel eerst ontworpen."),
-                ("Digitale klantenservice", "Live chat en een slimme assistent die klanten verwelkomen als in een echte winkel."),
-                ("Vertrouwen gevend beleid", "Betalen bij levering en 15 dagen retour — de zekerheden die trouw opbouwen."),
-            ],
-            "effort": "De grootste uitdaging: een catalogus van duizenden producten logisch indelen, een mandje bouwen dat soepel op de telefoon werkt, en daarna de chatlaag voor klantenservice toevoegen. Het café leerde me dat goed design zichzelf uitlegt vóór iemand het uitlegt — dat was mijn maatstaf voor elk ontworpen scherm.",
-            "effort_stats": [("Producten in lijst", "3.029+"), ("Interfacetaal", "Arabisch"), ("Ontwerpprioriteit", "Mobiel eerst")],
-            "ops": ["Cloudflare Pages", "Wereldwijd CDN + automatisch SSL", "Gestructureerde productdata", "Klantenservicechat", "Doorlopende Wrangler-deployments"],
-            "cost_self": "0 MAD — volledig op een gratis stack gebouwd.",
-            "cost_market": "Ca. 8.000 – 25.000 MAD voor een Arabische webshop met deze functies.",
-            "cost_now": "0 MAD per maand op het gratis pakket.",
-            "cost_scale": "Eigen domein (100 – 150 MAD/jaar) en geavanceerde betaal- en voorraadtools bij groei.",
-        },
-        {
-            "value_intro": "DTSG bewaart een levende volkscultuur en brengt die naar de digitale generatie:",
-            "values": [
-                ("Marokkaans erfgoed, digitaal", "Ronda, Rami, Dama en meer spellen die families verenigen — met moderne interface en geluidseffecten."),
-                ("Live multiplayer", "Spelkamers en livechat via een realtime verbinding — als echte potjes, maar online."),
-                ("Volledig motivatiesysteem", "Toernooien, een ranglijst en een spelmunten-systeem dat partijen wedstrijdwaarde geeft."),
-                ("Echte software-engineering", "78 georganiseerde codemodules met sessies en authenticatie — structuur op professioneel niveau."),
-            ],
-            "effort": "Mijn meest technische project: 78 codemodules, live spelersverbindingen via WebSocket, een sessie- en authenticatiesysteem, geluids- en visuele effecten, plus toernooien en ranglijst. Elk spel was een eigen engineeringoefening — regels, AI, interface — voordat alles tot één platform werd samengevoegd.",
-            "effort_stats": [("Codemodules", "78"), ("Connectiviteit", "Realtime via WebSocket"), ("Platforms", "Web + Android-APK")],
-            "ops": ["Cloudflare Pages voor de frontend", "WebSocket-brug voor multiplayer", "Sessies & authenticatie (2FA)", "Geluidseffecten & Canvas-grafiek", "Android-app (APK)"],
-            "cost_self": "0 MAD contant; de echte investering: maanden van doorlopend leren en bouwen.",
-            "cost_market": "Ca. 25.000 – 80.000 MAD voor een live multiplayer-spelplatform van deze omvang.",
-            "cost_now": "0 MAD/maand voor de frontend op het gratis pakket.",
-            "cost_scale": "Specifieke WebSocket-diensten bij groei van spelers: geschat 100 – 400 MAD/maand afhankelijk van schaal.",
-        },
-        {
-            "value_intro": "HRMP vertaalt echte behoeften uit het Marokkaanse werkveld naar een professioneel beheerinstrument:",
-            "values": [
-                ("Gebouwd voor Marokko's echte sectoren", "Beveiliging, schoonmaak, tuinbouw, bouw en ambacht — sectoren die echte organisatie nodig hebben, geen geïmporteerde sjablonen."),
-                ("Van werving tot salaris", "Werving, dienstroosters, fraudebestendige geo-aanwezigheid en salarissen tot op de centime."),
-                ("Conform Marokkaans recht", "CNSS-, AMO- en inkomstenbelastinginhoudingen, met officiële Damancom- en SIMPL-IR-bestanden."),
-                ("Veilige scheiding tussen bedrijven", "Elk bedrijf in een geïsoleerde omgeving met gedefinieerde rollen en volledige auditlog."),
-            ],
-            "effort": "Mijn diepste project op administratief en juridisch vlak: de Marokkaanse Arbeidswet en de behoeften van kleine bedrijven begrijpen, dan een salarismotor bouwen die de officiële inhoudingen respecteert, een geofencing-aanwezigheidssysteem dat fraude weerstaat en rapporten in vier talen. Elke functie was een les in het vertalen van een echte administratieve behoefte naar software.",
-            "effort_stats": [("Salarismotor", "Marokkaanse Arbeidswet"), ("Rapporttalen", "4"), ("Implementatie", "Cloud of lokale server")],
-            "ops": ["Frontend op Cloudflare Pages", "Back-enddiensten via een beveiligde tunnel", "SQLite, opwaardeerbaar naar PostgreSQL", "PDF/DOCX-rapporten met RTL-ondersteuning", "Android-app (APK)"],
-            "cost_self": "0 MAD voor de frontend; de back-end draait op verzoek via een beveiligde tunnel.",
-            "cost_market": "Ca. 30.000 – 100.000 MAD voor een op-maat HR-platform met deze juridische diepgang.",
-            "cost_now": "0 MAD/maand voor de frontend; de back-end start op verzoek.",
-            "cost_scale": "Permanente back-endhosting en beveiligde tunnel: geschat 80 – 300 MAD/maand afhankelijk van bedrijven en gebruikers.",
-        },
-        {
-            "value_intro": "MAMP digitaliseert het Marokkaanse verenigingswerk met functies die geworteld zijn in de juridische en administratieve werkelijkheid:",
-            "values": [
-                ("Van de wet naar het scherm", "Elke module is gebouwd op een echte referentie: Wet 75.00, de dahir van 1958 en Wet 09.08 over gegevensbescherming — geen geïmporteerde oplossingen die de Marokkaanse werkelijkheid negeren."),
-                ("Boekhouding die aan de algemene vergadering voldoet", "Gecategoriseerde inkomsten en uitgaven, een voorlopig budget, dubbele goedkeuring en een jaarlijks financieel verslag, klaar om af te drukken en aan partners te tonen."),
-                ("Officiële kwitanties en transparantie", "Donaties en lidmaatschappen worden geregistreerd met genummerde officiële kwitanties en nalevingsopvolging — de transparantie die overheden en partners allebei verwachten."),
-                ("Een assistent zonder hallucinaties", "Een slimme assistent die procedure- en rechtsvragen beantwoordt vanuit een gecontroleerde officiële kennisbank — hij wijst precies de indieningsstap en de benodigde documenten."),
-            ],
-            "effort": "Mijn onderzoekintensiefste project: voordat ik één scherm schreef, las ik de wetteksten en begreep ik de levenscyclus van een vereniging, van oprichting tot algemene vergadering; daarna bouwde ik de modules één voor één — lidmaatschappen, boekhouding, donaties, evenementen, documenten — gekoppeld aan een rechtenstelsel op vijf niveaus en een auditlogboek dat elke gevoelige handeling vastlegt. Het platform is volledig Arabisch en ontworpen voor mensen zonder technische achtergrond.",
-            "effort_stats": [("Wettelijke referentie", "Wet 75.00 & dahir 1958"), ("Rechtenniveaus", "5"), ("Modules", "lidmaatschappen, boekhouding, donaties, evenementen, documenten")],
-            "ops": ["Next.js (React) — een snelle, schaalbare interface", "Inlogsysteem met ondertekende sessies", "Serverzijde gecontroleerde rechten", "Auditlogboek voor gevoelige handelingen", "Cloudflare Pages"],
-            "cost_self": "0 MAD — gebouwd op een volledig gratis stack; de echte investering waren maanden juridisch onderzoek en bouwen.",
-            "cost_market": "Ongeveer 40.000 – 120.000 MAD voor een verenigingsplatform met deze juridische en boekhoudkundige diepgang.",
-            "cost_now": "0 MAD per maand op het gratis pakket.",
-            "cost_scale": "Een permanente server en database naarmate het gebruik groeit: ongeveer 150 – 500 MAD per maand, afhankelijk van het aantal verenigingen.",
-        },
-        {
-            "value_intro": "ISYACAR verandert bezoekers van de bedrijfssite in klanten die met vertrouwen boeken:",
-            "values": [
-                ("Negen talen voor een wereldwijd publiek", "De klant in Marrakech komt van overal — de site spreekt zijn taal: Frans, Engels, Arabisch, Russisch, Spaans, Italiaans, Nederlands, Duits en Japans."),
-                ("Boeken zonder wrijving", "De prijs is duidelijk vanaf 300 MAD per dag en boeken gebeurt met één tik op WhatsApp — zonder lange formulieren die de klant wegjagen."),
-                ("Levering op luchthaven en hotel", "De auto bereikt de luchthaven van Marrakech of het hotel binnen 15 minuten, gratis, met hulp dag en nacht — de service waar klanten hun vrienden over vertellen."),
-                ("Inhoud die vertrouwen bouwt", "Praktische gidsen over verzekering, wegen en ritkosten beantwoorden de vragen van de klant voordat hij ze stelt — contentmarketing in plaats van beloftes."),
-            ],
-            "effort": "Een bestaande site verbeteren voor een echt bedrijf is iets anders dan vanuit het niets bouwen: ik bewaarde de identiteit van het bedrijf en mijn vriend (wagenpark, adressen, telefoon) en bouwde de ervaring er opnieuw omheen — pagina's per waggencategorie, een engine met negen talen, adviesinhoud over verzekering en wegen, en een chat die dag en nacht antwoordt. Het zakelijke doel is op elk scherm zichtbaar: een bezoeker die begrijpt, vertrouwt en vervolgens boekt.",
-            "effort_stats": [("Interfacetalen", "9"), ("Wagenparkcategorieën", "economy, SUV en luxe"), ("Boekingskanaal", "direct via WhatsApp")],
-            "ops": ["Cloudflare Pages", "Wereldwijd CDN + automatisch SSL", "Vertaalengine met negen talen", "Geautomatiseerde chat voor veelgestelde vragen", "Directe WhatsApp-links om te boeken"],
-            "cost_self": "0 MAD — de herbouw en verbetering gebeurden op een volledig gratis stack, als dienst aan een vriend.",
-            "cost_market": "Ongeveer 10.000 – 35.000 MAD voor een meertalige verhuursite op dit niveau.",
-            "cost_now": "0 MAD per maand op het gratis pakket.",
-            "cost_scale": "De eigen domeinnaam van het bedrijf (ongeveer 100 – 150 MAD per jaar) plus geavanceerde boekings- en trackingtools naarmate de bestellingen groeien.",
-        },
+    'greeting': 'Hallo, ik ben',
+    'name': 'Tarik Chouika',
+    'name_alt': 'طارق شويكة',
+    'roles': [
+        'Gecertificeerde digitale professional (13 certificaten)',
+        'Websitebouwer met AI-ondersteuning',
+        'Expert in operaties & klantenservice',
+        'Tien jaar veldervaring'
     ],
-    "pp_tools": "Gereedschap en vaardigheden — simpel uitgelegd",
-    "pp_tools_note": "Elk gereedschap, elke bibliotheek en elke vaardigheid die ik in dit project gebruikte, in gewone taal uitgelegd: wat het is en wat het hier precies toevoegde — zonder cryptische symbolen.",
-    "project_tools": [
+    'alt_profile': 'Portretfoto van Tarik Chouika',
+    'cta_contact': 'Neem contact op',
+    'cta_cv': 'CV downloaden (PDF)',
+    'stats': [
         [
-            ("HTML5", "De grondtaal van webpagina's: ze bepaalt de structuur van elke pagina — titels, afbeeldingen, links en knoppen. Het is het geraamte waarop al het rust staat, zoals het skelet van een gebouw vóór de verf."),
-            ("CSS3", "De opmaaktaal die pagina's hun uiteindelijke vorm geeft: kleuren, lettertypes, tussenruimtes en aanpassing aan de telefoon. Het is het verschil tussen een grauwe pagina zonder ziel en een interface die prettig is voor het oog."),
-            ("JavaScript", "De taal van interactie in de browser: ze verandert de site van een statische vertoning in een levende ervaring — direct zoeken, producten sorteren en van taal wisselen zonder de pagina te herladen."),
-            ("Meertalige vertaalengine", "Code die ik zelf schreef en die de teksten van de site in zes talen bewaart en ze direct wisselt naar keuze van de bezoeker — in plaats van zes aparte sites te bouwen, dient één site iedereen."),
-            ("JSON-datalaag", "Gestructureerde bestanden die producten, prijzen en ingrediënten overzichtelijk en leesbaar bewaren; een nieuw product toevoegen betekent alleen het bestand bewerken, zonder het ontwerp aan te raken."),
-            ("Zoekmachineoptimalisatie (SEO)", "Nauwkeurige titels en beschrijvingen voor elke pagina, zodat een Google-zoekopdracht ze bij de eerste poging vindt — een gratis bezoeker die reclame niet kan kopen."),
-            ("Beheer van affiliatielinks", "Eén bestand dat de officiële aankooplinks bundelt: betrouwbaar, actueel en gescheiden van de inhoud — het beschermt de bezoeker tegen verdachte links en maakt updates eenvoudig."),
-            ("Cloudflare Pages", "De hosting: een wereldwijd netwerk dat de site gratis over honderden servers verspreidt, zodat hij uit elk land snel opent, met een automatisch SSL-beveiligingscertificaat."),
+            '10+',
+            'Jaar ervaring'
         ],
         [
-            ("HTML5", "De structuur van de winkel: de pagina's voor afdelingen, producten en winkelwagen zijn gebouwd in de grondtaal van het web — licht en snel, zelfs bij een zwakke verbinding."),
-            ("CSS3", "De opmaak die de winkel zijn elegante Arabische karakter geeft: warme kleuren, duidelijke lettertypes en een ontwerp dat eerst voor het telefoonscherm is gedacht en dan voor de computer."),
-            ("JavaScript", "De interactie-engine: afdelingen doorbladeren, de winkelwagen bijwerken en zoeken — alles werkt direct in de browser van de klant, zonder op een verre server te wachten."),
-            ("Interactieve winkelwagen", "Code die de keuzes van de klant bewaart en het totaal rechtstreeks in zijn browser berekent — en ze bewaart blijven, ook als hij de pagina sluit en later terugkeert."),
-            ("Live chat", "Een venster dat de klant tijdens het winkelen vergezelt en zijn vragen beantwoordt — zoals de verkoper die je in een echte winkel verwelkomt en rondleidt."),
-            ("Catalogusstructuur", "Een doordachte navigatie: hoofdafdelingen en subcategorieën afgestemd op de beleving van de Arabische klant — van het algemene naar het bijzondere in een paar tikken."),
-            ("Cloudflare Pages", "Gratis wereldwijde hosting: snel openen vanuit elk land en een automatisch SSL-certificaat — infrastructuur op het niveau van de grote winkels."),
+            '13',
+            'Certificeringen'
         ],
         [
-            ("Pu JavaScript (Vanilla)", "Programmeren zonder kant-en-klare bibliotheken: volledige controle over elk detail en hogere snelheid — de juiste keuze voor een spellenplatform waar elke milliseconde telt."),
-            ("HTML5 en CSS3", "De structuur en opmaak van de interface: speeltafels, kaarten en knoppen zijn nauwkeurig getekend en passen zich aan telefoon én computer aan."),
-            ("WebSocket", "Een communicatiekanaal dat openblijft tussen spelers en server: het draagt elke zet op hetzelfde moment over — je tegenstander speelt een kaart en hij verschijnt bij jou in hetzelfde ogenblik."),
-            ("Sessie- en authenticatiesysteem", "Het bewaart de identiteit van elke speler na het inloggen en beschermt accounts met wachtwoord en tweestapsverificatie — eerlijk spel zonder identiteitsdiefstal."),
-            ("Canvas", "Een tekenvlak in de browser: de tafel, de kaarten en de pionnen worden er beeldje voor beeldje op getekend — vloeiende beweging zoals in professionele games."),
-            ("Geluidseffecten", "De klanken van kaarten, tikken en overwinning brengen de geest van echte speelavonden terug naar het scherm — het detail dat spelers zich het meest herinneren."),
-            ("Code opgesplitst in 78 modules", "Elk spel en elke functie in een eigen bestand: een fout oplossen of iets toevoegen blijft eenvoudig — als een geordende werkplaats waar elk gereedschap zijn plek heeft."),
-            ("Cloudflare Pages", "De interface gehost op een gratis wereldwijd netwerk — spelers uit elk land openen het platform snel en veilig."),
+            '5',
+            'Kennisgebieden'
         ],
         [
-            ("HTML5, CSS3 en JavaScript", "De basis van de interface: praktische Arabische schermen, gebouwd in de grondtaal van het web — licht, snel en geschikt voor dagelijks gebruik in een bedrijf."),
-            ("Back-enddiensten via een beveiligde tunnel", "Het onzichtbare deel van het platform (accounts en loonadministratie) draait op een server die via een versleuteld kanaal aan de wereld wordt gepubliceerd — een praktische oplossing om echte diensten vanaf gratis hosting te draaien."),
-            ("De loonengine", "Code die lonen en inhoudingen (CNSS, AMO en inkomstenbelasting) berekent volgens de Marokkaanse Arbeidswet, op de centimeter nauwkeurig, en de officiële bestanden Damancom en SIMPL-IR genereert."),
-            ("SQLite-database", "De geordende informatiekast met personeelsdossiers, contracten en diensten in een lichte database die later naar PostgreSQL kan groeien wanneer het bedrijf uitbreidt."),
-            ("Rechten- en isolatiesysteem", "Elk bedrijf leeft in zijn eigen geïsoleerde ruimte met gedefinieerde rechten — de directeur ziet alleen zijn bedrijf, en het logboek registreert elke handeling."),
-            ("PDF- en DOCX-rapporten met RTL-ondersteuning", "Het genereren van officiële, afdrukklare rapporten die de Arabische schrijfrichting van rechts naar links respecteren — het rapport dat een directeur zo kan presenteren."),
-            ("Cloudflare Pages", "Gratis wereldwijde hosting van de interface — de rest draait op vraag via de server en de beveiligde tunnel."),
-        ],
-        [
-            ("Next.js (React)", "Het framework waarmee ik het platform bouwde: uit de React-familie die de grootste websites ter wereld gebruiken — het bouwt snelle interfaces en deelt het scherm op in componenten die gemakkelijk te ontwikkelen en te onderhouden zijn."),
-            ("React", "Een manier om de interface op te bouwen uit kleine onafhankelijke componenten — een knop, een kaart, een tabel — die samenvallen als legostenen; een fout in één component breekt niet het hele platform, en een functie toevoegen betekent niet opnieuw bouwen."),
-            ("Arabische RTL-interface", "Een structuur die zich automatisch aanpast aan schrijven van rechts naar links: menu's, tabellen en knoppen wijzen allemaal de juiste kant op — een platform dat van nature in het Arabisch denkt, niet als vertaling."),
-            ("Inloggen en ondertekende sessies", "Wachtwoorden zijn versleuteld en sessies ondertekend, door de server bij elk verzoek gecontroleerd — jouw account is alleen van jou, ook al probeert iemand jouw rechten na te bootsen."),
-            ("Rechten op vijf niveaus", "Van de platformeigenaar tot de burger: vijf rollen die de server controleert voordat een scherm verschijnt — elke gebruiker ziet alleen wat hem aangaat, met gegarandeerde scheiding van taken."),
-            ("Auditlogboek", "Een digitaal dagboek dat elke gevoelige handeling vastlegt: wie wat deed en wanneer — de hoeksteen van vertrouwen in de verenigingsboekhouding tegenover de algemene vergadering en de overheid."),
-            ("Het lettertype Cairo", "Een open Arabisch lettertype van Google, ontworpen voor schermen: duidelijk op elke grootte — het geeft het platform een elegante, leesbare Arabische identiteit."),
-            ("Cloudflare Pages", "Gratis wereldwijde hosting: het platform is verdeeld over een wereldwijd netwerk en opent snel vanuit Marokko en daarbuiten, met een automatisch beveiligingscertificaat."),
-        ],
-        [
-            ("HTML5, CSS3 en JavaScript", "Een op maat gemaakte bouw vanaf nul in de grondtaal van het web: snelle, lichte interfaces, ontworpen voor een klant die vanaf zijn telefoon op een luchthaven of hotel surft."),
-            ("Engine met negen talen", "Een vertaalsysteem dat de klant in zijn eigen taal aanspreekt — Frans, Engels, Arabisch, Russisch, Spaans, Italiaans, Nederlands, Duits en Japans — want de klant in Marrakech komt uit de hele wereld."),
-            ("Meertalig SEO (hreflang)", "Tags die Google vertellen welke taalversie welke is, zodat elke versie in zijn eigen land scoort: de Russische klant vindt de Russische versie, de Japanse de Japanse — de basis van organische marketing voor een toerismebedrijf."),
-            ("Boeken via WhatsApp", "De klant boekt met één tik in de app die hij toch al gebruikt — geen formulieren, geen nieuw account; het kortste pad tussen wens en boeking."),
-            ("Geautomatiseerde chat", "Hij beantwoordt de veelgestelde vragen — documenten, prijzen, verzekering — dag en nacht en geeft bijzondere gevallen door aan het team; een receptionist die nooit slaapt."),
-            ("Lettertypes voor meerdere alfabetten", "Een modern Latijns, een Arabisch en een Japans lettertype: elke taal verschijnt in haar eigen authenticiteit in plaats van als cosmetische vertaling — een detail dat het respect van de klant wint."),
-            ("Adviesinhoud", "Praktische gidsen over verzekering, wegen en ritkosten beantwoorden de vragen van de klant voordat hij ze stelt — contentmarketing die vertrouwen bouwt in plaats van beloftes te doen."),
-            ("Cloudflare Pages", "Gratis wereldwijde hosting met snel openen vanuit elk land en een automatisch SSL-certificaat — altijd beschikbaar wanneer de klant besluit te boeken."),
-        ],
+            '7',
+            'Digitale projecten'
+        ]
     ],
+    'about_title': 'Over mij',
+    'about_sub': 'Internationaal gecertificeerde digitale kennis, op een stevige basis van tien jaar veldervaring',
+    'about_p1': 'Ik ben Tarik Chouika, een Marokkaanse professional uit Rabat die ervoor koos zijn carrière met vertrouwen opnieuw richting de digitale wereld te tekenen. Mijn kennis is gedocumenteerd met 13 certificeringen van Google, HP LIFE, Huawei en nationale trainingsinstellingen, die kunstmatige intelligentie, digitale marketing, webtechnologieën, leiderschap en professionele communicatie dekken — kennis die ik elke dag verder ontwikkel en toepas, geen certificaten aan de muur.',
+    'about_p2': 'Mijn verschil: ik leer niet alleen, ik bouw. Wat ik heb opgedaan zette ik in in vier live digitale projecten die tot stand kwamen met hulp van AI-modellen: een meertalige gids en winkel voor natuurlijke supplementen, een complete Arabische webwinkel, een platform voor traditionele Marokkaanse spellen met live multiplayerkamers, en een HR-platform rond de Marokkaanse arbeidswet — van idee tot publicatie op Cloudflare Pages.',
+    'about_p3': 'Vóór deze digitale reis bracht ik meer dan tien jaar door in omgevingen die geen luiheid verdragen: het leiden en runnen van een volkscafé met volledige verantwoordelijkheid voor operaties, voorraad en service, naast ervaring in de bouw en beveiliging. Daar werden mijn vaardigheden echt gesmeed: klantenservice, omgaan met druk, discipline en mensenkennis.',
+    'about_p4': 'Vandaag bied ik deze zeldzame combinatie: een stevige veldmentaliteit samen met verifieerbare, gecertificeerde digitale kennis. Ik zoek een kans om te bewijzen dat mijn certificaten geen papier zijn, en dat een decennium in dienst van het publiek een professional smeedt die nooit teleurstelt. Klaar om direct te beginnen.',
+    'fact_loc_l': 'Locatie',
+    'fact_email_l': 'E-mail',
+    'fact_status_l': 'Status',
+    'fact_status_v': 'Beschikbaar voor nieuwe mogelijkheden',
+    'exp_title': 'Professionele ervaring',
+    'exp_sub': 'Een gevarieerde loopbaan gebouwd op discipline en verantwoordelijkheid',
+    'jobs': [
+        {
+            'period': '2016 – 2018 · 2020 – 2025',
+            'title': 'Cafémanager & operationsleider',
+            'org': 'Café- en horecasector',
+            'bullets': [
+                'Volledige leiding van de dagelijkse café-operaties en organisatie van de werkstroom.',
+                'Efficiënte bereiding en service van dranken met garantie van topkwaliteit service.',
+                'Voorraadbeheer, inkooporganisatie en dagelijkse kasbeheer.',
+                'Oplossing van onverwachte problemen en flexibele aanpassing aan elk klantprofiel om hun tevredenheid te garanderen.'
+            ]
+        },
+        {
+            'period': '2015 – 2016',
+            'title': 'Hulpwerker bij bouw- en sloopwerkzaamheden',
+            'org': 'Bouwplaatsen',
+            'bullets': [
+                'Bijdrage aan bouwwerkzaamheden en ondersteuning van de bouwplaatsen met efficiëntie en discipline.',
+                'Naleving van arbeidsveiligheidsnormen en gedijen onder veeleisende fysieke omstandigheden.'
+            ]
+        },
+        {
+            'period': '2013 – 2014',
+            'title': 'Beveiligingsmedewerker',
+            'org': 'Beveiligings- en bewakingsdiensten',
+            'bullets': [
+                'Beveiliging van gebouwen en bewaking van de werkperimeter om veiligheid te garanderen.',
+                "Situaties aanpakken met vastberadenheid, wijsheid en constante alertheid om risico's te voorkomen."
+            ]
+        }
+    ],
+    'cert_title': 'Certificaten en cursussen',
+    'cert_sub': '13 certificeringen in 5 vakgebieden, van Google, HP LIFE, Huawei en Marokkaanse nationale instellingen',
+    'l_issuer': 'Uitgegeven door',
+    'l_date': 'Datum van uitgifte',
+    'l_cred': 'Certificaat-ID',
+    'l_view': 'Certificaat bekijken',
+    'l_details': 'Certificaatpagina',
+    'l_pj_details': 'Projectdetails',
+    'lb_close': 'Sluiten',
+    'lb_prev': 'Vorige certificaat',
+    'lb_next': 'Volgende certificaat',
+    'lb_drive': 'Verifiëren op Google Drive',
+    'cp_home': 'Startpagina',
+    'cp_certs': 'Certificaten',
+    'cp_about': 'Over dit certificaat',
+    'cp_skills': 'Opgedane vaardigheden',
+    'cp_prospects': 'Vooruitzichten en toepassingen',
+    'cp_roles': 'Verwante paden en rollen',
+    'cp_meta': 'Certificaatgegevens',
+    'cp_verify': 'Dit certificaat verifiëren op Google Drive',
+    'cp_view_img': 'Afbeelding op volledige grootte bekijken',
+    'cp_print': 'Deze pagina afdrukken',
+    'cp_back': 'Alle certificaten',
+    'cp_prev': 'Vorige certificaat',
+    'cp_next': 'Volgende certificaat',
+    'cp_related': 'Certificaten in hetzelfde vakgebied',
+    'pp_home': 'Startpagina',
+    'pp_projects': 'Projecten',
+    'pp_about': 'Over het project',
+    'pp_tech': 'Gebruikte technologieën',
+    'pp_features': 'Belangrijkste functies',
+    'pp_learned': 'Wat ik ervan heb geleerd',
+    'pp_visit': 'Live-site bezoeken',
+    'pp_live': 'Gepubliceerd en online',
+    'pp_host': 'Hosting',
+    'pp_domain': 'Adres',
+    'pp_status': 'Status',
+    'pp_built_label': 'Bouwmethode',
+    'pp_built': 'Met hulp van AI-modellen',
+    'pp_back': 'Alle projecten',
+    'pp_prev': 'Vorige project',
+    'pp_next': 'Volgende project',
+    'fields': {
+        'all': 'Alle',
+        'ai': 'Kunstmatige intelligentie',
+        'biz': 'Professionele vaardigheden',
+        'civic': 'Burgerlijke betrokkenheid',
+        'marketing': 'Digitale marketing',
+        'web': 'Webtechnologieën'
+    },
+    'issuers': {
+        'google_en': 'Google Digital Garage / Skillshop',
+        'google_ar': 'Maharat min Google — geaccrediteerd door The Open University en IAB Europe',
+        'huawei': 'Huawei ICT Academy',
+        'portal': 'Nationale portal voor online verenigingstraining — Marokko',
+        'hp': 'HP LIFE — HP Foundation'
+    },
+    'certs': [
+        {
+            'title': 'Grondbeginselen van digitale marketing (Engels)',
+            'desc': 'Gecertificeerd programma van Google over de grondbeginselen van digitale marketing: zoeken, digitale advertenties, sociale media en webanalyse.'
+        },
+        {
+            'title': 'Grondbeginselen van digitale marketing (Arabisch)',
+            'desc': 'Maharat min Google-certificaat, geaccrediteerd door The Open University en IAB Europe, dat digitale strategie, e-mailmarketing en sociale marketing omvat.'
+        },
+        {
+            'title': 'Overzicht van kunstmatige intelligentie',
+            'desc': 'Training van de Huawei ICT Academy die de kernconcepten van AI en de toepassingen ervan in informatie- en communicatietechnologie introduceert.'
+        },
+        {
+            'title': 'Module: Participatieve democratie',
+            'desc': "Training via Marokko's nationale e-learningportal voor verenigingen, over de principes van participatieve democratie en burgerlijke betrokkenheid."
+        },
+        {
+            'title': 'Module: Juridisch kader voor het oprichten van verenigingen',
+            'desc': 'Gecertificeerde training over de Marokkaanse verenigingswet en de juridische procedures voor het oprichten en leiden van verenigingen.'
+        },
+        {
+            'title': 'Module: Gemeenschapscommunicatie',
+            'desc': 'Trainingsprogramma gericht op communicatie- en organisatievaardigheden voor verenigingswerk en burgerinitiatieven.'
+        },
+        {
+            'title': 'AI voor zakelijke professionals',
+            'desc': 'HP LIFE-cursus over AI-tools in het bedrijfsleven: zelfstandige versus geïntegreerde tools, effectieve prompts en ethisch gebruik.'
+        },
+        {
+            'title': 'Effectief leiderschap',
+            'desc': 'HP LIFE-cursus over leiderschapsstijlen en -strategieën, en de rol van ethiek in succesvol teamleiderschap.'
+        },
+        {
+            'title': 'AI voor beginners',
+            'desc': 'HP LIFE-introductie tot AI: de impact op het technologische landschap, het belang van data en ethische overwegingen in het bedrijfsleven.'
+        },
+        {
+            'title': 'Professionele communicatie voor carrièregroei',
+            'desc': 'HP LIFE-cursus over het opbouwen van een professioneel netwerk, personal branding en digitale tools om zelfverzekerd te groeien.'
+        },
+        {
+            'title': 'Effectieve websites',
+            'desc': 'HP LIFE-cursus over best practices voor zakelijk webdesign, het begrijpen van bezoekersgedrag en het meten van websiteprestaties.'
+        },
+        {
+            'title': 'E-mail op het werk',
+            'desc': "HP LIFE-cursus over het schrijven van effectieve professionele e-mails en het juiste gebruik van e-mail in verschillende werkscenario's."
+        },
+        {
+            'title': 'Strategische planning in het AI-tijdperk',
+            'desc': 'HP LIFE-cursus over strategisch denken en betere beslissingen nemen in een AI-gedreven bedrijfsomgeving, en het evalueren van planningskaders.'
+        }
+    ],
+    'cert_pages': [
+        {
+            'overview': 'Een gecertificeerd programma van Google Digital Garage dat via meerdere Engelstalige trainingsmodules de volledige basis van digitale marketing behandelt: digitale merkaanwezigheid, zichtbaarheid in zoekmachines, betaalde advertenties, e-mail- en socialmediamarketing en ten slotte het meten van resultaten met data. Ik behaalde het in 2021 — mijn eerste internationale certificering op het digitale pad.',
+            'skills': [
+                'Een digitale marketingstrategie opbouwen',
+                'Zichtbaarheid in zoekmachines (SEO)',
+                'Digitale advertentiecampagnes starten',
+                'E-mail- en socialmediamarketing',
+                'Campagneprestaties meten met data',
+                'Effectieve digitale content schrijven'
+            ],
+            'prospects': 'Een stevige basis voor elke rol in digitale promotie: paginabeheer en content, bijdragen aan kleine en middelgrote campagnes, of groeikanalen opbouwen voor een eigen online bedrijf.',
+            'roles': [
+                'Assistent digitale marketing',
+                'Content- en paginabeheer',
+                'E-commerce support'
+            ]
+        },
+        {
+            'overview': 'De geaccrediteerde Arabische editie van het Maharat min Google-programma, mede-geaccrediteerd door The Open University en IAB Europe — een wereldklassecertificaat in helder Arabisch. Het behandelt het opbouwen van een praktische digitale strategie, het bereiken van doelgroepen via mobiel, e-mail en social media, en technieken voor zichtbaarheid in zoekmachines, met bijzondere aandacht voor de lokale Arabische context.',
+            'skills': [
+                'Digitale campagnes in het Arabisch plannen',
+                'Mobiele marketing',
+                'Contentmarketing',
+                "Succes meten met heldere KPI's",
+                'Online gedrag van Arabische consumenten begrijpen',
+                'Adverteren op social media'
+            ],
+            'prospects': 'Een directe kwalificatie voor content- en digitale communicatierollen in Arabische omgevingen, en een praktische pijler voor elk bedrijf dat een Arabisch online publiek bedient.',
+            'roles': [
+                'Digitaal communicatieverantwoordelijke',
+                'Contentcreator',
+                'E-commerce support'
+            ]
+        },
+        {
+            'overview': 'Een training van de Huawei ICT Academy die een volledig begrip van kunstmatige intelligentie opbouwt: van de kernbegrippen (machine learning en neurale netten) via de evolutiefases van het vakgebied tot de praktische toepassingen in informatie- en communicatietechnologie en daarbuiten. Een recente certificering (2026) die een venster opent naar de meest invloedrijke technologie van onze tijd.',
+            'skills': [
+                'Concepten van machine learning & neurale netten',
+                'AI-toepassingen in ICT',
+                'De evolutie van AI-technologie volgen',
+                'Een snel veranderend techlandschap lezen',
+                'AI verbinden met praktische oplossingen'
+            ],
+            'prospects': 'De officiële toegangspoort tot de wereld van AI; het biedt de minimale kennis om diepere trainingen te volgen en de impact van de technologie op verschillende sectoren te begrijpen.',
+            'roles': [
+                'Trainee digitale technologie',
+                'Professionele AI-tools gebruiker',
+                'Assistent digitale projecten'
+            ]
+        },
+        {
+            'overview': "Een trainingsmodule via Marokko's nationale portal voor online verenigingstraining, onder het ministerie dat de relaties met het Parlement beheert. Het behandelde de principes en mechanismen van participatieve democratie: burgerparticipatie in het bestuur van de publieke zaak, de rollen van het maatschappelijk middenveld en de constitutionele mechanismen die de burger tot partner maken in de besluitvorming.",
+            'skills': [
+                'Principes van participatieve democratie',
+                'Mechanismen van burgerparticipatie',
+                'Rollen van het maatschappelijk middenveld',
+                'Het constitutionele kader van participatie',
+                'Cultuur van publieke zaken'
+            ],
+            'prospects': 'Essentiële kennis voor iedereen die actief is in verenigingswerk of wil deelnemen aan het maatschappelijke en institutionele leven — en wil begrijpen hoe publieke besluiten in Marokko genomen worden.',
+            'roles': [
+                'Verenigingswerk & maatschappelijk middenveld',
+                'Burgerinitiatieven',
+                'Ondersteuning van lokale projecten'
+            ]
+        },
+        {
+            'overview': 'Een gecertificeerde module die het complete juridische kader voor verenigingen in Marokko van A tot Z uitlegt: hoe een vereniging juridisch op te richten, welke documenten nodig zijn, bestuursorganen en hun rollen, rechten en plichten, en een gezonde relatie met het bestuur — van het dossier voorbereiden tot de dagelijkse juridische verenigingsvoering.',
+            'skills': [
+                'Verenigingen oprichten in Marokko',
+                'Juridische dossiers voorbereiden',
+                'Bestuursorganen en hun rollen',
+                'Juridische rechten en plichten',
+                'Degelijke juridische verenigingsvoering'
+            ],
+            'prospects': 'Maakt het praktisch mogelijk deel te nemen aan het oprichten en besturen van verenigingen in volledige wettelijke naleving — een gevraagde vaardigheid in verenigingswerk, burgerinitiatieven en institutionele partnerschappen.',
+            'roles': [
+                'Oprichter of bestuurslid van een vereniging',
+                'Administratieve & juridische ondersteuning',
+                'Community-initiatieven'
+            ]
+        },
+        {
+            'overview': 'Een trainingsmodule gericht op het hart van succesvol verenigingswerk: communicatie. Het behandelt interne communicatie tussen leden, externe communicatie met publiek, partners en instellingen, en het organiseren van boodschappen en veldcampagnes die de impact van de vereniging vergroten en de steunbasis verbreden.',
+            'skills': [
+                'Verenigingscommunicatie plannen',
+                'Communiceren met publiek & partners',
+                'Veldcampagnes organiseren',
+                'Duidelijke, overtuigende boodschappen bouwen',
+                'Teamwerk organiseren'
+            ],
+            'prospects': 'Versterkt de gereedheid voor coördinatie- en communicatierollen in elke collectieve inspanning — binnen en buiten verenigingen — waar communicatie de meest gevraagde vaardigheid blijft.',
+            'roles': [
+                'Communicatiecoördinator',
+                'Lid van een organisatieteam',
+                'Gemeenschapsfacilitator'
+            ]
+        },
+        {
+            'overview': 'Een HP LIFE-cursus voor professionals over het inzetten van kunstmatige intelligentie in het bedrijfsleven: zelfstandige tools onderscheiden van geïntegreerde, effectieve prompts schrijven die het beste naar boven halen, en het ethische, verantwoorde gebruik van technologie in dienst van professionele groei.',
+            'skills': [
+                'Professioneel prompts schrijven',
+                'De juiste AI-tool kiezen',
+                'AI in het dagelijks werk integreren',
+                'Ethisch gebruik van technologie',
+                'AI-output beoordelen'
+            ],
+            'prospects': 'Een direct dagelijkse vaardigheid: schrijf- en analysetaken versnellen en de kwaliteit en productiviteit van het werk verhogen — in elke rol die tekst, data of klantenservice raakt.',
+            'roles': [
+                'Professionele AI-tools gebruiker',
+                'Ondersteuning van digitale operaties',
+                'Kantoorproductiviteit verbeteren'
+            ]
+        },
+        {
+            'overview': 'Een HP LIFE-cursus over wat leiderschap echt succesvol maakt: de verschillende leiderschapsstijlen en wanneer je welke inzet, strategieën om een team positief te beïnvloeden, en het bouwen van een prestatiegerichte werkcultuur — met de spilrol die ethiek speelt in echt leiderschap.',
+            'skills': [
+                'Leiderschapsstijlen & de juiste keuze',
+                'Teams met vertrouwen leiden',
+                'Motivatie & werkcultuur',
+                'Ethische besluitvorming in management',
+                'Teamprestaties beoordelen'
+            ],
+            'prospects': 'Mijn veldervaring in het leiden van een café met een team maakt dit certificaat een natuurlijke voortzetting van mijn pad — directe gereedheid om grotere teams te leiden in dienstverlening of digitale projecten.',
+            'roles': [
+                'Teamleider',
+                'Locatie-/ploegverantwoordelijke',
+                'Projectcoördinator'
+            ]
+        },
+        {
+            'overview': "HP LIFE's introductie tot kunstmatige intelligentie vanaf nul: wat AI is en hoe het werkt, waarom data de kernbrandstof is, hoe het hele zakelijke landschap is getransformeerd, en de ethische overwegingen die je moet begrijpen voordat je het gebruikt.",
+            'skills': [
+                'Kernbegrippen van AI',
+                'De rol van data begrijpen',
+                'De impact van technologie op business volgen',
+                'Bewustzijn van ethische uitdagingen',
+                'Kritisch omgaan met AI-tools'
+            ],
+            'prospects': 'Een stevige basis voor iedereen die zonder programmeerachtergrond in technologie wil stappen — praktisch bewijs dat elke gedetermineerde de tools van de toekomst kan begrijpen en overnemen.',
+            'roles': [
+                'Startpunt van een digitaal pad',
+                'Bewust gebruik van AI-tools',
+                'Continue zelfontwikkeling'
+            ]
+        },
+        {
+            'overview': 'Een HP LIFE-cursus over de belangrijkste factor in carrièregroei: je netwerk. Het behandelt strategieën voor het opbouwen van een echt professioneel netwerk, het ontwikkelen van een persoonlijk merk, en het slimme gebruik van digitale tools — van professionele netwerken tot e-mail — om deuren naar nieuwe kansen te openen.',
+            'skills': [
+                'Een professioneel netwerk opbouwen',
+                'Persoonlijke branding',
+                'Digitale professionele communicatie',
+                'Je professionele imago managen',
+                'Kansen omzetten in resultaten'
+            ],
+            'prospects': 'Verandert elke carrière van het wachten op kansen in het creëren ervan; een duidelijke basis voor wie werk zoekt, partnerschappen of een professionele wending naar de digitale sector.',
+            'roles': [
+                'Carrièreontwikkeling',
+                'Digitale professionele aanwezigheid',
+                'Professioneel netwerken'
+            ]
+        },
+        {
+            'overview': 'Een HP LIFE-cursus die uitlegt wat de website van een bedrijf succesvol maakt: bewezen klantgerichte ontwerppraktijken, inzicht in hoe bezoekers werkelijk navigeren, en het meten van websiteprestaties met echte metrics in plaats van giswerk.',
+            'skills': [
+                'Principes van effectief webdesign',
+                'Bezoekersgedrag begrijpen',
+                'Prestatie- & conversiemetrics',
+                'De gebruikerservaring verbeteren',
+                'Website-analyses lezen'
+            ],
+            'prospects': 'Ik paste het direct toe in mijn vier gepubliceerde projecten; het is de maatstaf waarmee ik elke website — die van mij of van anderen — beoordeel voordat ik hem overneem of verbeter.',
+            'roles': [
+                'Websites beoordelen & verbeteren',
+                'Ondersteuning van digitale aanwezigheid',
+                'Onafhankelijke webprojecten'
+            ]
+        },
+        {
+            'overview': 'Een HP LIFE-cursus over het meest gebruikte en minst beheerste gereedschap op het werk: e-mail. Van de structuur van een effectieve professionele boodschap tot de juiste toon voor elk scenario — verzoeken, opvolgingen, verduidelijkingen, onderhandelingen — en het juiste gebruik van e-mail in professionele contexten.',
+            'skills': [
+                'Effectieve professionele e-mails schrijven',
+                'Structuur & inhoud van het bericht',
+                'De juiste toon voor elke situatie',
+                'Professioneel opvolgen',
+                'Slim postvakbeheer'
+            ],
+            'prospects': 'Een directe invloed op de dagelijkse professionele indruk: een duidelijke, respectvolle e-mail betekent snellere antwoorden en meer kansen — een vaardigheid die elke werkgever of partner direct opmerkt.',
+            'roles': [
+                'Bedrijfscommunicatie',
+                'Klantenservice via e-mail',
+                'Administratieve ondersteuning'
+            ]
+        },
+        {
+            'overview': 'Mijn nieuwste certificering: een HP LIFE-cursus over strategisch denken in een AI-gedreven wereld. Het behandelt de essentiële bouwstenen van elk succesvol plan, het evalueren van praktische planningskaders en het kiezen van het meest geschikte, en het verwerven van vaardigheden om AI-tools te gebruiken ter ondersteuning van planning en betere beslissingen.',
+            'skills': [
+                'Systematisch strategisch denken',
+                'Bouwstenen van een strategisch plan',
+                'Planningskaders evalueren',
+                'Databeslissingen nemen',
+                'AI gebruiken bij planning'
+            ],
+            'prospects': 'Het verbindt mijn hele pad: mijn certificeringen in AI, marketing en leiderschap komen samen in het vermogen een helder plan te trekken en het te volgen — de vaardigheid van wie wil leiden, niet geleid wil worden.',
+            'roles': [
+                'Projectplanning & coördinatie',
+                'Besluitvorming ondersteunen',
+                'Ondernemerschap'
+            ]
+        }
+    ],
+    'drive_title': 'Volledige certificatenmap',
+    'drive_text': 'De originele Google Drive-map bevat alle 13 certificaten in hun volledige formaat, op elk moment beschikbaar voor verificatie.',
+    'drive_cta': 'Openen op Google Drive',
+    'pj_title': 'Mijn digitale projecten',
+    'pj_sub': 'Zeven live projecten die ik heb gebouwd als onderdeel van mijn digitale leerreis',
+    'pj_note': 'Ik heb deze projecten ontwikkeld met behulp van AI-modellen als onderdeel van zelfstudie en het verbeteren van mijn digitale vaardigheden — ze zijn allemaal gepubliceerd en draaien op Cloudflare Pages.',
+    'pj_visit': 'Project bezoeken',
+    'projects': [
+        {
+            'name': 'NATSUP',
+            'tag': 'E-commerce — Natuurlijke supplementen',
+            'desc': 'Complete gids en winkel voor natuurlijke supplementen met productinformatie, prijzen en officiële aankooplinks in meerdere talen.'
+        },
+        {
+            'name': 'SYDA',
+            'tag': 'Algemene webwinkel',
+            'desc': 'Volledige Arabische webwinkel met duizenden producten voor huis, beauty, elektronica en meer, met winkelwagen en ordertracking.'
+        },
+        {
+            'name': 'DTSG',
+            'tag': 'Marokkaans gameplatform',
+            'desc': 'Digitaal gameplatform voor traditionele Marokkaanse spellen zoals Ronda en Rami, met multiplayermodus, toernooien en ranglijsten.'
+        },
+        {
+            'name': 'HRMP',
+            'tag': 'HR-platform',
+            'desc': 'Marokkaans platform voor personeelsbeheer dat werving, planning, aanwezigheid en payroll dekt volgens de Marokkaanse arbeidswet.'
+        },
+        {
+            'name': 'MAMP',
+            'tag': 'Platform voor Marokkaanse verenigingen',
+            'desc': 'Het eerste complete Marokkaanse platform om verenigingswerk te digitaliseren: lidmaatschappen, boekhouding, donaties, evenementen en officiële documenten — volgens Wet 75.00 en de dahir van 1958.'
+        },
+        {
+            'name': 'ISYACAR',
+            'tag': 'Verbetering van de website van een autoverhuurbedrijf',
+            'desc': 'Opnieuw opgebouwde en verbeterde versie van de website van het autoverhuurbedrijf van mijn vriend in Marrakech: negen talen, een wagenpark van economy tot luxueus, en direct boeken via WhatsApp.'
+        },
+        {
+            'name': 'PHMP',
+            'tag': 'Apotheekbeheerplatform',
+            'desc': 'Een professioneel platform voor apotheekbeheer: kassa, voorraad, recepten en rapporten, plus een klantenkant om medicijnen te bestellen bij een apotheek in de buurt, met levering.'
+        }
+    ],
+    'project_pages': [
+        {
+            'about': 'NATSUP is een digitale gids en winkel gespecialiseerd in natuurlijke supplementen, gebouwd voor wie geïnteresseerd is in gezondheid en fitness: duidelijke, vereenvoudigde supplementreviews — ingrediënten, voordelen en prijzen — met betrouwbare officiële aankooplinks voor elk product. De interface is meertalig en dekt wereldwijd bekende producten af, met één doel: de aankoopbeslissing geïnformeerd, veilig en weloverwogen maken.',
+            'tech': [
+                'HTML5',
+                'CSS3',
+                'JavaScript',
+                'Meertalige vertaalengine',
+                'Gestructureerde JSON-datalaag',
+                'SEO-optimalisatie',
+                'Cloudflare Pages'
+            ],
+            'features': [
+                'Productcatalogus met afbeeldingen, ingrediënten en prijzen',
+                'Betrouwbare officiële aankooplinks',
+                'Meertalige interface',
+                'Georganiseerde educatieve inhoud',
+                'Mobielvriendelijk ontwerp'
+            ],
+            'learned': 'Dit project leerde me hoe een groot, georganiseerd contentsysteem wordt gebouwd — data, vertaling en presentatie — hoe aankoop- en trackinglinks netjes worden beheerd, en hoe helderheid en eerlijkheid het vertrouwen van bezoekers opbouwen.'
+        },
+        {
+            'about': 'SYDA is een complete Arabische webwinkel met duizenden producten: huis, beauty, elektronica, auto en meer. Het biedt een volledig Arabische winkelervaring: browsen per categorie, een interactieve winkelwagen, ordertracking en een live klantenservicechat — met de geest van een moderne, snelle Marokkaanse winkel.',
+            'tech': [
+                'HTML5',
+                'CSS3',
+                'JavaScript',
+                'Interactieve winkelwagen',
+                'Live klantenservicechat',
+                'Categoriebrowsing',
+                'Cloudflare Pages'
+            ],
+            'features': [
+                'Duizenden producten in heldere categorieën',
+                'Winkelwagen & ordertracking',
+                'Live chat met klanten',
+                'Volledig Arabische interface',
+                'Snelle mobiele ervaring'
+            ],
+            'learned': 'Het verscherpte mijn commerciële denken: hoe grote productcatalogi worden georganiseerd, hoe een complete klantreis van browsen tot bestellen wordt ontworpen, en hoe klantenservice digitaal wordt benaderd met de cafémentaliteit — de klant eerst.'
+        },
+        {
+            'about': "Het platform voor digitale traditionele Marokkaanse spellen (DTSG) is mijn meest ambitieuze project: een platform dat Marokko's traditionele spellen — Ronda, Rami, Tawla, Damma, Partchi en meer — omtovert tot een moderne digitale ervaring met multiplayerkamers, live chat, toernooien en ranglijsten, plus geluidseffecten en visuele afwerking.",
+            'tech': [
+                'HTML5',
+                'CSS3',
+                'Vanilla JavaScript',
+                'Live netwerkverbinding via WebSocket',
+                'Sessie- & authenticatiesysteem',
+                'Geluids- & visuele effecten',
+                'Cloudflare Pages'
+            ],
+            'features': [
+                'Meerdere traditionele Marokkaanse spellen',
+                'Realtime multiplayer via het netwerk',
+                'Spelkamers & live chat',
+                'Toernooien en ranglijsten',
+                'Geluidseffecten in het spel'
+            ],
+            'learned': 'De grootste technische les van mijn reis: de architectuur van een groot project met nette codemodules, realtime verbinding tussen spelers, state- en sessiebeheer — en waarom methodische codeverdeling een project onderhoudbaar houdt.'
+        },
+        {
+            'about': 'HRMP is een Marokkaans platform voor personeelsbeheer, ontworpen om de volledige werkcyclus te organiseren: werving, ploegenplanning, aanwezigheids- en afwezigheidsregistratie en salarisberekening conform de Marokkaanse arbeidswet. Het project combineert een praktische gebruikersinterface met backendservices via een beveiligde tunnel, en levert een realistische administratieve oplossing.',
+            'tech': [
+                'HTML5',
+                'CSS3',
+                'JavaScript',
+                'Backendservices via beveiligde tunnel',
+                'Beheer van werknemersgegevens',
+                'Salaris- & ploegenberekening',
+                'Cloudflare Pages'
+            ],
+            'features': [
+                'Werving en personeelsdossiers beheren',
+                'Ploegenplanning en aanwezigheid',
+                'Salaris conform de arbeidswet',
+                'Georganiseerde administratieve rapporten',
+                'Praktische Arabische interface'
+            ],
+            'learned': 'Het bracht me dichter bij de echte zakenwereld: complexe administratieve behoeften begrijpen — ploegen, aanwezigheid, salarissen — en ze vertalen naar een bruikbaar systeem, en waarom elke digitale oplossing aan de lokale wetgeving (de Marokkaanse arbeidswet) moet voldoen.'
+        },
+        {
+            'about': 'MAMP is het eerste complete Marokkaanse platform om verenigingswerk te digitaliseren, van de oprichting van een vereniging tot haar jaarverslag: lidmaatschapsbeheer met genummerde kwitanties, gecategoriseerde boekhouding met voorlopig budget en dubbele goedkeuring, registratie van geld- en natuurlijke giften, planning van evenementen met openbare inschrijving en een archief van officiële documenten — met daarbovenop een digitale identiteitskaart voor elke vereniging en een slimme verenigingsassistent die antwoordt vanuit een gecontroleerde officiële kennisbank. Elke module is gebouwd op een echte Marokkaanse wettelijke referentie: Wet 75.00, de dahir van 15 november 1958 en Wet 09.08 over de bescherming van persoonsgegevens.',
+            'tech': [
+                'Next.js (React)',
+                'Volledig Arabisch RTL-interface',
+                'Inlogsysteem met ondertekende sessies',
+                'Rechten op vijf niveaus',
+                'Auditlogboek voor gevoelige handelingen',
+                'Arabische lettertype Cairo',
+                'Cloudflare Pages'
+            ],
+            'features': [
+                'Lidmaatschapsbeheer met genummerde kwitanties en verlengingsherinneringen',
+                'Gecategoriseerde boekhouding met voorlopig budget, dubbele goedkeuring en jaarverslag',
+                'Geld- en natuurlijke giften met officiële kwitanties en compliance-opvolging',
+                'Evenementen en activiteiten met openbare inschrijving',
+                'Archief van officiële documenten met classificatie en vertrouwelijkheidsniveaus'
+            ],
+            'learned': 'Dit project leerde me dat programmeren een gereedschap is, geen doel: de echte waarde kwam niet van de schermen maar van het begrijpen van de Marokkaanse verenigingswet en het vertalen van de werkelijke behoeften van verenigingsmensen naar eenvoudige modules die mensen zonder technische achtergrond kunnen gebruiken — en dat de bescherming van persoonsgegevens (CNDP-naleving) geen technisch detail is maar de hoeksteen van vertrouwen in elk platform dat gegevens van mensen verzamelt.'
+        },
+        {
+            'about': "ISYACAR is een volledige herbouw en verbetering van de website van het autoverhuurbedrijf van mijn vriend in Marrakech (het bedrijf: isyacar.com). Ik heb de identiteit van het bedrijf bewaard — het wagenpark, de adressen en de telefoonnummers — en de ervaring er opnieuw omheen gebouwd: een geclassificeerd wagenpark van compacte wagens (vanaf 300 MAD per dag) tot SUV's en luxewagens, negen talen voor de internationale klant, gratis levering op de luchthaven van Marrakech en bij hotels binnen 15 minuten, hulp dag en nacht, gratis annuleren tot 48 uur vooraf en praktische gidsen over verzekering en wegen — met direct boeken via WhatsApp, zonder formulieren.",
+            'tech': [
+                'HTML5',
+                'CSS3',
+                'JavaScript',
+                'Vertaalengine met negen talen',
+                'Meertalig SEO (hreflang)',
+                'Geautomatiseerde chat voor veelgestelde vragen',
+                'Cloudflare Pages'
+            ],
+            'features': [
+                'Geclassificeerd wagenpark: economy, SUV en luxe met duidelijke prijzen',
+                'Negen talen die de klant in de zijne aanspreken',
+                'Direct boeken via WhatsApp zonder formulieren',
+                'Gratis levering op luchthaven en hotel binnen 15 minuten',
+                'Praktische gidsen: verzekering, wegen en ritkosten'
+            ],
+            'learned': 'Het eerste project dat ik voor een echte klant bouwde — en nog wel een vriend — wat de lat voor verantwoordelijkheid hoger legde: ik leerde dat ontwikkeling een dienst is die afgemeten wordt aan het zakelijke resultaat (hoeveel bezoekers echt boekten), niet aan het aantal technologieën; dat functies als boeken via WhatsApp en een duidelijke prijs voortkomen uit begrip van de echte huurautoklant; en dat het vertrouwen van een vriend meer waard is dan welke technische showcased dan ook.'
+        },
+        {
+            'about': 'PHMP is een tweezijdig platform voor apotheekbeheer. De openbare kant spreekt de klant aan: kies je apotheek uit de beschikbare apotheken in je regio, bekijk de medicijnen en bestel ze met levering aan huis — zonder ingewikkelde formulieren. De beheerkant spreekt de eigenaar en apothekers aan: een snelle kassa met barcode-scanning, voorraadopvolging, registratie van recepten, rapporten en grafische dashboards van verkopen en activiteiten, beheer van meerdere apotheken met een fijnmazige rechtenmatrix, auditlogboeken voor elke gevoelige handeling, en de officiële Marokkaanse wettelijke referenties van de farmasector, ingebouwd in het platform, met toegang tot de originele teksten.',
+            'tech': [
+                'React (interactieve interface)',
+                'Vite (snelle build)',
+                'Grafische dashboards',
+                'Medicijndatabase',
+                'Barcode-scanning',
+                'Back-enddiensten (Cloudflare Workers)',
+                'Ondertekende sessies',
+                'Cloudflare Pages'
+            ],
+            'features': [
+                'Klantenkant om een apotheek te kiezen en medicijnen te bestellen met levering',
+                'Snelle kassa met barcode-scanning',
+                'Voorraadopvolging en receptregistratie',
+                'Rapporten en grafische dashboards van verkopen en activiteiten',
+                'Beheer van meerdere apotheken met rechten en auditlogboeken',
+                'Marokkaanse wettelijke referenties van de farmasector in het platform'
+            ],
+            'learned': 'Dit project leerde me dat software in de gezondheidszorg dubbele verantwoordelijkheid draagt: een fout in de prijs of wisselwerking van een medicijn is niet hetzelfde als een fout in een gewone winkel. Ik leerde een platform bouwen dat twee heel verschillende kanten bedient — een klant die moeiteloos wil bestellen en een apotheker die snelheid en precisie nodig heeft — en beide in balans te houden binnen één systeem; en dat naleving van de officiële Marokkaanse regelgeving geen beperking is maar het fundament van vertrouwen in elk platform dat de gezondheid van mensen raakt.'
+        }
+    ],
+    'sk_title': 'Vaardigheden',
+    'sk_sub': 'Van certificeringen naar het veld — een gedocumenteerde, geteste mix',
+    'cats': [
+        {
+            'icon': 'code',
+            'title': 'Digitaal & AI',
+            'items': [
+                'AI-tools',
+                'Prompts schrijven',
+                'Strategische planning in het AI-tijdperk',
+                'Digitale marketing',
+                'Webanalyse',
+                'Professionele e-mail'
+            ]
+        },
+        {
+            'icon': 'coffee',
+            'title': 'Operaties & Service',
+            'items': [
+                'Cafémanagement',
+                'Dranken bereiden',
+                'Klantenservice',
+                'Voorraadbeheer',
+                'Organisatie & planning'
+            ]
+        },
+        {
+            'icon': 'shield',
+            'title': 'Velddiscipline',
+            'items': [
+                'Discipline',
+                'Uithoudingsvermogen',
+                'Werken onder druk',
+                'Problemen oplossen',
+                'Veiligheid & beveiliging'
+            ]
+        },
+        {
+            'icon': 'globe',
+            'title': 'Leiderschap & Communicatie',
+            'items': [
+                'Effectief leiderschap',
+                'Professionele communicatie',
+                'Arabisch (moedertaal)',
+                'Samenwerken',
+                'Verenigingscommunicatie'
+            ]
+        }
+    ],
+    'edu_title': 'Onderwijs',
+    'edu_sub': 'Een academische basis gecombineerd met onvermoeibaar zelfleren',
+    'edu_level': 'Tweede jaar van het Baccalaureaat (zonder het einddiploma)',
+    'edu_note': 'Hoewel ik mijn Baccalaureaat niet heb behaald, bleef ik mijn vaardigheden opbouwen via zelfstudie en gecertificeerde digitale cursussen — een weerspiegeling van mijn wil om continu te leren en te groeien.',
+    'gal_title': 'Momenten uit mijn leven',
+    'gal_sub': 'Glimpen van mijn leven buiten het werk',
+    'gal': [
+        'Familiemomenten',
+        'Met mijn dierbaren',
+        'Mijn trouwe metgezel',
+        'Mijn liefde voor de natuur'
+    ],
+    'ct_title': 'Neem contact op',
+    'ct_sub': 'Zoek je een toegewijde, flexibele professional? Laten we praten',
+    'avail': 'Beschikbaar voor nieuwe mogelijkheden',
+    'email_cta': 'Stuur me een e-mail',
+    'copy': 'E-mailadres kopiëren',
+    'copied': 'Gekopieerd!',
+    'ct_note': 'Ik beantwoord meestal binnen 24 uur.',
+    'footer_rights': 'Alle rechten voorbehouden.',
+    'footer_built': 'Ontworpen en gebouwd met behulp van AI-modellen, gehost op Cloudflare Pages.',
+    'sources': {
+        'medium': 'Medium — onafhankelijke gepubliceerde recensie',
+        'reddit': 'Reddit — publieke discussie in r/marketing',
+        'linkedin_article': 'LinkedIn — publiek gepubliceerd artikel',
+        'appstore': 'App Store — officiële beoordelingen van de HP LIFE-app'
+    },
+    'links': {
+        'credential': 'Officiële certificaatverificatie',
+        'course': 'Officiële cursuspagina',
+        'grow': 'Grow with Google — leerplatform van Google',
+        'platform': 'Officieel HP LIFE-platform',
+        'academy': 'Officiële Huawei ICT Academy',
+        'talent': 'Huawei Talent-platform',
+        'maroc': 'Officiële portaalsite van het Koninkrijk Marokko',
+        'spub': 'Portaal van de overheidsdiensten — Marokko',
+        'trusted': 'Betrouwbare leerplatformen'
+    },
+    'cp_reviews': 'Echte, publiek gepubliceerde beoordelingen',
+    'cp_reviews_note': 'Letterlijke citaten van echte gebruikers, openbaar gepubliceerd op de genoemde bronnen en hier getoond in de originele taal.',
+    'cp_view_source': 'Bron bekijken',
+    'cp_links': 'Officiële links & betrouwbare platforms',
+    'pp_value': 'Toegevoegde waarde',
+    'pp_effort': 'De geïnvesteerde inspanning',
+    'pp_ops': 'Technologieën voor bouw en beheer',
+    'pp_tech_build': 'Voor de bouw',
+    'pp_tech_ops': 'Voor beheer en continuïteit',
+    'pp_costs': 'Geschatte kosten',
+    'cost_build': 'Een soortgelijk project bouwen',
+    'cost_ops': 'Beheer en exploitatie',
+    'cost_self': 'Zelfbouwroute (wat ik echt deed)',
+    'cost_market': 'Via freelancer/bureau in Marokko (schatting)',
+    'cost_now': 'Huidige situatie',
+    'cost_scale': 'Bij opschaling (schatting)',
+    'cost_note': 'Richtbedragen in Marokkaanse dirham (MAD); de werkelijke kosten variëren met omvang, exacte vereisten en de dienstenmarkt. Mijn huidige projecten draaien volledig op gratis pakketten.',
+    'ct_phone': 'Telefoon',
+    'ct_whatsapp': 'WhatsApp',
+    'ct_linkedin': 'LinkedIn',
+    'ct_facebook': 'Facebook',
+    'ct_telegram': 'Telegram-bot',
+    'ct_call': 'Nu bellen',
+    'ct_wa_chat': 'Chatten via WhatsApp',
+    'hd_book': 'Consult of afspraak',
+    'ft_tagline': 'Gecertificeerde digitale kennis — 13 internationale certificaten — op tien jaar praktijkervaring.',
+    'ft_quick': 'Snelle links',
+    'ft_contact': 'Contactkanalen',
+    'ft_gov': 'Officiële Marokkaanse overheidswebsites',
+    'ft_gov_note': 'Officiële portalen van de Marokkaanse overheden en digitale diensten',
+    'gov': {
+        'maroc': 'Officieel nationaal portaal',
+        'spub': 'Portaal overheidsdiensten',
+        'tax': 'Algemene Directie Belastingen (DGI)',
+        'cnss': 'Nationaal Sociaal Zekerheidsfonds (CNSS)',
+        'anapec': 'Nationaal Agentschap voor Werkgelegenheid (ANAPEC)',
+        'education': 'Ministerie van Onderwijs',
+        'sante': 'Ministerie van Volksgezondheid en Sociale Bescherming',
+        'interieur': 'Ministerie van Binnenlandse Zaken'
+    },
+    'project_v4': [
+        {
+            'value_intro': 'NATSUP is niet zomaar een productsite, maar een beslistool vóór de aankoop:',
+            'values': [
+                (
+                    'Duidelijke info vooraf',
+                    'Vereenvoudigde supplementreviews: ingrediënten, voordelen en prijzen op één plek, zonder verwarring.',
+                ),
+                (
+                    'Zes talen, één interface',
+                    'Content in het Engels, Arabisch, Frans, Spaans, Italiaans en Duits — werkelijk wereldwijd bereik.',
+                ),
+                (
+                    'Officiële aankooplinks',
+                    'Elk product verwijst naar een vertrouwde officiële bron en beschermt bezoekers tegen dubieuze links.',
+                ),
+                (
+                    'Structuur die kan groeien',
+                    'Een catalogus op basis van gestructureerde JSON-data, uitbreidbaar tot honderden producten zonder herbouw.',
+                )
+            ],
+            'effort': 'Het project verliep in fasen: productdata organiseren en in zes talen vertalen, de vertaalengine bouwen, een mobielvriendelijke interface ontwerpen en daarna zoekmachineoptimalisatie. Elke pagina werd vóór publicatie inhoudelijk en taalkundig gecontroleerd; het werk besloeg weken, naast mijn dagelijkse leerproces.',
+            'effort_stats': [
+                (
+                    'Interfacetalen',
+                    '6',
+                ),
+                (
+                    'Bouwbasis',
+                    'Gestructureerde JSON-data',
+                ),
+                (
+                    'Optimalisatie',
+                    'Volledige SEO',
+                )
+            ],
+            'ops': [
+                'Cloudflare Pages (gratis hosting)',
+                'Wereldwijd CDN',
+                'Automatisch SSL',
+                'Deployments via Wrangler',
+                'Gratis pages.dev-domein'
+            ],
+            'cost_self': '0 MAD — gratis hosting en subdomein; de echte investering was mijn tijd en leerproces.',
+            'cost_market': 'Ca. 4.000 – 12.000 MAD voor een meertalige catalogussite van deze omvang.',
+            'cost_now': '0 MAD per maand — draait op het gratis Cloudflare Pages-pakket.',
+            'cost_scale': 'Eigen domein: ca. 100 – 150 MAD per jaar, plus optionele betaalde diensten (ca. 50 MAD/maand).'
+        },
+        {
+            'value_intro': 'Syda combineert een moderne winkelervaring met de sfeer van een Arabische souk:',
+            'values': [
+                (
+                    'Enorme, geordende catalogus',
+                    'Duizenden producten in overzichtelijke rubrieken, binnen enkele tikken bereikbaar.',
+                ),
+                (
+                    'Complete koopreis',
+                    'Van bladeren naar mandje tot bestelling — een volledig Arabische interface, mobiel eerst ontworpen.',
+                ),
+                (
+                    'Digitale klantenservice',
+                    'Live chat en een slimme assistent die klanten verwelkomen als in een echte winkel.',
+                ),
+                (
+                    'Vertrouwen gevend beleid',
+                    'Betalen bij levering en 15 dagen retour — de zekerheden die trouw opbouwen.',
+                )
+            ],
+            'effort': 'De grootste uitdaging: een catalogus van duizenden producten logisch indelen, een mandje bouwen dat soepel op de telefoon werkt, en daarna de chatlaag voor klantenservice toevoegen. Het café leerde me dat goed design zichzelf uitlegt vóór iemand het uitlegt — dat was mijn maatstaf voor elk ontworpen scherm.',
+            'effort_stats': [
+                (
+                    'Producten in lijst',
+                    '3.029+',
+                ),
+                (
+                    'Interfacetaal',
+                    'Arabisch',
+                ),
+                (
+                    'Ontwerpprioriteit',
+                    'Mobiel eerst',
+                )
+            ],
+            'ops': [
+                'Cloudflare Pages',
+                'Wereldwijd CDN + automatisch SSL',
+                'Gestructureerde productdata',
+                'Klantenservicechat',
+                'Doorlopende Wrangler-deployments'
+            ],
+            'cost_self': '0 MAD — volledig op een gratis stack gebouwd.',
+            'cost_market': 'Ca. 8.000 – 25.000 MAD voor een Arabische webshop met deze functies.',
+            'cost_now': '0 MAD per maand op het gratis pakket.',
+            'cost_scale': 'Eigen domein (100 – 150 MAD/jaar) en geavanceerde betaal- en voorraadtools bij groei.'
+        },
+        {
+            'value_intro': 'DTSG bewaart een levende volkscultuur en brengt die naar de digitale generatie:',
+            'values': [
+                (
+                    'Marokkaans erfgoed, digitaal',
+                    'Ronda, Rami, Dama en meer spellen die families verenigen — met moderne interface en geluidseffecten.',
+                ),
+                (
+                    'Live multiplayer',
+                    'Spelkamers en livechat via een realtime verbinding — als echte potjes, maar online.',
+                ),
+                (
+                    'Volledig motivatiesysteem',
+                    'Toernooien, een ranglijst en een spelmunten-systeem dat partijen wedstrijdwaarde geeft.',
+                ),
+                (
+                    'Echte software-engineering',
+                    '78 georganiseerde codemodules met sessies en authenticatie — structuur op professioneel niveau.',
+                )
+            ],
+            'effort': 'Mijn meest technische project: 78 codemodules, live spelersverbindingen via WebSocket, een sessie- en authenticatiesysteem, geluids- en visuele effecten, plus toernooien en ranglijst. Elk spel was een eigen engineeringoefening — regels, AI, interface — voordat alles tot één platform werd samengevoegd.',
+            'effort_stats': [
+                (
+                    'Codemodules',
+                    '78',
+                ),
+                (
+                    'Connectiviteit',
+                    'Realtime via WebSocket',
+                ),
+                (
+                    'Platforms',
+                    'Web + Android-APK',
+                )
+            ],
+            'ops': [
+                'Cloudflare Pages voor de frontend',
+                'WebSocket-brug voor multiplayer',
+                'Sessies & authenticatie (2FA)',
+                'Geluidseffecten & Canvas-grafiek',
+                'Android-app (APK)'
+            ],
+            'cost_self': '0 MAD contant; de echte investering: maanden van doorlopend leren en bouwen.',
+            'cost_market': 'Ca. 25.000 – 80.000 MAD voor een live multiplayer-spelplatform van deze omvang.',
+            'cost_now': '0 MAD/maand voor de frontend op het gratis pakket.',
+            'cost_scale': 'Specifieke WebSocket-diensten bij groei van spelers: geschat 100 – 400 MAD/maand afhankelijk van schaal.'
+        },
+        {
+            'value_intro': 'HRMP vertaalt echte behoeften uit het Marokkaanse werkveld naar een professioneel beheerinstrument:',
+            'values': [
+                (
+                    "Gebouwd voor Marokko's echte sectoren",
+                    'Beveiliging, schoonmaak, tuinbouw, bouw en ambacht — sectoren die echte organisatie nodig hebben, geen geïmporteerde sjablonen.',
+                ),
+                (
+                    'Van werving tot salaris',
+                    'Werving, dienstroosters, fraudebestendige geo-aanwezigheid en salarissen tot op de centime.',
+                ),
+                (
+                    'Conform Marokkaans recht',
+                    'CNSS-, AMO- en inkomstenbelastinginhoudingen, met officiële Damancom- en SIMPL-IR-bestanden.',
+                ),
+                (
+                    'Veilige scheiding tussen bedrijven',
+                    'Elk bedrijf in een geïsoleerde omgeving met gedefinieerde rollen en volledige auditlog.',
+                )
+            ],
+            'effort': 'Mijn diepste project op administratief en juridisch vlak: de Marokkaanse Arbeidswet en de behoeften van kleine bedrijven begrijpen, dan een salarismotor bouwen die de officiële inhoudingen respecteert, een geofencing-aanwezigheidssysteem dat fraude weerstaat en rapporten in vier talen. Elke functie was een les in het vertalen van een echte administratieve behoefte naar software.',
+            'effort_stats': [
+                (
+                    'Salarismotor',
+                    'Marokkaanse Arbeidswet',
+                ),
+                (
+                    'Rapporttalen',
+                    '4',
+                ),
+                (
+                    'Implementatie',
+                    'Cloud of lokale server',
+                )
+            ],
+            'ops': [
+                'Frontend op Cloudflare Pages',
+                'Back-enddiensten via een beveiligde tunnel',
+                'SQLite, opwaardeerbaar naar PostgreSQL',
+                'PDF/DOCX-rapporten met RTL-ondersteuning',
+                'Android-app (APK)'
+            ],
+            'cost_self': '0 MAD voor de frontend; de back-end draait op verzoek via een beveiligde tunnel.',
+            'cost_market': 'Ca. 30.000 – 100.000 MAD voor een op-maat HR-platform met deze juridische diepgang.',
+            'cost_now': '0 MAD/maand voor de frontend; de back-end start op verzoek.',
+            'cost_scale': 'Permanente back-endhosting en beveiligde tunnel: geschat 80 – 300 MAD/maand afhankelijk van bedrijven en gebruikers.'
+        },
+        {
+            'value_intro': 'MAMP digitaliseert het Marokkaanse verenigingswerk met functies die geworteld zijn in de juridische en administratieve werkelijkheid:',
+            'values': [
+                (
+                    'Van de wet naar het scherm',
+                    'Elke module is gebouwd op een echte referentie: Wet 75.00, de dahir van 1958 en Wet 09.08 over gegevensbescherming — geen geïmporteerde oplossingen die de Marokkaanse werkelijkheid negeren.',
+                ),
+                (
+                    'Boekhouding die aan de algemene vergadering voldoet',
+                    'Gecategoriseerde inkomsten en uitgaven, een voorlopig budget, dubbele goedkeuring en een jaarlijks financieel verslag, klaar om af te drukken en aan partners te tonen.',
+                ),
+                (
+                    'Officiële kwitanties en transparantie',
+                    'Donaties en lidmaatschappen worden geregistreerd met genummerde officiële kwitanties en nalevingsopvolging — de transparantie die overheden en partners allebei verwachten.',
+                ),
+                (
+                    'Een assistent zonder hallucinaties',
+                    'Een slimme assistent die procedure- en rechtsvragen beantwoordt vanuit een gecontroleerde officiële kennisbank — hij wijst precies de indieningsstap en de benodigde documenten.',
+                )
+            ],
+            'effort': 'Mijn onderzoekintensiefste project: voordat ik één scherm schreef, las ik de wetteksten en begreep ik de levenscyclus van een vereniging, van oprichting tot algemene vergadering; daarna bouwde ik de modules één voor één — lidmaatschappen, boekhouding, donaties, evenementen, documenten — gekoppeld aan een rechtenstelsel op vijf niveaus en een auditlogboek dat elke gevoelige handeling vastlegt. Het platform is volledig Arabisch en ontworpen voor mensen zonder technische achtergrond.',
+            'effort_stats': [
+                (
+                    'Wettelijke referentie',
+                    'Wet 75.00 & dahir 1958',
+                ),
+                (
+                    'Rechtenniveaus',
+                    '5',
+                ),
+                (
+                    'Modules',
+                    'lidmaatschappen, boekhouding, donaties, evenementen, documenten',
+                )
+            ],
+            'ops': [
+                'Next.js (React) — een snelle, schaalbare interface',
+                'Inlogsysteem met ondertekende sessies',
+                'Serverzijde gecontroleerde rechten',
+                'Auditlogboek voor gevoelige handelingen',
+                'Cloudflare Pages'
+            ],
+            'cost_self': '0 MAD — gebouwd op een volledig gratis stack; de echte investering waren maanden juridisch onderzoek en bouwen.',
+            'cost_market': 'Ongeveer 40.000 – 120.000 MAD voor een verenigingsplatform met deze juridische en boekhoudkundige diepgang.',
+            'cost_now': '0 MAD per maand op het gratis pakket.',
+            'cost_scale': 'Een permanente server en database naarmate het gebruik groeit: ongeveer 150 – 500 MAD per maand, afhankelijk van het aantal verenigingen.'
+        },
+        {
+            'value_intro': 'ISYACAR verandert bezoekers van de bedrijfssite in klanten die met vertrouwen boeken:',
+            'values': [
+                (
+                    'Negen talen voor een wereldwijd publiek',
+                    'De klant in Marrakech komt van overal — de site spreekt zijn taal: Frans, Engels, Arabisch, Russisch, Spaans, Italiaans, Nederlands, Duits en Japans.',
+                ),
+                (
+                    'Boeken zonder wrijving',
+                    'De prijs is duidelijk vanaf 300 MAD per dag en boeken gebeurt met één tik op WhatsApp — zonder lange formulieren die de klant wegjagen.',
+                ),
+                (
+                    'Levering op luchthaven en hotel',
+                    'De auto bereikt de luchthaven van Marrakech of het hotel binnen 15 minuten, gratis, met hulp dag en nacht — de service waar klanten hun vrienden over vertellen.',
+                ),
+                (
+                    'Inhoud die vertrouwen bouwt',
+                    'Praktische gidsen over verzekering, wegen en ritkosten beantwoorden de vragen van de klant voordat hij ze stelt — contentmarketing in plaats van beloftes.',
+                )
+            ],
+            'effort': "Een bestaande site verbeteren voor een echt bedrijf is iets anders dan vanuit het niets bouwen: ik bewaarde de identiteit van het bedrijf en mijn vriend (wagenpark, adressen, telefoon) en bouwde de ervaring er opnieuw omheen — pagina's per waggencategorie, een engine met negen talen, adviesinhoud over verzekering en wegen, en een chat die dag en nacht antwoordt. Het zakelijke doel is op elk scherm zichtbaar: een bezoeker die begrijpt, vertrouwt en vervolgens boekt.",
+            'effort_stats': [
+                (
+                    'Interfacetalen',
+                    '9',
+                ),
+                (
+                    'Wagenparkcategorieën',
+                    'economy, SUV en luxe',
+                ),
+                (
+                    'Boekingskanaal',
+                    'direct via WhatsApp',
+                )
+            ],
+            'ops': [
+                'Cloudflare Pages',
+                'Wereldwijd CDN + automatisch SSL',
+                'Vertaalengine met negen talen',
+                'Geautomatiseerde chat voor veelgestelde vragen',
+                'Directe WhatsApp-links om te boeken'
+            ],
+            'cost_self': '0 MAD — de herbouw en verbetering gebeurden op een volledig gratis stack, als dienst aan een vriend.',
+            'cost_market': 'Ongeveer 10.000 – 35.000 MAD voor een meertalige verhuursite op dit niveau.',
+            'cost_now': '0 MAD per maand op het gratis pakket.',
+            'cost_scale': 'De eigen domeinnaam van het bedrijf (ongeveer 100 – 150 MAD per jaar) plus geavanceerde boekings- en trackingtools naarmate de bestellingen groeien.'
+        },
+        {
+            'value_intro': 'PHMP digitaliseert de apotheek, van de toonbank tot het rapport:',
+            'values': [
+                (
+                    'Een tweezijdig platform in één systeem',
+                    'De klant bestelt medicijnen in een paar tikken met levering, en de apotheker ontvangt de bestelling in hetzelfde systeem en bereidt ze voor — een volledige cyclus zonder papier.',
+                ),
+                (
+                    'Barcodes in plaats van handschrift',
+                    'Barcode-scanning vermindert invoerfouten en versnelt de kassa — de nauwkeurigheid die onmisbaar is bij het werken met medicijnen.',
+                ),
+                (
+                    'Echte Marokkaanse naleving',
+                    'De wettelijke referenties en regelgeving van de Marokkaanse farmasector zijn in het platform ingebouwd, met toegang tot de originele teksten — geen giswerk buiten de wet.',
+                ),
+                (
+                    'Beslissingen gebaseerd op cijfers',
+                    'Grafische dashboards vatten verkopen, activiteiten en voorraad samen: de apotheek weet wat verkoopt en wat ontbreekt, vóór het op is.',
+                )
+            ],
+            'effort': 'Ik bouwde het platform op twee gezichten: de eenvoudige klantenkant — apotheek kiezen, bestellen, laten leveren — en de diepe beheerkant: kassa, voorraad, recepten, rapporten, meerdere apotheken, een rechtenmatrix en auditlogboeken. Het moeilijkste waren niet de schermen, maar het begrijpen van hoe een echte apotheek werkt: hoe een verkoop wordt geregistreerd, wanneer de voorraad wordt afgeboekt en hoe rechten en regels bewaard blijven — samen met een medicijndatabase en de officiële wettelijke referenties.',
+            'effort_stats': [
+                (
+                    'Bediende kanten',
+                    'klant + eigenaar + apothekers',
+                ),
+                (
+                    'Beheermodules',
+                    'kassa, voorraad, recepten, rapporten',
+                ),
+                (
+                    'Referentie',
+                    'Marokkaanse farmaregelgeving',
+                )
+            ],
+            'ops': [
+                'React + Vite — een snelle interface die vlot bouwt en actualiseert',
+                'Back-enddiensten op Cloudflare Workers',
+                'Ondertekende sessies en gecontroleerde rechten',
+                'Auditlogboeken voor gevoelige handelingen',
+                'Cloudflare Pages als hosting'
+            ],
+            'cost_self': '0 MAD — gebouwd op een gratis stack (hosting en back-enddiensten) met AI-ondersteunde ontwikkeling.',
+            'cost_market': 'Ongeveer 60.000 – 180.000 MAD voor een apotheekbeheersysteem van deze diepgang: kassa, voorraad, recepten, rapporten en wettelijke naleving.',
+            'cost_now': '0 MAD per maand in het gratis pakket.',
+            'cost_scale': 'Een eigen server en database zodra het gebruik zich over meerdere apotheken uitbreidt: geschat 200 – 700 MAD per maand.'
+        }
+    ],
+    'pp_tools': 'Gereedschap en vaardigheden — simpel uitgelegd',
+    'pp_tools_note': 'Elk gereedschap, elke bibliotheek en elke vaardigheid die ik in dit project gebruikte, in gewone taal uitgelegd: wat het is en wat het hier precies toevoegde — zonder cryptische symbolen.',
+    'project_tools': [
+        [
+            (
+                'HTML5',
+                "De grondtaal van webpagina's: ze bepaalt de structuur van elke pagina — titels, afbeeldingen, links en knoppen. Het is het geraamte waarop al het rust staat, zoals het skelet van een gebouw vóór de verf.",
+            ),
+            (
+                'CSS3',
+                "De opmaaktaal die pagina's hun uiteindelijke vorm geeft: kleuren, lettertypes, tussenruimtes en aanpassing aan de telefoon. Het is het verschil tussen een grauwe pagina zonder ziel en een interface die prettig is voor het oog.",
+            ),
+            (
+                'JavaScript',
+                'De taal van interactie in de browser: ze verandert de site van een statische vertoning in een levende ervaring — direct zoeken, producten sorteren en van taal wisselen zonder de pagina te herladen.',
+            ),
+            (
+                'Meertalige vertaalengine',
+                'Code die ik zelf schreef en die de teksten van de site in zes talen bewaart en ze direct wisselt naar keuze van de bezoeker — in plaats van zes aparte sites te bouwen, dient één site iedereen.',
+            ),
+            (
+                'JSON-datalaag',
+                'Gestructureerde bestanden die producten, prijzen en ingrediënten overzichtelijk en leesbaar bewaren; een nieuw product toevoegen betekent alleen het bestand bewerken, zonder het ontwerp aan te raken.',
+            ),
+            (
+                'Zoekmachineoptimalisatie (SEO)',
+                'Nauwkeurige titels en beschrijvingen voor elke pagina, zodat een Google-zoekopdracht ze bij de eerste poging vindt — een gratis bezoeker die reclame niet kan kopen.',
+            ),
+            (
+                'Beheer van affiliatielinks',
+                'Eén bestand dat de officiële aankooplinks bundelt: betrouwbaar, actueel en gescheiden van de inhoud — het beschermt de bezoeker tegen verdachte links en maakt updates eenvoudig.',
+            ),
+            (
+                'Cloudflare Pages',
+                'De hosting: een wereldwijd netwerk dat de site gratis over honderden servers verspreidt, zodat hij uit elk land snel opent, met een automatisch SSL-beveiligingscertificaat.',
+            )
+        ],
+        [
+            (
+                'HTML5',
+                "De structuur van de winkel: de pagina's voor afdelingen, producten en winkelwagen zijn gebouwd in de grondtaal van het web — licht en snel, zelfs bij een zwakke verbinding.",
+            ),
+            (
+                'CSS3',
+                'De opmaak die de winkel zijn elegante Arabische karakter geeft: warme kleuren, duidelijke lettertypes en een ontwerp dat eerst voor het telefoonscherm is gedacht en dan voor de computer.',
+            ),
+            (
+                'JavaScript',
+                'De interactie-engine: afdelingen doorbladeren, de winkelwagen bijwerken en zoeken — alles werkt direct in de browser van de klant, zonder op een verre server te wachten.',
+            ),
+            (
+                'Interactieve winkelwagen',
+                'Code die de keuzes van de klant bewaart en het totaal rechtstreeks in zijn browser berekent — en ze bewaart blijven, ook als hij de pagina sluit en later terugkeert.',
+            ),
+            (
+                'Live chat',
+                'Een venster dat de klant tijdens het winkelen vergezelt en zijn vragen beantwoordt — zoals de verkoper die je in een echte winkel verwelkomt en rondleidt.',
+            ),
+            (
+                'Catalogusstructuur',
+                'Een doordachte navigatie: hoofdafdelingen en subcategorieën afgestemd op de beleving van de Arabische klant — van het algemene naar het bijzondere in een paar tikken.',
+            ),
+            (
+                'Cloudflare Pages',
+                'Gratis wereldwijde hosting: snel openen vanuit elk land en een automatisch SSL-certificaat — infrastructuur op het niveau van de grote winkels.',
+            )
+        ],
+        [
+            (
+                'Pu JavaScript (Vanilla)',
+                'Programmeren zonder kant-en-klare bibliotheken: volledige controle over elk detail en hogere snelheid — de juiste keuze voor een spellenplatform waar elke milliseconde telt.',
+            ),
+            (
+                'HTML5 en CSS3',
+                'De structuur en opmaak van de interface: speeltafels, kaarten en knoppen zijn nauwkeurig getekend en passen zich aan telefoon én computer aan.',
+            ),
+            (
+                'WebSocket',
+                'Een communicatiekanaal dat openblijft tussen spelers en server: het draagt elke zet op hetzelfde moment over — je tegenstander speelt een kaart en hij verschijnt bij jou in hetzelfde ogenblik.',
+            ),
+            (
+                'Sessie- en authenticatiesysteem',
+                'Het bewaart de identiteit van elke speler na het inloggen en beschermt accounts met wachtwoord en tweestapsverificatie — eerlijk spel zonder identiteitsdiefstal.',
+            ),
+            (
+                'Canvas',
+                'Een tekenvlak in de browser: de tafel, de kaarten en de pionnen worden er beeldje voor beeldje op getekend — vloeiende beweging zoals in professionele games.',
+            ),
+            (
+                'Geluidseffecten',
+                'De klanken van kaarten, tikken en overwinning brengen de geest van echte speelavonden terug naar het scherm — het detail dat spelers zich het meest herinneren.',
+            ),
+            (
+                'Code opgesplitst in 78 modules',
+                'Elk spel en elke functie in een eigen bestand: een fout oplossen of iets toevoegen blijft eenvoudig — als een geordende werkplaats waar elk gereedschap zijn plek heeft.',
+            ),
+            (
+                'Cloudflare Pages',
+                'De interface gehost op een gratis wereldwijd netwerk — spelers uit elk land openen het platform snel en veilig.',
+            )
+        ],
+        [
+            (
+                'HTML5, CSS3 en JavaScript',
+                'De basis van de interface: praktische Arabische schermen, gebouwd in de grondtaal van het web — licht, snel en geschikt voor dagelijks gebruik in een bedrijf.',
+            ),
+            (
+                'Back-enddiensten via een beveiligde tunnel',
+                'Het onzichtbare deel van het platform (accounts en loonadministratie) draait op een server die via een versleuteld kanaal aan de wereld wordt gepubliceerd — een praktische oplossing om echte diensten vanaf gratis hosting te draaien.',
+            ),
+            (
+                'De loonengine',
+                'Code die lonen en inhoudingen (CNSS, AMO en inkomstenbelasting) berekent volgens de Marokkaanse Arbeidswet, op de centimeter nauwkeurig, en de officiële bestanden Damancom en SIMPL-IR genereert.',
+            ),
+            (
+                'SQLite-database',
+                'De geordende informatiekast met personeelsdossiers, contracten en diensten in een lichte database die later naar PostgreSQL kan groeien wanneer het bedrijf uitbreidt.',
+            ),
+            (
+                'Rechten- en isolatiesysteem',
+                'Elk bedrijf leeft in zijn eigen geïsoleerde ruimte met gedefinieerde rechten — de directeur ziet alleen zijn bedrijf, en het logboek registreert elke handeling.',
+            ),
+            (
+                'PDF- en DOCX-rapporten met RTL-ondersteuning',
+                'Het genereren van officiële, afdrukklare rapporten die de Arabische schrijfrichting van rechts naar links respecteren — het rapport dat een directeur zo kan presenteren.',
+            ),
+            (
+                'Cloudflare Pages',
+                'Gratis wereldwijde hosting van de interface — de rest draait op vraag via de server en de beveiligde tunnel.',
+            )
+        ],
+        [
+            (
+                'Next.js (React)',
+                'Het framework waarmee ik het platform bouwde: uit de React-familie die de grootste websites ter wereld gebruiken — het bouwt snelle interfaces en deelt het scherm op in componenten die gemakkelijk te ontwikkelen en te onderhouden zijn.',
+            ),
+            (
+                'React',
+                'Een manier om de interface op te bouwen uit kleine onafhankelijke componenten — een knop, een kaart, een tabel — die samenvallen als legostenen; een fout in één component breekt niet het hele platform, en een functie toevoegen betekent niet opnieuw bouwen.',
+            ),
+            (
+                'Arabische RTL-interface',
+                "Een structuur die zich automatisch aanpast aan schrijven van rechts naar links: menu's, tabellen en knoppen wijzen allemaal de juiste kant op — een platform dat van nature in het Arabisch denkt, niet als vertaling.",
+            ),
+            (
+                'Inloggen en ondertekende sessies',
+                'Wachtwoorden zijn versleuteld en sessies ondertekend, door de server bij elk verzoek gecontroleerd — jouw account is alleen van jou, ook al probeert iemand jouw rechten na te bootsen.',
+            ),
+            (
+                'Rechten op vijf niveaus',
+                'Van de platformeigenaar tot de burger: vijf rollen die de server controleert voordat een scherm verschijnt — elke gebruiker ziet alleen wat hem aangaat, met gegarandeerde scheiding van taken.',
+            ),
+            (
+                'Auditlogboek',
+                'Een digitaal dagboek dat elke gevoelige handeling vastlegt: wie wat deed en wanneer — de hoeksteen van vertrouwen in de verenigingsboekhouding tegenover de algemene vergadering en de overheid.',
+            ),
+            (
+                'Het lettertype Cairo',
+                'Een open Arabisch lettertype van Google, ontworpen voor schermen: duidelijk op elke grootte — het geeft het platform een elegante, leesbare Arabische identiteit.',
+            ),
+            (
+                'Cloudflare Pages',
+                'Gratis wereldwijde hosting: het platform is verdeeld over een wereldwijd netwerk en opent snel vanuit Marokko en daarbuiten, met een automatisch beveiligingscertificaat.',
+            )
+        ],
+        [
+            (
+                'HTML5, CSS3 en JavaScript',
+                'Een op maat gemaakte bouw vanaf nul in de grondtaal van het web: snelle, lichte interfaces, ontworpen voor een klant die vanaf zijn telefoon op een luchthaven of hotel surft.',
+            ),
+            (
+                'Engine met negen talen',
+                'Een vertaalsysteem dat de klant in zijn eigen taal aanspreekt — Frans, Engels, Arabisch, Russisch, Spaans, Italiaans, Nederlands, Duits en Japans — want de klant in Marrakech komt uit de hele wereld.',
+            ),
+            (
+                'Meertalig SEO (hreflang)',
+                'Tags die Google vertellen welke taalversie welke is, zodat elke versie in zijn eigen land scoort: de Russische klant vindt de Russische versie, de Japanse de Japanse — de basis van organische marketing voor een toerismebedrijf.',
+            ),
+            (
+                'Boeken via WhatsApp',
+                'De klant boekt met één tik in de app die hij toch al gebruikt — geen formulieren, geen nieuw account; het kortste pad tussen wens en boeking.',
+            ),
+            (
+                'Geautomatiseerde chat',
+                'Hij beantwoordt de veelgestelde vragen — documenten, prijzen, verzekering — dag en nacht en geeft bijzondere gevallen door aan het team; een receptionist die nooit slaapt.',
+            ),
+            (
+                'Lettertypes voor meerdere alfabetten',
+                'Een modern Latijns, een Arabisch en een Japans lettertype: elke taal verschijnt in haar eigen authenticiteit in plaats van als cosmetische vertaling — een detail dat het respect van de klant wint.',
+            ),
+            (
+                'Adviesinhoud',
+                'Praktische gidsen over verzekering, wegen en ritkosten beantwoorden de vragen van de klant voordat hij ze stelt — contentmarketing die vertrouwen bouwt in plaats van beloftes te doen.',
+            ),
+            (
+                'Cloudflare Pages',
+                'Gratis wereldwijde hosting met snel openen vanuit elk land en een automatisch SSL-certificaat — altijd beschikbaar wanneer de klant besluit te boeken.',
+            )
+        ],
+        [
+            (
+                'React',
+                'Een Meta-bibliotheek voor interactieve interfaces: ze verdeelt het scherm in kleine herbruikbare onderdelen — een knop, een kaart, een tabel — zodat een groot systeem als een apotheekplatform georganiseerd en onderhoudbaar blijft, als opgeruimde kamers in één huis.',
+            ),
+            (
+                'Vite',
+                'De moderne build-tool die het project bundelt en de voorverversing in een fractie van een seconde actualiseert in plaats van minuten wachten — als een voluitgeruste keuken die de bestelling bereidt zodra ze binnenkomt; daarom is het de praktische standaard voor React-projecten.',
+            ),
+            (
+                'Grafische dashboards',
+                'Grafiekbibliotheken zetten cijfers om in visuele voorstellingen — balken, lijnen en cirkels — zodat de apotheker verkopen en voorraad in één oogopslag leest in plaats van lange tabellen door te spitten.',
+            ),
+            (
+                'Medicijndatabase',
+                'Een georganiseerde catalogus van medicijnen met namen, vormen en classificaties: een betrouwbaar geheugen voor het platform — snel zoeken, nauwkeurige informatie en één centrale update die alle schermen tegelijk bereikt.',
+            ),
+            (
+                'Barcode-scanning',
+                'De zwarte streepjes lezen die op elke medicijnverpakking staan: één scan registreert de verkoop en boekt de voorraad automatisch af — geen handmatig typen, geen cijferfouten.',
+            ),
+            (
+                'Ondertekende sessies (JWT)',
+                'Een digitaal, ondertekend toegangsbewijs dat na verificatie van het account wordt uitgegeven en bij elk verzoek wordt gecontroleerd — alleen wie het recht heeft, komt bij de gegevens van de apotheek, zoals een personeelsbadge die niet te kopiëren is.',
+            ),
+            (
+                'Cloudflare Workers (back-enddiensten)',
+                'Kleine diensten die op Cloudflares wereldwijde netwerk dicht bij de gebruiker draaien: ze ontvangen inlog- en gegevensverzoeken en verwerken die zonder traditionele server — hoge snelheid en beschikbaarheid tegen vrijwel geen kosten.',
+            ),
+            (
+                'Arabische RTL-interface en Cairo-lettertype',
+                'Het platform is van oorsprong Arabisch, van rechts naar links, met het heldere Cairo-lettertype — geen achteraf geplakte vertaling maar een Arabisch ontwerp vanaf de basis, zichtbaar in elke knop en elke tabel.',
+            )
+        ]
+    ]
 }

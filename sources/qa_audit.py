@@ -19,6 +19,8 @@ PAGES = [
     ('/de/projects/natsup/', 'de-proj'),
     ('/projects/mamp/', 'ar-mamp'),
     ('/en/projects/isyacar/', 'en-isyacar'),
+    ('/projects/phmp/', 'ar-phmp'),
+    ('/en/projects/phmp/', 'en-phmp'),
 ]
 VIEWPORTS = [
     ('360x800', 360, 800),      # small phone portrait

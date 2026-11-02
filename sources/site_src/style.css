@@ -275,6 +275,8 @@ a.meta-chip:hover { border-color: var(--border-gold); color: var(--gold-2); tran
   padding: 0.95rem 1.9rem;
   transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, border-color 0.25s ease, color 0.25s ease;
 }
+/* hard size guard: any svg inside any button stays icon-sized (never blows up the pill) */
+.btn svg, .nav-cta svg, .cb-chip svg { width: 1.15em; height: 1.15em; flex: none; }
 .btn-primary {
   background: linear-gradient(135deg, var(--gold-2), var(--gold-3));
   color: var(--gold-dark);
@@ -1093,7 +1095,6 @@ html[lang="ar"] .cert-more, html[lang="ar"] .proj-more { font-family: var(--font
 }
 .nav-icon:hover { color: var(--gold-2); background: var(--glass); border-color: var(--border); }
 .nav-icon .ic { width: 1.15rem; height: 1.15rem; }
-.ic-fill { fill: currentColor; }
 
 .nav-cta {
   display: inline-flex; align-items: center; gap: 0.5rem;
