@@ -1,0 +1,197 @@
+# -*- coding: utf-8 -*-
+"""Language-neutral data for the 13 certificates + 6 digital projects."""
+
+# (img, field, issuer_key, year, month, day, credential_id, drive_file_id)
+CERTS = [
+    ('c01', 'marketing', 'google_en', 2021, 3, 31, '2YQ Q7H DY9', '1vMuqC5qmBTjrW6w1eJzXta1a9DvaMCzu'),
+    ('c02', 'marketing', 'google_ar', 2021, 4, 5, 'W6G 9GJ VNJ', '1CSFIpEjZFzcEz-lohuIZN--Cix02fAVK'),
+    ('c03', 'ai', 'huawei', 2026, 5, 19, 'ICT20260519000075', '157u_HHFZ5zjTtalp0lqrn9FEFdI1e9ep'),
+    ('c04', 'civic', 'portal', 2026, 5, 11, '', '16vvanzIqMqLpTtbdripkPx-LXnTBrutC'),
+    ('c05', 'civic', 'portal', 2026, 5, 12, '', '1zjQVDH1eoAdAZasAS8Aobf1K85zZ0pwB'),
+    ('c06', 'civic', 'portal', 2026, 5, 15, '', '131oY8Irv1b52lgllNkJOSFMqV0yD7Aru'),
+    ('c07', 'ai', 'hp', 2026, 5, 20, 'de90c5ca-0aec-420e-a45e-2ee4c54a3d95', '1kNRgSUqSaQrFH_Hx1JlIfIxpgzrF3bYr'),
+    ('c08', 'biz', 'hp', 2026, 5, 21, 'c76722f4-9169-474f-83e8-d93859654c2d', '1IvbA562tZfexM4Op75Hmp0SCjRHNKrKx'),
+    ('c09', 'ai', 'hp', 2026, 5, 22, 'd2ac4794-2648-4482-8638-770aea13df94', '1EcmCHYloQEIdm7eFLEqw6-A6rfO1fTmK'),
+    ('c10', 'biz', 'hp', 2026, 5, 25, '3f368344-f7a1-494a-abb5-8175edee5557', '1fZiENBUZeyvNQMWiJgukvIuCiC-mSNuv'),
+    ('c11', 'web', 'hp', 2026, 7, 1, '8bcaf75d-3310-4ee7-8bf5-4e4d5e1cab24', '18AKBs8Fn94L1p93EuD9LHLbKUesb1G1c'),
+    ('c12', 'biz', 'hp', 2026, 10, 13, 'bf38e3fc-9cc4-40cc-894b-4acf2dba020b', '1KYYLcm4uhoW49uf9M-Hb3WR7jA1-sR7y'),
+    ('c13', 'ai', 'hp', 2026, 10, 13, '5338a6e7-8c2f-4755-85a2-8e77fb1901c0', '1k3Px92loI-fjMp5UdR2zQDK9v7tnKbcS'),
+]
+
+# SEO-friendly URL slugs (one detail page per certificate)
+SLUGS = {
+    'c01': 'digital-marketing-english',
+    'c02': 'digital-marketing-arabic',
+    'c03': 'overview-of-ai',
+    'c04': 'participatory-democracy',
+    'c05': 'associations-legal-framework',
+    'c06': 'community-communication',
+    'c07': 'ai-for-business-professionals',
+    'c08': 'effective-leadership',
+    'c09': 'ai-for-beginners',
+    'c10': 'professional-communication',
+    'c11': 'effective-websites',
+    'c12': 'email-for-work',
+    'c13': 'strategic-planning-in-the-ai-era',
+}
+
+# filter order (translation keys in t_*.py: fields dict)
+FIELDS = ['all', 'ai', 'biz', 'civic', 'marketing', 'web']
+
+# English credential names for JSON-LD (canonical reference)
+CERTS_EN = {
+    'c01': 'Fundamentals of Digital Marketing (English)',
+    'c02': 'Fundamentals of Digital Marketing (Arabic)',
+    'c03': 'Overview of AI',
+    'c04': 'Participatory Democracy Training Module',
+    'c05': 'Legal Framework for Establishing Associations Training Module',
+    'c06': 'Community Communication Training Module',
+    'c07': 'AI for Business Professionals',
+    'c08': 'Effective Leadership',
+    'c09': 'AI for Beginners',
+    'c10': 'Professional Communication for Career Growth',
+    'c11': 'Effective Websites',
+    'c12': 'Email for Work',
+    'c13': 'Strategic Planning in the AI Era',
+}
+
+# (key, image, url) — names/descriptions live in translations
+PROJECTS = [
+    ('natsup', '/img/pj-natsup.jpg', 'https://natsup.pages.dev'),
+    ('syda', '/img/pj-syda.jpg', 'https://syda.pages.dev'),
+    ('dtsg', '/img/pj-dtsg.jpg', 'https://dtsg.pages.dev'),
+    ('hrmp', '/img/pj-hrmp.jpg', 'https://hrmp.pages.dev'),
+    ('mamp', '/img/pj-mamp.jpg', 'https://mamp.pages.dev'),
+    ('isyacar', '/img/pj-isyacar.jpg', 'https://isyacar.pages.dev'),
+    ('phmp', '/img/pj-phmp.jpg', 'https://phmp.pages.dev'),
+]
+
+# ---------------------------------------------------------------------------
+# v4: REAL public reviews (verbatim quotes, public sources — never invent).
+# (author, source_key, url, quote_lang, quote)  — quote is kept verbatim.
+# ---------------------------------------------------------------------------
+REVIEWS = {
+    'c01': [
+        ('Amit Gupta', 'medium', 'https://guptamit.medium.com/fundamentals-of-digital-marketing-a-course-by-google-review-outline-1c0ebf43e54c',
+         'en', 'Provides a roadmap for someone new in this field, so it&#8217;s a very good free course'),
+        ('nhggfu', 'reddit', 'https://www.reddit.com/r/marketing/comments/fpv6c3/is_googles_marketing_course_worth_investing_your/',
+         'en', 'Is it worth it to have &#8220;google certified&#8221; courses on your resume, at zero cost for 40 hours&#8217; investment? &#8230; plus the courses are very good.'),
+        ('Marie-Cécile Bonnet', 'linkedin_article', 'https://fr.linkedin.com/pulse/jai-test%C3%A9-pour-vous-la-certification-les-principes-du-bonnet',
+         'fr', 'Le contenu très qualitatif pour une formation gratuite. Le contenu correspond bien à l&#8217;intitulé qui est d&#8217;enseigner à l&#8217;apprenant les fondamentaux du marketing numérique'),
+    ],
+    'c02': [
+        ('Amit Gupta', 'medium', 'https://guptamit.medium.com/fundamentals-of-digital-marketing-a-course-by-google-review-outline-1c0ebf43e54c',
+         'en', 'Provides a roadmap for someone new in this field, so it&#8217;s a very good free course'),
+        ('nhggfu', 'reddit', 'https://www.reddit.com/r/marketing/comments/fpv6c3/is_googles_marketing_course_worth_investing_your/',
+         'en', 'Is it worth it to have &#8220;google certified&#8221; courses on your resume, at zero cost for 40 hours&#8217; investment? &#8230; plus the courses are very good.'),
+        ('Marie-Cécile Bonnet', 'linkedin_article', 'https://fr.linkedin.com/pulse/jai-test%C3%A9-pour-vous-la-certification-les-principes-du-bonnet',
+         'fr', 'Le contenu très qualitatif pour une formation gratuite. Le contenu correspond bien à l&#8217;intitulé qui est d&#8217;enseigner à l&#8217;apprenant les fondamentaux du marketing numérique'),
+    ],
+    # c03 (Huawei), c04-c06 (national portal): no verifiable public user reviews found — omitted honestly.
+    'c07': [
+        ('Musictomyears26', 'appstore', 'https://apps.apple.com/us/app/hp-life/id1605830167',
+         'en', 'Professional and Helpful! I&#8217;ve taken a lot of online courses, many for which I&#8217;ve paid a good deal of money. These courses are free, very well structured and very informative.'),
+        ('Mansour Al-Khamiri', 'appstore', 'https://apps.apple.com/us/app/hp-life/id1605830167',
+         'en', 'I didn&#8217;t know about the CV clearly you let me know exactly how to do it in the best way thank you so much'),
+    ],
+    'c08': [
+        ('Musictomyears26', 'appstore', 'https://apps.apple.com/us/app/hp-life/id1605830167',
+         'en', 'Professional and Helpful! I&#8217;ve taken a lot of online courses, many for which I&#8217;ve paid a good deal of money. These courses are free, very well structured and very informative.'),
+        ('Mansour Al-Khamiri', 'appstore', 'https://apps.apple.com/us/app/hp-life/id1605830167',
+         'en', 'I didn&#8217;t know about the CV clearly you let me know exactly how to do it in the best way thank you so much'),
+    ],
+    'c09': [
+        ('Musictomyears26', 'appstore', 'https://apps.apple.com/us/app/hp-life/id1605830167',
+         'en', 'Professional and Helpful! I&#8217;ve taken a lot of online courses, many for which I&#8217;ve paid a good deal of money. These courses are free, very well structured and very informative.'),
+        ('Mansour Al-Khamiri', 'appstore', 'https://apps.apple.com/us/app/hp-life/id1605830167',
+         'en', 'I didn&#8217;t know about the CV clearly you let me know exactly how to do it in the best way thank you so much'),
+    ],
+    'c10': [
+        ('Musictomyears26', 'appstore', 'https://apps.apple.com/us/app/hp-life/id1605830167',
+         'en', 'Professional and Helpful! I&#8217;ve taken a lot of online courses, many for which I&#8217;ve paid a good deal of money. These courses are free, very well structured and very informative.'),
+        ('Mansour Al-Khamiri', 'appstore', 'https://apps.apple.com/us/app/hp-life/id1605830167',
+         'en', 'I didn&#8217;t know about the CV clearly you let me know exactly how to do it in the best way thank you so much'),
+    ],
+    'c11': [
+        ('Musictomyears26', 'appstore', 'https://apps.apple.com/us/app/hp-life/id1605830167',
+         'en', 'Professional and Helpful! I&#8217;ve taken a lot of online courses, many for which I&#8217;ve paid a good deal of money. These courses are free, very well structured and very informative.'),
+        ('Mansour Al-Khamiri', 'appstore', 'https://apps.apple.com/us/app/hp-life/id1605830167',
+         'en', 'I didn&#8217;t know about the CV clearly you let me know exactly how to do it in the best way thank you so much'),
+    ],
+    'c12': [
+        ('Musictomyears26', 'appstore', 'https://apps.apple.com/us/app/hp-life/id1605830167',
+         'en', 'Professional and Helpful! I&#8217;ve taken a lot of online courses, many for which I&#8217;ve paid a good deal of money. These courses are free, very well structured and very informative.'),
+        ('Mansour Al-Khamiri', 'appstore', 'https://apps.apple.com/us/app/hp-life/id1605830167',
+         'en', 'I didn&#8217;t know about the CV clearly you let me know exactly how to do it in the best way thank you so much'),
+    ],
+    'c13': [
+        ('Musictomyears26', 'appstore', 'https://apps.apple.com/us/app/hp-life/id1605830167',
+         'en', 'Professional and Helpful! I&#8217;ve taken a lot of online courses, many for which I&#8217;ve paid a good deal of money. These courses are free, very well structured and very informative.'),
+        ('Mansour Al-Khamiri', 'appstore', 'https://apps.apple.com/us/app/hp-life/id1605830167',
+         'en', 'I didn&#8217;t know about the CV clearly you let me know exactly how to do it in the best way thank you so much'),
+    ],
+}
+
+# official links per issuer: (label_key, url) — labels translated in t_*.py["links"]
+OFFICIAL = {
+    'google_en': [
+        ('credential', 'https://learndigital.withgoogle.com/link/1ar27gu2qdc'),
+        ('course', 'https://learndigital.withgoogle.com/digitalgarage/course/fundamentals-digital-marketing'),
+        ('grow', 'https://grow.google'),
+    ],
+    'google_ar': [
+        ('course', 'https://learndigital.withgoogle.com/digitalgarage/course/fundamentals-digital-marketing'),
+        ('grow', 'https://grow.google'),
+    ],
+    'huawei': [
+        ('academy', 'https://e.huawei.com/en/talent/ict-academy/'),
+        ('talent', 'https://talent.huawei.com'),
+    ],
+    'portal': [
+        ('maroc', 'https://www.maroc.ma'),
+        ('spub', 'https://www.service-public.ma'),
+    ],
+    'hp': [
+        ('platform', 'https://www.life-global.org'),
+    ],
+}
+
+# trusted learning platforms strip (shown on all cert pages, below official links)
+TRUSTED_PLATFORMS = [
+    ('grow', 'https://grow.google'),
+    ('life', 'https://www.life-global.org'),
+    ('huawei_talent', 'https://talent.huawei.com'),
+    ('coursera', 'https://www.coursera.org'),
+    ('edx', 'https://www.edx.org'),
+    ('linkedin_learning', 'https://learning.linkedin.com'),
+]
+
+# contact channels (v4) — labels/aria in translations, values are universal
+CONTACT = {
+    'email': 'tarikchouika@gmail.com',
+    'phone': '+212 7 66 67 20 27',
+    'phone_href': 'tel:+212766672027',
+    'whatsapp_href': 'https://wa.me/212766672027',
+    'linkedin': 'https://www.linkedin.com/in/tarik-chouika-588863140',
+    'facebook': 'https://www.facebook.com/share/1A9A74Yi5Y/',
+    'telegram': 'https://t.me/tarikchouika_bot',
+}
+
+# official Moroccan government / digital-services portals for the footer
+GOV = [
+    ('maroc', 'https://www.maroc.ma'),
+    ('spub', 'https://www.service-public.ma'),
+    ('tax', 'https://www.tax.gov.ma'),
+    ('cnss', 'https://www.cnss.ma'),
+    ('anapec', 'https://www.anapec.ma'),
+    ('education', 'https://www.education.gov.ma'),
+    ('sante', 'https://www.sante.gov.ma'),
+    ('interieur', 'https://www.interieur.gov.ma'),
+]
+
+# Telegram bot (public info only — sending goes through the tarik-bot Cloudflare
+# Worker gateway server-side; the bot token is never shipped to the browser)
+TELEGRAM = {
+    'bot_url': 'https://t.me/tarikchouika_bot',
+    'worker': 'https://tarik-bot.balbolghol-ai.workers.dev',
+}
