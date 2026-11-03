@@ -191,10 +191,18 @@ def nav_links(t, lang, detail=False):
     n = t['nav']
     items = [('about', n['about']), ('certificates', n['certificates']),
              ('skills', n['skills']), ('projects', n['projects']),
+             ('services', n['services']),
              ('experience', n['experience']), ('gallery', n['gallery']),
              ('contact', n['contact'])]
     pre = LANG_PATH[lang] if detail else ''
-    return '\n'.join('<a href="%s#%s">%s</a>' % (pre, i, esc(x)) for i, x in items)
+    out = []
+    for i, x in items:
+        if i == 'services':
+            # a real page (not an anchor) — works from any page of any language
+            out.append('<a href="%sservices/">%s</a>' % (LANG_PATH[lang], esc(x)))
+        else:
+            out.append('<a href="%s#%s">%s</a>' % (pre, i, esc(x)))
+    return '\n'.join(out)
 
 
 def lang_options_html(current, suffix=''):
@@ -247,9 +255,14 @@ def chrome_tokens(t, lang, detail=False):
     pre = LANG_PATH[lang] if detail else ''
     quick_items = [('about', t['nav']['about']), ('certificates', t['nav']['certificates']),
                    ('skills', t['nav']['skills']), ('projects', t['nav']['projects']),
+                   ('services', t['nav']['services']),
                    ('experience', t['nav']['experience']), ('gallery', t['nav']['gallery']),
                    ('contact', t['nav']['contact'])]
-    footer_quick = ''.join('<li><a href="%s#%s">%s</a></li>' % (pre, i, esc(x)) for i, x in quick_items)
+    fq = []
+    for i, x in quick_items:
+        href = LANG_PATH[lang] + 'services/' if i == 'services' else pre + '#' + i
+        fq.append('<li><a href="%s">%s</a></li>' % (href, esc(x)))
+    footer_quick = ''.join(fq)
     gov_links = '\n'.join(
         '<li><a href="%s" target="_blank" rel="noopener">%s<span class="g-dom" dir="ltr">%s</span></a></li>'
         % (url, esc(t['gov'][key]), url.replace('https://www.', '').replace('https://', ''))
@@ -294,6 +307,9 @@ def chrome_tokens(t, lang, detail=False):
         'FOOTER_QUICK': footer_quick,
         'GOV_LINKS': gov_links,
         'AVAIL': esc(t['avail']),
+        'ICON_AWARD_SVC': icon('award'),
+        'FT_CERTS_SVC': esc(t['nav']['certificates']),
+        'CERTS_URL': LANG_PATH[lang] + '#certificates',
     }
 
 
@@ -561,6 +577,9 @@ def render_index(lang, template):
         'ICON_COPY': icon('copy'),
         'CTA_CONTACT': esc(t['cta_contact']),
         'CTA_CV': esc(t['cta_cv']),
+        'CTA_SERVICES': esc(t['cta_services']),
+        'SERVICES_URL': LANG_PATH[lang] + 'services/',
+        'ICON_SERVICES': icon('globe'),
         'STATS': stats_html(t),
         'ABOUT_TITLE': esc(t['about_title']),
         'ABOUT_SUB': esc(t['about_sub']),
@@ -858,6 +877,98 @@ def render_project_page(lang, idx, template):
     return apply_tokens(template, tokens, 'proj-%s-%s' % (lang, key))
 
 
+# ---------------- v8: digital services page ----------------
+def jsonld_services(t, lang):
+    svc = t['svc']
+    data = {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        'name': svc['h1'],
+        'description': svc['desc'],
+        'url': SITE_URL + LANG_PATH[lang] + 'services/',
+        'provider': {'@type': 'Person', 'name': 'Tarik Chouika', 'url': SITE_URL + '/'},
+        'areaServed': {'@type': 'Country', 'name': 'Morocco'},
+        'inLanguage': lang,
+        'hasOfferCatalog': {
+            '@type': 'OfferCatalog',
+            'name': svc['list_t'],
+            'itemListElement': [
+                {'@type': 'Offer',
+                 'itemOffered': {'@type': 'Service', 'name': it['name'], 'description': it['desc']}}
+                for it in svc['items']
+            ],
+        },
+    }
+    return json.dumps(data, ensure_ascii=False)
+
+
+def render_services_page(lang, template):
+    t = load_tr(lang)
+    svc = t['svc']
+    suffix = 'services/'
+    canonical = SITE_URL + LANG_PATH[lang] + suffix
+    cards = []
+    for it in svc['items']:
+        lis = '\n'.join('<li>' + icon('check') + '<span>' + esc(b) + '</span></li>' for b in it['bullets'])
+        cards.append(
+            '<article class="svc-card card reveal">\n'
+            '<div class="svc-head">\n'
+            '<span class="svc-icon">' + icon(it['icon']) + '</span>\n'
+            '<div class="svc-head-txt"><h3>' + esc(it['name']) + '</h3>\n'
+            '<span class="svc-tag">' + esc(it['tag']) + '</span></div>\n'
+            '</div>\n'
+            '<p class="svc-desc">' + esc(it['desc']) + '</p>\n'
+            '<ul class="feature-list">' + lis + '</ul>\n'
+            '<p class="svc-proof">' + icon('award') + '<span>' + esc(it['proof']) + '</span></p>\n'
+            '</article>')
+    steps = []
+    for i, (st, sd) in enumerate(svc['how'], 1):
+        steps.append(
+            '<article class="svc-step reveal">\n'
+            '<span class="svc-step-n" aria-hidden="true">' + str(i) + '</span>\n'
+            '<h3>' + esc(st) + '</h3>\n<p>' + esc(sd) + '</p>\n'
+            '</article>')
+    why = '\n'.join(
+        '<article class="value-card card reveal">\n<h3>%s</h3>\n<p>%s</p>\n</article>'
+        % (esc(a), esc(b)) for a, b in svc['why'])
+    aside_rows = '\n'.join(
+        '<div><dt>%s</dt><dd>%s</dd></div>' % (esc(a), esc(b)) for a, b in svc['aside_rows'])
+    tokens = {}
+    tokens.update(head_tokens(lang, svc['title'], svc['desc'], canonical, suffix,
+                              SITE_URL + '/img/profile.jpg', 'website', jsonld_services(t, lang)))
+    tokens.update(chrome_tokens(t, lang, detail=True))
+    tokens.update({
+        'NAV_LINKS': nav_links(t, lang, detail=True),
+        'NAV_LINKS_MOBILE': nav_links(t, lang, detail=True),
+        'LANG_OPTIONS': lang_options_html(lang, suffix),
+        'PP_HOME': esc(t['pp_home']),
+        'SVC_CRUMB': esc(svc['crumb']),
+        'SVC_TAG': esc(svc['tag']),
+        'SVC_H1': esc(svc['h1']),
+        'SVC_LEAD': esc(svc['lead']),
+        'SVC_INTRO_T': esc(svc['intro_t']),
+        'SVC_INTRO': esc(svc['intro']),
+        'SVC_LIST_T': esc(svc['list_t']),
+        'SVC_CARDS': '\n'.join(cards),
+        'SVC_HOW_T': esc(svc['how_t']),
+        'SVC_STEPS': '\n'.join(steps),
+        'SVC_WHY_T': esc(svc['why_t']),
+        'SVC_WHY_CARDS': why,
+        'SVC_CTA_T': esc(svc['cta_t']),
+        'SVC_CTA_P': esc(svc['cta_p']),
+        'SVC_CTA_BTN': esc(svc['cta_btn']),
+        'SVC_CTA_WA': esc(svc['cta_wa']),
+        'SVC_CTA_MAIL': esc(svc['cta_mail']),
+        'SVC_ASIDE_T': esc(svc['aside_t']),
+        'SVC_ASIDE_ROWS': aside_rows,
+        'SVC_BACK': esc(svc['back']),
+        'ICON_BACK': icon('back'),
+    })
+    tokens.update(footer_tokens(t, lang, suffix))
+    tokens['NAME'] = esc(t['name'])
+    return apply_tokens(template, tokens, 'svc-%s' % lang)
+
+
 # ---------------- static assets ----------------
 
 FAVICON = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
@@ -888,6 +999,7 @@ def sitemap_xml():
         lines.append('  </url>')
 
     emit('', '1.0')
+    emit('services/', '0.8')
     for s in CERT_SUFFIX:
         emit(s, '0.7')
     for s in PROJ_SUFFIX:
@@ -1000,11 +1112,15 @@ def main():
         cert_tpl = f.read()
     with open(os.path.join(SRC, 'project_page.html'), encoding='utf-8') as f:
         proj_tpl = f.read()
+    with open(os.path.join(SRC, 'services_page.html'), encoding='utf-8') as f:
+        services_tpl = f.read()
 
     pages = []
     for lang in LANGS:
         write_page('index.html' if lang == 'ar' else lang + '/index.html',
                    render_index(lang, index_tpl), pages)
+        write_page('services/index.html' if lang == 'ar' else lang + '/services/index.html',
+                   render_services_page(lang, services_tpl), pages)
         for i in range(len(CERTS)):
             write_page(LANG_PATH[lang].lstrip('/') + CERT_SUFFIX[i] + 'index.html',
                        render_cert_page(lang, i, cert_tpl), pages)

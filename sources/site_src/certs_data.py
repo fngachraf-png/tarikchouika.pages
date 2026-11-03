@@ -64,6 +64,7 @@ PROJECTS = [
     ('mamp', '/img/pj-mamp.jpg', 'https://mamp.pages.dev'),
     ('isyacar', '/img/pj-isyacar.jpg', 'https://isyacar.pages.dev'),
     ('phmp', '/img/pj-phmp.jpg', 'https://phmp.pages.dev'),
+    ('epdp', '/img/pj-epdp.jpg', 'https://epdp.pages.dev'),
 ]
 
 # ---------------------------------------------------------------------------

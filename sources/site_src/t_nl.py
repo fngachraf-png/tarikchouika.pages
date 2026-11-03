@@ -15,7 +15,7 @@ T = {
         'about': 'Over mij',
         'experience': 'Ervaring',
         'certificates': 'Certificaten',
-        'projects': 'Projecten',
+        'projects': 'Projecten', 'services': 'Diensten',
         'skills': 'Vaardigheden',
         'gallery': 'Galerij',
         'contact': 'Contact'
@@ -32,6 +32,7 @@ T = {
     'alt_profile': 'Portretfoto van Tarik Chouika',
     'cta_contact': 'Neem contact op',
     'cta_cv': 'CV downloaden (PDF)',
+    'cta_services': 'Digitale diensten',
     'stats': [
         [
             '10+',
@@ -46,14 +47,14 @@ T = {
             'Kennisgebieden'
         ],
         [
-            '7',
+            '8',
             'Digitale projecten'
         ]
     ],
     'about_title': 'Over mij',
     'about_sub': 'Internationaal gecertificeerde digitale kennis, op een stevige basis van tien jaar veldervaring',
     'about_p1': 'Ik ben Tarik Chouika, een Marokkaanse professional uit Rabat die ervoor koos zijn carrière met vertrouwen opnieuw richting de digitale wereld te tekenen. Mijn kennis is gedocumenteerd met 13 certificeringen van Google, HP LIFE, Huawei en nationale trainingsinstellingen, die kunstmatige intelligentie, digitale marketing, webtechnologieën, leiderschap en professionele communicatie dekken — kennis die ik elke dag verder ontwikkel en toepas, geen certificaten aan de muur.',
-    'about_p2': 'Mijn verschil: ik leer niet alleen, ik bouw. Wat ik heb opgedaan zette ik in in vier live digitale projecten die tot stand kwamen met hulp van AI-modellen: een meertalige gids en winkel voor natuurlijke supplementen, een complete Arabische webwinkel, een platform voor traditionele Marokkaanse spellen met live multiplayerkamers, en een HR-platform rond de Marokkaanse arbeidswet — van idee tot publicatie op Cloudflare Pages.',
+    'about_p2': 'Mijn verschil: ik leer niet alleen, ik bouw. Wat ik heb opgedaan zette ik in in acht live digitale projecten die tot stand kwamen met hulp van AI-modellen — van winkels en serviceplatformen tot gespecialiseerde Marokkaanse administratieve tools voor verenigingen, apotheken en officiële documenten — van idee tot publicatie op Cloudflare Pages.',
     'about_p3': 'Vóór deze digitale reis bracht ik meer dan tien jaar door in omgevingen die geen luiheid verdragen: het leiden en runnen van een volkscafé met volledige verantwoordelijkheid voor operaties, voorraad en service, naast ervaring in de bouw en beveiliging. Daar werden mijn vaardigheden echt gesmeed: klantenservice, omgaan met druk, discipline en mensenkennis.',
     'about_p4': 'Vandaag bied ik deze zeldzame combinatie: een stevige veldmentaliteit samen met verifieerbare, gecertificeerde digitale kennis. Ik zoek een kans om te bewijzen dat mijn certificaten geen papier zijn, en dat een decennium in dienst van het publiek een professional smeedt die nooit teleurstelt. Klaar om direct te beginnen.',
     'fact_loc_l': 'Locatie',
@@ -420,7 +421,7 @@ T = {
     'drive_text': 'De originele Google Drive-map bevat alle 13 certificaten in hun volledige formaat, op elk moment beschikbaar voor verificatie.',
     'drive_cta': 'Openen op Google Drive',
     'pj_title': 'Mijn digitale projecten',
-    'pj_sub': 'Zeven live projecten die ik heb gebouwd als onderdeel van mijn digitale leerreis',
+    'pj_sub': 'Acht live projecten die ik heb gebouwd als onderdeel van mijn digitale leerreis',
     'pj_note': 'Ik heb deze projecten ontwikkeld met behulp van AI-modellen als onderdeel van zelfstudie en het verbeteren van mijn digitale vaardigheden — ze zijn allemaal gepubliceerd en draaien op Cloudflare Pages.',
     'pj_visit': 'Project bezoeken',
     'projects': [
@@ -458,6 +459,11 @@ T = {
             'name': 'PHMP',
             'tag': 'Apotheekbeheerplatform',
             'desc': 'Een professioneel platform voor apotheekbeheer: kassa, voorraad, recepten en rapporten, plus een klantenkant om medicijnen te bestellen bij een apotheek in de buurt, met levering.'
+        },
+        {
+            'name': 'EPDP — Jouw digitale griffier',
+            'tag': 'Platform voor Marokkaanse administratieve documenten',
+            'desc': 'Een gratis platform met meer dan 1.180 officiële Marokkaanse administratieve formulieren en documenten in het Arabisch en Frans — van CNSS en belastingen tot contracten en volmachten — met een gids voor officiële portalen en een slimme assistent die antwoordt uit gecontroleerde bronnen.'
         }
     ],
     'project_pages': [
@@ -602,6 +608,28 @@ T = {
                 'Marokkaanse wettelijke referenties van de farmasector in het platform'
             ],
             'learned': 'Dit project leerde me dat software in de gezondheidszorg dubbele verantwoordelijkheid draagt: een fout in de prijs of wisselwerking van een medicijn is niet hetzelfde als een fout in een gewone winkel. Ik leerde een platform bouwen dat twee heel verschillende kanten bedient — een klant die moeiteloos wil bestellen en een apotheker die snelheid en precisie nodig heeft — en beide in balans te houden binnen één systeem; en dat naleving van de officiële Marokkaanse regelgeving geen beperking is maar het fundament van vertrouwen in elk platform dat de gezondheid van mensen raakt.'
+        },
+        {
+            'about': 'EPDP — «Jouw digitale griffier» — is een Marokkaans platform dat de diensten van de traditionele openbare griffier digitaliseert: een bibliotheek met meer dan 1.180 officiële administratieve formulieren en documenten in het Arabisch en Frans — verzoeken aan diensten, klachten, huur- en koopcontracten, volmachten, eerlijke verklaringen, cv’s — georganiseerd in 19 administratieve categorieën die sociale zekerheid, belastingen, contracten en meer dekken. Daarnaast: een volledige gids van de portalen van 38+ officiële Marokkaanse instanties, een slimme assistent die antwoordt uit gecontroleerde bronnen zonder hallucinatie, en een assistent die jouw document invult met jouw gegevens en het professioneel opmaakt — alles volledig gratis en zonder registratie.',
+            'tech': [
+                'Next.js (modern framework)',
+                'React (interactieve interface)',
+                'Lettertypes Cairo + Noto Kufi Arabic',
+                'Arabisch-eerst ontwerp (RTL)',
+                'Lokale opslag van voorkeuren',
+                'Documentarchitectuur in 19 categorieën',
+                'Brongebonden slimme assistent',
+                'Cloudflare Pages (hosting)'
+            ],
+            'features': [
+                'Bibliotheek met meer dan 1.180 officiële administratieve formulieren in het Arabisch en Frans',
+                '19 administratieve categorieën: van belastingen en sociale zekerheid tot contracten en klachten',
+                'Gecontroleerde gids van 38+ officiële Marokkaanse instanties met directe links',
+                'Slimme assistent die antwoordt uit gecontroleerde officiële bronnen — zonder verzonnen informatie',
+                'Automatisch invullen van documenten met jouw gegevens, professioneel opgemaakt en klaar om te printen',
+                'Volledig gratis, zonder registratie, interface in 7 talen'
+            ],
+            'learned': 'EPDP leerde me dat de waarde van een digitaal product wordt afgemeten aan de tijd die het mensen bespaart: elke minuut die een burger uitspaart bij het zoeken naar zijn document is de echte winst. Ik leerde discipline in informatie — bij officiële documenten is geen benadering toegestaan: elk formulier moet exact overeenkomen met zijn bron, anders verliest het platform zijn zin. Ook leerde ik een tweetalige (Arabisch/Franse) ervaring ontwerpen die de werkwijze van de Marokkaanse administratie respecteert en ze voor de burger vereenvoudigt.'
         }
     ],
     'sk_title': 'Vaardigheden',
@@ -1060,6 +1088,53 @@ T = {
             'cost_market': 'Ongeveer 60.000 – 180.000 MAD voor een apotheekbeheersysteem van deze diepgang: kassa, voorraad, recepten, rapporten en wettelijke naleving.',
             'cost_now': '0 MAD per maand in het gratis pakket.',
             'cost_scale': 'Een eigen server en database zodra het gebruik zich over meerdere apotheken uitbreidt: geschat 200 – 700 MAD per maand.'
+        },
+        {
+            'value_intro': 'EPDP verkort de weg van de burger naar het administratieve document:',
+            'values': [
+                (
+                    'Een nationale bibliotheek in één link',
+                    'Meer dan 1.180 officiële formulieren op één plek in plaats van spitten door websites en loketten: van een sociaal-zekerheidsverzoek tot een klaar huurcontract, in het Arabisch en Frans.'
+                ),
+                (
+                    'Een kaart van de officiële portalen',
+                    'Een geordende gids van 38+ officiële instanties (belastingen, sociale zekerheid, justitie, gemeenten...) met de directe link van elk — de juiste deur bij de eerste poging.'
+                ),
+                (
+                    'Antwoorden uit gecontroleerde bronnen, niet uit verbeelding',
+                    'De slimme assistent is uitsluitend gebonden aan officiële bronnen: staat het antwoord er niet, dan zegt hij dat helder — vertrouwen gebouwd op nauwkeurigheid.'
+                ),
+                (
+                    'Jouw document klaar in enkele minuten',
+                    'Vul je gegevens één keer in en de assistent vult het formulier in en maakt het op — je downloadt het netjes geprint, klaar om te ondertekenen en in te dienen.'
+                )
+            ],
+            'effort': 'Het grootste werk in EPDP waren niet de schermen maar de inhoud: meer dan 1.180 formulieren en documenten uit hun officiële bronnen verzamelen en controleren, ze indelen in 19 categorieën met een logica die de burger begrijpt — niet de administratie — en bij elk document de Arabische én Franse versie verzorgen. Daarbovenop bouwde ik het platform zelf: snel zoeken, bewaarde taalkeuze en een slimme assistent gebonden aan officiële bronnen zodat hij nooit een antwoord verzint — want hier weegt vertrouwen zwaarder dan het aantal functies.',
+            'effort_stats': [
+                (
+                    'Documenten en formulieren',
+                    'Meer dan 1.180'
+                ),
+                (
+                    'Administratieve categorieën',
+                    '19 categorieën'
+                ),
+                (
+                    'Officiële referentie-instanties',
+                    'Meer dan 38'
+                )
+            ],
+            'ops': [
+                'Next.js — een moderne, snelle, onderhoudbare architectuur',
+                'Professionele Arabische lettertypes (Cairo en Noto Kufi)',
+                'Lokale opslag van voorkeuren zonder registratie',
+                'Slimme assistent gebonden aan officiële bronnen',
+                'Cloudflare Pages voor hosting en uitrol'
+            ],
+            'cost_self': '0 dirham — gebouwd op een gratis ecosysteem (hosting en uitrol) met hulp van AI-tools bij ontwikkeling en samenstelling.',
+            'cost_market': 'Een platform voor administratieve documenten van deze schaal (gecontroleerde bibliotheek + instantiegids + slimme assistent): grofweg 80.000 – 250.000 dirham bij commerciële ontwikkeling.',
+            'cost_now': '0 dirham per maand op het gratis pakket.',
+            'cost_scale': 'Bij brede adoptie (sneller zoeken, database en backend-diensten): geschat 200 – 800 dirham per maand.'
         }
     ],
     'pp_tools': 'Gereedschap en vaardigheden — simpel uitgelegd',
@@ -1294,6 +1369,198 @@ T = {
                 'Arabische RTL-interface en Cairo-lettertype',
                 'Het platform is van oorsprong Arabisch, van rechts naar links, met het heldere Cairo-lettertype — geen achteraf geplakte vertaling maar een Arabisch ontwerp vanaf de basis, zichtbaar in elke knop en elke tabel.',
             )
+        ],
+        [
+            (
+                'Next.js',
+                'Een modern framework bovenop React: het levert snel ladende pagina’s die zoekmachines makkelijk indexeren, en werkt alleen het gewijzigde deel bij in plaats van de hele pagina te herladen.'
+            ),
+            (
+                'React',
+                'De interfacebibliotheek van Meta: ze splitst de pagina in kleine herbruikbare onderdelen — een knop, een kaart, een lijst — zodat de site consistent blijft en makkelijk te bouwen is.'
+            ),
+            (
+                'Lettertypes Cairo en Noto Kufi Arabic',
+                'Twee professionele Arabische lettertypes, ontworpen voor schermen: heldere letters in elke grootte, wat administratieve teksten waardigheid en leesbaarheid geeft.'
+            ),
+            (
+                'Arabisch-eerst ontwerp (RTL)',
+                'Het platform is vanaf het begin van rechts naar links ontworpen; de andere talen kwamen daarna — geen gespiegelde vertaling maar een echt Arabisch ontwerp.'
+            ),
+            (
+                'Lokale opslag (localStorage)',
+                'Een klein geheugen in je browser dat je taal en voorkeuren onthoudt: je komt terug en vindt het platform zoals je het achterliet — zonder account, zonder registratie.'
+            ),
+            (
+                'Documenten georganiseerd in 19 categorieën',
+                'Elk document is ingedeeld (belastingen, sociale zekerheid, contracten, klachten...) zodat je vindt wat je zoekt in twee klikken in plaats van honderden bestanden door te spitten.'
+            ),
+            (
+                'De brongebonden assistent',
+                'Een assistent die uitsluitend antwoordt uit vooraf gecontroleerde officiële documenten en bronnen: staat het antwoord er niet, dan zegt hij dat eerlijk in plaats van er een te verzinnen — het praktische middel tegen hallucinatie.'
+            ),
+            (
+                'Cloudflare Pages',
+                'De wereldwijde hostingdienst die het platform levert vanaf punten dicht bij de gebruiker in elk land: snel laden in Marokko en daarbuiten, met beveiligingscertificaten en directe updates bij elke nieuwe versie.'
+            )
         ]
-    ]
+    ],
+
+    # v8: digital services page
+    'svc': {
+        'nav': 'Diensten',
+        'cta_services': 'Digitale diensten',
+        'title': 'Digitale diensten | Tarik Chouika',
+        'desc': 'Professionele digitale diensten van Tarik Chouika: websites en platformen, ondersteuning bij digital marketing, AI-toepassing, advies voor cafés en kleine restaurants, verbetering van klantenservice en administratieve ondersteuning bij het oprichten van verenigingen in Marokko.',
+        'tag': 'Gecertificeerde kennis · Live praktijk',
+        'h1': 'Digitale diensten',
+        'lead': 'Wat ik voor jou kan doen: elke dienst hieronder is onderbouwd met een gecertificeerd diploma of een live project dat nu op internet draait — geen vage beloftes, maar bewijzen die je zelf kunt controleren.',
+        'intro_t': 'Waarom deze diensten?',
+        'intro': 'Deze diensten rusten op een dubbele basis: gecertificeerde kennis — dertien diploma’s van Google, HP LIFE, Huawei en nationale trainingsinstituten — en echte praktijk in acht digitale projecten die nu live op internet draaien. Daarom vermeldt elke dienst zijn «bewijs»: het certificaat of project dat aantoont dat ik hem kan leveren — en je kunt elk bewijs op deze site zelf verifieren.',
+        'list_t': 'Wat bied ik aan?',
+        'items': [
+            {
+                'icon': 'code',
+                'name': 'Websites en digitale platformen',
+                'tag': 'Een site die echt werkt, niet alleen een ontwerp',
+                'desc': 'Een professionele website of een eenvoudig platform voor jouw zaak, gebouwd zoals mijn live projecten: responsive ontwerp voor telefoon en computer, volledige ondersteuning van Arabisch van rechts naar links en waar nodig meertalige versies.',
+                'bullets': [
+                    'Responsive website met een heldere visuele identiteit',
+                    'Meertalige versie waar nodig',
+                    'Basis optimalisatie voor zoekmachines',
+                    'Oplevering met een link die direct werkt op wereldwijde hosting'
+                ],
+                'proof': 'Bewijs: Google-certificaat «Effectieve websites» · acht live projecten op internet'
+            },
+            {
+                'icon': 'globe',
+                'name': 'Digitale ondersteuning en basis-marketing',
+                'tag': 'Een gezonde digitale aanwezigheid voor jouw kleine zaak',
+                'desc': 'Ik begeleid kleine zaken en zelfstandigen bij hun eerste digitale stappen: zichtbaarheid op kaarten en in zoekmachines opzetten en verbeteren, heldere introductieteksten en een basislezing van de cijfers om beter te beslissen.',
+                'bullets': [
+                    'Opzetten en optimaliseren van het Google Business-profiel',
+                    'Eenvoudige, overtuigende introductie-inhoud',
+                    'Basislezing van statistieken en resultaten',
+                    'Een stapsgewijs verbeteringsplan passend bij jouw budget'
+                ],
+                'proof': 'Bewijs: twee Google-certificaten «Grondslagen van digital marketing» (Arabisch en Engels)'
+            },
+            {
+                'icon': 'award',
+                'name': 'Kunstmatige intelligentie in jouw werk',
+                'tag': 'Techniek die jouw werk dient, niet compliceeert',
+                'desc': 'Ik help je AI-tools praktisch in je werkdag te brengen: de juiste tool voor de taak kiezen, prompts schrijven die nauwkeurige resultaten geven en terugkerende taken automatiseren om tijd te besparen.',
+                'bullets': [
+                    'Keuze van tools die passen bij jouw echte behoefte',
+                    'Prompts die nauwkeurige resultaten opleveren',
+                    'Automatisering van dagelijkse terugkerende taken',
+                    'Praktische training voor jou of je team'
+                ],
+                'proof': 'Bewijs: vier certificaten in kunstmatige intelligentie — zie het certificaatgedeelte'
+            },
+            {
+                'icon': 'coffee',
+                'name': 'Advies voor café-oprichting en -beheer',
+                'tag': 'Tien jaar veldervaring in dienst van jouw project',
+                'desc': 'Praktisch advies gebouwd op echte ervaring, niet op handboeken: een café of klein restaurant oprichten, voorraad en inkopen organiseren, de service structureren en kosten beheersen — van het idee tot de eerste bedrijfsdag.',
+                'bullets': [
+                    'Realistische beoordeling van jouw idee en locatie',
+                    'Organisatie van voorraad en inkopen, verspilling beperken',
+                    'Structuur van de service en reactiesnelheid',
+                    'Een bedrijfsplan voor de eerste openingsweek'
+                ],
+                'proof': 'Bewijs: tien jaar café-beheer in het veld + certificaten «Effectief leiderschap» en «Professionele communicatie»'
+            },
+            {
+                'icon': 'phone',
+                'name': 'Klantenservice en klantervaring',
+                'tag': 'Een klant die terugkomt = een zaak die leeft',
+                'desc': 'Een praktische doorlichting van de klantreis van binnenkomst tot vertrek: heldere ontvangstprotocollen, een georganiseerde aanpak van klachten en kleine gebaren die het verschil maken in indruk en trouw.',
+                'bullets': [
+                    'Beoordeling van de huidige klantreis en zwakke punten',
+                    'Toepasbare ontvangst- en omgangsprotocollen',
+                    'Klachtenmethode die ze omzet in trouw',
+                    'Eenvoudige indicatoren om tevredenheid te meten'
+                ],
+                'proof': 'Bewijs: tien jaar publiek bedienen in het veld + certificaat «Professionele communicatie voor carrièregroei»'
+            },
+            {
+                'icon': 'landmark',
+                'name': 'Administratieve ondersteuning bij verenigingsoprichting',
+                'tag': 'Van het idee tot de oprichtingsvergadering',
+                'desc': 'Volledige begeleiding bij het oprichten van jouw vereniging volgens de Marokkaanse wet 75.00: het oprichtingsdossier voorbereiden, statuten en documenten opstellen en de procedure stap voor stap afronden — daarna het verenigingswerk digitaal organiseren.',
+                'bullets': [
+                    'Voorbereiding van het oprichtingsdossier volgens wet 75.00',
+                    'Opstellen van statuten en vergaderdocumenten',
+                    'De administratieve procedure stap voor stap afronden',
+                    'Lidmaatschappen en verslagen organiseren via het MAMP-platform'
+                ],
+                'proof': 'Bewijs: drie nationale certificaten in verenigingswerk + de live platformen MAMP en EPDP'
+            }
+        ],
+        'how_t': 'Hoe werken we samen?',
+        'how': [
+            (
+                'Neem gewoon contact op',
+                'Een bericht via WhatsApp, e-mail of Telegram — beschrijf je behoefte in eigen woorden, ik begrijp de rest.'
+            ),
+            (
+                'Eerste gratis consult',
+                'Een kort gesprek om de echte behoefte en de juiste omvang te bepalen — zonder kosten, zonder verplichting.'
+            ),
+            (
+                'Een helder aanbod vooraf',
+                'Ik stuur je een schriftelijk aanbod: wat ik oplever, binnen hoeveel tijd en tegen welke prijs — geen verrassingen achteraf.'
+            ),
+            (
+                'Uitvoering, oplevering en nazorg',
+                'Ik voer het werk uit met regelmatige updates, lever het compleet op en blijf daarna beschikbaar voor vragen.'
+            )
+        ],
+        'why_t': 'Mijn garanties bij elke opdracht',
+        'why': [
+            (
+                'Volledige transparantie',
+                'Een duidelijke schriftelijke afspraak vooraf: omvang, doorlooptijd en prijs — letterlijk nagekomen.'
+            ),
+            (
+                'Snelle reactie',
+                'Antwoord binnen maximaal 24 uur — wie tien jaar het publiek heeft bediend, kent de waarde van tijd.'
+            ),
+            (
+                'Een zeldzame combinatie',
+                'Veldmentaliteit van een echt decennium werk + gecertificeerde, verifieerbare digitale kennis.'
+            ),
+            (
+                'Eerlijke prijzen',
+                'Tarieven die passen bij kleine zaken en zelfstandigen — professionele kwaliteit zonder overdrijving.'
+            )
+        ],
+        'cta_t': 'Klaar om te starten?',
+        'cta_p': 'Stuur nu je aanvraag: een eerste gratis consult om je behoefte precies te bepalen, daarna een helder aanbod met omvang, doorlooptijd en prijs — vóór enige verplichting.',
+        'cta_btn': 'Vraag je gratis consult aan',
+        'cta_wa': 'Direct WhatsApp',
+        'cta_mail': 'Mail me',
+        'aside_t': 'Dienstenkaart',
+        'aside_rows': [
+            (
+                'Status',
+                'Nu beschikbaar'
+            ),
+            (
+                'Reactietijd',
+                'Binnen 24 uur'
+            ),
+            (
+                'Werktalen',
+                'Arabisch · Frans · Engels'
+            ),
+            (
+                'Bereik',
+                'Op afstand — vanuit Rabat, Marokko'
+            )
+        ],
+        'back': 'Terug naar home',
+        'crumb': 'Diensten'
+    }
 }

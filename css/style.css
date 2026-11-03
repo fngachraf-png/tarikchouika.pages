@@ -1424,3 +1424,66 @@ body.chat-open .back-to-top { opacity: 0 !important; pointer-events: none !impor
 
 /* chatbot hidden in print */
 @media print { .cb-fab, .cb-panel { display: none !important; } }
+
+/* ============================================================
+   v8: digital services page (same identity — coffee-gold)
+   ============================================================ */
+.svc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.svc-card {
+  padding: 1.5rem 1.5rem 1.3rem;
+  border-top: 2px solid var(--border-gold);
+  display: flex; flex-direction: column; gap: 0.85rem;
+  min-width: 0;
+}
+.svc-head { display: flex; align-items: flex-start; gap: 0.9rem; }
+.svc-icon {
+  display: grid; place-items: center; flex: none;
+  width: 48px; height: 48px; border-radius: 13px;
+  background: var(--gold-soft); border: 1px solid rgba(217, 166, 72, 0.3);
+}
+.svc-icon .ic { width: 1.45rem; height: 1.45rem; color: var(--gold-2); }
+.svc-head-txt { min-width: 0; }
+.svc-head-txt h3 { font-size: 1.06rem; margin: 0 0 0.25rem; line-height: 1.45; overflow-wrap: anywhere; }
+.svc-tag { font-size: 0.78rem; color: var(--gold-2); font-weight: 600; letter-spacing: 0.02em; }
+.svc-desc { color: var(--body-2); font-size: 0.93rem; margin: 0; }
+.svc-card .feature-list { gap: 0.55rem; }
+.svc-card .feature-list li { font-size: 0.9rem; }
+.svc-proof {
+  margin: 0.2rem 0 0; padding-top: 0.8rem;
+  border-top: 1px dashed var(--border);
+  display: flex; gap: 0.5rem; align-items: flex-start;
+  font-size: 0.8rem; color: var(--muted); line-height: 1.7;
+}
+.svc-proof .ic { flex: none; margin-top: 0.18rem; width: 0.95rem; height: 0.95rem; color: var(--gold); }
+
+.svc-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.9rem; margin-top: 0.4rem; }
+.svc-step {
+  background: var(--glass); border: 1px solid var(--border-faint);
+  border-radius: 14px; padding: 1.1rem 1.1rem 1.2rem; min-width: 0;
+}
+.svc-step-n {
+  display: inline-grid; place-items: center;
+  width: 2rem; height: 2rem; border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold-2), var(--gold-3));
+  color: var(--gold-dark); font-weight: 800; font-size: 0.95rem;
+  margin-bottom: 0.7rem;
+}
+.svc-step h3 { font-size: 0.98rem; margin-bottom: 0.4rem; }
+.svc-step p { color: var(--muted); font-size: 0.85rem; margin: 0; line-height: 1.75; }
+html[lang="ar"] .svc-step p { font-family: var(--font-ar); }
+
+.svc-cta {
+  background: linear-gradient(180deg, var(--gold-soft), transparent 140%);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius);
+  padding: 1.9rem 1.8rem 1.8rem;
+}
+.svc-cta p { color: var(--body-2); max-width: 56ch; }
+.svc-cta-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.3rem; }
+
+@media (max-width: 1000px) { .svc-steps { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 700px) {
+  .svc-grid { grid-template-columns: 1fr; }
+  .svc-steps { grid-template-columns: 1fr; }
+  .svc-cta { padding: 1.5rem 1.3rem; }
+}

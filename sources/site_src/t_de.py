@@ -15,7 +15,7 @@ T = {
         'about': 'Über mich',
         'experience': 'Erfahrung',
         'certificates': 'Zertifikate',
-        'projects': 'Projekte',
+        'projects': 'Projekte', 'services': 'Leistungen',
         'skills': 'Fähigkeiten',
         'gallery': 'Galerie',
         'contact': 'Kontakt'
@@ -32,6 +32,7 @@ T = {
     'alt_profile': 'Porträtfoto von Tarik Chouika',
     'cta_contact': 'Kontaktieren Sie mich',
     'cta_cv': 'Lebenslauf herunterladen (PDF)',
+    'cta_services': 'Digitale Leistungen',
     'stats': [
         [
             '10+',
@@ -46,14 +47,14 @@ T = {
             'Wissensgebiete'
         ],
         [
-            '7',
+            '8',
             'Digitale Projekte'
         ]
     ],
     'about_title': 'Über mich',
     'about_sub': 'International zertifiziertes Digitalwissen auf einem soliden Fundament aus zehn Jahren Praxis',
     'about_p1': 'Ich bin Tarik Chouika, ein marokkanischer Profi aus Rabat, der beschlossen hat, seinen Werdegang mit Zuversicht neu in Richtung digitale Welt zu zeichnen. Mein Wissen ist durch 13 Zertifizierungen von Google, HP LIFE, Huawei und nationalen Bildungseinrichtungen dokumentiert — sie decken künstliche Intelligenz, Digitalmarketing, Webtechnologien, Führung und professionelle Kommunikation ab. Es ist Wissen, das ich täglich weiterentwickle und anwende, nicht Zertifikate an der Wand.',
-    'about_p2': 'Mein Unterschied: Ich lerne nicht nur — ich baue. Was ich erworben habe, habe ich in vier Live-Digitalprojekten umgesetzt, die mit Hilfe von KI-Modellen entstanden: ein mehrsprachiger Ratgeber und Shop für natürliche Nahrungsergänzung, ein kompletter arabischer Online-Shop, eine Plattform für traditionelle marokkanische Spiele mit Live-Multiplayer-Räumen und eine HR-Plattform rund um das marokkanische Arbeitsgesetz — von der Idee bis zur Veröffentlichung auf Cloudflare Pages.',
+    'about_p2': 'Mein Unterschied: Ich lerne nicht nur — ich baue. Was ich erworben habe, habe ich in acht Live-Digitalprojekten umgesetzt, die mit Hilfe von KI-Modellen entstanden — von Shops und Serviceplattformen bis zu spezialisierten marokkanischen Verwaltungstools für Vereine, Apotheken und offizielle Dokumente — von der Idee bis zur Veröffentlichung auf Cloudflare Pages.',
     'about_p3': 'Vor dieser digitalen Reise verbrachte ich mehr als zehn Jahre in Umfeldern, die keine Trägheit dulden: Leitung und Betrieb eines volkstümlichen Cafés mit voller Verantwortung für Abläufe, Lager und Service, neben Erfahrungen in Bau und Sicherheit. Dort wurden meine Fähigkeiten wirklich geschmiedet: Kundenservice, Druckmanagement, Disziplin und Menschenkenntnis.',
     'about_p4': 'Heute biete ich diese seltene Kombination: eine solide Praxis-Mentalität gepaart mit überprüfbarem, zertifiziertem Digitalwissen. Ich suche eine Gelegenheit zu beweisen, dass meine Zertifikate kein Papier sind und dass ein Jahrzehnt im Dienst des Publikums einen Profi formt, der nie enttäuscht. Sofort einsatzbereit.',
     'fact_loc_l': 'Standort',
@@ -420,7 +421,7 @@ T = {
     'drive_text': 'Der ursprüngliche Google-Drive-Ordner enthält alle 13 Zertifikate im Originalformat und steht jederzeit zur Überprüfung bereit.',
     'drive_cta': 'Auf Google Drive öffnen',
     'pj_title': 'Meine digitalen Projekte',
-    'pj_sub': 'Sieben Live-Projekte, die ich im Rahmen meiner digitalen Lernreise entwickelt habe',
+    'pj_sub': 'Acht Live-Projekte, die ich im Rahmen meiner digitalen Lernreise entwickelt habe',
     'pj_note': 'Ich habe diese Projekte mit Hilfe von KI-Modellen im Rahmen des Selbstlernens und der Verbesserung meiner digitalen Fähigkeiten entwickelt — alle sind veröffentlicht und laufen auf Cloudflare Pages.',
     'pj_visit': 'Projekt besuchen',
     'projects': [
@@ -458,6 +459,11 @@ T = {
             'name': 'PHMP',
             'tag': 'Apotheken-Managementplattform',
             'desc': 'Eine professionelle Plattform für das Apothekenmanagement: Kasse, Lager, Rezepte und Berichte, dazu eine Kundenansicht, um Medikamente aus der Nähe-Apotheke mit Lieferung zu bestellen.'
+        },
+        {
+            'name': 'EPDP — Dein digitaler Schreiber',
+            'tag': 'Plattform für marokkanische Verwaltungsdokumente',
+            'desc': 'Eine kostenlose Plattform mit über 1.180 offiziellen marokkanischen Verwaltungsformularen und -dokumenten auf Arabisch und Französisch — von CNSS und Steuern bis zu Verträgen und Vollmachten — mit Leitfaden zu offiziellen Portalen und einem KI-Assistenten, der aus geprüften Quellen antwortet.'
         }
     ],
     'project_pages': [
@@ -602,6 +608,28 @@ T = {
                 'Marokkanische Rechtsquellen des Pharmasektors in der Plattform'
             ],
             'learned': 'Dieses Projekt hat mir gezeigt, dass Software im Gesundheitswesen doppelte Verantwortung trägt: Ein Fehler beim Preis oder bei der Wechselwirkung eines Medikaments ist nicht wie ein Fehler in einem gewöhnlichen Laden. Ich habe gelernt, eine Plattform für zwei sehr verschiedene Seiten zu bauen — eine Kundin, die mühelos bestellen will, und einen Apotheker, der Geschwindigkeit und Präzision braucht — und beide in einem System auszubalancieren; und dass die Einhaltung der offiziellen marokkanischen Vorschriften keine Last ist, sondern das Fundament des Vertrauens in jede Plattform, die die Gesundheit der Menschen berührt.'
+        },
+        {
+            'about': 'EPDP — „Dein digitaler Schreiber“ — ist eine marokkanische Plattform, die die Dienste des klassischen öffentlichen Schreibers digitalisiert: eine Bibliothek mit über 1.180 offiziellen Verwaltungsformularen und -dokumenten auf Arabisch und Französisch — Anträge an Behörden, Beschwerden, Miet- und Kaufverträge, Vollmachten, Ehrenerklärungen, Lebensläufe — geordnet in 19 Verwaltungskategorien von Sozialversicherung über Steuern bis zu Verträgen. Dazu: ein umfassender Leitfaden zu den Portalen von über 38 offiziellen marokkanischen Stellen, ein KI-Assistent, der aus geprüften Quellen ohne Halluzination antwortet, und ein Assistent, der dein Dokument mit deinen Daten ausfüllt und professionell formatiert — alles völlig kostenlos und ohne Registrierung.',
+            'tech': [
+                'Next.js (modernes Framework)',
+                'React (interaktive Oberfläche)',
+                'Schriften Cairo + Noto Kufi Arabic',
+                'Arabisch-first-Design (RTL)',
+                'Lokale Speicherung der Einstellungen',
+                'Dokumentarchitektur in 19 Kategorien',
+                'Quellengebundener KI-Assistent',
+                'Cloudflare Pages (Hosting)'
+            ],
+            'features': [
+                'Bibliothek mit über 1.180 offiziellen Verwaltungsformularen auf Arabisch und Französisch',
+                '19 Verwaltungskategorien: von Steuern und Sozialversicherung bis zu Verträgen und Beschwerden',
+                'Geprüfter Leitfaden zu über 38 offiziellen marokkanischen Stellen mit direkten Links',
+                'KI-Assistent, der aus geprüften offiziellen Quellen antwortet — ohne erfundene Informationen',
+                'Automatisches Ausfüllen der Dokumente mit deinen Daten, professionell formatiert und druckfertig',
+                'Vollständig kostenlos, ohne Registrierung, Oberfläche in 7 Sprachen'
+            ],
+            'learned': 'EPDP hat mir gezeigt: Der Wert eines digitalen Produkts bemisst sich nach der Zeit, die es den Menschen spart — jede Minute, die ein Bürger bei der Suche nach seinem Dokument spart, ist der echte Gewinn. Ich habe Disziplin im Umgang mit Informationen gelernt: Bei offiziellen Dokumenten gibt es kein „ungefähr“ — jedes Formular muss exakt seiner Quelle entsprechen, sonst verliert die Plattform ihren Sinn. Außerdem lernte ich, ein zweisprachiges Erlebnis (Arabisch/Französisch) zu gestalten, das die Arbeitsweise der marokkanischen Verwaltung respektiert und sie für den Bürger vereinfacht.'
         }
     ],
     'sk_title': 'Fähigkeiten',
@@ -1060,6 +1088,53 @@ T = {
             'cost_market': 'Etwa 60.000 – 180.000 MAD für ein Apothekenverwaltungssystem dieser Tiefe: Kasse, Lager, Rezepte, Berichte und rechtliche Konformität.',
             'cost_now': '0 MAD pro Monat im Free-Tarif.',
             'cost_scale': 'Ein eigener Server und eine Datenbank, sobald die Nutzung auf mehrere Apotheken wächst: geschätzt 200 – 700 MAD pro Monat.'
+        },
+        {
+            'value_intro': 'EPDP verkürzt den Weg des Bürgers zum Verwaltungsdokument:',
+            'values': [
+                (
+                    'Eine nationale Bibliothek in einem Link',
+                    'Über 1.180 offizielle Formulare an einem Ort statt endloser Suche auf Websites und an Schaltern: vom Sozialversicherungsantrag bis zum fertigen Mietvertrag, auf Arabisch und Französisch.'
+                ),
+                (
+                    'Eine Landkarte der offiziellen Portale',
+                    'Ein geordneter Leitfaden zu über 38 offiziellen Stellen (Steuern, Sozialversicherung, Justiz, Gemeinden...) mit direktem Link zu jeder — die richtige Tür beim ersten Versuch.'
+                ),
+                (
+                    'Antworten aus geprüften Quellen, nicht aus der Phantasie',
+                    'Der KI-Assistent ist ausschließlich auf offizielle Quellen beschränkt: Wenn die Antwort dort nicht steht, sagt er das klar — Vertrauen auf Grundlage von Genauigkeit.'
+                ),
+                (
+                    'Dein Dokument in Minuten fertig',
+                    'Gib deine Daten einmal ein, der Assistent füllt das Formular aus und formatiert es — du lädst es sauber ausgedruckt herunter, bereit zum Unterschreiben und Einreichen.'
+                )
+            ],
+            'effort': 'Die größte Arbeit in EPDP waren nicht die Bildschirmseiten, sondern der Inhalt: über 1.180 Formulare und Dokumente aus ihren offiziellen Quellen sammeln und prüfen, sie in 19 Kategorien mit einer Logik ordnen, die der Bürger versteht — nicht die Verwaltung — und bei jedem Dokument die arabische und die französische Fassung pflegen. Darüber hinaus baute ich die Plattform selbst: schnelle Suche, gespeicherter Sprachwechsel und ein KI-Assistent, der an offizielle Quellen gebunden ist, damit er nie eine Antwort erfindet — denn hier zählt Vertrauen mehr als Funktionsfülle.',
+            'effort_stats': [
+                (
+                    'Dokumente und Formulare',
+                    'Über 1.180'
+                ),
+                (
+                    'Verwaltungskategorien',
+                    '19 Kategorien'
+                ),
+                (
+                    'Offizielle Referenzstellen',
+                    'Über 38'
+                )
+            ],
+            'ops': [
+                'Next.js — eine moderne, schnelle, wartbare Architektur',
+                'Professionelle arabische Schriften (Cairo und Noto Kufi)',
+                'Lokale Speicherung der Einstellungen ohne Registrierung',
+                'KI-Assistent gebunden an offizielle Quellen',
+                'Cloudflare Pages für Hosting und Deployment'
+            ],
+            'cost_self': '0 Dirham — gebaut auf einem kostenlosen Ökosystem (Hosting und Deployment) mit Hilfe von KI-Werkzeugen bei Entwicklung und Zusammenstellung.',
+            'cost_market': 'Eine Verwaltungsdokument-Plattform dieses Umfangs (geprüfte Bibliothek + Stellenleitfaden + KI-Assistent): etwa 80.000 – 250.000 Dirham bei kommerzieller Entwicklung.',
+            'cost_now': '0 Dirham pro Monat im Free-Tarif.',
+            'cost_scale': 'Bei breiter Nutzung (schnellere Suche, Datenbank und Backend-Dienste): geschätzt 200 – 800 Dirham pro Monat.'
         }
     ],
     'pp_tools': 'Werkzeuge und Fähigkeiten — einfach erklärt',
@@ -1294,6 +1369,198 @@ T = {
                 'Arabische RTL-Oberfläche und Cairo-Schrift',
                 'Die Plattlikation ist von Grund auf arabisch, von rechts nach links, mit der klaren Cairo-Schrift — keine nachträglich angeklebte Übersetzung, sondern ein arabisches Design von der Basis her, sichtbar in jedem Knopf und jeder Tabelle.',
             )
+        ],
+        [
+            (
+                'Next.js',
+                'Ein modernes Framework auf Basis von React: Es erzeugt schnell ladende Seiten, die Suchmaschinen leicht indexieren, und aktualisiert nur den geänderten Teil statt die ganze Seite neu zu laden.'
+            ),
+            (
+                'React',
+                'Die UI-Bibliothek von Meta: Sie zerlegt die Seite in kleine wiederverwendbare Bausteine — Button, Karte, Liste — so bleibt die Seite einheitlich und leicht weiterzuentwickeln.'
+            ),
+            (
+                'Schriften Cairo und Noto Kufi Arabic',
+                'Zwei professionelle arabische Schriften, gebaut für Bildschirme: klare Buchstaben in jeder Größe — sie geben Verwaltungstexten Würde und Lesbarkeit.'
+            ),
+            (
+                'Arabisch-first-Design (RTL)',
+                'Die Plattform ist von Anfang an von rechts nach links entworfen, die anderen Sprachen kamen danach — keine spiegelverkehrt übersetzte, sondern eine echt arabische Gestaltung.'
+            ),
+            (
+                'Lokaler Speicher (localStorage)',
+                'Ein kleines Gedächtnis in deinem Browser, das Sprache und Einstellungen merkt: Du kommst zurück und findest alles so, wie du es verlassen hast — ohne Konto, ohne Registrierung.'
+            ),
+            (
+                'Dokumente in 19 Kategorien geordnet',
+                'Jedes Dokument ist einsortiert (Steuern, Sozialversicherung, Verträge, Beschwerden...) — du findest, was du suchst, mit zwei Klicks statt hunderte Dateien zu durchwühlen.'
+            ),
+            (
+                'Der quellengebundene Assistent',
+                'Ein Assistent, der ausschließlich aus vorab geprüften offiziellen Dokumenten und Quellen antwortet: Wenn die Antwort dort nicht steht, sagt er es ehrlich, statt eine zu erfinden — das praktische Gegenmittel gegen Halluzination.'
+            ),
+            (
+                'Cloudflare Pages',
+                'Der weltweite Hosting-Dienst, der die Plattform von Punkten in der Nähe der Nutzer in allen Ländern ausliefert: schnelles Laden in Marokko und anderswo, mit Sicherheitszertifikaten und Sofort-Updates bei jeder neuen Version.'
+            )
         ]
-    ]
+    ],
+
+    # v8: digital services page
+    'svc': {
+        'nav': 'Leistungen',
+        'cta_services': 'Digitale Leistungen',
+        'title': 'Digitale Leistungen | Tarik Chouika',
+        'desc': 'Professionelle digitale Leistungen von Tarik Chouika: Websites und Plattformen, Unterstützung im digitalen Marketing, KI-Einführung, Beratung für Cafés und kleine Restaurants, Verbesserung des Kundenservice und administrative Unterstützung bei der Gründung von Vereinen in Marokko.',
+        'tag': 'Zertifiziertes Wissen · Live-Praxis',
+        'h1': 'Digitale Leistungen',
+        'lead': 'Was ich für dich tun kann: Jede Leistung unten ist durch ein Zertifikat oder ein Live-Projekt belegt, das gerade im Internet läuft — keine vagen Versprechen, sondern Nachweise, die du selbst prüfen kannst.',
+        'intro_t': 'Warum diese Leistungen?',
+        'intro': 'Diese Leistungen ruhen auf einer doppelten Grundlage: zertifiziertes Wissen — dreizehn Zertifikate von Google, HP LIFE, Huawei und nationalen Bildungseinrichtungen — und echte Praxis in acht digitalen Live-Projekten im Internet. Deshalb nennt jede Leistung ihren „Nachweis“: das Zertifikat oder Projekt, das die Fähigkeit zur Umsetzung belegt — und jeden Nachweis kannst du auf dieser Website selbst überprüfen.',
+        'list_t': 'Was biete ich an?',
+        'items': [
+            {
+                'icon': 'code',
+                'name': 'Websites und digitale Plattformen',
+                'tag': 'Eine Seite, die wirklich funktioniert — nicht nur ein Design',
+                'desc': 'Eine professionelle Website oder eine einfache Plattform für dein Geschäft, gebaut wie meine Live-Projekte: responsives Design für Handy und Desktop, volle rechts-nach-links-Unterstützung für Arabisch und bei Bedarf mehrsprachige Versionen.',
+                'bullets': [
+                    'Responsive Website mit klarer visueller Identität',
+                    'Mehrsprachige Version bei Bedarf',
+                    'Grundlegende Suchmaschinen-Optimierung',
+                    'Übergabe mit einem Link, der sofort auf globalem Hosting funktioniert'
+                ],
+                'proof': 'Nachweis: Google-Zertifikat „Effektive Websites“ · acht Live-Projekte im Internet'
+            },
+            {
+                'icon': 'globe',
+                'name': 'Digitale Unterstützung und Basis-Marketing',
+                'tag': 'Ein gesundes digitales Auftreten für dein kleines Unternehmen',
+                'desc': 'Ich begleite kleine Unternehmen und Selbstständige durch die ersten digitalen Schritte: Sichtbarkeit auf Karten und in Suchmaschinen aufbauen und optimieren, klare Vorstellungstexte und eine grundlegende Lesart der Zahlen für bessere Entscheidungen.',
+                'bullets': [
+                    'Einrichtung und Optimierung des Google-Business-Profils',
+                    'Einfache, überzeugende Vorstellungsinhalte',
+                    'Grundlegende Lesart von Analysen und Ergebnissen',
+                    'Ein schrittweiser Verbesserungsplan passend zu deinem Budget'
+                ],
+                'proof': 'Nachweis: zwei Google-Zertifikate „Grundlagen des digitalen Marketings“ (Arabisch und Englisch)'
+            },
+            {
+                'icon': 'award',
+                'name': 'Künstliche Intelligenz in deiner Arbeit',
+                'tag': 'Technik, die deiner Arbeit dient — sie nicht verkompliziert',
+                'desc': 'Ich helfe dir, KI-Werkzeuge praktisch in deinen Arbeitsalltag zu bringen: das passende Werkzeug für die Aufgabe wählen, Prompts schreiben, die präzise Ergebnisse liefern, und wiederkehrende Aufgaben automatisieren, um Zeit zu sparen.',
+                'bullets': [
+                    'Auswahl der Werkzeuge nach deinem echten Bedarf',
+                    'Prompts, die präzise Ergebnisse liefern',
+                    'Automatisierung täglicher Wiederholaufgaben',
+                    'Praktische Schulung für dich oder dein Team'
+                ],
+                'proof': 'Nachweis: vier Zertifikate in künstlicher Intelligenz — siehe Zertifikatsbereich'
+            },
+            {
+                'icon': 'coffee',
+                'name': 'Beratung für Café-Gründung und -Betrieb',
+                'tag': 'Zehn Jahre Praxis im Dienst deines Projekts',
+                'desc': 'Praktische Beratung aus echter Erfahrung, nicht aus Lehrbüchern: ein Café oder kleines Restaurant eröffnen, Lager und Einkäufe organisieren, den Service strukturieren und Kosten kontrollieren — von der Idee bis zum ersten Betriebstag.',
+                'bullets': [
+                    'Realistische Einschätzung deiner Idee und Lage',
+                    'Lager- und Einkaufsorganisation, Verschwendung reduzieren',
+                    'Service-Struktur und Reaktionsschnelligkeit',
+                    'Betriebsplan für die erste Eröffnungswoche'
+                ],
+                'proof': 'Nachweis: zehn Jahre Café-Leitung im Feld + Zertifikate „Effektive Führung“ und „Professionelle Kommunikation“'
+            },
+            {
+                'icon': 'phone',
+                'name': 'Kundenservice und Kundenerlebnis',
+                'tag': 'Ein Kunde, der wiederkommt = ein Geschäft, das lebt',
+                'desc': 'Eine praktische Überprüfung der Customer Journey deiner Gäste vom Kommen bis zum Gehen: klare Empfangsprotokolle, ein geordneter Umgang mit Beschwerden und kleine Gesten, die bei Eindruck und Treue den Unterschied machen.',
+                'bullets': [
+                    'Bewertung der aktuellen Customer Journey und ihrer Schwachstellen',
+                    'Anwendbare Empfangs- und Umgangsprotokolle',
+                    'Beschwerdemethode, die daraus Treue macht',
+                    'Einfache Kennzahlen zur Messung der Zufriedenheit'
+                ],
+                'proof': 'Nachweis: zehn Jahre Publikumsservice + Zertifikat „Professionelle Kommunikation für Karrierewachstum“'
+            },
+            {
+                'icon': 'landmark',
+                'name': 'Administrative Unterstützung bei Vereinsgründungen',
+                'tag': 'Von der Idee zur Gründungsversammlung',
+                'desc': 'Vollständige Begleitung bei der Gründung deines Vereins nach marokkanischem Gesetz 75.00: Gründungsdossier vorbereiten, Satzung und Dokumente entwerfen und das Verfahren Schritt für Schritt abschließen — danach die Vereinsarbeit digital organisieren.',
+                'bullets': [
+                    'Vorbereitung des Gründungsdossiers nach Gesetz 75.00',
+                    'Entwurf von Satzung und Versammlungsunterlagen',
+                    'Behördliches Verfahren Schritt für Schritt abschließen',
+                    'Mitgliedschaften und Berichte über die MAMP-Plattform organisieren'
+                ],
+                'proof': 'Nachweis: drei nationale Zertifikate in Vereinsarbeit + die Live-Plattformen MAMP und EPDP'
+            }
+        ],
+        'how_t': 'Wie arbeiten wir zusammen?',
+        'how': [
+            (
+                'Schreib mir einfach',
+                'Eine Nachricht per WhatsApp, E-Mail oder Telegram — beschreibe dein Bedarf mit deinen Worten, den Rest verstehe ich.'
+            ),
+            (
+                'Erstberatung kostenlos',
+                'Ein kurzes Gespräch, um den echten Bedarf und den passenden Umfang festzulegen — kostenfrei und unverbindlich.'
+            ),
+            (
+                'Klares Angebot vor dem Start',
+                'Ich schicke dir ein schriftliches Angebot: was ich liefere, in welcher Zeit und zu welchem Preis — keine Überraschungen später.'
+            ),
+            (
+                'Umsetzung, Übergabe, Nachbetreuung',
+                'Ich setze die Arbeit mit regelmäßigen Updates um, übergebe sie vollständig und stehe danach für Fragen bereit.'
+            )
+        ],
+        'why_t': 'Meine Garantien bei jeder Arbeit',
+        'why': [
+            (
+                'Volle Transparenz',
+                'Eine klare schriftliche Vereinbarung vor jeder Arbeit: Umfang, Dauer und Preis — haargenau eingehalten.'
+            ),
+            (
+                'Schnelle Antwort',
+                'Antwort innerhalb von maximal 24 Stunden — wer zehn Jahre Publikum bedient hat, kennt den Wert der Zeit.'
+            ),
+            (
+                'Eine seltene Kombination',
+                'Feld-erprobte Denkweise aus einem echten Jahrzehnt Arbeit + zertifiziertes, überprüfbares Digitales Wissen.'
+            ),
+            (
+                'Faire Preise',
+                'Preise, die für kleine Unternehmen und Selbstständige passen — professionelle Qualität ohne Übertreibung.'
+            )
+        ],
+        'cta_t': 'Bereit anzufangen?',
+        'cta_p': 'Schicke jetzt deine Anfrage: eine kostenlose Erstberatung, um dein Bedarf präzise zu klären, danach ein klares Angebot mit Umfang, Dauer und Preis — vor jeder Verpflichtung.',
+        'cta_btn': 'Kostenlose Erstberatung anfragen',
+        'cta_wa': 'Direkt per WhatsApp',
+        'cta_mail': 'Schreib mir',
+        'aside_t': 'Leistungskarte',
+        'aside_rows': [
+            (
+                'Status',
+                'Jetzt verfügbar'
+            ),
+            (
+                'Antwortzeit',
+                'Innerhalb von 24 Stunden'
+            ),
+            (
+                'Arbeitssprachen',
+                'Arabisch · Französisch · Englisch'
+            ),
+            (
+                'Umfang',
+                'Fern — aus Rabat, Marokko'
+            )
+        ],
+        'back': 'Zurück zur Startseite',
+        'crumb': 'Leistungen'
+    }
 }

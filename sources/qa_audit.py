@@ -21,6 +21,11 @@ PAGES = [
     ('/en/projects/isyacar/', 'en-isyacar'),
     ('/projects/phmp/', 'ar-phmp'),
     ('/en/projects/phmp/', 'en-phmp'),
+    ('/projects/epdp/', 'ar-epdp'),
+    ('/en/projects/epdp/', 'en-epdp'),
+    ('/services/', 'ar-services'),
+    ('/en/services/', 'en-services'),
+    ('/de/services/', 'de-services'),
 ]
 VIEWPORTS = [
     ('360x800', 360, 800),      # small phone portrait

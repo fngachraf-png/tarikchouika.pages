@@ -15,7 +15,7 @@ T = {
         'about': 'About',
         'experience': 'Experience',
         'certificates': 'Certificates',
-        'projects': 'Projects',
+        'projects': 'Projects', 'services': 'Services',
         'skills': 'Skills',
         'gallery': 'Gallery',
         'contact': 'Contact'
@@ -32,6 +32,7 @@ T = {
     'alt_profile': 'Portrait photo of Tarik Chouika',
     'cta_contact': 'Contact Me',
     'cta_cv': 'Download CV (PDF)',
+    'cta_services': 'Digital services',
     'stats': [
         [
             '10+',
@@ -46,14 +47,14 @@ T = {
             'Fields of knowledge'
         ],
         [
-            '7',
+            '8',
             'Digital projects'
         ]
     ],
     'about_title': 'About Me',
     'about_sub': 'Internationally certified digital knowledge, on top of a solid base of ten years in the field',
     'about_p1': 'I am Tarik Chouika, a Moroccan professional from Rabat who chose to redraw his career path with confidence toward the digital world. My knowledge is documented by 13 certified credentials from Google, HP LIFE, Huawei and national training institutions, covering artificial intelligence, digital marketing, web technologies, leadership and professional communication — knowledge I develop and apply every day, not certificates hanging on a wall.',
-    'about_p2': "My difference is that I don't just learn; I build. I put what I gained into four live digital projects developed with the help of AI models: a multilingual natural-supplements guide and store, a complete Arabic e-commerce store, a platform for traditional Moroccan games with live multiplayer rooms, and an HR platform built around the Moroccan labor code — from idea to deployment on Cloudflare Pages.",
+    'about_p2': 'My difference is that I don\'t just learn; I build. I put what I gained into eight live digital projects developed with the help of AI models — from stores and service platforms to specialized Moroccan administrative tools for associations, pharmacies and official documents — from idea to deployment on Cloudflare Pages.',
     'about_p3': 'Before this digital journey, I spent more than ten years in fields that tolerate no laziness: running and operating a popular café with full responsibility for operations, inventory and service, alongside experience in construction and security guarding. That is where my skills were truly forged: customer service, pressure management, discipline, and reading people.',
     'about_p4': 'Today I offer this rare blend: a solid field mindset together with verifiable, certified digital knowledge. I am looking for an opportunity to prove that my certificates are not just paper, and that a decade of serving the public builds a professional who never lets you down. Ready to start immediately.',
     'fact_loc_l': 'Location',
@@ -420,7 +421,7 @@ T = {
     'drive_text': 'The original Google Drive folder contains all 13 certificates in full format, available anytime for verification.',
     'drive_cta': 'Open on Google Drive',
     'pj_title': 'My Digital Projects',
-    'pj_sub': 'Seven live projects I built as part of my digital skills journey',
+    'pj_sub': 'Eight live projects I built as part of my digital skills journey',
     'pj_note': 'I developed these projects with the help of AI models as part of self-learning and improving my digital skills — all are published and running on Cloudflare Pages.',
     'pj_visit': 'Visit project',
     'projects': [
@@ -458,6 +459,11 @@ T = {
             'name': 'PHMP',
             'tag': 'Pharmacy management platform',
             'desc': 'A professional pharmacy management platform: point of sale, inventory, prescriptions and reports, plus a customer side to order medicines from a nearby pharmacy with delivery.'
+        },
+        {
+            'name': 'EPDP — Your Digital Scribe',
+            'tag': 'Moroccan administrative documents platform',
+            'desc': 'A free platform gathering 1,180+ official Moroccan administrative forms and documents in Arabic and French — from CNSS and tax requests to contracts and proxies — with an official-portals guide and a smart assistant answering from verified sources.'
         }
     ],
     'project_pages': [
@@ -602,6 +608,28 @@ T = {
                 'Moroccan pharmaceutical legal references inside the platform'
             ],
             'learned': "This project taught me that software in healthcare carries double responsibility: a mistake in a medicine's price or interaction is not like a mistake in an ordinary shop. I learned to build a platform serving two very different sides — a customer who wants effortless ordering and a pharmacist who needs speed and accuracy — and to balance both in one system, and that compliance with official Moroccan regulations is not a constraint but the very foundation of trust in any platform that touches people's health."
+        },
+        {
+            'about': 'EPDP — “Your Digital Scribe” — is a Moroccan platform that digitizes the services of the traditional public scribe: a library of more than 1,180 official administrative forms and documents in Arabic and French — requests addressed to administrations, complaints, rental and sale contracts, proxies, honor declarations, CVs — organized into 19 administrative categories covering social security, taxes, contracts and more. Alongside the library: a comprehensive guide to the portals of 38+ official Moroccan entities, a smart assistant that answers from verified sources without hallucination, and an assistant that fills your document with your data and formats it professionally — all completely free and without registration.',
+            'tech': [
+                'Next.js (modern framework)',
+                'React (interactive interface)',
+                'Cairo + Noto Kufi Arabic fonts',
+                'Native Arabic-first RTL design',
+                'Local preferences storage',
+                '19-category document architecture',
+                'Source-restricted smart assistant',
+                'Cloudflare Pages (hosting)'
+            ],
+            'features': [
+                'Library of 1,180+ official administrative forms in Arabic and French',
+                '19 administrative categories: from taxes and social security to contracts and complaints',
+                'Verified guide to 38+ official Moroccan entities with direct links',
+                'Smart assistant answering from verified official sources — no invented information',
+                'Automatic document filling with your data, professionally formatted for printing',
+                'Completely free, no registration, interface in 7 languages'
+            ],
+            'learned': 'EPDP taught me that a digital product\'s value is measured by the time it saves people: every minute a citizen saves looking for a document is the real gain. I learned discipline with information — when you handle official documents there is no room for approximation: every form must match its source, or the platform loses its meaning. I also learned to design a bilingual (Arabic/French) experience that respects how the Moroccan administration works while simplifying it for the citizen.'
         }
     ],
     'sk_title': 'Skills',
@@ -1060,6 +1088,53 @@ T = {
             'cost_market': 'Approximately 60,000 – 180,000 MAD for a pharmacy management system of this depth: POS, inventory, prescriptions, reports and legal compliance.',
             'cost_now': '0 MAD per month on the free tier.',
             'cost_scale': 'A dedicated server and database as usage spreads across multiple pharmacies: an estimated 200 – 700 MAD per month.'
+        },
+        {
+            'value_intro': 'EPDP shortens the citizen’s path to administrative documents:',
+            'values': [
+                (
+                    'A national library in one link',
+                    'More than 1,180 official forms in one place instead of digging through websites and counters: from a social-security request to a ready rental contract, in Arabic and French.'
+                ),
+                (
+                    'A map of official portals',
+                    'An organized guide to 38+ official entities (taxes, social security, justice, municipalities...) with the direct link to each one — the right door on the first try.'
+                ),
+                (
+                    'Answers from verified sources, not imagination',
+                    'The smart assistant is restricted to official sources only: if the answer is not there, it says so clearly — trust built on accuracy.'
+                ),
+                (
+                    'Your document ready in minutes',
+                    'Enter your data once and the assistant fills the form and formats it — you download it properly printed, ready to sign and submit.'
+                )
+            ],
+            'effort': 'The biggest work in EPDP was not the screens but the content: collecting and verifying more than 1,180 forms and documents from their official sources, classifying them into 19 categories with logic a citizen understands rather than an administration, and carefully maintaining both the Arabic and French versions of every document. On top of that I built the platform itself: fast search, persistent language switching, and a smart assistant restricted to official sources so it never invents an answer — because trust matters more here than feature count.',
+            'effort_stats': [
+                (
+                    'Documents and forms',
+                    'More than 1,180'
+                ),
+                (
+                    'Administrative categories',
+                    '19 categories'
+                ),
+                (
+                    'Official reference entities',
+                    'More than 38'
+                )
+            ],
+            'ops': [
+                'Next.js — a fast, modern, maintainable architecture',
+                'Professional Arabic fonts (Cairo and Noto Kufi)',
+                'Local storage of user preferences without registration',
+                'Smart assistant restricted to official sources',
+                'Cloudflare Pages for hosting and deployment'
+            ],
+            'cost_self': '0 dirhams — built on a free ecosystem (hosting and deployment) with the help of AI tools in development and compilation.',
+            'cost_market': 'An administrative-documents platform of this scale (verified library + entities guide + smart assistant): roughly 80,000 – 250,000 dirhams if developed commercially.',
+            'cost_now': '0 dirhams per month on the free plan.',
+            'cost_scale': 'At wide adoption (faster search, database and backend services): an estimated 200 – 800 dirhams per month.'
         }
     ],
     'pp_tools': 'Tools & skills — explained simply',
@@ -1294,6 +1369,198 @@ T = {
                 'Arabic RTL interface and Cairo font',
                 'The platform is natively Arabic, right-to-left, with the clear Cairo typeface — not a bolted-on translation but an Arabic design from the ground up, visible in every button and every table.',
             )
+        ],
+        [
+            (
+                'Next.js',
+                'A modern framework built on top of React: it produces fast-loading pages that search engines index easily, and updates only the part that changes instead of reloading the whole page.'
+            ),
+            (
+                'React',
+                'Meta\'s interface library: it splits the page into small reusable components — a button, a card, a list — so the site stays consistent and easy to develop.'
+            ),
+            (
+                'Cairo and Noto Kufi Arabic fonts',
+                'Two professional Arabic typefaces designed for screens: clear letters at every size, giving administrative texts dignity and readability.'
+            ),
+            (
+                'Arabic-first design (RTL)',
+                'The platform is designed right-to-left from the start, then other languages are added — not a reversed translation but a properly Arabic design.'
+            ),
+            (
+                'Local storage (localStorage)',
+                'A small memory inside your browser that remembers your language and preferences: you come back and find the platform as you left it — no account, no registration.'
+            ),
+            (
+                'Documents organized into 19 categories',
+                'Every document is classified (taxes, social security, contracts, complaints...) so you find what you need in two clicks instead of digging through hundreds of files.'
+            ),
+            (
+                'The source-restricted smart assistant',
+                'An assistant that answers exclusively from officially verified documents and sources chosen in advance: if the answer is not there, it says so honestly instead of inventing one — the practical cure for hallucination.'
+            ),
+            (
+                'Cloudflare Pages',
+                'The global hosting service that serves the platform from points close to users in every country: fast loading in Morocco and abroad, with security certificates and instant updates on every new release.'
+            )
         ]
-    ]
+    ],
+
+    # v8: digital services page
+    'svc': {
+        'nav': 'Services',
+        'cta_services': 'Digital services',
+        'title': 'Digital Services | Tarik Chouika',
+        'desc': 'Professional digital services by Tarik Chouika: websites and platforms, digital marketing support, AI adoption, café and small-restaurant consulting, customer-service improvement, and administrative support for founding associations in Morocco.',
+        'tag': 'Certified knowledge · Live practice',
+        'h1': 'Digital Services',
+        'lead': 'What I can do for you: every service below is backed by a certified credential or a live project running on the internet right now — not vague promises, but evidence you can check yourself.',
+        'intro_t': 'Why these services?',
+        'intro': 'These services rest on a double foundation: certified knowledge — thirteen credentials from Google, HP LIFE, Huawei and national training institutions — and hands-on practice across eight digital projects running live on the internet. That is why each service lists its “proof”: the certificate or project that demonstrates the ability to deliver it — and you can verify every proof yourself on this site.',
+        'list_t': 'What do I offer?',
+        'items': [
+            {
+                'icon': 'code',
+                'name': 'Websites and digital platforms',
+                'tag': 'A site that actually works, not just a design',
+                'desc': 'A professional showcase website or a simple platform for your business, built the same way as my live projects: responsive design for phone and desktop, full right-to-left Arabic support, and multilingual versions when needed.',
+                'bullets': [
+                    'Responsive showcase site with a clear visual identity',
+                    'Multilingual version when needed',
+                    'Basic search-engine optimization',
+                    'Delivered with a link that works instantly on global hosting'
+                ],
+                'proof': 'Proof: Google “Effective Websites” certificate · eight live projects on the internet'
+            },
+            {
+                'icon': 'globe',
+                'name': 'Digital support and basic marketing',
+                'tag': 'A healthy digital presence for your small business',
+                'desc': 'I accompany small businesses and freelancers through their first digital steps: setting up and optimizing visibility on maps and search engines, clear introductory content, and a basic reading of the numbers for better decisions.',
+                'bullets': [
+                    'Google Business profile setup and optimization',
+                    'Simple, convincing introductory content',
+                    'Basic reading of analytics and results',
+                    'A gradual improvement plan that fits your budget'
+                ],
+                'proof': 'Proof: two Google “Fundamentals of Digital Marketing” certificates (Arabic and English)'
+            },
+            {
+                'icon': 'award',
+                'name': 'Bringing AI into your work',
+                'tag': 'Technology that serves your work, not complicates it',
+                'desc': 'I help you bring AI tools into your working day in a practical way: choosing the right tool for the task, writing prompts that give accurate results, and automating repetitive tasks to save time.',
+                'bullets': [
+                    'Choosing the right tools for your actual needs',
+                    'Writing prompts that produce accurate results',
+                    'Automating daily repetitive tasks',
+                    'Hands-on training for you or your team'
+                ],
+                'proof': 'Proof: four certified credentials in artificial intelligence — see the certificates section'
+            },
+            {
+                'icon': 'coffee',
+                'name': 'Café setup and operations consulting',
+                'tag': 'Ten years in the field, at your project’s service',
+                'desc': 'Practical consulting built on real experience, not textbooks: setting up a café or small restaurant, organizing inventory and purchasing, structuring service, and controlling costs — from the idea to the first day of operation.',
+                'bullets': [
+                    'A realistic assessment of your idea and location',
+                    'Inventory and purchasing organization, waste control',
+                    'Service structure and customer-response speed',
+                    'An operating plan for the first opening week'
+                ],
+                'proof': 'Proof: ten years managing a café in the field + “Effective Leadership” and “Professional Communication” certificates'
+            },
+            {
+                'icon': 'phone',
+                'name': 'Customer service and guest experience',
+                'tag': 'A customer who returns = a business that lives',
+                'desc': 'A practical review of your customer’s journey from entrance to exit: clear reception protocols, an organized way to handle complaints, and small touches that make the difference in impression and loyalty.',
+                'bullets': [
+                    'Assessment of the current customer journey and its weak points',
+                    'Reception and interaction protocols you can apply',
+                    'A complaint-handling method that turns them into loyalty',
+                    'Simple indicators to measure customer satisfaction'
+                ],
+                'proof': 'Proof: ten years serving the public in the field + “Professional Communication for Career Growth” certificate'
+            },
+            {
+                'icon': 'landmark',
+                'name': 'Administrative support for founding associations',
+                'tag': 'From the idea to the founding general assembly',
+                'desc': 'Complete support to found your association under Moroccan Law 75.00: preparing the founding file, drafting the statutes and documents, and completing every step of the procedure — then organizing the association’s work digitally.',
+                'bullets': [
+                    'Preparing the founding file under Law 75.00',
+                    'Drafting statutes and general-assembly documents',
+                    'Completing the administrative procedure step by step',
+                    'Organizing memberships and reports through the MAMP platform'
+                ],
+                'proof': 'Proof: three national certificates in association work + the live MAMP and EPDP platforms'
+            }
+        ],
+        'how_t': 'How do we work together?',
+        'how': [
+            (
+                'Reach out simply',
+                'A message via WhatsApp, email or Telegram — describe your need in your own words, I’ll understand the rest.'
+            ),
+            (
+                'A free first consultation',
+                'A short conversation to define the actual need and the right scope — no charge, no commitment.'
+            ),
+            (
+                'A clear offer before starting',
+                'I send you a written offer: what I will deliver, in how much time, and at what price — no surprises later.'
+            ),
+            (
+                'Delivery and follow-up',
+                'I deliver the work with regular updates, hand it over complete, and stay available for questions afterwards.'
+            )
+        ],
+        'why_t': 'My guarantees on every job',
+        'why': [
+            (
+                'Full transparency',
+                'A clear written agreement before any work: scope, duration and price — honored to the letter.'
+            ),
+            (
+                'Fast responses',
+                'A reply within 24 hours at most — whoever served the public for ten years knows the value of time.'
+            ),
+            (
+                'A rare combination',
+                'A field-hardened mindset from a real decade of work + certified digital knowledge you can verify.'
+            ),
+            (
+                'Fair pricing',
+                'Prices studied to fit small businesses and freelancers — professional quality without exaggeration.'
+            )
+        ],
+        'cta_t': 'Ready to start?',
+        'cta_p': 'Send your request now: a free first consultation to define your need precisely, then a clear offer with scope, duration and price before any commitment.',
+        'cta_btn': 'Request your free consultation',
+        'cta_wa': 'Direct WhatsApp',
+        'cta_mail': 'Email me',
+        'aside_t': 'Service card',
+        'aside_rows': [
+            (
+                'Status',
+                'Available now'
+            ),
+            (
+                'Response time',
+                'Within 24 hours'
+            ),
+            (
+                'Working languages',
+                'Arabic · French · English'
+            ),
+            (
+                'Scope',
+                'Remote — from Rabat, Morocco'
+            )
+        ],
+        'back': 'Back to home',
+        'crumb': 'Services'
+    }
 }

@@ -15,7 +15,7 @@ T = {
         'about': 'Chi sono',
         'experience': 'Esperienza',
         'certificates': 'Certificati',
-        'projects': 'Progetti',
+        'projects': 'Progetti', 'services': 'Servizi',
         'skills': 'Competenze',
         'gallery': 'Galleria',
         'contact': 'Contatti'
@@ -32,6 +32,7 @@ T = {
     'alt_profile': 'Foto ritratto di Tarik Chouika',
     'cta_contact': 'Contattami',
     'cta_cv': 'Scarica il CV (PDF)',
+    'cta_services': 'Servizi digitali',
     'stats': [
         [
             '10+',
@@ -46,14 +47,14 @@ T = {
             'Aree di conoscenza'
         ],
         [
-            '7',
+            '8',
             'Progetti digitali'
         ]
     ],
     'about_title': 'Chi sono',
     'about_sub': 'Conoscenza digitale certificata a livello internazionale, su una base solida di dieci anni sul campo',
     'about_p1': "Sono Tarik Chouika, un professionista marocchino di Rabat che ha scelto di ridisegnare il proprio percorso con fiducia verso il mondo digitale. Le mie conoscenze sono documentate da 13 certificazioni di Google, HP LIFE, Huawei e istituti di formazione nazionali, che coprono l'intelligenza artificiale, il marketing digitale, le tecnologie web, la leadership e la comunicazione professionale — una conoscenza che sviluppo e applico ogni giorno, non certificati appesi al muro.",
-    'about_p2': "La mia differenza è che non mi limito a imparare: costruisco. Ho messo in pratica ciò che ho acquisito in quattro progetti digitali online sviluppati con l'aiuto di modelli di IA: una guida e un negozio multilingue di integratori naturali, un e-commerce arabo completo, una piattaforma di giochi tradizionali marocchini con sale multiplayer in diretta e una piattaforma HR costruita attorno al codice del lavoro marocchino — dall'idea alla pubblicazione su Cloudflare Pages.",
+    'about_p2': 'La mia differenza è che non mi limito a imparare: costruisco. Ho messo in pratica ciò che ho acquisito in otto progetti digitali online sviluppati con l\'aiuto dell\'IA — da negozi e piattaforme di servizi a strumenti amministrativi marocchini specializzati per associazioni, farmacie e documenti ufficiali — dall\'idea alla pubblicazione su Cloudflare Pages.',
     'about_p3': 'Prima di questo percorso digitale ho trascorso più di dieci anni in terreni che non perdonano la pigrizia: gestione e conduzione di un caffè popolare con piena responsabilità di operazioni, inventario e servizio, accanto a esperienze in edilizia e sicurezza. Lì le mie competenze si sono davvero forgiate: servizio clienti, gestione della pressione, disciplina e lettura delle persone.',
     'about_p4': "Oggi offro questa combinazione rara: una mentalità da campo solida unita a una conoscenza digitale certificata e verificabile. Cerco un'opportunità per dimostrare che i miei certificati non sono solo carta, e che un decennio al servizio del pubblico forgia un professionista che non delude mai. Pronto a iniziare immediatamente.",
     'fact_loc_l': 'Località',
@@ -420,7 +421,7 @@ T = {
     'drive_text': 'La cartella originale di Google Drive contiene tutti i 13 certificati nel loro formato integrale, disponibili in qualsiasi momento per la verifica.',
     'drive_cta': 'Apri su Google Drive',
     'pj_title': 'I miei progetti digitali',
-    'pj_sub': 'Sette progetti online realizzati nel mio percorso di apprendimento digitale',
+    'pj_sub': 'Otto progetti online realizzati nel mio percorso di apprendimento digitale',
     'pj_note': "Ho sviluppato questi progetti con l'aiuto di modelli di IA nell'ambito dell'autoapprendimento e del miglioramento delle mie competenze digitali — tutti sono pubblicati e funzionano su Cloudflare Pages.",
     'pj_visit': 'Visita il progetto',
     'projects': [
@@ -458,6 +459,11 @@ T = {
             'name': 'PHMP',
             'tag': 'Piattaforma di gestione farmacie',
             'desc': 'Una piattaforma professionale per la gestione delle farmacie: cassa, inventario, ricette e report, più un lato cliente per ordinare farmaci dalla farmacia vicina con consegna a domicilio.'
+        },
+        {
+            'name': 'EPDP — Il tuo scrivano digitale',
+            'tag': 'Piattaforma di documenti amministrativi marocchini',
+            'desc': 'Piattaforma gratuita che raccoglie oltre 1.180 moduli e documenti amministrativi marocchini ufficiali in arabo e francese — da CNSS e tasse a contratti e procure — con guida ai portali ufficiali e un assistente intelligente che risponde da fonti verificate.'
         }
     ],
     'project_pages': [
@@ -602,6 +608,28 @@ T = {
                 'Riferimenti legali marocchini del settore farmaceutico integrati'
             ],
             'learned': "Questo progetto mi ha insegnato che il software sanitario porta una responsabilità doppia: un errore nel prezzo o nell'interazione di un farmaco non è come un errore in un negozio qualunque. Ho imparato a costruire una piattaforma che serve due pubblici molto diversi — un cliente che vuole ordinare senza sforzo e un farmacista che ha bisogno di velocità e precisione — e a bilanciarli in un unico sistema; e che la conformità ai regolamenti marocchini ufficiali non è un vincolo ma il fondamento stesso della fiducia in qualsiasi piattaforma che tocca la salute delle persone."
+        },
+        {
+            'about': 'EPDP — «Il tuo scrivano digitale» — è una piattaforma marocchina che digitalizza i servizi dello scrivano pubblico tradizionale: una biblioteca di oltre 1.180 moduli e documenti amministrativi ufficiali in arabo e francese — richieste alle amministrazioni, reclami, contratti di locazione e vendita, procure, dichiarazioni giurate, curriculum — organizzati in 19 categorie amministrative che coprono previdenza sociale, tasse, contratti e altro. Accanto alla biblioteca: una guida completa ai portali di oltre 38 enti ufficiali marocchini, un assistente intelligente che risponde da fonti verificate senza allucinazioni, e un assistente che compila il tuo documento con i tuoi dati e lo formatta professionalmente — il tutto completamente gratis e senza registrazione.',
+            'tech': [
+                'Next.js (framework moderno)',
+                'React (interfaccia interattiva)',
+                'Font Cairo + Noto Kufi Arabic',
+                'Design arabo nativo (RTL)',
+                'Archiviazione locale delle preferenze',
+                'Architettura documentale in 19 categorie',
+                'Assistente intelligente vincolato alle fonti',
+                'Cloudflare Pages (hosting)'
+            ],
+            'features': [
+                'Biblioteca con oltre 1.180 moduli amministrativi ufficiali in arabo e francese',
+                '19 categorie amministrative: da tasse e previdenza a contratti e reclami',
+                'Guida verificata di oltre 38 enti ufficiali marocchini con link diretti',
+                'Assistente intelligente che risponde da fonti ufficiali verificate — senza informazioni inventate',
+                'Compilazione automatica dei documenti con i tuoi dati, formattazione professionale pronta per la stampa',
+                'Completamente gratuito, senza registrazione, interfaccia in 7 lingue'
+            ],
+            'learned': 'EPDP mi ha insegnato che il valore di un prodotto digitale si misura dal tempo che fa risparmiare alle persone: ogni minuto che il cittadino rispara cercando il suo documento è il vero guadagno. Ho imparato la disciplina dell’informazione: con documenti ufficiali non c’è spazio per l’approssimazione, ogni modulo deve corrispondere alla sua fonte o la piattaforma perde senso. Ho anche imparato a progettare un’esperienza bilingue (arabo/francese) che rispetta il funzionamento dell’amministrazione marocchina e la semplifica per il cittadino.'
         }
     ],
     'sk_title': 'Competenze',
@@ -1060,6 +1088,53 @@ T = {
             'cost_market': 'Circa 60.000 – 180.000 MAD per un sistema di gestione farmacie di questa profondità: cassa, inventario, ricette, report e conformità legale.',
             'cost_now': '0 MAD al mese con il piano gratuito.',
             'cost_scale': "Un server e un database dedicati quando l'uso si estende a più farmacie: stimati 200 – 700 MAD al mese."
+        },
+        {
+            'value_intro': 'EPDP accorcia il percorso del cittadino verso il documento amministrativo:',
+            'values': [
+                (
+                    'Una biblioteca nazionale in un solo link',
+                    'Oltre 1.180 moduli ufficiali in un unico posto invece di frugare tra siti e sportelli: da una richiesta di previdenza sociale a un contratto d’affitto pronto, in arabo e francese.'
+                ),
+                (
+                    'Una mappa dei portali ufficiali',
+                    'Guida ordinata di oltre 38 enti ufficiali (tasse, previdenza, giustizia, comuni...) con il link diretto di ciascuno — la porta giusta al primo tentativo.'
+                ),
+                (
+                    'Risposte da fonti verificate, non dall’immaginazione',
+                    'L’assistente intelligente è vincolato alle sole fonti ufficiali: se la risposta non c’è, lo dichiara chiaramente — fiducia costruita sulla precisione.'
+                ),
+                (
+                    'Il tuo documento pronto in pochi minuti',
+                    'Inserisci i tuoi dati una volta e l’assistente compila il modulo e lo formatta — lo scarichi stampato con cura, pronto da firmare e presentare.'
+                )
+            ],
+            'effort': 'Il lavoro più grande in EPDP non sono state le schermate ma i contenuti: raccogliere e verificare oltre 1.180 moduli e documenti dalle loro fonti ufficiali, classificarli in 19 categorie con una logica che capisca il cittadino e non l’amministrazione, e curare le versioni araba e francese di ogni documento. Sopra a questo ho costruito la piattaforma stessa: ricerca veloce, cambio lingua memorizzato e un assistente intelligente vincolato alle fonti ufficiali perché non inventi mai una risposta — qui la fiducia conta più del numero di funzioni.',
+            'effort_stats': [
+                (
+                    'Documenti e moduli',
+                    'Oltre 1.180'
+                ),
+                (
+                    'Categorie amministrative',
+                    '19 categorie'
+                ),
+                (
+                    'Enti ufficiali di riferimento',
+                    'Oltre 38'
+                )
+            ],
+            'ops': [
+                'Next.js — un’architettura moderna, rapida e manutenibile',
+                'Font arabe professionali (Cairo e Noto Kufi)',
+                'Archiviazione locale delle preferenze senza registrazione',
+                'Assistente intelligente vincolato alle fonti ufficiali',
+                'Cloudflare Pages per hosting e pubblicazione'
+            ],
+            'cost_self': '0 dirham — costruita su un ecosistema gratuito (hosting e pubblicazione) con l’aiuto di strumenti IA nello sviluppo e nella raccolta.',
+            'cost_market': 'Una piattaforma di documenti amministrativi di questa scala (biblioteca verificata + guida agli enti + assistente intelligente): indicativamente 80.000 – 250.000 dirham nello sviluppo commerciale.',
+            'cost_now': '0 dirham al mese sul piano gratuito.',
+            'cost_scale': 'Con un’adozione ampia (ricerca più veloce, database e servizi backend): circa 200 – 800 dirham al mese.'
         }
     ],
     'pp_tools': 'Strumenti e competenze — spiegati in modo semplice',
@@ -1294,6 +1369,198 @@ T = {
                 'Interfaccia araba RTL e font Cairo',
                 'La piattaforma è araba per progetto, da destra a sinistra, con il font Cairo chiaro — non una traduzione appiccicata ma un design arabo fin dalle basi, visibile in ogni pulsante e ogni tabella.',
             )
+        ],
+        [
+            (
+                'Next.js',
+                'Un framework moderno costruito su React: produce pagine a caricamento rapido, facili da indicizzare nei motori di ricerca, e aggiorna solo la parte che cambia invece di ricaricare tutta la pagina.'
+            ),
+            (
+                'React',
+                'La libreria di interfacce di Meta: divide la pagina in piccoli componenti riutilizzabili — un pulsante, una scheda, una lista — per un sito coerente e facile da sviluppare.'
+            ),
+            (
+                'Font Cairo e Noto Kufi Arabic',
+                'Due tipografie arabe professionali pensate per gli schermi: lettere nitide a ogni dimensione, che danno ai testi amministrativi solidità e leggibilità.'
+            ),
+            (
+                'Design arabo nativo (RTL)',
+                'La piattaforma è progettata da destra a sinistra fin dall’inizio e poi si aggiungono le altre lingue — non una traduzione invertita ma un vero design arabo.'
+            ),
+            (
+                'Archiviazione locale (localStorage)',
+                'Una piccola memoria nel tuo browser che ricorda lingua e preferenze: torni e ritrovi la piattaforma come l’hai lasciata — senza account né registrazione.'
+            ),
+            (
+                'Documenti organizzati in 19 categorie',
+                'Ogni documento è classificato (tasse, previdenza, contratti, reclami...) così trovi ciò che ti serve in due clic invece di cercare tra centinaia di file.'
+            ),
+            (
+                'L’assistente vincolato alle fonti',
+                'Un assistente che risponde esclusivamente da documenti e fonti ufficiali verificate in anticipo: se la risposta non c’è, lo dice con onestà invece di inventarla — il rimedio pratico contro le allucinazioni.'
+            ),
+            (
+                'Cloudflare Pages',
+                'Il servizio di hosting globale che serve la piattaforma da punti vicini agli utenti in ogni paese: apertura rapida in Marocco e fuori, con certificati di sicurezza e aggiornamenti istantanei.'
+            )
         ]
-    ]
+    ],
+
+    # v8: digital services page
+    'svc': {
+        'nav': 'Servizi',
+        'cta_services': 'Servizi digitali',
+        'title': 'Servizi digitali | Tarik Chouika',
+        'desc': 'Servizi digitali professionali di Tarik Chouika: siti e piattaforme, supporto al marketing digitale, adozione dell’IA, consulenza per caffè e piccoli ristoranti, miglioramento del servizio clienti e supporto amministrativo per fondare associazioni in Marocco.',
+        'tag': 'Conoscenza certificata · Pratica reale',
+        'h1': 'Servizi digitali',
+        'lead': 'Cosa posso fare per te: ogni servizio è sostenuto da una certificazione o da un progetto online attivo in questo momento su Internet — non promesse vaghe, ma prove che puoi verificare tu stesso.',
+        'intro_t': 'Perché questi servizi?',
+        'intro': 'Questi servizi poggiano su una base doppia: conoscenza certificata — tredici credenziali di Google, HP LIFE, Huawei ed enti di formazione nazionali — e pratica reale in otto progetti digitali online. Per questo ogni servizio indica la sua «prova»: il certificato o il progetto che dimostra la capacità di realizzarlo — e puoi verificare ogni prova tu stesso su questo sito.',
+        'list_t': 'Cosa offro?',
+        'items': [
+            {
+                'icon': 'code',
+                'name': 'Siti e piattaforme digitali',
+                'tag': 'Un sito che funziona davvero, non solo un design',
+                'desc': 'Un sito vetrina professionale o una piattaforma semplice per la tua attività, costruiti come i miei progetti online: design responsive per telefono e computer, pieno supporto dell’arabo da destra a sinistra e versioni multilingue all’occorrenza.',
+                'bullets': [
+                    'Sito vetrina responsive con identità visiva chiara',
+                    'Versione multilingue all’occorrenza',
+                    'Ottimizzazione di base per i motori di ricerca',
+                    'Consegna con un link che funziona subito su hosting mondiale'
+                ],
+                'proof': 'Prova: certificato Google «Siti web efficaci» · otto progetti online su Internet'
+            },
+            {
+                'icon': 'globe',
+                'name': 'Supporto digitale e marketing di base',
+                'tag': 'Una presenza digitale sana per la tua piccola attività',
+                'desc': 'Accompagno piccole attività e freelance nei primi passi digitali: creare e ottimizzare la visibilità su mappe e motori di ricerca, contenuti di presentazione chiari e una lettura di base dei numeri per decidere meglio.',
+                'bullets': [
+                    'Creazione e ottimizzazione della scheda Google Business',
+                    'Contenuti di presentazione semplici e convincenti',
+                    'Lettura di base di statistiche e risultati',
+                    'Piano di miglioramento graduale adatto al tuo budget'
+                ],
+                'proof': 'Prova: due certificati Google «Fondamenti del marketing digitale» (arabo e inglese)'
+            },
+            {
+                'icon': 'award',
+                'name': 'L’intelligenza artificiale nel tuo lavoro',
+                'tag': 'Tecnologia che serve il lavoro, senza complicarlo',
+                'desc': 'Ti aiuto a portare gli strumenti di IA nella tua giornata lavorativa in modo pratico: scegliere lo strumento giusto per il compito, scrivere istruzioni che danno risultati precisi e automatizzare le attività ripetitive per risparmiare tempo.',
+                'bullets': [
+                    'Scelta degli strumenti adatti ai tuoi bisogni reali',
+                    'Istruzioni che producono risultati precisi',
+                    'Automatizzazione delle attività ripetitive quotidiane',
+                    'Formazione pratica per te o per il tuo team'
+                ],
+                'proof': 'Prova: quattro certificati in intelligenza artificiale — vedi la sezione certificati'
+            },
+            {
+                'icon': 'coffee',
+                'name': 'Consulenza per aperture e gestione di caffè',
+                'tag': 'Dieci anni sul campo al servizio del tuo progetto',
+                'desc': 'Consulenza pratica basata su esperienza reale, non su manuali: aprire un caffè o un piccolo ristorante, organizzare magazzino e acquisti, strutturare il servizio e controllare i costi — dall’idea al primo giorno di attività.',
+                'bullets': [
+                    'Valutazione realistica dell’idea e della location',
+                    'Organizzazione di magazzino e acquisti, controllo degli sprechi',
+                    'Struttura del servizio e velocità di risposta al cliente',
+                    'Piano operativo per la prima settimana di apertura'
+                ],
+                'proof': 'Prova: dieci anni di gestione di un caffè sul campo + certificati «Leadership efficace» e «Comunicazione professionale»'
+            },
+            {
+                'icon': 'phone',
+                'name': 'Servizio clienti ed esperienza del cliente',
+                'tag': 'Un cliente che torna = un’attività che vive',
+                'desc': 'Una revisione pratica del percorso del tuo cliente, dall’ingresso all’uscita: protocolli di accoglienza chiari, gestione organizzata dei reclami e piccole attenzioni che fanno la differenza nell’impressione e nella fedeltà.',
+                'bullets': [
+                    'Valutazione del percorso cliente attuale e dei suoi punti deboli',
+                    'Protocolli di accoglienza e interazione applicabili',
+                    'Metodo di gestione dei reclami che li trasforma in fedeltà',
+                    'Indicatori semplici per misurare la soddisfazione'
+                ],
+                'proof': 'Prova: dieci anni di servizio al pubblico + certificato «Comunicazione professionale per la crescita professionale»'
+            },
+            {
+                'icon': 'landmark',
+                'name': 'Supporto amministrativo per fondare associazioni',
+                'tag': 'Dall’idea all’assemblea costituente',
+                'desc': 'Accompagnamento completo per fondare la tua associazione secondo la legge marocchina 75.00: preparare il dossier di costituzione, redigere lo statuto e i documenti, completare la procedura passo per passo — poi organizzare digitalmente il lavoro associativo.',
+                'bullets': [
+                    'Preparazione del dossier di costituzione secondo la legge 75.00',
+                    'Redazione dello statuto e dei documenti dell’assemblea',
+                    'Adempimento della procedura amministrativa passo per passo',
+                    'Organizzazione di soci e verbali tramite la piattaforma MAMP'
+                ],
+                'proof': 'Prova: tre certificati nazionali in lavoro associativo + le piattaforme MAMP ed EPDP online'
+            }
+        ],
+        'how_t': 'Come lavoriamo insieme?',
+        'how': [
+            (
+                'Contattami con semplicità',
+                'Un messaggio via WhatsApp, e-mail o Telegram — descrivi il tuo bisogno con le tue parole, il resto lo capisco io.'
+            ),
+            (
+                'Prima consulenza gratuita',
+                'Una breve conversazione per definire il bisogno reale e l’ambito giusto — senza costi e senza impegno.'
+            ),
+            (
+                'Un’offerta chiara prima di iniziare',
+                'Ti invio un’offerta scritta: cosa consegnerò, in quanto tempo e a quale prezzo — nessuna sorpresa dopo.'
+            ),
+            (
+                'Esecuzione, consegna e seguito',
+                'Realizzo il lavoro con aggiornamenti periodici, lo consegno completo e resto disponibile per domande dopo.'
+            )
+        ],
+        'why_t': 'Le mie garanzie in ogni lavoro',
+        'why': [
+            (
+                'Trasparenza totale',
+                'Un accordo chiaro e scritto prima di qualsiasi lavoro: ambito, tempi e prezzo — rispettati alla lettera.'
+            ),
+            (
+                'Rapidità di risposta',
+                'Una risposta entro 24 ore al massimo — chi ha servito il pubblico per dieci anni conosce il valore del tempo.'
+            ),
+            (
+                'Una combinazione rara',
+                'Mentalità da campo forgiata da un vero decennio di lavoro + conoscenza digitale certificata e verificabile.'
+            ),
+            (
+                'Prezzi giusti',
+                'Tariffe studiate per le piccole attività e i freelance — qualità professionale senza esagerazione.'
+            )
+        ],
+        'cta_t': 'Pronto per iniziare?',
+        'cta_p': 'Invia ora la tua richiesta: una prima consulenza gratuita per definire con precisione il tuo bisogno, poi un’offerta chiara con ambito, tempi e prezzo prima di qualsiasi impegno.',
+        'cta_btn': 'Richiedi la consulenza gratuita',
+        'cta_wa': 'WhatsApp diretto',
+        'cta_mail': 'Scrivimi',
+        'aside_t': 'Scheda servizio',
+        'aside_rows': [
+            (
+                'Stato',
+                'Disponibile ora'
+            ),
+            (
+                'Tempo di risposta',
+                'Entro 24 ore'
+            ),
+            (
+                'Lingue di lavoro',
+                'Arabo · Francese · Inglese'
+            ),
+            (
+                'Ambito',
+                'Da remoto — da Rabat, Marocco'
+            )
+        ],
+        'back': 'Torna alla home',
+        'crumb': 'Servizi'
+    }
 }

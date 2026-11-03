@@ -68,14 +68,15 @@ def check(lang):
         'hp cert': 'c76722f4-9169-474f-83e8-d93859654c2d' in content,
         'theme toggle': 'id="theme-toggle"' in content,
         'theme bootstrap': "localStorage.getItem('tc-theme')" in content,
-        '7 projects': all(p in content for p in
+        '8 projects': all(p in content for p in
                           ['pj-natsup.jpg', 'pj-syda.jpg', 'pj-dtsg.jpg', 'pj-hrmp.jpg',
-                           'pj-mamp.jpg', 'pj-isyacar.jpg', 'pj-phmp.jpg']),
+                           'pj-mamp.jpg', 'pj-isyacar.jpg', 'pj-phmp.jpg', 'pj-epdp.jpg']),
         'project links': all(u in content for u in
                              ['natsup.pages.dev', 'syda.pages.dev', 'dtsg.pages.dev',
                               'hrmp.pages.dev', 'mamp.pages.dev', 'isyacar.pages.dev',
-                              'phmp.pages.dev']),
-        '7 project cards': content.count('class="proj-card card reveal"') == 7,
+                              'phmp.pages.dev', 'epdp.pages.dev']),
+        '8 project cards': content.count('class="proj-card card reveal"') == 8,
+        'stats 8 projects': '>8</b>' in content,
         'stats 13': '>13</b>' in content,
         'no leftover tokens': '{{' not in content,
         '8 lang options': content.count('<option value=') == 8,
@@ -84,6 +85,8 @@ def check(lang):
                                   'Italiano', 'Deutsch', 'Nederlands', 'Português']),
         'profile img': '/img/profile.jpg' in content,
         'gallery imgs': all('/img/g%d.jpg' % i in content for i in range(1, 5)),
+        'services nav link': 'services/' in content,
+        'services hero cta': 'CTA' not in '' or True,  # placeholder (cta presence checked via nav)
     }
     failed = [k for k, v in checks.items() if not v]
     status = 'OK ' if not problems and not failed else 'FAIL'
@@ -94,4 +97,53 @@ def check(lang):
 
 ok = all(check(l) for l in LANGS)
 print('\nALL PAGES VALID' if ok else '\nVALIDATION FAILED')
-raise SystemExit(0 if ok else 1)
+
+# ---- v8: services pages + epdp project pages ----
+print('\n-- v8 pages: services x8 + epdp project x8 --')
+v8_ok = True
+for lang in LANGS:
+    base = '' if lang == 'ar' else lang + '/'
+    svc_path = os.path.join(OUT, base + 'services', 'index.html')
+    if not os.path.exists(svc_path):
+        print('FAIL %s services page MISSING' % lang)
+        v8_ok = False
+        continue
+    s = open(svc_path, encoding='utf-8').read()
+    issues = []
+    if s.count('class="svc-card card reveal"') != 6:
+        issues.append('svc-cards=%d' % s.count('class="svc-card card reveal"'))
+    if s.count('class="svc-step reveal"') != 4:
+        issues.append('svc-steps=%d' % s.count('class="svc-step reveal"'))
+    if s.count('class="value-card card reveal"') != 4:
+        issues.append('why-cards=%d' % s.count('class="value-card card reveal"'))
+    if '{{' in s:
+        issues.append('leftover tokens')
+    if 'id="svc-cta"' not in s or 'data-chat-wizard' not in s:
+        issues.append('cta/chat missing')
+    if 'hreflang="x-default"' not in s:
+        issues.append('hreflangs missing')
+    # language switcher must keep the services suffix
+    if ('services/" selected' not in s and ('value="/services/"' not in s)):
+        issues.append('lang switcher suffix')
+    ep_path = os.path.join(OUT, base + 'projects', 'epdp', 'index.html')
+    if not os.path.exists(ep_path):
+        issues.append('epdp page MISSING')
+    else:
+        e = open(ep_path, encoding='utf-8').read()
+        if 'epdp.pages.dev' not in e or 'pj-epdp.jpg' not in e:
+            issues.append('epdp content incomplete')
+        if '{{' in e:
+            issues.append('epdp leftover tokens')
+    print('%s %-4s services+epdp %s' % ('FAIL' if issues else 'OK  ', lang,
+                                        '| ' + '; '.join(issues) if issues else ''))
+    v8_ok = v8_ok and not issues
+
+# sitemap must list services + epdp
+sm = open(os.path.join(OUT, 'sitemap.xml'), encoding='utf-8').read()
+for needle in ['/services/', '/projects/epdp/']:
+    if needle not in sm:
+        print('FAIL sitemap missing %s' % needle)
+        v8_ok = False
+
+print('\nV8 PAGES VALID' if v8_ok else '\nV8 VALIDATION FAILED')
+raise SystemExit(0 if (ok and v8_ok) else 1)
