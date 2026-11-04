@@ -242,6 +242,60 @@
     });
   }
 
+
+  /* ---------- Project shots lightbox ---------- */
+  var slb = document.getElementById('shot-lb');
+  var shotBtns = Array.prototype.slice.call(document.querySelectorAll('.shot-zoom'));
+  var slbIndex = -1, slbLastFocus = null;
+  function openSlb(i) {
+    var btn = shotBtns[i];
+    if (!btn || !slb) return;
+    slbLastFocus = btn;
+    var img = document.getElementById('slb-img');
+    if (img) {
+      img.src = btn.getAttribute('data-full') || '';
+      img.alt = btn.getAttribute('data-alt') || '';
+    }
+    var cap = document.getElementById('slb-cap');
+    if (cap) cap.textContent = btn.getAttribute('data-cap') || '';
+    var cnt = document.getElementById('slb-count');
+    if (cnt) cnt.textContent = (i + 1) + ' / ' + shotBtns.length;
+    slbIndex = i;
+    slb.hidden = false;
+    document.body.style.overflow = 'hidden';
+    var c = slb.querySelector('.slb-close');
+    if (c) c.focus();
+  }
+  function closeSlb() {
+    if (!slb || slb.hidden) return;
+    slb.hidden = true;
+    document.body.style.overflow = '';
+    if (slbLastFocus && slbLastFocus.focus) slbLastFocus.focus();
+    slbIndex = -1;
+  }
+  function stepSlb(delta) {
+    if (slbIndex < 0) return;
+    openSlb((slbIndex + delta + shotBtns.length) % shotBtns.length);
+  }
+  if (slb && shotBtns.length) {
+    shotBtns.forEach(function (btn, i) {
+      btn.addEventListener('click', function () { openSlb(i); });
+    });
+    slb.querySelectorAll('[data-slb-close]').forEach(function (el) {
+      el.addEventListener('click', closeSlb);
+    });
+    var slbPrev = document.getElementById('slb-prev');
+    var slbNext = document.getElementById('slb-next');
+    if (slbPrev) slbPrev.addEventListener('click', function () { stepSlb(-1); });
+    if (slbNext) slbNext.addEventListener('click', function () { stepSlb(1); });
+    document.addEventListener('keydown', function (e) {
+      if (slb.hidden) return;
+      if (e.key === 'Escape') { closeSlb(); }
+      else if (e.key === 'ArrowLeft') { stepSlb(document.documentElement.dir === 'rtl' ? 1 : -1); }
+      else if (e.key === 'ArrowRight') { stepSlb(document.documentElement.dir === 'rtl' ? -1 : 1); }
+    });
+  }
+
   /* ---------- Current year ---------- */
   document.querySelectorAll('[data-year]').forEach(function (el) {
     el.textContent = String(new Date().getFullYear());
